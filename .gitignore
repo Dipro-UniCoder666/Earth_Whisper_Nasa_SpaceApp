@@ -1,0 +1,28 @@
+# --- Frontend (app/) ---
+app/node_modules/
+app/dist/
+app/.vite/
+app/*.local
+
+# --- Backend (backend/) ---
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.egg-info/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Environment ---
+.env
+.env.local
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+# Note: AquaByte_NISAR/ raster and geopackage files are intentionally
+# tracked, not ignored — they are the team's scientific source data.

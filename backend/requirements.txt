@@ -1,0 +1,9 @@
+# Earth Whisper — backend dependencies
+#
+# This file is intentionally minimal. The backend has not been implemented
+# yet (see backend/README.md). Add dependencies here as each service is
+# actually built in a future prompt — do not pre-install packages for
+# functionality that doesn't exist.
+
+fastapi>=0.115
+uvicorn[standard]>=0.30

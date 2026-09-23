@@ -1,0 +1,143 @@
+/* Earth Whisper — motion library
+   One orchestrated hero entrance + a small set of slow, ambient loops.
+   Every animation here is disabled globally via prefers-reduced-motion in globals.css. */
+
+@keyframes ew-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ew-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ew-draw {
+  from {
+    stroke-dashoffset: var(--ew-dash, 600);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ew-rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ew-drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -6px);
+  }
+}
+
+@keyframes ew-pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+@keyframes ew-sweep {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.12;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ew-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ew-anim-rise {
+  animation: ew-rise-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.ew-anim-scale {
+  animation: ew-scale-in 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.ew-anim-fade {
+  animation: ew-fade 1s ease-out both;
+}
+
+.ew-orbit-slow {
+  animation: ew-rotate-slow 90s linear infinite;
+  transform-origin: center;
+}
+
+.ew-orbit-slow-reverse {
+  animation: ew-rotate-slow 130s linear infinite reverse;
+  transform-origin: center;
+}
+
+.ew-drift {
+  animation: ew-drift 7s ease-in-out infinite;
+}
+
+.ew-draw {
+  stroke-dasharray: var(--ew-dash, 600);
+  animation: ew-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.ew-pulse-ring {
+  animation: ew-pulse-ring 3.2s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ew-orbit-slow,
+  .ew-orbit-slow-reverse,
+  .ew-drift,
+  .ew-pulse-ring {
+    animation: none !important;
+  }
+}
