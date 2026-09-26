@@ -4,7 +4,7 @@
 const TEAM = [
   {
     name: 'Shakil Ahmed',
-    role: 'Data & Research Support',
+    role: 'QA Lead & Data Coordinator',
     image: '/images/Shakil_Ahmed_Data_Analysis.jpeg',
     featured: false,
     imageScale: '145%',
@@ -24,7 +24,7 @@ const TEAM = [
   },
   {
     name: 'Jerin Tasnim',
-    role: 'Content & Media Specialist',
+    role: 'Media & Communications Lead',
     image: '/images/Jerin_Tasnim_Story.jpeg',
     featured: false,
     imageScale: '170%',
