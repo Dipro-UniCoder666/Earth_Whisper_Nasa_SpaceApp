@@ -8,6 +8,7 @@ interface InvestigationMapProps {
   center: { lat: number; lng: number } | null
   initialCenter?: { lat: number; lng: number }
   initialZoom?: number
+  fitBounds?: [[number, number], [number, number]]
   candidates: CandidateAnomaly[]
   selectedCandidateId?: string
   onMapClick?: (lat: number, lng: number) => void
@@ -46,17 +47,28 @@ function MapClickHandler({ onMapClick }: { onMapClick?: (lat: number, lng: numbe
 }
 
 /** Recenters/zooms the map imperatively when `center` changes, without remounting the map. */
-function MapRecenter({ center }: { center: { lat: number; lng: number } | null }) {
+function MapRecenter({
+  center,
+  bounds,
+}: {
+  center: { lat: number; lng: number } | null
+  bounds?: [[number, number], [number, number]]
+}) {
   const map = useMap()
   const hasCenteredRef = useRef(false)
 
   useEffect(() => {
+    if (bounds) {
+      map.flyToBounds(bounds, { duration: 1.1, padding: [24, 24] })
+      hasCenteredRef.current = true
+      return
+    }
     if (!center) return
     map.flyTo([center.lat, center.lng], hasCenteredRef.current ? Math.max(map.getZoom(), SELECTED_ZOOM) : SELECTED_ZOOM, {
       duration: 1.1,
     })
     hasCenteredRef.current = true
-  }, [center, map])
+  }, [bounds, center, map])
 
   return null
 }
@@ -65,6 +77,7 @@ export function InvestigationMap({
   center,
   initialCenter,
   initialZoom,
+  fitBounds,
   candidates,
   selectedCandidateId,
   onMapClick,
@@ -89,7 +102,7 @@ export function InvestigationMap({
         />
 
         <MapClickHandler onMapClick={onMapClick} />
-        <MapRecenter center={center} />
+        <MapRecenter center={center} bounds={fitBounds} />
 
         {center && <Marker position={[center.lat, center.lng]} icon={selectedIcon} />}
 

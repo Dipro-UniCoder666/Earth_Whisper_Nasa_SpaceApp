@@ -48,6 +48,32 @@ export interface InvestigationSite {
   limitation: string
 }
 
+export interface InvestigationLocation {
+  id: string
+  shortName: string
+  subtitle: string
+  name: string
+  coords: { lat: number; lng: number }
+  latitude: string
+  longitude: string
+  coordLabel: string
+  aoiBounds?: [[number, number], [number, number]]
+  badges?: string[]
+}
+
+export const SANDHYA_INVESTIGATION: InvestigationLocation = {
+  id: 'sandhya-river',
+  shortName: 'Sandhya River',
+  subtitle: 'Babuganj, Barishal, Bangladesh',
+  name: 'Sandhya River near Babuganj, Barishal, Bangladesh',
+  coords: { lat: 22.49, lng: 90.185 },
+  latitude: '22.4900',
+  longitude: '90.1850',
+  coordLabel: '22.4900° N · 90.1850° E',
+  aoiBounds: [[22.47, 90.15], [22.51, 90.22]],
+  badges: ['211 radar candidates', '32 investigated'],
+}
+
 export const MONDA_INVESTIGATION: InvestigationSite = {
   id: 'monda-uttarakhand',
   shortName: 'Monda, Uttarakhand',

@@ -148,13 +148,6 @@ const S = {
   },
 } as const
 
-// ── Distance helper ───────────────────────────────────────────────────────────
-function distToEdge(rect: DOMRect, cx: number, cy: number): number {
-  const dx = Math.max(rect.left - cx, 0, cx - rect.right)
-  const dy = Math.max(rect.top  - cy, 0, cy - rect.bottom)
-  return Math.sqrt(dx * dx + dy * dy)
-}
-
 // ── Atmospheric SVG background ────────────────────────────────────────────────
 function SectionBackground() {
   return (

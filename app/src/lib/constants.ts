@@ -14,7 +14,7 @@ export const ROUTES = {
 export const NAV_LINKS = [
   { label: 'Home',        to: '/',            external: false },
   { label: 'Investigate', to: '/investigate', external: false },
-  { label: 'Science',     to: '/science',     external: false },
+  { label: 'Whisper Lab', to: '/science',     external: false },
   { label: 'About',       to: '/about',       external: false },
 ] as const
 

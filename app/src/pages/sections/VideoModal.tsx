@@ -16,7 +16,7 @@ function distToEdge(rect: DOMRect, cx: number, cy: number): number {
 // Because it mounts fresh each open, useEffect here always fires after the
 // <video> element is in the DOM, so videoRef.current is never null.
 // ─────────────────────────────────────────────────────────────────────────────
-function VideoPlayer({ onClose }: { onClose: () => void }) {
+function VideoPlayer() {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   // Autoplay immediately after mount
@@ -169,7 +169,7 @@ export function VideoModal({ isOpen, onClose }: VideoModalProps) {
           background: '#000',
         }}>
           {/* VideoPlayer mounts here — its own useEffect fires after DOM is ready */}
-          <VideoPlayer onClose={onClose} />
+          <VideoPlayer />
         </div>
 
         {/* Close button */}

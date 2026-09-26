@@ -16,7 +16,7 @@ import { ROUTES } from '@/lib/constants'
 const NAV_LINKS = [
   { label: 'Home', to: ROUTES.landing },
   { label: 'Investigate', to: ROUTES.investigate },
-  { label: 'Science', to: ROUTES.science },
+  { label: 'Whisper Lab', to: ROUTES.science },
   { label: 'About', to: ROUTES.about },
 ]
 

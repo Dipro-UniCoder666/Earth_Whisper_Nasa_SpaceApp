@@ -1,9 +1,14 @@
 import { forwardRef, useState } from 'react'
 import type { InvestigationSite } from '@/features/investigation/data/investigationSite'
 import { downloadCaseFile } from '@/features/investigation/caseFile/buildCaseFile'
+import type { InvestigationLifecycleStatus } from '@/features/investigation/models/investigationModel'
+import { InvestigationScan } from './InvestigationScan'
+import { InvestigationResultShell } from './InvestigationResultShell'
 
 export interface InvestigationResultsProps {
   site: InvestigationSite
+  lifecycleStatus: Extract<InvestigationLifecycleStatus, 'scanning' | 'ready'>
+  scanProgress: number
 }
 
 /**
@@ -18,7 +23,7 @@ export interface InvestigationResultsProps {
  * (and the downloadable case file) follow whichever investigation is selected.
  */
 export const InvestigationResults = forwardRef<HTMLElement, InvestigationResultsProps>(
-  function InvestigationResults({ site }, ref) {
+  function InvestigationResults({ site, lifecycleStatus, scanProgress }, ref) {
     const [caseFileState, setCaseFileState] = useState<'idle' | 'building' | 'ready'>('idle')
 
     const before = site.nisar.beforeCoherence.toFixed(4)
@@ -39,8 +44,16 @@ export const InvestigationResults = forwardRef<HTMLElement, InvestigationResults
       }
     }
 
+    if (lifecycleStatus === 'scanning') {
+      return (
+        <InvestigationResultShell ref={ref} className="ew-results-card ew-sandhya-results" aria-live="polite">
+          <InvestigationScan locationName={site.shortName} progress={scanProgress} />
+        </InvestigationResultShell>
+      )
+    }
+
     return (
-      <section ref={ref} className="ew-results-card" aria-labelledby="results-title">
+      <InvestigationResultShell ref={ref} className="ew-results-card" aria-labelledby="results-title">
         {/* ---------- Header ---------- */}
         <div className="ew-results-head">
           <p className="ew-panel-label">EARTH EVENT EVIDENCE</p>
@@ -245,7 +258,7 @@ export const InvestigationResults = forwardRef<HTMLElement, InvestigationResults
             Science Mode
           </button>
         </div>
-      </section>
+      </InvestigationResultShell>
     )
   },
 )

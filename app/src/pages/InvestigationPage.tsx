@@ -2,39 +2,52 @@ import { useRef, useState } from 'react'
 import { MapPin } from 'lucide-react'
 import { InvestigationMap } from '@/features/investigation/components/InvestigationMap'
 import { InvestigationResults } from '@/features/investigation/components/InvestigationResults'
+import { SandhyaInvestigationResults } from '@/features/candidates/components/SandhyaInvestigationResults'
 import { SecondaryPageLayout } from '@/components/layout/SecondaryPageLayout'
-import { MONDA_INVESTIGATION } from '@/features/investigation/data/investigationSite'
+import { mondaInvestigationAdapter } from '@/features/investigation/adapters/mondaInvestigationAdapter'
+import { useInvestigationLifecycle } from '@/features/investigation/hooks/useInvestigationLifecycle'
+import {
+  MONDA_INVESTIGATION,
+  SANDHYA_INVESTIGATION,
+  type InvestigationLocation,
+} from '@/features/investigation/data/investigationSite'
 
 
 const INVESTIGATION_BUTTONS = [
-  { id: MONDA_INVESTIGATION.id, label: MONDA_INVESTIGATION.shortName },
-  { id: 'investigation-2', label: 'Investigation 2' },
-  { id: 'investigation-3', label: 'Investigation 3' },
-  { id: 'investigation-4', label: 'Investigation 4' },
+  { ...SANDHYA_INVESTIGATION, number: '01' },
+  {
+    id: MONDA_INVESTIGATION.id,
+    shortName: MONDA_INVESTIGATION.shortName,
+    subtitle: MONDA_INVESTIGATION.name,
+    name: MONDA_INVESTIGATION.name,
+    coords: MONDA_INVESTIGATION.coords,
+    latitude: MONDA_INVESTIGATION.latitude,
+    longitude: MONDA_INVESTIGATION.longitude,
+    coordLabel: MONDA_INVESTIGATION.coordLabel,
+    number: '02',
+  },
+  { id: 'investigation-3', shortName: 'Investigation 3', subtitle: 'Reserved investigation', number: '03' },
+  { id: 'investigation-4', shortName: 'Investigation 4', subtitle: 'Reserved investigation', number: '04' },
 ]
 
 export function InvestigationPage() {
-  const [selectedLocation, setSelectedLocation] = useState<{
-    name: string
-    latitude: string
-    longitude: string
-  } | null>(null)
+  const [selectedLocation, setSelectedLocation] = useState<InvestigationLocation | null>(null)
   const [investigationStarted, setInvestigationStarted] = useState(false)
   const [mapCenter, setMapCenter] = useState<{ lat: number; lng: number } | null>(null)
   const resultsRef = useRef<HTMLElement | null>(null)
+  const mondaLifecycle = useInvestigationLifecycle(mondaInvestigationAdapter)
 
-  function selectMondaInvestigation() {
-    setSelectedLocation({
-      name: MONDA_INVESTIGATION.name,
-      latitude: MONDA_INVESTIGATION.latitude,
-      longitude: MONDA_INVESTIGATION.longitude,
-    })
-    setMapCenter({ ...MONDA_INVESTIGATION.coords })
+  function selectInvestigation(investigation: InvestigationLocation) {
+    setSelectedLocation(investigation)
+    setMapCenter({ ...investigation.coords })
+    setInvestigationStarted(false)
+    mondaLifecycle.reset()
   }
 
   function beginInvestigation() {
     if (!selectedLocation) return
     setInvestigationStarted(true)
+    if (selectedLocation.id === MONDA_INVESTIGATION.id) mondaLifecycle.start()
     window.setTimeout(() => {
       resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }, 80)
@@ -59,15 +72,19 @@ export function InvestigationPage() {
           <div className="ew-panel-map">
             <InvestigationMap
               center={mapCenter}
-              initialCenter={MONDA_INVESTIGATION.coords}
+              initialCenter={SANDHYA_INVESTIGATION.coords}
               initialZoom={7}
+              fitBounds={selectedLocation?.aoiBounds}
               candidates={[]}
               className="h-full w-full"
             />
             {selectedLocation && (
               <div className="ew-map-label" aria-hidden="true">
-                <span className="ew-map-label-place">{MONDA_INVESTIGATION.name}</span>
-                <span className="ew-map-label-coords">{MONDA_INVESTIGATION.coordLabel}</span>
+                <span className="ew-map-label-place">{selectedLocation.name}</span>
+                <span className="ew-map-label-coords">
+                  {selectedLocation.id === SANDHYA_INVESTIGATION.id ? 'AOI center ' : ''}
+                  {selectedLocation.coordLabel}
+                </span>
               </div>
             )}
           </div>
@@ -79,24 +96,32 @@ export function InvestigationPage() {
             <div className="ew-location-options" aria-label="Available investigations">
               {INVESTIGATION_BUTTONS.map((investigation) => {
                 const isActive = investigation.id === MONDA_INVESTIGATION.id
+                const isSandhya = investigation.id === SANDHYA_INVESTIGATION.id
+                const isSelected = investigation.id === selectedLocation?.id
+                const isAvailable = isSandhya || isActive
 
-                const cardClass = isActive
-                  ? selectedLocation
+                const cardClass = isAvailable
+                  ? isSelected
                     ? 'ew-location-card is-active is-selected'
                     : 'ew-location-card is-active'
                   : 'ew-location-card is-placeholder'
+                const cardName = isSandhya
+                  ? SANDHYA_INVESTIGATION.shortName
+                  : isActive
+                    ? MONDA_INVESTIGATION.shortName
+                    : investigation.shortName
 
                 return (
                   <button
                     key={investigation.id}
                     type="button"
                     className={cardClass}
-                    aria-current={isActive && selectedLocation ? 'true' : undefined}
-                    onClick={isActive ? selectMondaInvestigation : undefined}
+                    aria-current={isSelected ? 'true' : undefined}
+                    onClick={isAvailable ? () => selectInvestigation(investigation as InvestigationLocation) : undefined}
                   >
-                    <span className="ew-location-card-name">{investigation.label}</span>
-                    {isActive && (
-                      <span className="ew-location-card-sub">{MONDA_INVESTIGATION.coordLabel}</span>
+                    <span className="ew-location-card-name">{cardName}</span>
+                    {isAvailable && 'coordLabel' in investigation && (
+                      <span className="ew-location-card-sub">{investigation.coordLabel}</span>
                     )}
                   </button>
                 )
@@ -125,7 +150,10 @@ export function InvestigationPage() {
                 {selectedLocation?.name ?? 'No location selected'}
               </p>
               {selectedLocation && (
-                <p className="ew-location-selected-coords">{MONDA_INVESTIGATION.coordLabel}</p>
+                <p className="ew-location-selected-coords">
+                  {selectedLocation.id === SANDHYA_INVESTIGATION.id ? 'AOI center ' : ''}
+                  {selectedLocation.coordLabel}
+                </p>
               )}
             </div>
 
@@ -158,7 +186,7 @@ export function InvestigationPage() {
               type="button"
               className="ew-cta"
               onClick={beginInvestigation}
-              disabled={!selectedLocation}
+              disabled={!selectedLocation || (selectedLocation.id === SANDHYA_INVESTIGATION.id && investigationStarted)}
             >
               <span className="ew-cta-title">Begin Investigation</span>
             </button>
@@ -168,7 +196,17 @@ export function InvestigationPage() {
 
         {investigationStarted && (
           <div className="ew-results-region">
-            <InvestigationResults ref={resultsRef} site={MONDA_INVESTIGATION} />
+            {selectedLocation?.id === SANDHYA_INVESTIGATION.id ? (
+              <SandhyaInvestigationResults ref={resultsRef} location={SANDHYA_INVESTIGATION} />
+            ) : mondaLifecycle.lifecycle.data &&
+              (mondaLifecycle.lifecycle.status === 'scanning' || mondaLifecycle.lifecycle.status === 'ready') ? (
+              <InvestigationResults
+                ref={resultsRef}
+                site={mondaLifecycle.lifecycle.data.site}
+                lifecycleStatus={mondaLifecycle.lifecycle.status}
+                scanProgress={mondaLifecycle.progress}
+              />
+            ) : null}
           </div>
         )}
       </div>
