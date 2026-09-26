@@ -8,6 +8,7 @@ export const ROUTES = {
   landing:     '/',
   investigate: '/investigate',
   science:     '/science',
+  analysis:    '/analysis',
   about:       '/about',
 } as const
 
@@ -15,6 +16,7 @@ export const NAV_LINKS = [
   { label: 'Home',        to: '/',            external: false },
   { label: 'Investigate', to: '/investigate', external: false },
   { label: 'Whisper Lab', to: '/science',     external: false },
+  { label: 'Analysis',    to: '/analysis',    external: false },
   { label: 'About',       to: '/about',       external: false },
 ] as const
 

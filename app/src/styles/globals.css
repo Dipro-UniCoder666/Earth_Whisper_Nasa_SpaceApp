@@ -240,15 +240,15 @@
   background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a1a1a;
+  background: #3a3a3a;
   border-radius: 4px;
   border: 1px solid #2a2a2a;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2c2c2c;
+  background: #484848;
 }
 * {
-  scrollbar-color: #1a1a1a #000000;
+  scrollbar-color: #3a3a3a #000000;
   scrollbar-width: thin;
 }
 
@@ -3025,6 +3025,13 @@
 .whisper-lab-game-sections { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 12px 0; }
 .whisper-lab-game-section { min-height: 205px; padding: 13px; border: 1px solid rgba(71, 204, 214, .3); border-radius: 9px; background: linear-gradient(155deg, rgba(6, 35, 52, .91), rgba(4, 19, 32, .92)); box-shadow: inset 0 1px rgba(126, 237, 232, .08); }
 .whisper-lab-game-section.is-complete { border-color: rgba(111, 232, 207, .72); box-shadow: 0 0 22px rgba(68, 219, 201, .14), inset 0 1px rgba(126, 237, 232, .13); }
+.whisper-lab-game-section.is-drop-valid { border-color: rgba(126, 245, 228, .95); box-shadow: 0 0 28px rgba(68, 219, 201, .32), inset 0 1px rgba(126, 237, 232, .18); animation: whisper-lab-drop-pulse 1s ease-in-out infinite; }
+.whisper-lab-game-section.is-drop-invalid { border-color: rgba(241, 126, 126, .75); box-shadow: 0 0 20px rgba(219, 91, 91, .2), inset 0 1px rgba(241, 126, 126, .12); }
+.whisper-lab-world.is-drop-valid { box-shadow: inset 0 0 70px rgba(72, 239, 230, .2), 0 0 30px rgba(72, 239, 230, .2); }
+.whisper-lab-world.is-drop-invalid { box-shadow: inset 0 0 55px rgba(230, 105, 105, .12); }
+.whisper-lab-satellite, .whisper-lab-equipment, .whisper-lab-object, .section-drop-object, .section-core-actions button { touch-action: none; user-select: none; }
+@keyframes whisper-lab-drop-pulse { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { .whisper-lab-game-section.is-drop-valid { animation: none; } }
 .whisper-lab-game-section header { display: flex; align-items: center; gap: 9px; margin-bottom: 13px; }.whisper-lab-game-section h2 { margin: 0; color: #e8fbff; font-size: .92rem; letter-spacing: 0; text-transform: none; }.whisper-lab-game-section header small { color: rgba(171, 220, 226, .55); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; }.section-orb { display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; color: #071c2a; background: #f3b634; font-size: 1.1rem; font-weight: 800; }.section-orb.blue { background: #54aef2; }.section-orb.amber { background: #f0a934; }
 .section-signal-pair { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 91px; }.section-signal { position: relative; display: flex; align-items: center; gap: 2px; width: 105px; height: 61px; padding: 8px; box-sizing: border-box; border: 1px solid rgba(87, 219, 231, .6); border-radius: 6px; background: rgba(5, 39, 57, .9); overflow: hidden; }.section-signal.later { border-color: rgba(233, 145, 120, .7); background: rgba(64, 33, 47, .72); }.section-signal small { position: absolute; top: 5px; left: 7px; color: rgba(224, 244, 244, .76); font-size: .52rem; }.section-signal i { width: 13px; height: 23px; margin-top: 12px; border-top: 2px solid #61e4e1; transform: skewY(-28deg); }.section-signal i:nth-child(2n) { transform: skewY(29deg); }.section-signal.later i { border-color: #f3aa85; transform: skewY(22deg); }.section-scanner { display: grid; place-items: center; width: 34px; height: 52px; color: #a4fff0; border: 1px solid rgba(119, 239, 224, .72); border-radius: 7px; background: rgba(50, 160, 151, .2); box-shadow: 0 0 16px rgba(76, 228, 212, .26); animation: whisper-lab-scanner-pulse 1.6s ease-in-out infinite; }
 .section-machine-action { display: block; min-width: 112px; margin: 7px auto 0; padding: 8px 10px; border: 1px solid rgba(103, 225, 215, .44); border-radius: 5px; color: #d9fff7; background: rgba(32, 119, 113, .36); cursor: pointer; font: inherit; font-size: .64rem; }.section-machine-action:disabled { cursor: default; opacity: .48; }.section-machine-action:not(:disabled):hover, .section-machine-action:not(:disabled):focus-visible { border-color: #affff2; background: rgba(59, 162, 143, .55); }
@@ -3365,3 +3372,375 @@
 .whisper-lab-learning-thinking span:nth-child(2) { animation-delay: .18s; }
 .whisper-lab-learning-thinking span:nth-child(3) { animation-delay: .36s; }
 @keyframes whisper-lab-thinking-dot { 45%, 100% { opacity: 1; } }
+
+/* Pointer-drop feedback stays after the station defaults so it remains visible. */
+.whisper-lab-game-section.is-drop-valid {
+  border-color: rgba(126, 245, 228, .95);
+  box-shadow: 0 0 28px rgba(68, 219, 201, .32), inset 0 1px rgba(126, 237, 232, .18);
+  animation: whisper-lab-drop-pulse 1s ease-in-out infinite;
+}
+.whisper-lab-game-section.is-drop-invalid {
+  border-color: rgba(241, 126, 126, .75);
+  box-shadow: 0 0 20px rgba(219, 91, 91, .2), inset 0 1px rgba(241, 126, 126, .12);
+}
+.whisper-lab-world.is-drop-valid {
+  box-shadow: inset 0 0 70px rgba(72, 239, 230, .2), 0 0 30px rgba(72, 239, 230, .2);
+}
+.whisper-lab-world.is-drop-invalid {
+  box-shadow: inset 0 0 55px rgba(230, 105, 105, .12);
+}
+.whisper-lab-satellite,
+.whisper-lab-equipment,
+.whisper-lab-object,
+.section-drop-object,
+.section-core-actions button {
+  touch-action: none;
+  user-select: none;
+}
+@keyframes whisper-lab-drop-pulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whisper-lab-game-section.is-drop-valid { animation: none; }
+}
+
+.whisper-lab-drag-overlay {
+  position: fixed;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid rgba(141, 246, 231, .9);
+  border-radius: 6px;
+  color: #eafffa;
+  background: rgba(4, 38, 51, .96);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .42), 0 0 24px rgba(82, 231, 222, .55);
+  pointer-events: none;
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  transition: transform .26s ease, opacity .26s ease, box-shadow .26s ease;
+}
+.whisper-lab-drag-overlay.is-snapping {
+  border-color: #fff0a6;
+  box-shadow: 0 0 30px rgba(255, 214, 102, .7), 0 12px 28px rgba(0, 0, 0, .45);
+}
+.whisper-lab-drag-overlay.is-returning {
+  opacity: .68;
+  border-color: rgba(241, 154, 154, .75);
+  box-shadow: 0 0 18px rgba(219, 91, 91, .28);
+}
+.whisper-lab-drag-overlay svg { color: #8df2e6; flex: 0 0 auto; }
+@media (prefers-reduced-motion: reduce) {
+  .whisper-lab-drag-overlay { transition: none; }
+}
+.compare-section.is-comparing .section-scanner {
+  color: #d5fff7;
+  box-shadow: 0 0 24px rgba(82, 231, 222, .62);
+  animation: whisper-lab-compare-scan .75s ease-in-out infinite alternate;
+}
+.compare-section.is-comparing .compare-slot {
+  border-color: rgba(133, 244, 227, .92);
+  box-shadow: inset 0 0 15px rgba(75, 224, 204, .22);
+}
+@keyframes whisper-lab-compare-scan {
+  from { transform: scale(.96) rotate(-4deg); opacity: .72; }
+  to { transform: scale(1.08) rotate(4deg); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .compare-section.is-comparing .section-scanner { animation: none; }
+}
+
+.whisper-lab-evidence-modal-backdrop {
+  position: fixed;
+  z-index: 150;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px;
+  background: rgba(0, 5, 12, .68);
+  backdrop-filter: blur(5px);
+}
+.whisper-lab-evidence-modal {
+  position: relative;
+  width: min(430px, 100%);
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  padding: 52px 24px 24px;
+  border: 1px solid rgba(83, 221, 215, .48);
+  border-radius: 10px;
+  background: #071a29;
+  box-shadow: -18px 0 55px rgba(0, 0, 0, .42), 0 0 28px rgba(45, 216, 207, .14);
+  animation: whisper-lab-drawer-in .28s ease both;
+}
+.whisper-lab-modal-copy { margin: 0 0 18px; color: rgba(196, 227, 237, .66); font-size: .75rem; line-height: 1.5; }
+.whisper-lab-evidence-list { display: grid; gap: 9px; }
+.whisper-lab-evidence-card {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 11px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(89, 224, 220, .35);
+  border-radius: 6px;
+  color: inherit;
+  text-align: left;
+  background: rgba(6, 25, 39, .82);
+  cursor: grab;
+  font: inherit;
+  touch-action: none;
+  user-select: none;
+}
+.whisper-lab-evidence-card:hover:not(:disabled),
+.whisper-lab-evidence-card:focus-visible:not(:disabled) { border-color: #8df0e4; box-shadow: 0 0 16px rgba(83, 224, 207, .25); transform: translateY(-1px); }
+.whisper-lab-evidence-card:active:not(:disabled) { cursor: grabbing; }
+.whisper-lab-evidence-card:disabled { cursor: default; opacity: .52; }
+.whisper-lab-evidence-card.is-placed { border-color: rgba(126, 240, 216, .7); }
+.whisper-lab-evidence-card > span:last-child { display: grid; gap: 3px; }
+.whisper-lab-evidence-card strong { color: #ecfbff; font-size: .78rem; }
+.whisper-lab-evidence-card small { color: #6de4df; font-size: .59rem; letter-spacing: .08em; text-transform: uppercase; }
+.whisper-lab-evidence-card em { color: rgba(188, 220, 231, .62); font-size: .66rem; font-style: normal; line-height: 1.35; }
+.whisper-lab-evidence-card .whisper-lab-evidence-icon { display: grid; place-items: center; width: 32px; height: 32px; color: #65e2dc; border-radius: 50%; background: rgba(67, 205, 205, .12); }
+@media (max-width: 760px) { .whisper-lab-evidence-modal-backdrop { padding: 10px; } .whisper-lab-evidence-modal { max-height: calc(100vh - 20px); } }
+
+/* The evidence interaction is the central Whisper Lab console, never a sidebar. */
+.whisper-lab-evidence-modal-backdrop {
+  align-items: center;
+  justify-content: center;
+  padding: clamp(14px, 4vw, 48px);
+  background: rgba(0, 5, 12, .58);
+}
+.whisper-lab-evidence-modal {
+  width: min(84vw, 1080px);
+  max-height: min(86vh, 760px);
+  overflow: auto;
+  padding: 28px 32px 30px;
+  border: 1px solid rgba(103, 238, 228, .62);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(5, 31, 47, .98), rgba(3, 16, 29, .98));
+  box-shadow: 0 0 0 1px rgba(79, 211, 214, .1), 0 0 70px rgba(30, 204, 202, .2), 0 24px 80px rgba(0, 0, 0, .58);
+}
+.whisper-lab-modal-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.whisper-lab-modal-topline .whisper-lab-eyebrow { margin: 0; }
+.whisper-lab-modal-topline > span { color: rgba(125, 236, 226, .7); font-size: .58rem; font-weight: 800; letter-spacing: .16em; }
+.whisper-lab-evidence-modal > h2 { margin: 12px 0 6px; color: #edffff; font-size: clamp(1.15rem, 2vw, 1.7rem); letter-spacing: .04em; }
+.whisper-lab-modal-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .9fr); gap: 20px; align-items: stretch; margin-top: 20px; }
+.whisper-lab-modal-bay, .whisper-lab-modal-machine { min-width: 0; padding: 17px; border: 1px solid rgba(88, 220, 216, .32); border-radius: 9px; background: rgba(3, 23, 36, .7); }
+.whisper-lab-modal-label { display: block; margin-bottom: 12px; color: #72e5da; font-size: .59rem; font-weight: 800; letter-spacing: .15em; }
+.whisper-lab-modal-bay .whisper-lab-evidence-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.whisper-lab-modal-machine { display: flex; flex-direction: column; justify-content: center; min-height: 270px; box-shadow: inset 0 0 30px rgba(54, 212, 204, .07); }
+.whisper-lab-modal-machine.is-process, .whisper-lab-modal-machine.is-collect { border-color: rgba(251, 193, 76, .58); }
+.whisper-lab-modal-machine.is-compare { border-color: rgba(90, 175, 246, .58); }
+.whisper-lab-modal-machine.is-clues { border-color: rgba(181, 116, 248, .58); }
+.whisper-lab-modal-machine.is-build { border-color: rgba(244, 174, 55, .7); }
+.whisper-lab-modal-machine-core { display: flex; align-items: center; gap: 15px; min-height: 116px; padding: 18px; border: 1px solid rgba(108, 233, 220, .4); border-radius: 8px; background: radial-gradient(circle at 28% 40%, rgba(45, 148, 141, .32), rgba(3, 23, 35, .8) 65%); box-shadow: 0 0 26px rgba(51, 216, 203, .14); }
+.whisper-lab-modal-machine-core .whisper-lab-core-orb { flex: 0 0 58px; width: 58px; height: 58px; }
+.whisper-lab-modal-machine-copy { display: grid; gap: 7px; }
+.whisper-lab-modal-machine-copy strong { color: #edfffb; font-size: .82rem; letter-spacing: .08em; }
+.whisper-lab-modal-machine-copy span { color: rgba(206, 239, 235, .68); font-size: .68rem; line-height: 1.45; }
+.whisper-lab-modal-machine .section-machine-action, .whisper-lab-modal-machine .investigate-now-button { margin-top: 16px; }
+.whisper-lab-modal-machine .section-status { margin-top: 12px; }
+@media (max-width: 760px) {
+  .whisper-lab-evidence-modal { width: min(94vw, 620px); padding: 22px 17px; }
+  .whisper-lab-modal-layout { grid-template-columns: 1fr; }
+  .whisper-lab-modal-machine { min-height: 210px; }
+  .whisper-lab-modal-bay .whisper-lab-evidence-list { grid-template-columns: 1fr; }
+}
+
+/* Keep the active console inside the existing Earth Scene surface. */
+.whisper-lab-shell { position: relative; }
+.whisper-lab-evidence-modal-backdrop {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 40;
+  height: 560px;
+  padding: 18px;
+  align-items: stretch;
+  background: rgba(3, 19, 31, .78);
+  backdrop-filter: blur(3px);
+}
+.whisper-lab-evidence-modal {
+  width: 100%;
+  max-width: none;
+  max-height: 100%;
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+}
+@media (max-width: 760px) {
+  .whisper-lab-evidence-modal-backdrop { height: 530px; padding: 10px; }
+}
+
+/* The console is an in-scene piece of equipment, not a page-covering dialog. */
+.whisper-lab-evidence-modal-backdrop {
+  inset: 0;
+  width: 100%;
+  height: 560px;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: transparent;
+  backdrop-filter: none;
+  pointer-events: none;
+}
+.whisper-lab-evidence-modal {
+  pointer-events: auto;
+  width: min(700px, calc(100% - 40px));
+  height: auto;
+  max-height: 488px;
+  margin: 62px 26px 0 0;
+  padding: 18px 20px 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, rgba(5, 31, 47, .97), rgba(3, 16, 29, .98));
+  box-shadow: 0 0 34px rgba(30, 204, 202, .18), 0 18px 45px rgba(0, 0, 0, .45);
+}
+.whisper-lab-evidence-modal .whisper-lab-modal-layout { gap: 12px; margin-top: 12px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-bay,
+.whisper-lab-evidence-modal .whisper-lab-modal-machine { padding: 12px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine { min-height: 220px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card { padding: 9px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card strong { font-size: .7rem; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card em { font-size: .59rem; }
+@media (max-width: 900px) {
+  .whisper-lab-evidence-modal { width: min(620px, calc(100% - 28px)); margin-right: 14px; }
+}
+@media (max-width: 760px) {
+  .whisper-lab-evidence-modal-backdrop { height: 530px; justify-content: center; }
+  .whisper-lab-evidence-modal { width: calc(100% - 20px); max-height: 500px; margin: 52px 0 0; padding: 15px; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-layout { grid-template-columns: 1fr; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-machine { min-height: 165px; }
+}
+
+/* Compact equipment scale: the four stations remain the main workflow. */
+.whisper-lab-evidence-modal {
+  width: min(470px, calc(100% - 34px));
+  max-height: 348px;
+  margin: 78px 26px 0 0;
+  padding: 13px 15px 14px;
+}
+.whisper-lab-evidence-modal > h2 { margin: 6px 0 3px; font-size: .98rem; }
+.whisper-lab-evidence-modal .whisper-lab-modal-copy { margin-bottom: 8px; font-size: .59rem; }
+.whisper-lab-evidence-modal .whisper-lab-modal-layout { grid-template-columns: minmax(0, 1.25fr) minmax(150px, .8fr); gap: 8px; margin-top: 8px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-bay,
+.whisper-lab-evidence-modal .whisper-lab-modal-machine { padding: 9px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-label { margin-bottom: 6px; font-size: .48rem; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-list { gap: 5px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card { grid-template-columns: 24px 1fr; gap: 6px; min-height: 0; padding: 6px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-icon { width: 23px; height: 23px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card strong { font-size: .58rem; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card small { font-size: .46rem; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card em { display: none; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine { min-height: 170px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-core { min-height: 66px; gap: 8px; padding: 8px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-core .whisper-lab-core-orb { flex-basis: 38px; width: 38px; height: 38px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-copy strong { font-size: .58rem; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-copy span { font-size: .51rem; }
+.whisper-lab-evidence-modal .section-machine-action,
+.whisper-lab-evidence-modal .investigate-now-button { margin-top: 8px; padding: 6px; font-size: .55rem; }
+.whisper-lab-evidence-modal .section-status { margin-top: 6px; font-size: .47rem; }
+@media (max-width: 760px) {
+  .whisper-lab-evidence-modal { width: calc(100% - 20px); max-height: 420px; margin: 48px 0 0; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-layout { grid-template-columns: 1fr; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-machine { min-height: 128px; }
+}
+
+/* Final game treatment: floating equipment nodes, never a modal surface. */
+.whisper-lab-evidence-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 560px;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: transparent;
+  backdrop-filter: none;
+  pointer-events: none;
+}
+.whisper-lab-evidence-modal {
+  position: relative;
+  width: min(520px, calc(100% - 32px));
+  max-height: none;
+  height: auto;
+  margin: 92px 24px 0 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  animation: none;
+}
+.whisper-lab-evidence-modal .whisper-lab-close {
+  z-index: 3;
+  top: -10px;
+  right: -2px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(111, 229, 220, .5);
+  color: #b9fff5;
+  background: rgba(3, 28, 42, .85);
+}
+.whisper-lab-evidence-modal .whisper-lab-modal-topline,
+.whisper-lab-evidence-modal > h2,
+.whisper-lab-evidence-modal > .whisper-lab-modal-copy { display: none; }
+.whisper-lab-evidence-modal .whisper-lab-modal-layout { display: flex; align-items: flex-start; justify-content: flex-end; gap: 12px; margin: 0; }
+.whisper-lab-evidence-modal .whisper-lab-modal-bay,
+.whisper-lab-evidence-modal .whisper-lab-modal-machine {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.whisper-lab-evidence-modal .whisper-lab-modal-bay { width: 250px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-label { display: none; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  min-width: 116px;
+  min-height: 32px;
+  padding: 5px 7px;
+  border: 1px solid rgba(94, 224, 214, .45);
+  border-radius: 5px;
+  background: rgba(4, 31, 45, .84);
+  box-shadow: 0 0 12px rgba(50, 205, 196, .1);
+}
+.whisper-lab-evidence-modal .whisper-lab-evidence-card > span:last-child { display: flex; align-items: baseline; gap: 4px; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-icon { width: 20px; height: 20px; background: rgba(67, 205, 205, .15); }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card strong { font-size: .54rem; white-space: nowrap; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card small { font-size: .43rem; white-space: nowrap; }
+.whisper-lab-evidence-modal .whisper-lab-evidence-card em { display: none; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine {
+  display: grid;
+  align-content: start;
+  width: 190px;
+  min-height: 0;
+  padding: 8px;
+  border: 1px solid rgba(241, 183, 66, .48);
+  border-radius: 7px;
+  background: rgba(3, 29, 42, .86);
+  box-shadow: 0 0 22px rgba(66, 210, 198, .12);
+}
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-core { min-height: 58px; padding: 6px; border: 0; background: transparent; box-shadow: none; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-core .whisper-lab-core-orb { flex-basis: 34px; width: 34px; height: 34px; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-copy strong { font-size: .55rem; }
+.whisper-lab-evidence-modal .whisper-lab-modal-machine-copy span { font-size: .47rem; }
+.whisper-lab-evidence-modal .section-machine-action,
+.whisper-lab-evidence-modal .investigate-now-button { margin-top: 3px; padding: 4px 6px; font-size: .49rem; }
+.whisper-lab-evidence-modal .section-status { margin: 3px 0 0; font-size: .43rem; }
+.whisper-lab-evidence-modal:has(.whisper-lab-modal-machine.is-complete) .whisper-lab-modal-bay { display: none; }
+@media (max-width: 760px) {
+  .whisper-lab-evidence-modal-backdrop { height: 530px; justify-content: center; }
+  .whisper-lab-evidence-modal { width: calc(100% - 24px); margin: 58px 0 0; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-layout { justify-content: center; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-bay { width: 205px; }
+  .whisper-lab-evidence-modal .whisper-lab-modal-machine { width: 150px; }
+}

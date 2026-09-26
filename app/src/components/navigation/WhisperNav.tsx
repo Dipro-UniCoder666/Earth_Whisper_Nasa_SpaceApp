@@ -17,6 +17,7 @@ const NAV_LINKS = [
   { label: 'Home', to: ROUTES.landing },
   { label: 'Investigate', to: ROUTES.investigate },
   { label: 'Whisper Lab', to: ROUTES.science },
+  { label: 'Analysis', to: ROUTES.analysis },
   { label: 'About', to: ROUTES.about },
 ]
 

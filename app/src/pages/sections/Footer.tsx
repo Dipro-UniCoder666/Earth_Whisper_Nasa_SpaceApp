@@ -13,14 +13,16 @@ const NAV_LINKS = [
   { label: 'Home',        to: '/' },
   { label: 'Investigate', to: '/investigate' },
   { label: 'Whisper Lab', to: '/science' },
+  { label: 'Analysis',    to: '/analysis' },
   { label: 'About',       to: '/about' },
 ]
 
 const DATA_SOURCES = [
-  { name: 'NISAR',            credit: 'NASA / JPL' },
-  { name: 'NASADEM',          credit: 'NASA' },
-  { name: 'GPM IMERG',        credit: 'NASA / GPM' },
-  { name: 'MODIS Land Cover', credit: 'NASA / LP DAAC' },
+  { name: 'NISAR', credit: 'NASA-ISRO SAR Mission', url: 'https://nisar.jpl.nasa.gov/' },
+  { name: 'Sentinel-1', credit: 'Copernicus radar mission', url: 'https://www.copernicus.eu/en/access-data/copernicus-services-catalogue/sentinel-1' },
+  { name: 'GPM IMERG', credit: 'NASA Global Precipitation Measurement', url: 'https://gpm.nasa.gov/data-access/downloads/gpm' },
+  { name: 'HLS', credit: 'Harmonized Landsat Sentinel-2', url: 'https://hls.gsfc.nasa.gov/' },
+  { name: 'NASADEM', credit: 'NASA Digital Elevation Model', url: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-001' },
 ]
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -262,13 +264,13 @@ export function Footer() {
 
         {/* ── DATA SOURCES ── */}
         <div style={{ flexShrink:0 }}>
-          <ColHead>Data Sources</ColHead>
+          <ColHead>Data Resources</ColHead>
           <div style={{ display:'flex', flexDirection:'column', gap:'14px' }}>
             {DATA_SOURCES.map(ds => (
               <div key={ds.name}>
-                <p style={{ fontSize:'0.82rem', color:'rgba(200,225,245,0.75)', letterSpacing:'0.04em', margin:'0 0 2px 0', fontWeight:500 }}>
+                <a href={ds.url} target="_blank" rel="noopener noreferrer" style={{ display:'block', fontSize:'0.82rem', color:'rgba(200,225,245,0.75)', letterSpacing:'0.04em', margin:'0 0 2px 0', fontWeight:500, textDecoration:'none' }}>
                   {ds.name}
-                </p>
+                </a>
                 <p style={{ fontSize:'0.68rem', color:'rgba(24,183,201,0.50)', letterSpacing:'0.06em', margin:0 }}>
                   {ds.credit}
                 </p>

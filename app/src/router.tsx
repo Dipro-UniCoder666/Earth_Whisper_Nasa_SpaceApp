@@ -45,6 +45,7 @@ export const router = createBrowserRouter([
         element: <AppLayout />,
         children: [
           { path: ROUTES.science, element: <WhisperLabPage /> },
+          { path: ROUTES.analysis, element: <Navigate to={ROUTES.science} replace /> },
           { path: ROUTES.about,   element: <AboutPage /> },
         ],
       },
