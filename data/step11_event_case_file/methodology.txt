@@ -1,0 +1,11 @@
+Step 1: NISAR coverage
+Step 2: NISAR AOI extraction and change
+Step 3: Temporal fingerprint
+Step 4: Optical verification
+Step 5: Environmental context
+Step 6: Feature engine
+Step 7: ML anomaly detection
+Step 8: Evidence fusion
+Step 9: Uncertainty
+Step 10: AI Investigator
+Step 11: Event Case File

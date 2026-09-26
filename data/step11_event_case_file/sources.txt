@@ -1,0 +1,8 @@
+NISAR Data User Guide: https://nisar-docs.asf.alaska.edu/
+NISAR GUNW Product Documentation: https://nisar-docs.asf.alaska.edu/gunw/
+NISAR Vertex Search: https://nisar-docs.asf.alaska.edu/vertex/
+ASF Vertex: https://vertex-plus.asf.alaska.edu/
+NISAR Product Overview: https://nisar-docs.asf.alaska.edu/products-overview/
+HLS: https://www.earthdata.nasa.gov/data/projects/hls
+NASA GPM IMERG: https://gpm.nasa.gov/data/imerg
+NASA Earthdata: https://www.earthdata.nasa.gov/

@@ -1,0 +1,14 @@
+{
+  "figures": [
+    {
+      "file": "step2_nisar_change/HH_023_to_029_coherence_change.png",
+      "title": "NISAR HH coherence-change map",
+      "source": "Earth Whisper Step 2 - exact AOI output"
+    },
+    {
+      "file": "step2_nisar_change/VV_025_to_026_coherence_change.png",
+      "title": "NISAR VV coherence-change map",
+      "source": "Earth Whisper Step 2 - exact AOI output"
+    }
+  ]
+}

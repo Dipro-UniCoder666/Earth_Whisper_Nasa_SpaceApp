@@ -1,0 +1,260 @@
+{
+  "project": "Earth Whisper",
+  "aoi": "Sandhya River near Babuganj, Barishal, Bangladesh",
+  "source_files": [
+    {
+      "path": "step6_feature_engine/feature_table.csv",
+      "rows": 211,
+      "columns": 58
+    },
+    {
+      "path": "step6_feature_engine/feature_schema.csv",
+      "rows": 78,
+      "columns": 6
+    },
+    {
+      "path": "step6_feature_engine/ml_feature_eligibility.csv",
+      "rows": 78,
+      "columns": 13
+    },
+    {
+      "path": "step6_feature_engine/step7d_knn_anomaly_results.csv",
+      "rows": 211,
+      "columns": 14
+    },
+    {
+      "path": "step6_feature_engine/step8b_comparison_aware_knn.csv",
+      "rows": 211,
+      "columns": 14
+    },
+    {
+      "path": "step6_feature_engine/step8c_evidence_matrix.csv",
+      "rows": 211,
+      "columns": 77
+    },
+    {
+      "path": "step6_feature_engine/step8e_uncertainty_annotations.csv",
+      "rows": 211,
+      "columns": 11
+    },
+    {
+      "path": "step6_feature_engine/step8f_cross_radar_consistency.csv",
+      "rows": 211,
+      "columns": 17
+    },
+    {
+      "path": "step9_uncertainty_limitations/uncertainty_limitations.csv",
+      "rows": 15,
+      "columns": 6
+    }
+  ],
+  "candidate_selection_rule": {
+    "identity": "candidate_key = comparison + '_' + region_id",
+    "A_top_anomaly": {
+      "field": "comparison_aware_anomaly_percentile",
+      "source_file": "step6_feature_engine/step8b_comparison_aware_knn.csv",
+      "count": 20,
+      "cutoff_percentile": 0.9145299145299145,
+      "next_best_percentile": 0.9094017094017094
+    },
+    "B_dual_radar": {
+      "field": "cross_radar_status",
+      "source_file": "step6_feature_engine/step8f_cross_radar_consistency.csv",
+      "accepted_values": [
+        "dual_radar_upper_quartile_stable",
+        "dual_radar_upper_quartile_but_sensitive"
+      ],
+      "count": 16
+    },
+    "C_deduplicate": "by candidate_key",
+    "overlap_A_and_B": 4
+  },
+  "candidate_count": 32,
+  "investigation_date": "2026-09-25",
+  "rules_applied": [
+    "Use only values present in the supplied Step 6-9 tables; no recomputation of source statistics.",
+    "candidate_key (= comparison + '_' + region_id) is the unique identity for every candidate.",
+    "HH_023_to_029 and VV_025_to_026 are kept distinct; their coherence values are never combined.",
+    "Sentinel-1 anomaly percentiles are read from the comparison-aware columns only.",
+    "Rainfall is reported as AOI-level environmental context and never used as a spatial score.",
+    "Missing rainfall for GUNW_023 is preserved as 'not available'.",
+    "optical_status distinguishes not_tested from tested_but_inconclusive_no_valid_pixels.",
+    "No supervised-classification claim, event probability or calibrated confidence value is produced.",
+    "Observation / Inference / Limitation are separated for every candidate."
+  ],
+  "assumptions": [
+    "The Step 6-9 CSV files in data/ are the authoritative evidence products for this investigation.",
+    "The 211 candidates form a candidate pool generated from NISAR change detection, not an unbiased sample of the AOI.",
+    "The two accepted cross_radar_status values are treated as the dual-radar upper-quartile set defined by the brief.",
+    "Rank-20 selection uses percentile descending with candidate_key ascending as the deterministic tie-break; no tie occurred at the cutoff.",
+    "Optical 'not tested' means no optical verification was performed, not that no change was observed."
+  ],
+  "source_consistency_checks": [
+    {
+      "check": "candidate_key set: step6_feature_engine/feature_table.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key set: step6_feature_engine/step7d_knn_anomaly_results.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key set: step6_feature_engine/step8b_comparison_aware_knn.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key set: step6_feature_engine/step8c_evidence_matrix.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key set: step6_feature_engine/step8e_uncertainty_annotations.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key set: step6_feature_engine/step8f_cross_radar_consistency.csv",
+      "status": "consistent",
+      "detail": "unique keys=211, missing_vs_feature_table=0, extra=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/feature_table.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/step7d_knn_anomaly_results.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/step8b_comparison_aware_knn.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/step8c_evidence_matrix.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/step8e_uncertainty_annotations.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "candidate_key uniqueness: step6_feature_engine/step8f_cross_radar_consistency.csv",
+      "status": "consistent",
+      "detail": "duplicates=0"
+    },
+    {
+      "check": "lon/lat/area agree across step8b/step8c/step8f/feature_table",
+      "status": "consistent",
+      "detail": "mismatched candidates=0"
+    },
+    {
+      "check": "comparison_aware_anomaly_percentile agrees numerically across step8b/step8e/step8f",
+      "status": "consistent",
+      "detail": "candidates differing beyond 1e-09: 0; string-representation-only differences: 148; max absolute delta: 1.1102230246251565e-16"
+    },
+    {
+      "check": "optical status agrees step8f vs step8e",
+      "status": "consistent",
+      "detail": "mismatched candidates=0"
+    },
+    {
+      "check": "comparison population sizes match the brief (195 HH / 16 VV)",
+      "status": "consistent",
+      "detail": "observed={'195': 195, '16': 16}"
+    },
+    {
+      "check": "cutoff is unambiguous (no tie at rank 20)",
+      "status": "consistent",
+      "detail": "rank20=0.914530 rank21=0.9094017094017094"
+    }
+  ],
+  "numeric_serialisation_note": {
+    "string_representation_only_differences": 148,
+    "max_absolute_numeric_delta": 1.1102230246251565e-16,
+    "numeric_tolerance_used": 1e-09,
+    "interpretation": "Selected percentile values are numerically identical across step8b, step8e and step8f; they differ only in the last decimal digit of their text serialisation (<= 1 ULP). No source value was altered and no corrective action was required."
+  },
+  "qa_results": [
+    {
+      "check": "candidate_key unique in output",
+      "pass": true,
+      "detail": "32 rows / 32 unique"
+    },
+    {
+      "check": "count equals |top20 union dual|",
+      "pass": true,
+      "detail": "32 investigated, 32 expected (A=20, B=16, overlap=4)"
+    },
+    {
+      "check": "no candidate outside the selection set",
+      "pass": true,
+      "detail": "checked all rows"
+    },
+    {
+      "check": "no new numerical event score",
+      "pass": true,
+      "detail": "score/rank columns added: 0"
+    },
+    {
+      "check": "no event probability",
+      "pass": true,
+      "detail": "probability columns: none; probability wording in prose: none"
+    },
+    {
+      "check": "no confirmed physical-event label in generated prose",
+      "pass": true,
+      "detail": "forbidden phrases found: none"
+    },
+    {
+      "check": "optical not_tested and tested_but_inconclusive stay distinct",
+      "pass": true,
+      "detail": "statuses present: ['not_tested', 'tested_but_inconclusive_no_valid_pixels']"
+    },
+    {
+      "check": "HH and VV comparisons remain distinguishable",
+      "pass": true,
+      "detail": "comparisons present: ['HH_023_to_029', 'VV_025_to_026']"
+    },
+    {
+      "check": "region_id never the unique key alone",
+      "pass": true,
+      "detail": "candidate_key = comparison + '_' + region_id verified"
+    },
+    {
+      "check": "all source files listed in manifest",
+      "pass": true,
+      "detail": "9 source files recorded"
+    },
+    {
+      "check": "assumptions recorded explicitly",
+      "pass": true,
+      "detail": "see manifest.assumptions"
+    },
+    {
+      "check": "no unresolved source inconsistency",
+      "pass": true,
+      "detail": "all consistency checks passed"
+    }
+  ],
+  "source_inconsistencies": [],
+  "unresolved_limitations": [
+    "No independent ground-truth event labels exist, so no physical event can be confirmed.",
+    "Six candidates have inconclusive optical verification (no valid pixels); the remaining 205 were not optically tested.",
+    "The VV comparison population is small (16 candidates), limiting percentile resolution.",
+    "The GUNW_023 14-day rainfall context is unavailable.",
+    "HH and VV coherence measurements are not interchangeable and are reported separately."
+  ],
+  "outputs": [
+    "step10_candidate_investigations.csv",
+    "step10_candidate_investigations.md",
+    "step10_investigator_manifest.json"
+  ]
+}

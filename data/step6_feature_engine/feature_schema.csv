@@ -1,0 +1,79 @@
+feature_name,category,source,unit,description,evidence_role
+candidate_key,metadata,Step 3 candidate datasets,identifier,Candidate identity; not a numerical measurement.,metadata
+comparison,metadata,Step 3 candidate datasets,identifier,Candidate identity; not a numerical measurement.,metadata
+region_id,metadata,Step 3 candidate datasets,identifier,Candidate identity; not a numerical measurement.,metadata
+pixels,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+area_m2,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+lon,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+lat,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+mean_change,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+min_change,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+max_change,spatial_candidate,step2_candidate_regions_geographic.csv,mixed,Candidate-region geometry and source change statistics.,measured
+GUNW_023_HH_median,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_023_HH_mean,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_025_VV_median,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_025_VV_mean,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_026_VV_median,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_026_VV_mean,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_029_HH_median,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+GUNW_029_HH_mean,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+HH_023_to_029_change,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+VV_025_to_026_change,nisar_temporal,step2_region_temporal_fingerprint.csv,coherence,NISAR interferometric temporal measurements and comparison changes.,measured
+s1_n,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_mean_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_median_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_min_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_max_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_p25_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_p75_db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_pct_le_minus1db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_pct_le_minus2db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+s1_pct_le_minus3db,sentinel1_crosscheck,step2_nisar_s1_ranked.csv,dB / percent,Independent Sentinel-1 radar change statistics used as a cross-check.,measured
+gunw_023_context_date,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_rainfall_day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_rainfall_3day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_rainfall_7day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_max_daily_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_023_wet_days_gt5mm_14day,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 023.,context
+gunw_025_context_date,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_rainfall_day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_rainfall_3day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_rainfall_7day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_max_daily_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_025_wet_days_gt5mm_14day,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 025.,context
+gunw_026_context_date,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_rainfall_day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_rainfall_3day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_rainfall_7day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_max_daily_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_026_wet_days_gt5mm_14day,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 026.,context
+gunw_029_context_date,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_rainfall_day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_rainfall_3day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_rainfall_7day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_max_daily_rainfall_14day_mm,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+gunw_029_wet_days_gt5mm_14day,environmental_context,step5d_radar_environment_join.csv,date / mm / count,AOI-level rainfall context associated with GUNW 029.,context
+optical_observation_key,optical_metadata,step4_candidate_water_verification.csv,identifier/date/coordinate,Identity and location of an actual optical observation.,metadata
+region_id,optical_metadata,step4_candidate_water_verification.csv,identifier/date/coordinate,Identity and location of an actual optical observation.,metadata
+date,optical_metadata,step4_candidate_water_verification.csv,identifier/date/coordinate,Identity and location of an actual optical observation.,metadata
+longitude,optical_metadata,step4_candidate_water_verification.csv,identifier/date/coordinate,Identity and location of an actual optical observation.,metadata
+latitude,optical_metadata,step4_candidate_water_verification.csv,identifier/date/coordinate,Identity and location of an actual optical observation.,metadata
+window_pixels,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+valid_pixels,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+fmask_water_pixels,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+valid_water_pixels,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+fmask_water_percent,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+valid_water_percent,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+high_aerosol_pixels,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+optical_valid_fraction,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+optical_high_aerosol_fraction,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+optical_valid_water_fraction,optical_quality,step4_candidate_water_verification.csv,count / fraction,Optical data availability and QA measurements.,quality
+optical_available,optical_quality,derived from optical QA,boolean,True only when at least one valid optical pixel exists.,quality
+ndwi_median,optical_measurement,step4_candidate_water_verification.csv,index / count,Optical water-index measurements where valid pixels exist.,measured
+mndwi_median,optical_measurement,step4_candidate_water_verification.csv,index / count,Optical water-index measurements where valid pixels exist.,measured
+ndwi_gt_0.2,optical_measurement,step4_candidate_water_verification.csv,index / count,Optical water-index measurements where valid pixels exist.,measured
+mndwi_gt_0.2,optical_measurement,step4_candidate_water_verification.csv,index / count,Optical water-index measurements where valid pixels exist.,measured
