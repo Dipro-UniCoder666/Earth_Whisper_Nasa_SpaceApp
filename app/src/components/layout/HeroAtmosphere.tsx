@@ -1,4 +1,4 @@
-﻿/**
+/**
  * HeroAtmosphere
  *
  * Extracts the exact visual layers from the LandingPage hero:
@@ -315,7 +315,7 @@ export function HeroAtmosphere() {
       </svg>
 
       {/* ── 3. Floating satellite — top-right, same as landing page ── */}
-      <div
+      <div className="ew-hero-satellite"
         aria-hidden="true"
         style={{
           position: 'fixed',

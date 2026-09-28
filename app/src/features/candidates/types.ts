@@ -107,3 +107,30 @@ export interface CandidateListResponse {
   dashboard_summary: DashboardSummary
   candidates: CandidateSummary[]
 }
+
+export interface InvestigationStage {
+  id: string
+  label: string
+  status: 'complete'
+  detail: string
+}
+
+export interface InvestigationResponse {
+  status: 'ready'
+  location_id: string
+  candidate_key: string
+  stages: InvestigationStage[]
+  result: {
+    project: string
+    location_id: string
+    candidate_count: number
+    investigated_candidate_count: number
+    candidate: CandidateDetail
+    evidence_groups: Record<string, Record<string, unknown>>
+    evidence_availability: Record<string, string>
+    uncertainty: Record<string, unknown>
+    limitations: string | null
+    provenance: Record<string, string | null>
+    site?: import('@/features/investigation/data/investigationSite').InvestigationSite
+  }
+}

@@ -9,7 +9,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import candidates, casefile, health
+from app.api import candidates, casefile, health, investigations
 from app.core.config import get_settings
 
 settings = get_settings()
@@ -28,13 +28,14 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=list(settings.cors_origins),
     allow_credentials=False,
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
 app.include_router(health.router, prefix="/api")
 app.include_router(candidates.router, prefix="/api")
 app.include_router(casefile.router, prefix="/api")
+app.include_router(investigations.router, prefix="/api")
 
 
 @app.exception_handler(Exception)

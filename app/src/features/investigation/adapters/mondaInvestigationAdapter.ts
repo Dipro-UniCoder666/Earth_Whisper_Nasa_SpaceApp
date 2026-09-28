@@ -1,4 +1,5 @@
 import { MONDA_INVESTIGATION } from '@/features/investigation/data/investigationSite'
+import { requestInvestigation } from '@/features/candidates/services/candidateService'
 import type { InvestigationAdapter, InvestigationData } from '@/features/investigation/models/investigationModel'
 
 export type MondaInvestigationData = Extract<InvestigationData, { kind: 'monda-site' }>
@@ -9,6 +10,12 @@ export type MondaInvestigationData = Extract<InvestigationData, { kind: 'monda-s
  */
 export const mondaInvestigationAdapter: InvestigationAdapter<MondaInvestigationData> = {
   async load() {
+    try {
+      const response = await requestInvestigation(MONDA_INVESTIGATION.id, MONDA_INVESTIGATION.coords.lat, MONDA_INVESTIGATION.coords.lng)
+      if (response.result.site) return { kind: 'monda-site', site: response.result.site }
+    } catch {
+      // Preserve the existing local Monda fallback when the API is unavailable.
+    }
     return {
       kind: 'monda-site',
       site: MONDA_INVESTIGATION,

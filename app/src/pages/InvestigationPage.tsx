@@ -197,7 +197,7 @@ export function InvestigationPage() {
         {investigationStarted && (
           <div className="ew-results-region">
             {selectedLocation?.id === SANDHYA_INVESTIGATION.id ? (
-              <SandhyaInvestigationResults ref={resultsRef} location={SANDHYA_INVESTIGATION} />
+              <SandhyaInvestigationResults ref={resultsRef} location={selectedLocation} />
             ) : mondaLifecycle.lifecycle.data &&
               (mondaLifecycle.lifecycle.status === 'scanning' || mondaLifecycle.lifecycle.status === 'ready') ? (
               <InvestigationResults

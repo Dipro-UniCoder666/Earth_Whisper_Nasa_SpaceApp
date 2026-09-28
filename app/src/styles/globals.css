@@ -1654,12 +1654,12 @@
 }
 
 .ew-sandhya-analysis {
-  min-height: 272px;
+  min-height: 236px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  padding: 18px 12px 10px;
+  gap: 14px;
+  padding: 12px 12px 8px;
 }
 
 .ew-sandhya-analysis-top {
@@ -1768,8 +1768,8 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
-  min-height: 88px;
-  padding: 18px 0 0;
+  min-height: 76px;
+  padding: 12px 0 0;
   border-top: 1px solid rgba(24, 183, 201, 0.16);
 }
 
@@ -3924,5 +3924,46 @@ body {
   .ew-landing-sections video,
   .ew-landing-sections svg {
     max-width: 100% !important;
+  }
+}
+
+/* ---------------------------- mobile hero polish -------------------------- */
+@media (max-width: 767px) {
+  /* smaller satellite, tucked into the top-right corner (landing + other pages) */
+  .ew-hero-satellite {
+    top: 72px !important;
+    right: 10px !important;
+  }
+
+  .ew-hero-satellite img {
+    width: 106px !important;
+  }
+
+  /* hero slightly shorter so the fold is never cut off */
+  .ew-hero-root {
+    height: 92svh !important;
+    min-height: 0 !important;
+  }
+
+  /* bring the Begin the Investigation CTA a little higher */
+  .ew-hero-cta {
+    bottom: calc(17% + 4px) !important;
+  }
+
+  .ew-hero-cta-btn {
+    font-size: 0.82rem !important;
+    padding: 6px 15px !important;
+    gap: 7px !important;
+  }
+
+  .ew-hero-cta-arrow {
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  /* relax the desktop-only star exclusion mask so stars read around the hero */
+  .ew-hero-stars #ew-star-mask rect:not(:first-child),
+  .ew-hero-stars #ew-star-mask circle {
+    fill: rgba(0, 0, 0, 0.45) !important;
   }
 }

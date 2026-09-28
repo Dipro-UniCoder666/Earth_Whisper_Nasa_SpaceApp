@@ -4,8 +4,8 @@ import { Activity, BadgeCheck, CheckCircle2, CircleAlert, CircleDashed, CloudRai
 import type { InvestigationLocation } from '@/features/investigation/data/investigationSite'
 import { InvestigationScan } from '@/features/investigation/components/InvestigationScan'
 import { InvestigationResultShell } from '@/features/investigation/components/InvestigationResultShell'
-import { getCaseFilePdfUrl, getSandhyaCandidate, getSandhyaCandidates } from '@/features/candidates/services/candidateService'
-import type { CandidateDetail, CandidateListResponse } from '@/features/candidates/types'
+import { getCaseFilePdfUrl, runSandhyaInvestigation } from '@/features/candidates/services/candidateService'
+import type { CandidateDetail, InvestigationResponse } from '@/features/candidates/types'
 
 interface SandhyaInvestigationResultsProps { location: InvestigationLocation }
 
@@ -69,7 +69,7 @@ function StatusRow({ label, value, tone }: { label: string; value: string; tone:
 }
 
 export const SandhyaInvestigationResults = forwardRef<HTMLElement, SandhyaInvestigationResultsProps>(function SandhyaInvestigationResults({ location }, ref) {
-  const [payload, setPayload] = useState<CandidateListResponse | null>(null)
+  const [payload, setPayload] = useState<InvestigationResponse | null>(null)
   const [candidate, setCandidate] = useState<CandidateDetail | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [phase, setPhase] = useState<'analysis' | 'result' | 'error'>('analysis')
@@ -88,14 +88,11 @@ export const SandhyaInvestigationResults = forwardRef<HTMLElement, SandhyaInvest
     setCandidate(null)
     setStartedAt(Date.now())
 
-    getSandhyaCandidates(true).then(async (result) => {
+    runSandhyaInvestigation(location.id, location.coords.lat, location.coords.lng).then((result) => {
       if (!active) return
       setPayload(result)
-      const first = result.candidates[0]
-      if (!first) throw new Error('No investigated candidate was returned.')
-      const detail = await getSandhyaCandidate(first.candidate_key)
       if (active) {
-        setCandidate(detail)
+        setCandidate(result.result.candidate)
         setApiReady(true)
       }
     }).catch(() => {
@@ -111,17 +108,8 @@ export const SandhyaInvestigationResults = forwardRef<HTMLElement, SandhyaInvest
   }, [attempt])
 
   useEffect(() => {
-    if (phase !== 'analysis') return
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reducedMotion) {
-      setScanProgress(1)
-      return
-    }
-      const timer = window.setInterval(() => {
-        setScanProgress((value) => Math.min(1, value + 0.01375))
-    }, 55)
-    return () => window.clearInterval(timer)
-  }, [attempt, phase])
+    if (apiReady) setScanProgress(1)
+  }, [apiReady])
 
   useEffect(() => {
     if (!apiReady) return
@@ -202,7 +190,7 @@ export const SandhyaInvestigationResults = forwardRef<HTMLElement, SandhyaInvest
         <article><strong>{candidate?.area_m2 === null || candidate?.area_m2 === undefined ? 'Not available' : `${numberText(candidate.area_m2, 0)} m²`}</strong><span>Investigated Region</span><small>Candidate region</small></article>
         <article className="is-warning"><strong>{candidate ? opticalText(candidate) : 'LOADING'}</strong><span>Verification</span><small>Optical evidence</small></article>
       </div>
-      <p className="ew-sandhya-project-context">Sandhya investigation: {payload?.candidate_count ?? '—'} radar candidates · {payload?.investigated_candidate_count ?? '—'} investigated</p>
+      <p className="ew-sandhya-project-context">Sandhya investigation: {payload?.result.candidate_count ?? '—'} radar candidates · {payload?.result.investigated_candidate_count ?? '—'} investigated</p>
 
       <section className="ew-sandhya-primary-result" aria-labelledby="sandhya-primary-result-title">
         <div className="ew-sandhya-primary-icon"><BadgeCheck size={21} aria-hidden="true" /></div>

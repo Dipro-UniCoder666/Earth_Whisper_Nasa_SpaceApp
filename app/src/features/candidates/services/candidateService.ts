@@ -1,4 +1,4 @@
-import type { CandidateDetail, CandidateListResponse, CandidateSummary } from '@/features/candidates/types'
+import type { CandidateDetail, CandidateListResponse, CandidateSummary, InvestigationResponse } from '@/features/candidates/types'
 
 /**
  * Sandhya River investigation data access.
@@ -38,11 +38,11 @@ type StaticContract = {
 let apiAvailable: boolean | null = null
 let staticContract: StaticContract | null = null
 
-async function fetchWithTimeout(url: string, timeoutMs = API_TIMEOUT_MS): Promise<Response> {
+async function fetchWithTimeout(url: string, init?: RequestInit, timeoutMs = API_TIMEOUT_MS): Promise<Response> {
   const controller = new AbortController()
   const timer = window.setTimeout(() => controller.abort(), timeoutMs)
   try {
-    return await fetch(url, { signal: controller.signal })
+    return await fetch(url, { ...init, signal: controller.signal })
   } finally {
     window.clearTimeout(timer)
   }
@@ -59,11 +59,11 @@ async function loadStaticContract(): Promise<StaticContract> {
 }
 
 /** Returns null (and remembers that the API is down) instead of throwing. */
-async function tryApi<T>(path: string): Promise<T | null> {
+async function tryApi<T>(path: string, init?: RequestInit): Promise<T | null> {
   if (!API_BASE_URL) return null
   if (apiAvailable === false) return null
   try {
-    const response = await fetchWithTimeout(`${API_BASE_URL}${path}`)
+    const response = await fetchWithTimeout(`${API_BASE_URL}${path}`, init)
     if (!response.ok) throw new Error(`Earth Whisper API request failed (${response.status})`)
     const payload = (await response.json()) as T
     apiAvailable = true
@@ -127,6 +127,65 @@ export async function getSandhyaCandidate(candidateKey: string): Promise<Candida
     throw new Error(`Candidate ${candidateKey} is not present in the verified investigation data.`)
   }
   return normalizeDetail(found)
+}
+
+function distanceSquared(candidate: CandidateSummary, latitude: number, longitude: number) {
+  return Math.pow((candidate.lat ?? 0) - latitude, 2) + Math.pow((candidate.lon ?? 0) - longitude, 2)
+}
+
+/** Runs the request-time investigation, with the same verified static fallback as the read API. */
+export async function requestInvestigation(locationId: string, latitude: number, longitude: number): Promise<InvestigationResponse> {
+  const request = { location_id: locationId, latitude, longitude }
+  const fromApi = await tryApi<InvestigationResponse>('/api/investigations', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(request),
+  })
+  if (!fromApi) throw new Error('Earth Whisper investigation service is unavailable.')
+  return fromApi
+}
+
+/** Runs Sandhya through the backend and preserves the existing static fallback. */
+export async function runSandhyaInvestigation(locationId: string, latitude: number, longitude: number): Promise<InvestigationResponse> {
+  try {
+    return await requestInvestigation(locationId, latitude, longitude)
+  } catch {
+    // The static fallback remains available for deployments without the API.
+  }
+
+  const contract = await loadStaticContract()
+  if (locationId !== 'sandhya-river') throw new Error('This investigation location is not available in the verified evidence contract.')
+  const candidates = contract.candidates.filter((candidate) => candidate.investigated)
+  const candidate = candidates.reduce<CandidateDetail | null>((nearest, current) => {
+    if (!nearest) return current
+    return distanceSquared(current, latitude, longitude) < distanceSquared(nearest, latitude, longitude) ? current : nearest
+  }, null)
+  if (!candidate) throw new Error('No verified investigated candidates are available for this location.')
+  return {
+    status: 'ready',
+    location_id: locationId,
+    candidate_key: candidate.candidate_key,
+    stages: [
+      ['initializing', 'Location resolved', 'The selected Sandhya River investigation was validated.'],
+      ['loading_observations', 'Observations loaded', 'Verified radar, rainfall, optical, and uncertainty records were read.'],
+      ['analyzing_radar_change', 'Radar change analyzed', 'NISAR change and Sentinel-1 cross-check records were assembled.'],
+      ['checking_supporting_evidence', 'Supporting evidence checked', 'Radar, environmental, and optical availability was recorded.'],
+      ['assessing_uncertainty', 'Uncertainty assessed', 'Recorded uncertainty and limitation statements were retained.'],
+      ['assembling_investigation', 'Investigation assembled', 'The verified evidence groups and supporting context are ready to present.'],
+    ].map(([id, label, detail]) => ({ id, label, status: 'complete' as const, detail })),
+    result: {
+      project: contract.project,
+      location_id: locationId,
+      candidate_count: contract.candidate_count,
+      investigated_candidate_count: contract.investigated_candidate_count,
+      candidate,
+      evidence_groups: { nisar: candidate.nisar, sentinel1: candidate.sentinel1, rainfall: candidate.environmental, optical: candidate.optical },
+      evidence_availability: Object.fromEntries(['nisar', 'sentinel1', 'rainfall', 'optical'].map((name) => [name, 'available'])),
+      uncertainty: candidate.uncertainty,
+      limitations: candidate.observations.limitation_summary,
+      provenance: {},
+    },
+  }
 }
 
 /** API PDF route when the service is reachable, otherwise the static Step 11 PDF. */

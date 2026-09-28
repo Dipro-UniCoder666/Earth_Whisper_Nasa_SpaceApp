@@ -1,4 +1,4 @@
-﻿import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { WhisperNav } from '@/components/navigation/WhisperNav'
 import { ROUTES } from '@/lib/constants'
 import { EarthSignalSection } from '@/pages/sections/EarthSignalSection'
@@ -44,6 +44,7 @@ export function LandingPage() {
           zIndex: 1,
           pointerEvents: 'none',
         }}
+        className="ew-hero-stars"
         viewBox="0 0 1440 900"
         preserveAspectRatio="xMidYMid slice"
       >
@@ -751,7 +752,7 @@ export function LandingPage() {
       </svg>
 
       {/* ── Satellite image — top-right, below navbar ── */}
-      <div
+      <div className="ew-hero-satellite"
         style={{
           position: 'absolute',
           top: '104px',
@@ -786,7 +787,7 @@ export function LandingPage() {
 
       <WhisperNav variant="overlay" />
       {/* ── Compact white pill CTA — below feature items ── */}
-      <div
+      <div className="ew-hero-cta"
         style={{
           position: 'absolute',
           bottom: 'calc(10% - 50px)',
@@ -798,7 +799,7 @@ export function LandingPage() {
         }}
       >
         <button
-          type="button"
+          type="button" className="ew-hero-cta-btn"
           onClick={() => navigate(ROUTES.investigate)}
           style={{
             display: 'inline-flex',
@@ -817,8 +818,19 @@ export function LandingPage() {
             letterSpacing: '-0.01em',
           }}
         >
-          Begin the Investigation ⮞
-        </button>
+        Begin the Investigation
+        <svg
+          className="ew-hero-cta-arrow"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          style={{ display: 'block', flexShrink: 0 }}
+        >
+          <path d="M2 12h11" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
+          <path d="M11 5.4 21 12l-10 6.6z" fill="currentColor" />
+        </svg>
+      </button>
       </div>
 
     </div>
