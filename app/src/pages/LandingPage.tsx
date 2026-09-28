@@ -18,6 +18,7 @@ export function LandingPage() {
         {/* Portrait hero artwork on phones; the landscape artwork everywhere else */}
         <source media="(max-width: 767px)" srcSet="/images/Hero_Mobile.svg" />
         <img
+          className="ew-hero-bg"
           src="/images/Hero.svg"
           alt="Earth Whisper hero"
           style={{
@@ -819,7 +820,17 @@ export function LandingPage() {
           }}
         >
         Begin the Investigation
-        <span className="ew-hero-cta-arrow" aria-hidden="true">⮞</span>
+        <svg
+          className="ew-hero-cta-arrow"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          style={{ display: 'block', flexShrink: 0, width: '12px', height: '12px', minWidth: '12px' }}
+        >
+          <path d="M2 12h11" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
+          <path d="M11 5.4 21 12l-10 6.6z" fill="currentColor" />
+        </svg>
       </button>
       </div>
 

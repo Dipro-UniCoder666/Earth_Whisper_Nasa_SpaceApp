@@ -3940,7 +3940,7 @@ body {
 @media (max-width: 767px) {
   /* smaller satellite, tucked into the top-right corner (landing + other pages) */
   .ew-hero-satellite {
-    top: 72px !important;
+    top: 94px !important;
     right: 10px !important;
   }
 
@@ -3956,7 +3956,7 @@ body {
 
   /* CTA sits low, just above the fold */
   .ew-hero-cta {
-    bottom: calc(8% - 16px) !important;
+    bottom: calc(4% - 2px) !important;
   }
 
   .ew-hero-cta-btn {
@@ -4065,5 +4065,90 @@ body {
     height: 32px !important;
     top: 10px !important;
     left: 10px !important;
+  }
+}
+
+/* Mobile: hero artwork nudged down 10px (with a small compensating zoom),
+   and an arrow that cannot disappear on phones. */
+@media (max-width: 767px) {
+  .ew-hero-bg {
+    transform: translateY(10px) scale(1.02);
+    transform-origin: center center;
+  }
+
+  .ew-hero-cta-arrow {
+    display: block !important;
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    font-size: 0 !important;
+  }
+}
+
+/* ------------------- Team section: three cards, one row, phones ----------- */
+@media (max-width: 767px) {
+  /* higher specificity than the component's own column rule */
+  .ew-landing-sections .team-cards-row {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .ew-team-card {
+    /* four cards share the phone width; min-width:0 lets them shrink instead of overflowing */
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding: 12px 6px 11px !important;
+    border-radius: 13px !important;
+  }
+
+  .ew-team-photo {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* keep every portrait centred inside the smaller ring */
+  .ew-team-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: none !important;
+  }
+
+  .ew-team-name {
+    font-size: 0.58rem !important;
+    line-height: 1.18 !important;
+    margin-bottom: 4px !important;
+    letter-spacing: 0.01em !important;
+  }
+
+  .ew-team-role {
+    font-size: 0.46rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .ew-team-icons {
+    gap: 4px !important;
+  }
+
+  .ew-team-icons svg {
+    width: 10px !important;
+    height: 12px !important;
+  }
+}
+
+/* ---------- Team section on phones: desktop composition, compacted -------- */
+@media (max-width: 767px) {
+  /* desktop keeps a 56px gap under the heading; phones need a tighter one */
+  .ew-landing-sections #team-heading {
+    font-size: 1.55rem !important;
+    line-height: 1.05 !important;
+    letter-spacing: 0.01em !important;
+    margin-bottom: 26px !important;
   }
 }

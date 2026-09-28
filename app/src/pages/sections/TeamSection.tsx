@@ -32,6 +32,17 @@ const TEAM = [
     gmail: null,
     whatsapp: null,
   },
+  {
+    name: 'Devjyoti Dey Mugdho',
+    role: 'Earth Science & Geospatial Research Contributor',
+    // Placeholder portrait - the real photo will be added later.
+    image: '/images/team_placeholder.svg',
+    featured: false,
+    imageScale: '100%',
+    imageTranslate: '0px, 0px',
+    gmail: null,
+    whatsapp: null,
+  },
 ] as const
 
 // ── Gmail SVG icon ────────────────────────────────────────────────────────────
@@ -133,6 +144,7 @@ function TeamCard({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="ew-team-card"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -156,6 +168,7 @@ function TeamCard({
     >
       {/* ── Circular profile image ── */}
       <div
+        className="ew-team-photo"
         style={{
           width: '110px',
           height: '110px',
@@ -189,7 +202,7 @@ function TeamCard({
       </div>
 
       {/* ── Name ── */}
-      <p style={{
+      <p className="ew-team-name" style={{
         margin: '0 0 8px 0',
         fontSize: '1.05rem',
         fontWeight: 700,
@@ -202,7 +215,7 @@ function TeamCard({
       </p>
 
       {/* ── Role ── */}
-      <p style={{
+      <p className="ew-team-role" style={{
         margin: '0 0 20px 0',
         fontSize: '0.75rem',
         fontWeight: 500,
@@ -215,7 +228,7 @@ function TeamCard({
       </p>
 
       {/* ── Contact icons ── */}
-      <div style={{ display: 'flex', gap: '10px', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="ew-team-icons" style={{ display: 'flex', gap: '10px', alignItems: 'center', justifyContent: 'center' }}>
         <ContactIcon href={gmail} label={gmail ? `Email ${name}` : `Email ${name} (coming soon)`}>
           <GmailIcon size={16} />
         </ContactIcon>
