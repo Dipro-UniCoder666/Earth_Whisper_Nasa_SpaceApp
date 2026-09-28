@@ -188,7 +188,7 @@ export function InvestigationPage() {
               onClick={beginInvestigation}
               disabled={!selectedLocation || (selectedLocation.id === SANDHYA_INVESTIGATION.id && investigationStarted)}
             >
-              <span className="ew-cta-title">Begin Investigation</span>
+              <span className="ew-cta-title">Begin Investigation <span aria-hidden="true">⮞</span></span>
             </button>
           </div>
 

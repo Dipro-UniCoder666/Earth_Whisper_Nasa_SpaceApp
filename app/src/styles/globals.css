@@ -3939,27 +3939,23 @@ body {
     width: 106px !important;
   }
 
-  /* hero slightly shorter so the fold is never cut off */
+  /* hero: nearly full height on phones */
   .ew-hero-root {
-    height: 92svh !important;
+    height: 99svh !important;
     min-height: 0 !important;
   }
 
-  /* bring the Begin the Investigation CTA a little higher */
+  /* CTA sits low, just above the fold */
   .ew-hero-cta {
-    bottom: calc(17% + 4px) !important;
+    bottom: calc(8% - 6px) !important;
   }
 
   .ew-hero-cta-btn {
     font-size: 0.82rem !important;
     padding: 6px 15px !important;
-    gap: 7px !important;
+    gap: 6px !important;
   }
 
-  .ew-hero-cta-arrow {
-    width: 11px !important;
-    height: 11px !important;
-  }
 
   /* relax the desktop-only star exclusion mask so stars read around the hero */
   .ew-hero-stars #ew-star-mask rect:not(:first-child),
