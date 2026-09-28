@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Placeholder portrait">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Devjyoti Dey Mugdho - portrait to be added">
   <defs>
     <linearGradient id="ew-ph-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07182a"/>
-      <stop offset="100%" stop-color="#0d2b3f"/>
+      <stop offset="0%" stop-color="#0a2233"/>
+      <stop offset="100%" stop-color="#123a4f"/>
     </linearGradient>
   </defs>
   <rect width="512" height="512" fill="url(#ew-ph-bg)"/>
-  <circle cx="256" cy="256" r="236" fill="none" stroke="rgba(24,183,201,0.30)" stroke-width="3"/>
-  <circle cx="256" cy="196" r="84" fill="rgba(24,183,201,0.26)"/>
-  <path d="M256 302c-89 0-156 56-156 126v84h312v-84c0-70-67-126-156-126z" fill="rgba(24,183,201,0.26)"/>
+  <circle cx="256" cy="256" r="236" fill="none" stroke="rgba(24,183,201,0.55)" stroke-width="7"/>
+  <text x="256" y="306" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="196" font-weight="700" fill="#18B7C9" letter-spacing="8">DD</text>
+  <text x="256" y="392" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="600" fill="rgba(200,225,245,0.75)" letter-spacing="6">PHOTO SOON</text>
 </svg>

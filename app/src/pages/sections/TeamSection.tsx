@@ -134,6 +134,8 @@ function TeamCard({
   whatsapp: string | null
 }) {
   const [hovered, setHovered] = useState(false)
+  // Fall back to the monogram placeholder when a portrait file is missing.
+  const [photoFailed, setPhotoFailed] = useState(false)
 
   // Same glow intensity for all cards
   const glowBase = '0 0 0 1.5px rgba(24,183,201,0.28), 0 0 24px 6px rgba(24,183,201,0.14), 0 0 56px 16px rgba(24,183,201,0.07)'
@@ -187,15 +189,17 @@ function TeamCard({
         }}
       >
         <img
-          src={image}
+          src={photoFailed ? '/images/team_placeholder.svg' : image}
           alt={name}
+        onError={() => setPhotoFailed(true)}
           style={{
-            width: imageScale,
-            height: imageScale,
+            width: photoFailed ? '100%' : imageScale,
+            height: photoFailed ? '100%' : imageScale,
             objectFit: 'cover',
+          objectPosition: 'center 22%',
             display: 'block',
             maxWidth: 'none',
-            transform: `translate(${imageTranslate})`,
+            transform: photoFailed ? 'none' : `translate(${imageTranslate})`,
             transformOrigin: 'center center',
           }}
         />

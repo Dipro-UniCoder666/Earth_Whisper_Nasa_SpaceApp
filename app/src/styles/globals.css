@@ -4262,8 +4262,8 @@ body {
   }
 
   .ew-team-photo {
-    width: 62px !important;
-    height: 62px !important;
+    width: 70px !important;
+    height: 70px !important;
     margin-bottom: 6px !important;
   }
 
@@ -4272,6 +4272,7 @@ body {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
+    object-position: center 22% !important;
     transform: none !important;
   }
 
@@ -4280,15 +4281,15 @@ body {
   }
 
   .ew-team-name {
-    font-size: 0.57rem !important;
-    line-height: 1.12 !important;
+    font-size: 0.54rem !important;
+    line-height: 1.14 !important;
     margin-bottom: 3px !important;
     letter-spacing: 0.01em !important;
   }
 
   .ew-team-role {
-    font-size: 0.42rem !important;
-    line-height: 1.18 !important;
+    font-size: 0.38rem !important;
+    line-height: 1.2 !important;
     margin-bottom: 6px !important;
     letter-spacing: 0.02em !important;
   }
