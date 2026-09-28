@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/lib/constants'
 
@@ -26,8 +27,29 @@ interface WhisperNavProps {
 }
 
 export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const navRef = useRef<HTMLElement | null>(null)
+
+  // Close the mobile menu on outside pointer-down or Escape.
+  useEffect(() => {
+    if (!menuOpen) return
+    const onPointerDown = (event: PointerEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) setMenuOpen(false)
+    }
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('pointerdown', onPointerDown)
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [menuOpen])
+
   const pill = (
     <nav
+      ref={navRef}
       aria-label="Primary"
       className="whisper-nav-pill"
       style={{
@@ -100,6 +122,35 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
           </Link>
         ))}
       </div>
+
+      {/* Mobile: compact hamburger; desktop keeps the full link row */}
+      <button
+        type="button"
+        className="whisper-nav-burger"
+        aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+      </button>
+
+      {menuOpen && (
+        <div className="whisper-nav-menu" role="menu">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              role="menuitem"
+              className="whisper-nav-menu-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   )
 
@@ -115,13 +166,14 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
           paddingBottom: '4px',
         }}
       >
-        <div style={{ width: 'calc(100% - 80px)', maxWidth: '1200px', margin: '0 auto' }}>{pill}</div>
+        <div className="whisper-nav-shell" style={{ width: 'calc(100% - 80px)', maxWidth: '1200px', margin: '0 auto' }}>{pill}</div>
       </div>
     )
   }
 
   return (
     <div
+      className="whisper-nav-shell"
       style={{
         position: 'absolute',
         top: '28px',

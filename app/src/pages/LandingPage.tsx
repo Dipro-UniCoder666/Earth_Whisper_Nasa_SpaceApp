@@ -11,23 +11,27 @@ export function LandingPage() {
 
   return (
     <>
-    <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden', margin: 0, padding: 0 }}>
+    <div className="ew-hero-root" style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden', margin: 0, padding: 0 }}>
 
       {/* ── Hero SVG — full viewport, unchanged ───────────────── */}
-      <img
-        src="/images/Hero.svg"
-        alt="Earth Whisper hero"
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          objectPosition: 'center',
-          display: 'block',
-        }}
-        aria-hidden="true"
-      />
+      <picture style={{ display: 'contents' }}>
+        {/* Portrait hero artwork on phones; the landscape artwork everywhere else */}
+        <source media="(max-width: 767px)" srcSet="/images/Hero_Mobile.svg" />
+        <img
+          src="/images/Hero.svg"
+          alt="Earth Whisper hero"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center',
+            display: 'block',
+          }}
+          aria-hidden="true"
+        />
+      </picture>
 
       {/* ── Star field — behind everything, z-index 1 ─────────── */}
       <svg
@@ -819,10 +823,12 @@ export function LandingPage() {
 
     </div>
 
-      <EarthSignalSection />
-      <SignalToStorySection />
-      <TeamSection />
-      <Footer />
+      <div className="ew-landing-sections">
+        <EarthSignalSection />
+        <SignalToStorySection />
+        <TeamSection />
+        <Footer />
+      </div>
     </>
   )
 }
