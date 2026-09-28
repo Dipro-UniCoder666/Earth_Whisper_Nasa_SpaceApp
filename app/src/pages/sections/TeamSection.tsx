@@ -35,8 +35,7 @@ const TEAM = [
   {
     name: 'Devjyoti Dey Mugdho',
     role: 'Earth Science & Geospatial Research Contributor',
-    // Placeholder portrait - the real photo will be added later.
-    image: '/images/team_placeholder.svg',
+    image: '/images/Debjyoti_ESR.jpeg',
     featured: false,
     imageScale: '100%',
     imageTranslate: '0px, 0px',
@@ -145,6 +144,7 @@ function TeamCard({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="ew-team-card"
+      data-member={name}
       style={{
         display: 'flex',
         flexDirection: 'column',

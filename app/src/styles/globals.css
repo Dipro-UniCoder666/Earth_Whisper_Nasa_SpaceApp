@@ -76,6 +76,60 @@
   --breakpoint-2xl: 90rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes ew-section-arrive {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ew-section-divider {
+  from { opacity: 0; transform: scaleX(0.55); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+
+.ew-landing-sections > section,
+.ew-landing-sections > footer {
+  scroll-margin-top: 18px;
+  animation: ew-section-arrive 780ms cubic-bezier(0.22, 0.7, 0.24, 1) both;
+}
+
+.ew-landing-sections > section + section,
+.ew-landing-sections > footer {
+  position: relative;
+}
+
+.ew-landing-sections > section + section::before,
+.ew-landing-sections > footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(24, 183, 201, 0.22), transparent);
+  transform-origin: center;
+  animation: ew-section-divider 900ms ease both;
+}
+
+[data-theme='dark'] main > * {
+  animation: ew-section-arrive 700ms cubic-bezier(0.22, 0.7, 0.24, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .ew-landing-sections > section,
+  .ew-landing-sections > footer,
+  .ew-landing-sections > section + section::before,
+  .ew-landing-sections > footer::before,
+  [data-theme='dark'] main > * {
+    animation: none;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -3928,7 +3982,12 @@ body {
   }
 
   .ew-signal-story-card-content {
-    padding: 17px 15px !important;
+    padding: 12px 12px !important;
+  }
+
+  .ew-signal-story-card-content > svg {
+    width: 92px !important;
+    height: 77px !important;
   }
 
   .ew-signal-story-card-content > span:first-child {
@@ -3957,6 +4016,7 @@ body {
     margin-top: 24px !important;
     padding: 7px 11px !important;
     gap: 7px !important;
+    flex-wrap: wrap !important;
     white-space: normal !important;
     text-align: center;
   }
@@ -3964,6 +4024,14 @@ body {
   .ew-signal-story-inner > div:last-child span {
     font-size: 0.56rem !important;
     letter-spacing: 0.06em !important;
+  }
+
+  .ew-signal-story-inner > div:last-child span:nth-child(3) {
+    display: none;
+  }
+
+  .ew-signal-story-inner > div:last-child span:last-child {
+    flex-basis: 100%;
   }
 }
 
@@ -4189,14 +4257,14 @@ body {
     flex: 0 0 calc(50% - 4px) !important;
     min-width: 0 !important;
     max-width: none !important;
-    padding: 14px 10px 12px !important;
-    border-radius: 14px !important;
+    padding: 9px 6px 8px !important;
+    border-radius: 12px !important;
   }
 
   .ew-team-photo {
-    width: 56px !important;
-    height: 56px !important;
-    margin-bottom: 10px !important;
+    width: 62px !important;
+    height: 62px !important;
+    margin-bottom: 6px !important;
   }
 
   /* keep every portrait centred inside the smaller ring */
@@ -4207,17 +4275,21 @@ body {
     transform: none !important;
   }
 
+  .ew-team-card[data-member="Devjyoti Dey Mugdho"] .ew-team-photo img {
+    object-position: 50% 32% !important;
+  }
+
   .ew-team-name {
-    font-size: 0.68rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 5px !important;
+    font-size: 0.57rem !important;
+    line-height: 1.12 !important;
+    margin-bottom: 3px !important;
     letter-spacing: 0.01em !important;
   }
 
   .ew-team-role {
-    font-size: 0.54rem !important;
-    line-height: 1.32 !important;
-    margin-bottom: 10px !important;
+    font-size: 0.42rem !important;
+    line-height: 1.18 !important;
+    margin-bottom: 6px !important;
     letter-spacing: 0.02em !important;
   }
 
