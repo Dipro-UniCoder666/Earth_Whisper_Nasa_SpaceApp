@@ -244,6 +244,7 @@ function TeamCard({
 export function TeamSection() {
   return (
     <section
+      className="ew-team-section"
       style={{
         position: 'relative',
         width: '100%',
@@ -251,6 +252,7 @@ export function TeamSection() {
         overflow: 'hidden',
         padding: '80px 32px 90px',
         boxSizing: 'border-box',
+        isolation: 'isolate',
       }}
       aria-labelledby="team-heading"
     >
@@ -264,17 +266,6 @@ export function TeamSection() {
       {/* Soft radial background glow */}
       <div style={{ position:'absolute', inset:0, background:'radial-gradient(ellipse at 50% 60%, rgba(10,28,52,0.6) 0%, transparent 70%)', pointerEvents:'none', animation:'team-bg-pulse 6s ease-in-out infinite' }} aria-hidden="true" />
 
-      {/* Sparse stars */}
-      <svg style={{ position:'absolute', inset:0, width:'100%', height:'100%', pointerEvents:'none', zIndex:0 }} aria-hidden="true">
-        <defs><style>{`@keyframes ts{0%,100%{opacity:0.55}50%{opacity:0.08}}`}</style></defs>
-        {[[90,40],[260,25],[480,60],[700,18],[920,50],[1140,32],[1360,58],[1440,80],
-          [150,200],[440,180],[780,210],[1060,190],[1300,220],[50,350],[370,380],
-          [690,340],[1010,370],[1330,360],[200,500],[560,480],[880,510],[1200,490],
-        ].map(([cx,cy],i) => (
-          <circle key={i} cx={cx} cy={cy} r={i%3===0?0.9:0.5} fill="#ddeeff"
-            style={{ animation:`ts ${2.0+(i%5)*0.6}s ease-in-out ${(i%4)*0.4}s infinite` }} />
-        ))}
-      </svg>
 
       <div style={{ position:'relative', zIndex:2, maxWidth:'960px', margin:'0 auto', display:'flex', flexDirection:'column', alignItems:'center' }}>
 

@@ -664,7 +664,6 @@ function Background() {
         </radialGradient>
         <style>{`
           @keyframes ewa-arc { 0%,100%{opacity:0.06} 50%{opacity:0.14} }
-          @keyframes ewa-star { 0%,100%{opacity:0.55} 50%{opacity:0.08} }
         `}</style>
       </defs>
 
@@ -677,15 +676,6 @@ function Background() {
       <path d="M 500 1200 Q 900 700 1500 500" fill="none" stroke="rgba(79,175,131,0.05)" strokeWidth="1"
         style={{ animation: 'ewa-arc 9s ease-in-out 2s infinite' }}/>
 
-      {/* Sparse stars */}
-      {[
-        [60,80,0.5],[180,40,0.4],[340,120,0.6],[520,60,0.5],[700,90,0.4],
-        [880,50,0.5],[1060,80,0.4],[1240,40,0.6],[1400,70,0.5],[1440,200,0.4],
-        [100,300,0.4],[420,260,0.5],[760,280,0.4],[1100,300,0.5],[1380,260,0.4],
-      ].map(([cx, cy, r], i) => (
-        <circle key={i} cx={cx} cy={cy} r={r} fill="#e0eeff"
-          style={{ animation: `ewa-star ${2.5 + (i % 4) * 0.8}s ease-in-out ${(i % 3) * 0.6}s infinite` }}/>
-      ))}
     </svg>
   )
 }

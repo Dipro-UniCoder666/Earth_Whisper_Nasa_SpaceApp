@@ -55,9 +55,21 @@ export function SecondaryPageLayout({ children }: SecondaryPageLayoutProps) {
       />
 
       {/* ── Skip link ── */}
-      {/* Landing hero atmosphere: star field, solar flare, floating satellite
-          (same layers as the landing hero, without its text and CTA button) */}
-      <HeroAtmosphere />
+      {/* Keep the shared hero atmosphere inside the top hero band so it does
+          not continue behind the page footer or lower content. */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          inset: '0 0 auto',
+          height: '900px',
+          overflow: 'hidden',
+          pointerEvents: 'none',
+          zIndex: 2,
+        }}
+      >
+        <HeroAtmosphere />
+      </div>
 
       <SkipLink />
 

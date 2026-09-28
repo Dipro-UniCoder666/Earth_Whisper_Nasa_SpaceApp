@@ -167,6 +167,7 @@ function GlowCard({ children, glowColor, inView, fadeDelay, style }: CardProps) 
 
   return (
     <div
+      className="ew-signal-story-card"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -206,7 +207,7 @@ function GlowCard({ children, glowColor, inView, fadeDelay, style }: CardProps) 
         ...style,
       }}
     >
-      <div style={{ padding: '28px 24px', display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center' }}>
+      <div className="ew-signal-story-card-content" style={{ padding: '28px 24px', display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center' }}>
         {children}
       </div>
     </div>
@@ -222,6 +223,7 @@ export function SignalToStorySection() {
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
+      className="ew-signal-story-section"
       style={{
         position: 'relative',
         width: '100%',
@@ -266,27 +268,17 @@ export function SignalToStorySection() {
               0 0 72px 22px rgba(79,175,131,0.13);
           }
         }
-        @keyframes sts-twink { 0%,100%{opacity:0.6} 50%{opacity:0.1} }
         @keyframes sts-pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
       `}</style>
 
       {/* Atmospheric background */}
       <div style={{ position:'absolute', inset:0, background:'radial-gradient(ellipse at 50% 40%, rgba(10,28,52,0.55) 0%, transparent 65%)', pointerEvents:'none' }} aria-hidden="true"/>
 
-      {/* Subtle star dots */}
-      <svg style={{ position:'absolute', inset:0, width:'100%', height:'100%', zIndex:0, pointerEvents:'none' }} aria-hidden="true">
-        {[[80,60],[220,35],[410,80],[640,28],[860,55],[1080,38],[1300,62],[1420,90],
-          [140,180],[520,160],[900,190],[1240,170],[60,440],[380,480],[760,420],
-          [1100,460],[1380,400]].map(([cx,cy],i) => (
-          <circle key={i} cx={cx} cy={cy} r={i%3===0?0.8:0.5} fill="#e0eeff"
-            style={{ animation:`sts-twink ${2.2+(i%4)*0.7}s ease-in-out ${(i%3)*0.4}s infinite` }}/>
-        ))}
-      </svg>
 
-      <div style={{ position:'relative', zIndex:2, width:'100%', maxWidth:'1040px', display:'flex', flexDirection:'column', alignItems:'center', gap:'0' }}>
+      <div className="ew-signal-story-inner" style={{ position:'relative', zIndex:2, width:'100%', maxWidth:'1040px', display:'flex', flexDirection:'column', alignItems:'center', gap:'0' }}>
 
         {/* ── Header ── */}
-        <div style={{
+        <div className="ew-signal-story-header" style={{
           textAlign:'center',
           marginBottom:'52px',
           opacity: inView ? 1 : 0,
@@ -306,7 +298,7 @@ export function SignalToStorySection() {
         </div>
 
         {/* ── Three cards + connectors ── */}
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'0', width:'100%', flexWrap:'wrap', rowGap:'32px' }}>
+        <div className="ew-signal-story-cards" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'0', width:'100%', flexWrap:'wrap', rowGap:'32px' }}>
 
           {/* CARD 01 — DETECT */}
           <GlowCard glowColor="24,183,201" inView={inView} fadeDelay="0.1s">

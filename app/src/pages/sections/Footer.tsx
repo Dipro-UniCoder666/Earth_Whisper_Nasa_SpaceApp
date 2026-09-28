@@ -148,7 +148,6 @@ export function Footer() {
       <style>{`
         @keyframes fw-orb   { 0%,100%{opacity:0.22} 50%{opacity:0.38} }
         @keyframes fw-orb2  { 0%,100%{opacity:0.12} 50%{opacity:0.22} }
-        @keyframes fw-star  { 0%,100%{opacity:0.55} 50%{opacity:0.06} }
         @keyframes fw-arc   { 0%,100%{opacity:0.05} 50%{opacity:0.10} }
 
         @media (max-width: 900px) {
@@ -189,17 +188,6 @@ export function Footer() {
           {/* Subtle radar rings behind identity */}
           <ellipse cx="160" cy="50%" rx="180" ry="60" fill="none" stroke="rgba(24,183,201,0.03)" strokeWidth="0.8"/>
           <ellipse cx="160" cy="50%" rx="280" ry="100" fill="none" stroke="rgba(24,183,201,0.02)" strokeWidth="0.6"/>
-        </svg>
-        {/* Stars */}
-        <svg style={{ position:'absolute', inset:0, width:'100%', height:'100%' }}>
-          {[
-            [55,28],[185,14],[390,50],[620,12],[840,42],[1060,18],[1280,46],[1460,64],
-            [120,130],[460,108],[780,138],[1040,114],[1300,132],[260,220],[700,200],[1180,228],
-            [80,310],[430,290],[820,320],[1120,298],[1400,316],[200,400],[600,380],[1000,408],
-          ].map(([cx,cy],i) => (
-            <circle key={i} cx={cx} cy={cy} r={i%4===0?0.9:i%3===0?0.7:0.5} fill="#c0d8f0"
-              style={{ animation:`fw-star ${2.0+(i%6)*0.55}s ease-in-out ${(i%5)*0.38}s infinite` }}/>
-          ))}
         </svg>
       </div>
 

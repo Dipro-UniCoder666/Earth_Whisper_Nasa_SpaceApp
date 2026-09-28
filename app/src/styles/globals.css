@@ -610,6 +610,13 @@
   white-space: nowrap;
 }
 
+@media (max-width: 767px) {
+  .ew-cta-arrow,
+  .ew-hero-cta-arrow {
+    display: none;
+  }
+}
+
 .ew-cta-context {
   max-width: 100%;
   overflow: hidden;
@@ -3874,6 +3881,92 @@ body {
 }
 
 /* ---------------------------- landing sections --------------------------- */
+.ew-landing-sections {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  overflow: hidden;
+  background: #04090f;
+}
+
+.ew-team-section {
+  isolation: isolate;
+  background: linear-gradient(180deg, #081827 0%, #07111f 100%) !important;
+}
+
+@media (max-width: 767px) {
+  .ew-signal-story-section {
+    min-height: auto !important;
+    padding: 42px 12px 48px !important;
+  }
+
+  .ew-signal-story-header {
+    margin-bottom: 26px !important;
+  }
+
+  .ew-signal-story-header h2 {
+    font-size: clamp(1.7rem, 9vw, 2.25rem) !important;
+    line-height: 1.05 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ew-signal-story-header p {
+    max-width: 280px !important;
+    font-size: 0.76rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .ew-signal-story-cards {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    row-gap: 12px !important;
+  }
+
+  .ew-signal-story-card {
+    width: min(260px, calc(100vw - 44px)) !important;
+  }
+
+  .ew-signal-story-card-content {
+    padding: 17px 15px !important;
+  }
+
+  .ew-signal-story-card-content > span:first-child {
+    margin-bottom: 7px !important;
+  }
+
+  .ew-signal-story-card-content h3 {
+    margin: 9px 0 5px !important;
+    font-size: 0.68rem !important;
+  }
+
+  .ew-signal-story-card-content p {
+    max-width: 210px !important;
+    font-size: 0.7rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .ew-signal-story-cards > div[aria-hidden="true"] {
+    width: 30px !important;
+    height: 18px !important;
+    transform: rotate(90deg);
+  }
+
+  .ew-signal-story-inner > div:last-child {
+    max-width: calc(100vw - 36px);
+    margin-top: 24px !important;
+    padding: 7px 11px !important;
+    gap: 7px !important;
+    white-space: normal !important;
+    text-align: center;
+  }
+
+  .ew-signal-story-inner > div:last-child span {
+    font-size: 0.56rem !important;
+    letter-spacing: 0.06em !important;
+  }
+}
+
 @media (max-width: 767px) {
   .ew-landing-sections {
     overflow-x: clip;
@@ -3950,7 +4043,7 @@ body {
 
   /* hero: nearly full height on phones */
   .ew-hero-root {
-    height: 99svh !important;
+    height: calc(99svh + 10px) !important;
     min-height: 0 !important;
   }
 
@@ -4068,21 +4161,17 @@ body {
   }
 }
 
-/* Mobile: hero artwork nudged down 10px (with a small compensating zoom),
-   and an arrow that cannot disappear on phones. */
+/* Mobile: hero artwork nudged down 10px (with a small compensating zoom). */
 @media (max-width: 767px) {
   .ew-hero-bg {
     transform: translateY(10px) scale(1.02);
     transform-origin: center center;
   }
 
-  .ew-hero-cta-arrow {
-    display: block !important;
-    width: 12px !important;
-    height: 12px !important;
-    min-width: 12px !important;
-    font-size: 0 !important;
+  .ew-hero-stars {
+    height: calc(100% - 10px) !important;
   }
+
 }
 
 /* ------------------- Team section: three cards, one row, phones ----------- */
@@ -4090,24 +4179,24 @@ body {
   /* higher specificity than the component's own column rule */
   .ew-landing-sections .team-cards-row {
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     align-items: stretch !important;
     gap: 8px !important;
   }
 
   .ew-team-card {
-    /* four cards share the phone width; min-width:0 lets them shrink instead of overflowing */
-    flex: 1 1 0 !important;
+    /* two cards per row on phones: half width minus half the 8px gap */
+    flex: 0 0 calc(50% - 4px) !important;
     min-width: 0 !important;
     max-width: none !important;
-    padding: 12px 6px 11px !important;
-    border-radius: 13px !important;
+    padding: 14px 10px 12px !important;
+    border-radius: 14px !important;
   }
 
   .ew-team-photo {
-    width: 48px !important;
-    height: 48px !important;
-    margin-bottom: 8px !important;
+    width: 56px !important;
+    height: 56px !important;
+    margin-bottom: 10px !important;
   }
 
   /* keep every portrait centred inside the smaller ring */
@@ -4119,25 +4208,25 @@ body {
   }
 
   .ew-team-name {
-    font-size: 0.58rem !important;
-    line-height: 1.18 !important;
-    margin-bottom: 4px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 5px !important;
     letter-spacing: 0.01em !important;
   }
 
   .ew-team-role {
-    font-size: 0.46rem !important;
-    line-height: 1.3 !important;
-    margin-bottom: 8px !important;
+    font-size: 0.54rem !important;
+    line-height: 1.32 !important;
+    margin-bottom: 10px !important;
     letter-spacing: 0.02em !important;
   }
 
   .ew-team-icons {
-    gap: 4px !important;
+    gap: 6px !important;
   }
 
   .ew-team-icons svg {
-    width: 10px !important;
+    width: 12px !important;
     height: 12px !important;
   }
 }

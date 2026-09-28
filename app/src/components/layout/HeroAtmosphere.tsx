@@ -17,7 +17,7 @@ export function HeroAtmosphere() {
       <svg
         aria-hidden="true"
         style={{
-          position: 'fixed',
+          position: 'absolute',
           inset: 0,
           width: '100%',
           height: '100%',
@@ -269,7 +269,7 @@ export function HeroAtmosphere() {
       <svg
         aria-hidden="true"
         style={{
-          position: 'fixed',
+          position: 'absolute',
           inset: 0,
           width: '100%',
           height: '100%',
@@ -318,7 +318,7 @@ export function HeroAtmosphere() {
       <div className="ew-hero-satellite"
         aria-hidden="true"
         style={{
-          position: 'fixed',
+          position: 'absolute',
           top: '104px',
           right: '52px',
           zIndex: 4,
