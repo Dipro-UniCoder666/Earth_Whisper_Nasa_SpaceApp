@@ -185,6 +185,13 @@ export async function runSandhyaInvestigation(locationId: string, latitude: numb
       limitations: candidate.observations.limitation_summary,
       provenance: {},
     },
+    source_status: 'VERIFIED_STATIC',
+    scientific_result_status: 'VERIFIED_STATIC',
+    provenance: {
+      source_status: 'VERIFIED_STATIC',
+      scientific_processing: 'verified_static_contract',
+      live_acquisition: { status: 'not_attempted', reason: 'backend unavailable' },
+    },
   }
 }
 

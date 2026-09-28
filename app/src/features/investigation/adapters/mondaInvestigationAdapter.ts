@@ -12,13 +12,14 @@ export const mondaInvestigationAdapter: InvestigationAdapter<MondaInvestigationD
   async load() {
     try {
       const response = await requestInvestigation(MONDA_INVESTIGATION.id, MONDA_INVESTIGATION.coords.lat, MONDA_INVESTIGATION.coords.lng)
-      if (response.result.site) return { kind: 'monda-site', site: response.result.site }
+      if (response.result.site) return { kind: 'monda-site', site: response.result.site, sourceStatus: response.source_status }
     } catch {
       // Preserve the existing local Monda fallback when the API is unavailable.
     }
     return {
       kind: 'monda-site',
       site: MONDA_INVESTIGATION,
+      sourceStatus: 'VERIFIED_STATIC',
     }
   },
 }

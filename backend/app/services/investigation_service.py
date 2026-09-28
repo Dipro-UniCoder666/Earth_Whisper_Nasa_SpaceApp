@@ -8,6 +8,7 @@ from math import hypot
 from typing import Any, Dict, List, Optional
 
 from app.services.candidate_service import CandidateService, DataContractError, get_candidate_service
+from app.services.live_eo_service import LiveEOService
 
 
 class InvestigationError(RuntimeError):
@@ -15,8 +16,9 @@ class InvestigationError(RuntimeError):
 
 
 class InvestigationService:
-    def __init__(self, candidate_service: Optional[CandidateService] = None) -> None:
+    def __init__(self, candidate_service: Optional[CandidateService] = None, live_service: Optional[LiveEOService] = None) -> None:
         self._candidates = candidate_service or get_candidate_service()
+        self._live = live_service or LiveEOService()
 
     def run(self, location_id: str, latitude: float, longitude: float) -> Dict[str, Any]:
         stages: List[Dict[str, str]] = []
@@ -24,8 +26,19 @@ class InvestigationService:
         def complete(stage_id: str, label: str, detail: str) -> None:
             stages.append({"id": stage_id, "label": label, "status": "complete", "detail": detail})
 
+        live_attempt = self._live.acquire_nisar_metadata(latitude, longitude)
+        metadata_source_status = live_attempt.get("source_status")
+        if metadata_source_status not in {"LIVE", "CACHED_LIVE"}:
+            metadata_source_status = "VERIFIED_STATIC"
+        provenance = {
+            "source_status": metadata_source_status,
+            "scientific_result_status": "VERIFIED_STATIC",
+            "live_acquisition": live_attempt,
+            "scientific_processing": "verified_static_contract",
+        }
+
         if location_id == "monda-uttarakhand":
-            return self._run_monda(latitude, longitude, complete, stages)
+            return self._run_monda(latitude, longitude, complete, stages, provenance)
         if location_id != "sandhya-river":
             raise InvestigationError("This investigation location is not available in the verified evidence contract.")
         if not (-90 <= latitude <= 90 and -180 <= longitude <= 180):
@@ -81,9 +94,9 @@ class InvestigationService:
             "provenance": candidate.get("provenance", {}),
         }
         complete("assembling_investigation", "Investigation assembled", "The verified evidence groups and supporting context are ready to present.")
-        return {"status": "ready", "location_id": location_id, "candidate_key": candidate["candidate_key"], "stages": stages, "result": result}
+        return {"status": "ready", "location_id": location_id, "candidate_key": candidate["candidate_key"], "stages": stages, "result": result, "source_status": metadata_source_status, "scientific_result_status": "VERIFIED_STATIC", "provenance": provenance}
 
-    def _run_monda(self, latitude: float, longitude: float, complete: Any, stages: List[Dict[str, str]]) -> Dict[str, Any]:
+    def _run_monda(self, latitude: float, longitude: float, complete: Any, stages: List[Dict[str, str]], provenance: Dict[str, Any]) -> Dict[str, Any]:
         if hypot(latitude - 31.1105, longitude - 77.9373) > 1:
             raise InvestigationError("The selected coordinates do not match the verified Monda investigation.")
         complete("initializing", "Location resolved", "The selected Monda investigation was validated.")
@@ -137,6 +150,9 @@ class InvestigationService:
             "candidate_key": "monda-uttarakhand",
             "stages": stages,
             "result": {"project": "Earth Whisper", "location_id": "monda-uttarakhand", "site": site},
+            "source_status": provenance["source_status"],
+            "scientific_result_status": "VERIFIED_STATIC",
+            "provenance": provenance,
         }
 
 

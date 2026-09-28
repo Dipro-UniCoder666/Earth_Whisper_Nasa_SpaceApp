@@ -210,7 +210,7 @@ export function EarthSignalSection() {
 
   return (
     <>
-      <section style={S.section} aria-labelledby="ew-signal-heading">
+      <section className="ew-signal-section" style={S.section} aria-labelledby="ew-signal-heading">
         <style>{`
           @keyframes ew-signal-glow {
             0%, 100% {
@@ -236,23 +236,23 @@ export function EarthSignalSection() {
         `}</style>
         <SectionBackground />
 
-        <div style={S.inner}>
+        <div className="ew-signal-inner" style={S.inner}>
 
-          <p style={S.eyebrow} aria-hidden="true">Earth Observation · NISAR · Radar Analysis</p>
+          <p className="ew-signal-eyebrow" style={S.eyebrow} aria-hidden="true">Earth Observation · NISAR · Radar Analysis</p>
 
           <div style={S.headingWrap}>
-            <h2 id="ew-signal-heading" style={S.heading}>
+            <h2 id="ew-signal-heading" className="ew-signal-heading" style={S.heading}>
               THE EARTH LEFT A{' '}
               <span style={S.headingAccent}>SIGNAL</span>
             </h2>
           </div>
 
-          <p style={S.subtitle}>
+          <p className="ew-signal-subtitle" style={S.subtitle}>
             From an invisible radar change to evidence you can investigate.
           </p>
 
           {/* Outer glow wrapper — position:relative so button anchors to it */}
-          <div className="ew-video-glow" style={S.videoGlowWrap}>
+          <div className="ew-video-glow ew-signal-video" style={S.videoGlowWrap}>
 
             {/* Inner div clips the video */}
             <div style={S.videoInner}>
@@ -317,14 +317,14 @@ export function EarthSignalSection() {
           </div>
 
           {/* ── Four-stage process ── */}
-          <div style={S.stagesRow}>
+          <div className="ew-signal-stages" style={S.stagesRow}>
             {STAGES.map((stage, i) => (
-              <div key={stage.num} style={S.stageItem}>
-                {i < STAGES.length - 1 && <div style={S.connector} aria-hidden="true" />}
-                <span style={S.stageNum}>{stage.num}</span>
-                <div style={S.stageDot(stage.accent)} aria-hidden="true" />
-                <span style={S.stageLabel(stage.accent)}>{stage.label}</span>
-                <p style={S.stageBody}>{stage.body}</p>
+              <div key={stage.num} className="ew-signal-stage" style={S.stageItem}>
+                {i < STAGES.length - 1 && <div className="ew-signal-connector" style={S.connector} aria-hidden="true" />}
+                <span className="ew-signal-stage-num" style={S.stageNum}>{stage.num}</span>
+                <div className="ew-signal-stage-dot" style={S.stageDot(stage.accent)} aria-hidden="true" />
+                <span className="ew-signal-stage-label" style={S.stageLabel(stage.accent)}>{stage.label}</span>
+                <p className="ew-signal-stage-body" style={S.stageBody}>{stage.body}</p>
               </div>
             ))}
           </div>

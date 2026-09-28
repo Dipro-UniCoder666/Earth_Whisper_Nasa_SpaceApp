@@ -35,6 +35,9 @@ class Settings:
     host: str
     port: int
     cors_origins: tuple
+    live_eo_enabled: bool
+    live_eo_timeout_seconds: float
+    nasa_cmr_base_url: str
 
     @property
     def service_name(self) -> str:
@@ -49,4 +52,7 @@ def get_settings() -> Settings:
         host=os.environ.get("HOST", "127.0.0.1"),
         port=int(os.environ.get("PORT", "8000")),
         cors_origins=_origins("CORS_ORIGINS", DEFAULT_CORS_ORIGINS),
+        live_eo_enabled=os.environ.get("LIVE_EO_ENABLED", "true").lower() in {"1", "true", "yes"},
+        live_eo_timeout_seconds=float(os.environ.get("LIVE_EO_TIMEOUT_SECONDS", "3")),
+        nasa_cmr_base_url=os.environ.get("NASA_CMR_BASE_URL", "https://cmr.earthdata.nasa.gov"),
     )

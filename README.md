@@ -2,6 +2,8 @@
 
 **Where Earth's Changes Tell Their Story**
 
+**Live Demo:** https://earth-whisper.vercel.app/
+
 Built by **AquaByte** for **NASA Space Apps Challenge 2026** and the
 *Dancing with the SARs* challenge.
 

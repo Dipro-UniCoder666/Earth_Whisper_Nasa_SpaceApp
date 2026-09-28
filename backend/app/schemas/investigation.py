@@ -1,6 +1,6 @@
 """Schemas for request-time investigation assembly."""
 
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Literal
 
 from pydantic import BaseModel, Field
 
@@ -24,3 +24,6 @@ class InvestigationResponse(BaseModel):
     candidate_key: str
     stages: List[InvestigationStage]
     result: Dict[str, Any]
+    source_status: Literal["LIVE", "CACHED_LIVE", "VERIFIED_STATIC"]
+    scientific_result_status: Literal["VERIFIED_STATIC"]
+    provenance: Dict[str, Any]

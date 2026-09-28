@@ -601,6 +601,15 @@
   line-height: 1.15;
 }
 
+.ew-cta-arrow,
+.ew-hero-cta-arrow {
+  display: inline-block;
+  font-family: "Segoe UI Symbol", "Arial Unicode MS", Arial, sans-serif;
+  font-size: 0.95em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .ew-cta-context {
   max-width: 100%;
   overflow: hidden;
@@ -3947,7 +3956,7 @@ body {
 
   /* CTA sits low, just above the fold */
   .ew-hero-cta {
-    bottom: calc(8% - 6px) !important;
+    bottom: calc(8% - 16px) !important;
   }
 
   .ew-hero-cta-btn {
@@ -3956,10 +3965,105 @@ body {
     gap: 6px !important;
   }
 
+  .ew-begin-row {
+    padding-top: 12px;
+  }
+
+  .ew-cta-arrow,
+  .ew-hero-cta-arrow {
+    font-size: 1rem;
+    line-height: 0.9;
+  }
+
 
   /* relax the desktop-only star exclusion mask so stars read around the hero */
   .ew-hero-stars #ew-star-mask rect:not(:first-child),
   .ew-hero-stars #ew-star-mask circle {
     fill: rgba(0, 0, 0, 0.45) !important;
+  }
+}
+
+/* ---------- EarthSignalSection: desktop composition, compacted ------------ */
+@media (max-width: 767px) {
+  .ew-signal-section {
+    padding-top: 52px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .ew-signal-inner {
+    padding: 0 16px !important;
+  }
+
+  .ew-landing-sections .ew-signal-eyebrow {
+    font-size: 0.56rem !important;
+    letter-spacing: 0.14em !important;
+    margin-bottom: 14px !important;
+    opacity: 0.9 !important;
+  }
+
+  .ew-landing-sections .ew-signal-heading {
+    font-size: clamp(1.55rem, 7.6vw, 2.1rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .ew-landing-sections .ew-signal-subtitle {
+    font-size: 0.84rem !important;
+    line-height: 1.5 !important;
+    max-width: 320px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .ew-signal-video {
+    margin-bottom: 30px !important;
+    border-radius: 14px !important;
+  }
+
+  /* four stages stay side by side, exactly like desktop */
+  .ew-landing-sections .ew-signal-stages {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+
+  .ew-signal-stage {
+    padding: 0 4px !important;
+    min-width: 0 !important;
+  }
+
+  .ew-landing-sections .ew-signal-stage-num {
+    font-size: 0.55rem !important;
+    letter-spacing: 0.08em !important;
+    margin-bottom: 6px !important;
+  }
+
+  .ew-signal-stage-dot {
+    width: 6px !important;
+    height: 6px !important;
+    margin-bottom: 9px !important;
+  }
+
+  .ew-landing-sections .ew-signal-stage-label {
+    font-size: 0.60rem !important;
+    letter-spacing: 0.07em !important;
+    margin-bottom: 6px !important;
+    white-space: nowrap !important;
+  }
+
+  .ew-landing-sections .ew-signal-stage-body {
+    font-size: 0.56rem !important;
+    line-height: 1.4 !important;
+    max-width: none !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .ew-signal-connector {
+    top: 24px !important;
+  }
+
+  .ew-mute-btn {
+    width: 32px !important;
+    height: 32px !important;
+    top: 10px !important;
+    left: 10px !important;
   }
 }

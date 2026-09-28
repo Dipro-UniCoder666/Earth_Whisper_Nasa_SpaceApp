@@ -1,4 +1,4 @@
-import type { CandidateDetail, CandidateListResponse } from '@/features/candidates/types'
+import type { CandidateDetail, CandidateListResponse, InvestigationSourceStatus } from '@/features/candidates/types'
 import type { InvestigationSite } from '@/features/investigation/data/investigationSite'
 
 /**
@@ -16,6 +16,7 @@ export type InvestigationData =
   | {
       kind: 'monda-site'
       site: InvestigationSite
+      sourceStatus: InvestigationSourceStatus
     }
 
 export type InvestigationLifecycleStatus = 'idle' | 'scanning' | 'ready' | 'error'

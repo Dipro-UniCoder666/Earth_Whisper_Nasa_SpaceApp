@@ -190,7 +190,7 @@ export const SandhyaInvestigationResults = forwardRef<HTMLElement, SandhyaInvest
         <article><strong>{candidate?.area_m2 === null || candidate?.area_m2 === undefined ? 'Not available' : `${numberText(candidate.area_m2, 0)} m²`}</strong><span>Investigated Region</span><small>Candidate region</small></article>
         <article className="is-warning"><strong>{candidate ? opticalText(candidate) : 'LOADING'}</strong><span>Verification</span><small>Optical evidence</small></article>
       </div>
-      <p className="ew-sandhya-project-context">Sandhya investigation: {payload?.result.candidate_count ?? '—'} radar candidates · {payload?.result.investigated_candidate_count ?? '—'} investigated</p>
+      <p className="ew-sandhya-project-context">Sandhya investigation: {payload?.result.candidate_count ?? '—'} radar candidates · {payload?.result.investigated_candidate_count ?? '—'} investigated · Metadata: {payload?.source_status === 'LIVE' ? 'live NASA discovery' : payload?.source_status === 'CACHED_LIVE' ? 'cached NASA discovery' : 'not available'} · Scientific result: verified precomputed evidence</p>
 
       <section className="ew-sandhya-primary-result" aria-labelledby="sandhya-primary-result-title">
         <div className="ew-sandhya-primary-icon"><BadgeCheck size={21} aria-hidden="true" /></div>

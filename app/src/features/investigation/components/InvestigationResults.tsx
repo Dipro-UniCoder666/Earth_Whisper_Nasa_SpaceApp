@@ -2,11 +2,13 @@ import { forwardRef, useState } from 'react'
 import type { InvestigationSite } from '@/features/investigation/data/investigationSite'
 import { downloadCaseFile } from '@/features/investigation/caseFile/buildCaseFile'
 import type { InvestigationLifecycleStatus } from '@/features/investigation/models/investigationModel'
+import type { InvestigationSourceStatus } from '@/features/candidates/types'
 import { InvestigationScan } from './InvestigationScan'
 import { InvestigationResultShell } from './InvestigationResultShell'
 
 export interface InvestigationResultsProps {
   site: InvestigationSite
+  sourceStatus: InvestigationSourceStatus
   lifecycleStatus: Extract<InvestigationLifecycleStatus, 'scanning' | 'ready'>
   scanProgress: number
 }
@@ -23,7 +25,7 @@ export interface InvestigationResultsProps {
  * (and the downloadable case file) follow whichever investigation is selected.
  */
 export const InvestigationResults = forwardRef<HTMLElement, InvestigationResultsProps>(
-  function InvestigationResults({ site, lifecycleStatus, scanProgress }, ref) {
+  function InvestigationResults({ site, sourceStatus, lifecycleStatus, scanProgress }, ref) {
     const [caseFileState, setCaseFileState] = useState<'idle' | 'building' | 'ready'>('idle')
 
     const before = site.nisar.beforeCoherence.toFixed(4)
@@ -61,7 +63,7 @@ export const InvestigationResults = forwardRef<HTMLElement, InvestigationResults
             {site.name}
           </h2>
           <p className="ew-results-head-coords">{site.coordLabel}</p>
-          <p className="ew-results-head-note">NISAR radar observation + terrain context</p>
+          <p className="ew-results-head-note">NISAR radar observation + terrain context · Metadata: {sourceStatus === 'LIVE' ? 'live NASA discovery' : sourceStatus === 'CACHED_LIVE' ? 'cached NASA discovery' : 'not available'} · Scientific result: verified precomputed evidence</p>
         </div>
 
         {/* ---------- 01 NISAR radar observation ---------- */}

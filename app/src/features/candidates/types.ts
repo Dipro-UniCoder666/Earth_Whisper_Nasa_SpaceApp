@@ -115,6 +115,8 @@ export interface InvestigationStage {
   detail: string
 }
 
+export type InvestigationSourceStatus = 'LIVE' | 'CACHED_LIVE' | 'VERIFIED_STATIC'
+
 export interface InvestigationResponse {
   status: 'ready'
   location_id: string
@@ -133,4 +135,7 @@ export interface InvestigationResponse {
     provenance: Record<string, string | null>
     site?: import('@/features/investigation/data/investigationSite').InvestigationSite
   }
+  source_status: InvestigationSourceStatus
+  scientific_result_status: 'VERIFIED_STATIC'
+  provenance: Record<string, unknown>
 }

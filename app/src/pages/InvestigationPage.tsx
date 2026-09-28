@@ -188,7 +188,7 @@ export function InvestigationPage() {
               onClick={beginInvestigation}
               disabled={!selectedLocation || (selectedLocation.id === SANDHYA_INVESTIGATION.id && investigationStarted)}
             >
-              <span className="ew-cta-title">Begin Investigation <span aria-hidden="true">⮞</span></span>
+              <span className="ew-cta-title">Begin Investigation <span className="ew-cta-arrow" aria-hidden="true">⮞</span></span>
             </button>
           </div>
 
@@ -203,6 +203,7 @@ export function InvestigationPage() {
               <InvestigationResults
                 ref={resultsRef}
                 site={mondaLifecycle.lifecycle.data.site}
+                sourceStatus={mondaLifecycle.lifecycle.data.sourceStatus}
                 lifecycleStatus={mondaLifecycle.lifecycle.status}
                 scanProgress={mondaLifecycle.progress}
               />
