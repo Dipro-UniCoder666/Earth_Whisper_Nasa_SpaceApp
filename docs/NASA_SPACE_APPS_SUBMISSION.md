@@ -190,10 +190,6 @@ statistics are claimed.
 
 https://www.youtube.com/watch?v=mgyILV_3OjE
 
-### 30-Second Final Demo Video
-
-TO BE ADDED – 30-second final demo YouTube URL
-
 ### Application
 
 Live demo: https://earth-whisper.vercel.app/
