@@ -98,7 +98,15 @@ Notes:
 - The browser map uses Leaflet with OpenStreetMap tiles, and location search
   uses OpenStreetMap Nominatim when that workflow is used. These are **map
   services, not NASA evidence integrations**.
-- Sentinel-1 provides an independent radar observation; it is not ground truth.
+- **Sentinel-1 role.** Sentinel-1 was used as an **independent SAR cross-check in
+  the broader Earth Whisper evidence pipeline** - comparing radar backscatter
+  behavior around NISAR-identified candidate regions to strengthen the
+  supporting evidence. It is an ESA/Copernicus mission, not a NASA dataset.
+  It provides an independent radar observation and is not ground truth: it was
+  not the primary detector, was not applied to every individual investigation
+  or site, and does not by itself confirm any physical event. NISAR remains the
+  primary radar observation and Sentinel-1 remains the independent cross-check
+  in the broader pipeline.
 - Rainfall is contextual evidence and does not prove that rainfall caused an
   observed change.
 
