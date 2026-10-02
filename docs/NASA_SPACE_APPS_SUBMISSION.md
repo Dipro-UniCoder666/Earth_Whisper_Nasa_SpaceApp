@@ -443,7 +443,6 @@ scientific measurements or to replace the documented scientific processing.
 - [x] Team Journey - section 3 of this document
 - [x] Community / Impact - section 5 of this document
 - [x] 240-second prescreening video - https://www.youtube.com/watch?v=mgyILV_3OjE
-- [ ] 30-second final demo video - `TO BE ADDED – 30-second final demo YouTube URL`
 - [x] Visual assets - brand, hero, team imagery, and scientific figures committed; interface visuals are captured from the running application
 - [x] Architecture documentation - `README.md` and `docs/architecture/overview.md`
 - [x] NASA dataset documentation - `docs/SCIENTIFIC_DATA_AND_METHODOLOGY.md` (section 3)
