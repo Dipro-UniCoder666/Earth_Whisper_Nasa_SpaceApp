@@ -1,0 +1,64 @@
+{
+  "created_at_utc": "2026-11-11T21:32:12.909724+00:00",
+  "checkpoint": "models/gherproof/sen1floods11_attention_unet.pt",
+  "checkpoint_sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+  "validation_event_id": "11",
+  "event_group_counts_official_train": {
+    "2": 31,
+    "3": 40,
+    "4": 18,
+    "5": 10,
+    "6": 16,
+    "7": 39,
+    "8": 15,
+    "9": 18,
+    "10": 24,
+    "11": 41
+  },
+  "validation_event": {
+    "threshold": 0.5,
+    "iou": 0.5087645717324306,
+    "precision": 0.6468678134924225,
+    "recall": 0.7044065265744817,
+    "f1": 0.6744121399248453,
+    "pr_auc_trapezoidal": 0.7268385169541247,
+    "average_precision": 0.7268402983601776,
+    "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+      [
+        9509438,
+        222504
+      ],
+      [
+        171036,
+        407583
+      ]
+    ],
+    "valid_pixels": 10310561,
+    "water_prevalence": 0.05611906083480812,
+    "chip_count": 41
+  },
+  "independent_bolivia_event_test": {
+    "threshold": 0.5,
+    "iou": 0.6275512676719422,
+    "precision": 0.7423303714016625,
+    "recall": 0.8023195345883279,
+    "f1": 0.7711600612982162,
+    "pr_auc_trapezoidal": 0.7469289771120851,
+    "average_precision": 0.7469309297596322,
+    "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+      [
+        2246682,
+        125851
+      ],
+      [
+        89332,
+        362569
+      ]
+    ],
+    "valid_pixels": 2824434,
+    "water_prevalence": 0.1599970117906809,
+    "chip_count": 15
+  },
+  "interpretation": "Metrics describe Sen1Floods11 water/non-water benchmark labels only. Bolivia is geographically/event held out; neither result estimates Sujatpur accuracy or waterlogging performance.",
+  "threshold_selection": "fixed 0.5; not tuned on Bolivia"
+}

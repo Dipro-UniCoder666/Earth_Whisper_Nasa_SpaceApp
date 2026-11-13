@@ -1,0 +1,1213 @@
+{
+  "status": "pass",
+  "created_at_utc": "2026-11-12T23:44:18.774482+00:00",
+  "configuration": {
+    "bands": [
+      "VV",
+      "VH"
+    ],
+    "representation_source": "linear RTC Gamma0 intensity",
+    "conversion": "10*log10(value) once; positive finite only",
+    "clip_db": [
+      -60,
+      20
+    ],
+    "normalization": "checkpoint mean/std",
+    "patch": 256,
+    "overlap": 64,
+    "threshold": 0.5,
+    "threshold_sensitivity": [
+      0.4,
+      0.5,
+      0.6
+    ],
+    "mask": "common valid VV/VH; invalid normalized to zero and excluded from outputs"
+  },
+  "checkpoints": {
+    "scratch": {
+      "path": "models/gherproof/sen1floods11_attention_unet.pt",
+      "sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+      "architecture": "AttentionUNet",
+      "mean": [
+        -10.23175048828125,
+        -17.202211380004883
+      ],
+      "std": [
+        4.136703968048096,
+        4.915712356567383
+      ],
+      "threshold": 0.5,
+      "benchmark_only": true,
+      "actual_sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+      "hash_valid": true
+    },
+    "pretrained": {
+      "path": "models/gherproof/sen1floods11_resnet50_moco_unet.pt",
+      "sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+      "architecture": "ResNet50SARUNet",
+      "mean": [
+        -12.54847240447998,
+        -20.192371368408203
+      ],
+      "std": [
+        5.256977081298828,
+        5.911509037017822
+      ],
+      "threshold": 0.5,
+      "benchmark_only": true,
+      "actual_sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+      "hash_valid": true
+    }
+  },
+  "scene_count": 8,
+  "scenes": [
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_water_probability.tif",
+      "sha256": "4cdcec3e4a18bd9f3a07e5ce8b804c38b565b27e6adf813a0270a3ed3a1d3ddd",
+      "hash_matches_manifest": true,
+      "bytes": 20845424,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 1.5054984032758512e-05,
+        "max": 0.9988558888435364,
+        "mean": 0.23304440081119537,
+        "std": 0.2860623598098755,
+        "percentiles": {
+          "1": 0.002993103116750717,
+          "5": 0.005891868844628334,
+          "10": 0.008809651248157024,
+          "25": 0.019427748396992683,
+          "50": 0.07986371964216232,
+          "75": 0.38468998670578003,
+          "90": 0.7457253336906433,
+          "95": 0.8639909029006958,
+          "99": 0.9599692821502686
+        }
+      },
+      "model": "scratch",
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "date": "2026-01-12",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 1281215,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_water_probability.tif",
+      "sha256": "69cce80b699703035e2216dbf3ce8626f3abd225842b8cd3bc71a7f22f964428",
+      "hash_matches_manifest": true,
+      "bytes": 20319603,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 7.222237763926387e-05,
+        "max": 0.9937824606895447,
+        "mean": 0.12371581792831421,
+        "std": 0.22017930448055267,
+        "percentiles": {
+          "1": 0.0036541710142046213,
+          "5": 0.0054164789617061615,
+          "10": 0.006864774972200394,
+          "25": 0.010997532866895199,
+          "50": 0.026393329724669456,
+          "75": 0.1027216911315918,
+          "90": 0.43040668964385986,
+          "95": 0.729975700378418,
+          "99": 0.9388276934623718
+        }
+      },
+      "model": "pretrained",
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "date": "2026-01-12",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 564519,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_water_probability.tif",
+      "sha256": "7fdeafc47a1e37ea83daa1c814bff7faf3fce23c2602023230ece7d387293a91",
+      "hash_matches_manifest": true,
+      "bytes": 20792824,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 1.826141851779539e-05,
+        "max": 0.9990441203117371,
+        "mean": 0.26409897208213806,
+        "std": 0.2990449368953705,
+        "percentiles": {
+          "1": 0.0031183329410851,
+          "5": 0.0062119364738464355,
+          "10": 0.00934611912816763,
+          "25": 0.0217764712870121,
+          "50": 0.11164291203022003,
+          "75": 0.4691481590270996,
+          "90": 0.7832484245300293,
+          "95": 0.881971001625061,
+          "99": 0.9650774598121643
+        }
+      },
+      "model": "scratch",
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "date": "2026-01-24",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 1519463,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_water_probability.tif",
+      "sha256": "c4507227cf3ade880dba0a76562168ed274dffc8ab1cc3355f5ca78427453fa2",
+      "hash_matches_manifest": true,
+      "bytes": 20319745,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 6.973677227506414e-05,
+        "max": 0.993943452835083,
+        "mean": 0.13020014762878418,
+        "std": 0.22201816737651825,
+        "percentiles": {
+          "1": 0.003331398358568549,
+          "5": 0.005003238562494516,
+          "10": 0.006400181446224451,
+          "25": 0.010651642456650734,
+          "50": 0.028358934447169304,
+          "75": 0.12266004085540771,
+          "90": 0.4487951099872589,
+          "95": 0.7269687652587891,
+          "99": 0.9400143623352051
+        }
+      },
+      "model": "pretrained",
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "date": "2026-01-24",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 576356,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_water_probability.tif",
+      "sha256": "8f610e6f33f3f2de0c319614a9e93e33ddecf4c4fec7dc066dffe602eb6e6392",
+      "hash_matches_manifest": true,
+      "bytes": 20959054,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 1.3622392543766182e-05,
+        "max": 0.9986721873283386,
+        "mean": 0.158905491232872,
+        "std": 0.2304968386888504,
+        "percentiles": {
+          "1": 0.0025388882495462894,
+          "5": 0.004913788288831711,
+          "10": 0.007320154923945665,
+          "25": 0.015349259600043297,
+          "50": 0.045428454875946045,
+          "75": 0.1988700032234192,
+          "90": 0.528041660785675,
+          "95": 0.7287893295288086,
+          "99": 0.9385742545127869
+        }
+      },
+      "model": "scratch",
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "date": "2026-01-09",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 702685,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_water_probability.tif",
+      "sha256": "f135b03e37ac64b4c33dae4ff082360942d61bf97b4cae9187008986237e3e9c",
+      "hash_matches_manifest": true,
+      "bytes": 20289459,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 0.0004050882998853922,
+        "max": 0.9814816117286682,
+        "mean": 0.053623002022504807,
+        "std": 0.10139194875955582,
+        "percentiles": {
+          "1": 0.004389272071421146,
+          "5": 0.00613779854029417,
+          "10": 0.007464221213012934,
+          "25": 0.01110169105231762,
+          "50": 0.020961716771125793,
+          "75": 0.04886457324028015,
+          "90": 0.11821265518665314,
+          "95": 0.20837262272834778,
+          "99": 0.5870834589004517
+        }
+      },
+      "model": "pretrained",
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "date": "2026-01-09",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 88654,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_water_probability.tif",
+      "sha256": "81f8fa03c260561ad2fc8703044f0684763b3ee4801d7eac08acef780253e764",
+      "hash_matches_manifest": true,
+      "bytes": 20910192,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 1.5219254237308633e-05,
+        "max": 0.9987419247627258,
+        "mean": 0.19391368329524994,
+        "std": 0.25446799397468567,
+        "percentiles": {
+          "1": 0.0025752794463187456,
+          "5": 0.005089903250336647,
+          "10": 0.007612019777297974,
+          "25": 0.016829736530780792,
+          "50": 0.06266935914754868,
+          "75": 0.2875015139579773,
+          "90": 0.6278932094573975,
+          "95": 0.7904309034347534,
+          "99": 0.9499151110649109
+        }
+      },
+      "model": "scratch",
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "date": "2026-01-21",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 954866,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_water_probability.tif",
+      "sha256": "33a028c381dd092f018879444934e1ed8977bef59e306fa6b4bf430f3db05e6a",
+      "hash_matches_manifest": true,
+      "bytes": 20319207,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "shape": [
+        2156,
+        3111
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixels": 6475371,
+      "invalid_pixels": 231945,
+      "statistics": {
+        "valid_count": 6475371,
+        "min": 0.0003529511159285903,
+        "max": 0.9866192936897278,
+        "mean": 0.06303050369024277,
+        "std": 0.11431567370891571,
+        "percentiles": {
+          "1": 0.003969138953834772,
+          "5": 0.005608933977782726,
+          "10": 0.006888785865157843,
+          "25": 0.010695518925786018,
+          "50": 0.022841526195406914,
+          "75": 0.060442447662353516,
+          "90": 0.1518968939781189,
+          "95": 0.2603742480278015,
+          "99": 0.6496151089668274
+        }
+      },
+      "model": "pretrained",
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "date": "2026-01-21",
+      "threshold": 0.5,
+      "predicted_class_pixels_at_threshold": 114701,
+      "coverage_fraction_of_rectangular_grid": 0.9654191035579657,
+      "source_valid_pixels_recorded": 6475371,
+      "valid_count_matches_manifest": true
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "pre_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "pre_date": "2026-01-12",
+      "post_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "phase6b_common_valid_pixels": 6475371,
+      "phase6b_common_valid_fraction": 1.0,
+      "scenes_pixel_validated": true,
+      "models": {
+        "pre": {
+          "valid_pixels": 6475371,
+          "invalid_pixels_in_rectangular_raster": 231945,
+          "xor_pixels": 868656,
+          "xor_fraction": 0.13414768049583567,
+          "absolute_probability_difference": {
+            "valid_count": 6475371,
+            "min": 7.450580596923828e-09,
+            "max": 0.9149761199951172,
+            "mean": 0.13165554404258728,
+            "std": 0.17356963455677032,
+            "percentiles": {
+              "1": 0.00018077794811688364,
+              "5": 0.0009188919793814421,
+              "10": 0.0019637970253825188,
+              "25": 0.007860484533011913,
+              "50": 0.044248808175325394,
+              "75": 0.20191428065299988,
+              "90": 0.4143437147140503,
+              "95": 0.5240912437438965,
+              "99": 0.6722239851951599
+            }
+          },
+          "grid_4x4": [
+            {
+              "row": 0,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 381961,
+              "xor_pixels": 75116,
+              "xor_fraction": 0.19665882118855066
+            },
+            {
+              "row": 0,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394340,
+              "xor_pixels": 65379,
+              "xor_fraction": 0.16579347770959071
+            },
+            {
+              "row": 0,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404249,
+              "xor_pixels": 54121,
+              "xor_fraction": 0.1338803559192478
+            },
+            {
+              "row": 0,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 396806,
+              "xor_pixels": 24854,
+              "xor_fraction": 0.06263514160572169
+            },
+            {
+              "row": 1,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 412402,
+              "xor_pixels": 63140,
+              "xor_fraction": 0.15310304023743823
+            },
+            {
+              "row": 1,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 64922,
+              "xor_fraction": 0.15481873983526573
+            },
+            {
+              "row": 1,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 70492,
+              "xor_fraction": 0.16810145418298192
+            },
+            {
+              "row": 1,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 407008,
+              "xor_pixels": 29771,
+              "xor_fraction": 0.07314598238855256
+            },
+            {
+              "row": 2,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 407964,
+              "xor_pixels": 67345,
+              "xor_fraction": 0.16507584002510026
+            },
+            {
+              "row": 2,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 64052,
+              "xor_fraction": 0.1527440609335578
+            },
+            {
+              "row": 2,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 52952,
+              "xor_fraction": 0.12627401977383615
+            },
+            {
+              "row": 2,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 412045,
+              "xor_pixels": 34949,
+              "xor_fraction": 0.0848184057566528
+            },
+            {
+              "row": 3,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 398772,
+              "xor_pixels": 79614,
+              "xor_fraction": 0.19964791911167284
+            },
+            {
+              "row": 3,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404740,
+              "xor_pixels": 50120,
+              "xor_fraction": 0.12383258388101002
+            },
+            {
+              "row": 3,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394910,
+              "xor_pixels": 27267,
+              "xor_fraction": 0.06904611177230255
+            },
+            {
+              "row": 3,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 382806,
+              "xor_pixels": 44562,
+              "xor_fraction": 0.11640883371733986
+            }
+          ]
+        },
+        "post": {
+          "valid_pixels": 6475371,
+          "invalid_pixels_in_rectangular_raster": 231945,
+          "xor_pixels": 1058025,
+          "xor_fraction": 0.1633921824710893,
+          "absolute_probability_difference": {
+            "valid_count": 6475371,
+            "min": 9.313225746154785e-09,
+            "max": 0.9171971678733826,
+            "mean": 0.15027932822704315,
+            "std": 0.1823275238275528,
+            "percentiles": {
+              "1": 0.00020552831119857728,
+              "5": 0.0010602939873933792,
+              "10": 0.0023789629340171814,
+              "25": 0.009879112243652344,
+              "50": 0.060942672193050385,
+              "75": 0.24877199530601501,
+              "90": 0.45052868127822876,
+              "95": 0.5426622629165649,
+              "99": 0.6713867783546448
+            }
+          },
+          "grid_4x4": [
+            {
+              "row": 0,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 381961,
+              "xor_pixels": 71123,
+              "xor_fraction": 0.18620487431962948
+            },
+            {
+              "row": 0,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394340,
+              "xor_pixels": 75083,
+              "xor_fraction": 0.19040168382613987
+            },
+            {
+              "row": 0,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404249,
+              "xor_pixels": 85009,
+              "xor_fraction": 0.21028870819717552
+            },
+            {
+              "row": 0,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 396806,
+              "xor_pixels": 68306,
+              "xor_fraction": 0.17213953418043074
+            },
+            {
+              "row": 1,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 412402,
+              "xor_pixels": 65816,
+              "xor_fraction": 0.15959185454968697
+            },
+            {
+              "row": 1,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 67593,
+              "xor_fraction": 0.16118824253234829
+            },
+            {
+              "row": 1,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 85713,
+              "xor_fraction": 0.20439879620929932
+            },
+            {
+              "row": 1,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 407008,
+              "xor_pixels": 55323,
+              "xor_fraction": 0.13592607516314176
+            },
+            {
+              "row": 2,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 407964,
+              "xor_pixels": 74334,
+              "xor_fraction": 0.18220725358119835
+            },
+            {
+              "row": 2,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 69639,
+              "xor_fraction": 0.16606731498395105
+            },
+            {
+              "row": 2,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 59775,
+              "xor_fraction": 0.1425447486776903
+            },
+            {
+              "row": 2,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 412045,
+              "xor_pixels": 61266,
+              "xor_fraction": 0.14868764333992646
+            },
+            {
+              "row": 3,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 398772,
+              "xor_pixels": 81711,
+              "xor_fraction": 0.20490656314886702
+            },
+            {
+              "row": 3,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404740,
+              "xor_pixels": 57255,
+              "xor_fraction": 0.1414611849582448
+            },
+            {
+              "row": 3,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394910,
+              "xor_pixels": 31701,
+              "xor_fraction": 0.08027398647793169
+            },
+            {
+              "row": 3,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 382806,
+              "xor_pixels": 48378,
+              "xor_fraction": 0.12637732950894187
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "pre_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "pre_date": "2026-01-09",
+      "post_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "phase6b_common_valid_pixels": 6475371,
+      "phase6b_common_valid_fraction": 1.0,
+      "scenes_pixel_validated": true,
+      "models": {
+        "pre": {
+          "valid_pixels": 6475371,
+          "invalid_pixels_in_rectangular_raster": 231945,
+          "xor_pixels": 631223,
+          "xor_fraction": 0.09748059223170379,
+          "absolute_probability_difference": {
+            "valid_count": 6475371,
+            "min": 3.259629011154175e-09,
+            "max": 0.9415920376777649,
+            "mean": 0.11220191419124603,
+            "std": 0.17341141402721405,
+            "percentiles": {
+              "1": 0.00015823915600776672,
+              "5": 0.0007871524430811405,
+              "10": 0.0015829764306545258,
+              "25": 0.004870198667049408,
+              "50": 0.02426367625594139,
+              "75": 0.142360657453537,
+              "90": 0.3906721770763397,
+              "95": 0.5314793586730957,
+              "99": 0.704287052154541
+            }
+          },
+          "grid_4x4": [
+            {
+              "row": 0,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 381961,
+              "xor_pixels": 66960,
+              "xor_fraction": 0.17530585583344896
+            },
+            {
+              "row": 0,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394340,
+              "xor_pixels": 42660,
+              "xor_fraction": 0.10818075772176294
+            },
+            {
+              "row": 0,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404249,
+              "xor_pixels": 46177,
+              "xor_fraction": 0.11422910137068985
+            },
+            {
+              "row": 0,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 396806,
+              "xor_pixels": 27055,
+              "xor_fraction": 0.06818193273287199
+            },
+            {
+              "row": 1,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 412402,
+              "xor_pixels": 52446,
+              "xor_fraction": 0.12717203117346668
+            },
+            {
+              "row": 1,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 28340,
+              "xor_fraction": 0.0675820690510371
+            },
+            {
+              "row": 1,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 62584,
+              "xor_fraction": 0.1492433383729748
+            },
+            {
+              "row": 1,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 407008,
+              "xor_pixels": 28913,
+              "xor_fraction": 0.07103791571664439
+            },
+            {
+              "row": 2,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 407964,
+              "xor_pixels": 58771,
+              "xor_fraction": 0.14405927974036925
+            },
+            {
+              "row": 2,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 26575,
+              "xor_fraction": 0.06337309403780209
+            },
+            {
+              "row": 2,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 38387,
+              "xor_fraction": 0.09154103333317436
+            },
+            {
+              "row": 2,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 412045,
+              "xor_pixels": 32517,
+              "xor_fraction": 0.07891613780048296
+            },
+            {
+              "row": 3,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 398772,
+              "xor_pixels": 53787,
+              "xor_fraction": 0.13488158647046433
+            },
+            {
+              "row": 3,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404740,
+              "xor_pixels": 14369,
+              "xor_fraction": 0.035501803627019816
+            },
+            {
+              "row": 3,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394910,
+              "xor_pixels": 11590,
+              "xor_fraction": 0.02934845914258945
+            },
+            {
+              "row": 3,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 382806,
+              "xor_pixels": 40092,
+              "xor_fraction": 0.10473190075390668
+            }
+          ]
+        },
+        "post": {
+          "valid_pixels": 6475371,
+          "invalid_pixels_in_rectangular_raster": 231945,
+          "xor_pixels": 870049,
+          "xor_fraction": 0.13436280330501527,
+          "absolute_probability_difference": {
+            "valid_count": 6475371,
+            "min": 9.313225746154785e-10,
+            "max": 0.9504494071006775,
+            "mean": 0.13786432147026062,
+            "std": 0.18957126140594482,
+            "percentiles": {
+              "1": 0.000160247553139925,
+              "5": 0.0008089509792625904,
+              "10": 0.0016543800011277199,
+              "25": 0.0060533396899700165,
+              "50": 0.03685004264116287,
+              "75": 0.21115314960479736,
+              "90": 0.45838332176208496,
+              "95": 0.5686249732971191,
+              "99": 0.7120072841644287
+            }
+          },
+          "grid_4x4": [
+            {
+              "row": 0,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 381961,
+              "xor_pixels": 72061,
+              "xor_fraction": 0.18866062241956638
+            },
+            {
+              "row": 0,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394340,
+              "xor_pixels": 51891,
+              "xor_fraction": 0.1315894913019222
+            },
+            {
+              "row": 0,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404249,
+              "xor_pixels": 69738,
+              "xor_fraction": 0.17251248611623035
+            },
+            {
+              "row": 0,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 396806,
+              "xor_pixels": 69170,
+              "xor_fraction": 0.17431692061107948
+            },
+            {
+              "row": 1,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 412402,
+              "xor_pixels": 58184,
+              "xor_fraction": 0.14108563973986546
+            },
+            {
+              "row": 1,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 42192,
+              "xor_fraction": 0.10061477266765552
+            },
+            {
+              "row": 1,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 82842,
+              "xor_fraction": 0.1975523558336632
+            },
+            {
+              "row": 1,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 407008,
+              "xor_pixels": 52728,
+              "xor_fraction": 0.12955027910999292
+            },
+            {
+              "row": 2,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 407964,
+              "xor_pixels": 75550,
+              "xor_fraction": 0.18518790873704544
+            },
+            {
+              "row": 2,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 40026,
+              "xor_fraction": 0.09544953760892064
+            },
+            {
+              "row": 2,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 419342,
+              "xor_pixels": 50905,
+              "xor_fraction": 0.12139256263384064
+            },
+            {
+              "row": 2,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 412045,
+              "xor_pixels": 54301,
+              "xor_fraction": 0.13178414978946473
+            },
+            {
+              "row": 3,
+              "column": 0,
+              "aoi_pixels": 418803,
+              "common_valid_pixels": 398772,
+              "xor_pixels": 62814,
+              "xor_fraction": 0.15751858204688393
+            },
+            {
+              "row": 3,
+              "column": 1,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 404740,
+              "xor_pixels": 26477,
+              "xor_fraction": 0.06541730493650244
+            },
+            {
+              "row": 3,
+              "column": 2,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 394910,
+              "xor_pixels": 19009,
+              "xor_fraction": 0.0481350181053911
+            },
+            {
+              "row": 3,
+              "column": 3,
+              "aoi_pixels": 419342,
+              "common_valid_pixels": 382806,
+              "xor_pixels": 42161,
+              "xor_fraction": 0.11013672721953156
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "disagreement_figure": "data/gherproof/processed/phase7/figures/phase7b_model_disagreement_audit.png",
+  "limitations": [
+    "Four scene times comprise two separately validated geometries; they are not one continuous orbit series.",
+    "Model outputs remain exploratory due to training/RTC measurement-domain mismatch and absence of human-reviewed local references.",
+    "Coverage is the Phase 6B provisional AOI and is not village boundary coverage."
+  ]
+}

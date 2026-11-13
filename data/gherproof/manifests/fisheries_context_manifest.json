@@ -1,0 +1,319 @@
+{
+  "generated_at_utc": "2026-11-13T04:28:52.066217+00:00",
+  "study_area": {
+    "evidence_id": "geography-provisional-regional-aoi",
+    "status": "provisional_regional_search_extent",
+    "geometry": "data/gherproof/regional/six_village_regional_search_extent.geojson",
+    "crs": "EPSG:4326"
+  },
+  "clark_2022": {
+    "source": "Clark Labs Bangladesh Land Cover and Change Maps 2022 v1",
+    "source_url": "https://www.clarku.edu/geospatial-analytics/aquaculture-data-download/",
+    "license": "Clark's page states non-commercial use only and requires permission for other uses; source archive is not redistributed.",
+    "local_raster": "data/gherproof/reference/clark_2022_locality_context_15m_utm45n.tif",
+    "crs": "EPSG:32645",
+    "native_resolution_m": 15,
+    "class_legend": {
+      "1": "Mangrove",
+      "2": "Coastal wetland",
+      "3": "Pond aquaculture",
+      "4": "Water",
+      "5": "Other landcover",
+      "6": "Missing"
+    },
+    "valid_covered_aoi_cells": 454374,
+    "valid_covered_aoi_area_km2": 102.23415,
+    "mapped_classes_in_raster_footprint": {
+      "3": {
+        "class_name": "Pond aquaculture",
+        "pixels": 10299,
+        "area_km2_nominal": 2.317275
+      },
+      "5": {
+        "class_name": "Other landcover",
+        "pixels": 444075,
+        "area_km2_nominal": 99.916875
+      }
+    },
+    "pond_aquaculture_class_3_area_km2_in_covered_footprint": 2.317275,
+    "new_water_candidate_overlap": {
+      "candidate_cells": 671,
+      "candidate_cells_with_context_coverage": 59,
+      "context_coverage_pct": 8.793,
+      "overlap_by_class": {
+        "5": {
+          "class_name": "Other landcover",
+          "candidate_cells": 59,
+          "pct_of_all_candidates": 8.793
+        }
+      }
+    },
+    "model_prediction_overlap": {
+      "scratch": {
+        "predicted_water_cells": 317510,
+        "predicted_water_cells_with_Clark_coverage": 56348,
+        "predicted_water_cells_over_Clark_2022_pond_aquaculture": 3516,
+        "pct_of_predictions_over_Clark_pond_class_on_supported_cells": 6.24,
+        "prediction_evidence_id": "prediction-scratch-2026-01-12-probability",
+        "limitations": [
+          "Phase 8B thresholded model cells are exploratory and unvalidated locally.",
+          "Clark 2022 class 3 is historical context, not a 2026 fish-farm inventory.",
+          "Nearest-neighbour grid transfer does not define parcel boundaries."
+        ]
+      },
+      "pretrained": {
+        "predicted_water_cells": 139907,
+        "predicted_water_cells_with_Clark_coverage": 18582,
+        "predicted_water_cells_over_Clark_2022_pond_aquaculture": 2738,
+        "pct_of_predictions_over_Clark_pond_class_on_supported_cells": 14.735,
+        "prediction_evidence_id": "prediction-pretrained-2026-01-12-probability",
+        "limitations": [
+          "Phase 8B thresholded model cells are exploratory and unvalidated locally.",
+          "Clark 2022 class 3 is historical context, not a 2026 fish-farm inventory.",
+          "Nearest-neighbour grid transfer does not define parcel boundaries."
+        ]
+      }
+    },
+    "limitations": [
+      "The source geometry is a provisional regional search rectangle, not a village or enclosure boundary.",
+      "Clark 2022 coverage is partial; its mapped class area is only the covered footprint inside the provisional AOI.",
+      "Clark class 3 is a 2022 pond-aquaculture class, not a verified active 2026 fisheries asset or Pallimangal boundary.",
+      "WorldCover 2021 is historical land-cover context, not current 2026 ground truth.",
+      "Possible-water candidates and model predictions are exploratory and are not damage, flood, or waterlogging labels."
+    ]
+  },
+  "worldcover_2021": {
+    "source": "ESA WorldCover 10 m 2021 v200 Map",
+    "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E087_Map.tif",
+    "accessed_utc": "2026-11-13T04:28:52.066854+00:00",
+    "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium.",
+    "license": "Creative Commons Attribution 4.0 International License",
+    "local_subset": "data/gherproof/processed/fisheries_context/ESA_WorldCover_2021_10m_provisional_AOI_UTM45N.tif",
+    "crs": "EPSG:32645",
+    "resolution_m": 10,
+    "bounds": [
+      729410.0,
+      2536410.0,
+      760520.0,
+      2557970.0
+    ],
+    "pixel_count": [
+      3111,
+      2156
+    ],
+    "valid_aoi_pixels": 6475371,
+    "valid_aoi_area_km2_nominal": 647.5371,
+    "class_legend": {
+      "10": "Tree cover",
+      "20": "Shrubland",
+      "30": "Grassland",
+      "40": "Cropland",
+      "50": "Built-up",
+      "60": "Bare / sparse vegetation",
+      "70": "Snow / ice",
+      "80": "Permanent water bodies",
+      "90": "Herbaceous wetland",
+      "95": "Mangroves",
+      "100": "Moss / lichen"
+    },
+    "class_counts": {
+      "10": {
+        "class_name": "Tree cover",
+        "pixels": 2612034,
+        "area_km2_nominal": 261.2034
+      },
+      "20": {
+        "class_name": "Shrubland",
+        "pixels": 1081,
+        "area_km2_nominal": 0.1081
+      },
+      "30": {
+        "class_name": "Grassland",
+        "pixels": 33009,
+        "area_km2_nominal": 3.3009
+      },
+      "40": {
+        "class_name": "Cropland",
+        "pixels": 2927725,
+        "area_km2_nominal": 292.7725
+      },
+      "50": {
+        "class_name": "Built-up",
+        "pixels": 75058,
+        "area_km2_nominal": 7.5058
+      },
+      "60": {
+        "class_name": "Bare / sparse vegetation",
+        "pixels": 11123,
+        "area_km2_nominal": 1.1123
+      },
+      "80": {
+        "class_name": "Permanent water bodies",
+        "pixels": 648821,
+        "area_km2_nominal": 64.8821
+      },
+      "90": {
+        "class_name": "Herbaceous wetland",
+        "pixels": 166520,
+        "area_km2_nominal": 16.652
+      }
+    },
+    "possible_new_water_candidate_overlap": {
+      "candidate_cells": 671,
+      "candidate_cells_with_context_coverage": 671,
+      "context_coverage_pct": 100.0,
+      "overlap_by_class": {
+        "10": {
+          "class_name": "Tree cover",
+          "candidate_cells": 22,
+          "pct_of_all_candidates": 3.279
+        },
+        "30": {
+          "class_name": "Grassland",
+          "candidate_cells": 1,
+          "pct_of_all_candidates": 0.149
+        },
+        "40": {
+          "class_name": "Cropland",
+          "candidate_cells": 327,
+          "pct_of_all_candidates": 48.733
+        },
+        "60": {
+          "class_name": "Bare / sparse vegetation",
+          "candidate_cells": 3,
+          "pct_of_all_candidates": 0.447
+        },
+        "80": {
+          "class_name": "Permanent water bodies",
+          "candidate_cells": 281,
+          "pct_of_all_candidates": 41.878
+        },
+        "90": {
+          "class_name": "Herbaceous wetland",
+          "candidate_cells": 37,
+          "pct_of_all_candidates": 5.514
+        }
+      }
+    },
+    "possible_water_loss_candidate_overlap": {
+      "candidate_cells": 1316,
+      "candidate_cells_with_context_coverage": 1316,
+      "context_coverage_pct": 100.0,
+      "overlap_by_class": {
+        "10": {
+          "class_name": "Tree cover",
+          "candidate_cells": 10,
+          "pct_of_all_candidates": 0.76
+        },
+        "30": {
+          "class_name": "Grassland",
+          "candidate_cells": 1,
+          "pct_of_all_candidates": 0.076
+        },
+        "40": {
+          "class_name": "Cropland",
+          "candidate_cells": 925,
+          "pct_of_all_candidates": 70.289
+        },
+        "60": {
+          "class_name": "Bare / sparse vegetation",
+          "candidate_cells": 9,
+          "pct_of_all_candidates": 0.684
+        },
+        "80": {
+          "class_name": "Permanent water bodies",
+          "candidate_cells": 222,
+          "pct_of_all_candidates": 16.869
+        },
+        "90": {
+          "class_name": "Herbaceous wetland",
+          "candidate_cells": 149,
+          "pct_of_all_candidates": 11.322
+        }
+      }
+    },
+    "limitations": [
+      "WorldCover 2021 is not current 2026 ground truth.",
+      "WorldCover 2020 and 2021 must not be treated as a genuine change series because algorithm versions differ.",
+      "The study AOI is provisional."
+    ]
+  },
+  "department_of_fisheries": {
+    "source": "Bangladesh Department of Fisheries, Yearbook of Fisheries Statistics 2024–25 summary table",
+    "source_url": "https://fisheries.portal.gov.bd/pages/static-pages/6922e13e933eb65569e2b13e",
+    "retrieved_at_utc": "2026-11-13T04:28:52.072692+00:00",
+    "year": "2024–25",
+    "aquaculture_production_lakh_metric_tonnes": 31.07,
+    "total_fish_production_lakh_metric_tonnes": 51.11,
+    "geographic_level": "Bangladesh national aggregate",
+    "limitations": [
+      "National total only; no Manirampur or Pallimangal estimate is available from this figure.",
+      "Not used for incident impact quantification."
+    ]
+  },
+  "limitations": [
+    "The source geometry is a provisional regional search rectangle, not a village or enclosure boundary.",
+    "Clark 2022 coverage is partial; its mapped class area is only the covered footprint inside the provisional AOI.",
+    "Clark class 3 is a 2022 pond-aquaculture class, not a verified active 2026 fisheries asset or Pallimangal boundary.",
+    "WorldCover 2021 is historical land-cover context, not current 2026 ground truth.",
+    "Possible-water candidates and model predictions are exploratory and are not damage, flood, or waterlogging labels."
+  ],
+  "sentinel2_true_colour": {
+    "provider": "Microsoft Planetary Computer Sentinel-2 L2A",
+    "access_method": "Planetary Computer public SAS signing API; temporary signed URLs are not saved",
+    "processing": "AOI grid clipped from same S2B acquisition; B04/B03/B02 reflectance, offset -1000 and quantification 10000; clear mask inherited from existing Phase 7 B03 validity mask",
+    "band_order": [
+      "B04 red",
+      "B03 green",
+      "B02 blue"
+    ],
+    "display_stretch": "0–0.4 reflectance linear display stretch in preview service",
+    "observations": [
+      {
+        "evidence_id": "s2-true-colour-2026-01-10",
+        "date": "2026-01-10",
+        "path": "data/gherproof/processed/fisheries_context/2026-01-10_S2_true_colour_B04_B03_B02_10m.tif",
+        "bytes": 57612337,
+        "sha256": "4441145c5db86d74c3ad4fe79f3b6fabc64fa56dd0f15ed18c30d7d68f88b374",
+        "width": 3111,
+        "height": 2156,
+        "crs": "EPSG:32645",
+        "resolution_m": 10,
+        "valid_pixels": 6472354,
+        "source_stac_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+        "source_assets": {
+          "B02": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/10/S2B_MSIL2A_20260110T043049_N0511_R133_T45QYF_20260110T065859.SAFE/GRANULE/L2A_T45QYF_A046205_20260110T043130/IMG_DATA/R10m/T45QYF_20260110T043049_B02_10m.tif",
+          "B03": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/10/S2B_MSIL2A_20260110T043049_N0511_R133_T45QYF_20260110T065859.SAFE/GRANULE/L2A_T45QYF_A046205_20260110T043130/IMG_DATA/R10m/T45QYF_20260110T043049_B03_10m.tif",
+          "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/10/S2B_MSIL2A_20260110T043049_N0511_R133_T45QYF_20260110T065859.SAFE/GRANULE/L2A_T45QYF_A046205_20260110T043130/IMG_DATA/R10m/T45QYF_20260110T043049_B04_10m.tif"
+        },
+        "source_scene_datetime": "2026-01-10T04:30:49.024000Z",
+        "processed_utc": "2026-11-13T04:46:29.004760+00:00"
+      },
+      {
+        "evidence_id": "s2-true-colour-2026-01-20",
+        "date": "2026-01-20",
+        "path": "data/gherproof/processed/fisheries_context/2026-01-20_S2_true_colour_B04_B03_B02_10m.tif",
+        "bytes": 57372703,
+        "sha256": "74030f056615128ab6f0849fbde4ae754263dbf42deab0f7ce37a666fab1cb91",
+        "width": 3111,
+        "height": 2156,
+        "crs": "EPSG:32645",
+        "resolution_m": 10,
+        "valid_pixels": 6472158,
+        "source_stac_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+        "source_assets": {
+          "B02": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/20/S2B_MSIL2A_20260120T043009_N0511_R133_T45QYF_20260120T062559.SAFE/GRANULE/L2A_T45QYF_A046348_20260120T043528/IMG_DATA/R10m/T45QYF_20260120T043009_B02_10m.tif",
+          "B03": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/20/S2B_MSIL2A_20260120T043009_N0511_R133_T45QYF_20260120T062559.SAFE/GRANULE/L2A_T45QYF_A046348_20260120T043528/IMG_DATA/R10m/T45QYF_20260120T043009_B03_10m.tif",
+          "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/20/S2B_MSIL2A_20260120T043009_N0511_R133_T45QYF_20260120T062559.SAFE/GRANULE/L2A_T45QYF_A046348_20260120T043528/IMG_DATA/R10m/T45QYF_20260120T043009_B04_10m.tif"
+        },
+        "source_scene_datetime": "2026-01-20T04:30:09.024000Z",
+        "processed_utc": "2026-11-13T04:48:01.848491+00:00"
+      }
+    ],
+    "limitations": [
+      "Provisional regional search extent, not an enclosure boundary.",
+      "Cloud/shadow and all validity treatment follows the existing Phase 7 B03 mask; no independent new mask was generated.",
+      "True-colour imagery is contextual observation, not ground truth for water or incident impact."
+    ]
+  }
+}

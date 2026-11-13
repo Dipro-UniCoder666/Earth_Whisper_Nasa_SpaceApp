@@ -1,0 +1,361 @@
+{
+  "status": "quantified_distribution_comparison_with_measurement_domain_limits",
+  "training_subset": {
+    "dataset": "Sen1Floods11 v1.1 local project train subset excluding full validation event",
+    "chips": 210,
+    "bands": [
+      "VV",
+      "VH"
+    ],
+    "units": "dataset dB values; training loader applies [-60,20] dB clip",
+    "normalization_means_std_from_checkpoint": "see Phase 7 manifest"
+  },
+  "rtc": {
+    "provider": "Planetary Computer sentinel-1-rtc",
+    "representation": "linear Gamma0 converted once to dB in Phase 7, clip for metrics [-60,20]",
+    "pooled_scene_count": 4,
+    "scenes": [
+      {
+        "date": "2026-01-12",
+        "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+        "bands": [
+          {
+            "band": "VV",
+            "valid_pixels": 6475371,
+            "median_db": -9.572171211242676,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -22.544660568237305,
+              "2": -21.59574317932129,
+              "5": -19.765413284301758,
+              "25": -13.018389701843262,
+              "50": -9.572171211242676,
+              "75": -7.097019195556641,
+              "95": -4.282163619995117,
+              "98": -3.0959410667419434,
+              "99": -2.17791748046875
+            }
+          },
+          {
+            "band": "VH",
+            "valid_pixels": 6475371,
+            "median_db": -16.563735961914062,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -27.370136260986328,
+              "2": -26.510589599609375,
+              "5": -25.065969467163086,
+              "25": -20.429418563842773,
+              "50": -16.563735961914062,
+              "75": -13.829948425292969,
+              "95": -11.094389915466309,
+              "98": -10.07282543182373,
+              "99": -9.375043869018555
+            }
+          }
+        ],
+        "source_grid": {
+          "crs": "EPSG:32645",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "shape": [
+            2156,
+            3111
+          ]
+        }
+      },
+      {
+        "date": "2026-01-24",
+        "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+        "bands": [
+          {
+            "band": "VV",
+            "valid_pixels": 6475371,
+            "median_db": -9.38862419128418,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -22.624759674072266,
+              "2": -21.637256622314453,
+              "5": -19.60253143310547,
+              "25": -12.490829467773438,
+              "50": -9.38862419128418,
+              "75": -7.056174278259277,
+              "95": -4.285117149353027,
+              "98": -3.1081297397613525,
+              "99": -2.1793212890625
+            }
+          },
+          {
+            "band": "VH",
+            "valid_pixels": 6475371,
+            "median_db": -16.603025436401367,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -27.363080978393555,
+              "2": -26.50844955444336,
+              "5": -25.083423614501953,
+              "25": -20.63435173034668,
+              "50": -16.603025436401367,
+              "75": -13.715455055236816,
+              "95": -10.935821533203125,
+              "98": -9.903661727905273,
+              "99": -9.2027006149292
+            }
+          }
+        ],
+        "source_grid": {
+          "crs": "EPSG:32645",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "shape": [
+            2156,
+            3111
+          ]
+        }
+      },
+      {
+        "date": "2026-01-09",
+        "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+        "bands": [
+          {
+            "band": "VV",
+            "valid_pixels": 6475371,
+            "median_db": -9.300310134887695,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -20.74032974243164,
+              "2": -19.870664596557617,
+              "5": -18.358112335205078,
+              "25": -12.65127182006836,
+              "50": -9.300310134887695,
+              "75": -6.878795146942139,
+              "95": -3.954092264175415,
+              "98": -2.6037631034851074,
+              "99": -1.4815964698791504
+            }
+          },
+          {
+            "band": "VH",
+            "valid_pixels": 6475371,
+            "median_db": -16.33819007873535,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -25.126689910888672,
+              "2": -24.391746520996094,
+              "5": -23.219694137573242,
+              "25": -19.605798721313477,
+              "50": -16.33819007873535,
+              "75": -13.838285446166992,
+              "95": -11.186007499694824,
+              "98": -10.170734405517578,
+              "99": -9.458447456359863
+            }
+          }
+        ],
+        "source_grid": {
+          "crs": "EPSG:32645",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "shape": [
+            2156,
+            3111
+          ]
+        }
+      },
+      {
+        "date": "2026-01-21",
+        "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+        "bands": [
+          {
+            "band": "VV",
+            "valid_pixels": 6475371,
+            "median_db": -8.958748817443848,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -21.664562225341797,
+              "2": -20.736522674560547,
+              "5": -18.92272186279297,
+              "25": -12.090686798095703,
+              "50": -8.958748817443848,
+              "75": -6.581836700439453,
+              "95": -3.6902947425842285,
+              "98": -2.377487897872925,
+              "99": -1.2986685037612915
+            }
+          },
+          {
+            "band": "VH",
+            "valid_pixels": 6475371,
+            "median_db": -16.174192428588867,
+            "sample_size_for_distribution": 250000,
+            "percentiles_db": {
+              "1": -25.083724975585938,
+              "2": -24.344255447387695,
+              "5": -23.1795654296875,
+              "25": -19.636173248291016,
+              "50": -16.174192428588867,
+              "75": -13.49215030670166,
+              "95": -10.792878150939941,
+              "98": -9.77856731414795,
+              "99": -9.079421997070312
+            }
+          }
+        ],
+        "source_grid": {
+          "crs": "EPSG:32645",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "shape": [
+            2156,
+            3111
+          ]
+        }
+      }
+    ]
+  },
+  "bands": [
+    {
+      "band": "VV",
+      "training": {
+        "sample_size": 524392,
+        "median_db": -9.614189147949219,
+        "percentiles_db": {
+          "1": -24.26851463317871,
+          "2": -22.308788299560547,
+          "5": -18.36224365234375,
+          "25": -11.852273941040039,
+          "50": -9.614189147949219,
+          "75": -7.721207618713379,
+          "95": -4.985292434692383,
+          "98": -3.4790706634521484,
+          "99": -2.1013331413269043
+        },
+        "lag1_texture": {
+          "horizontal": {
+            "neighbor_pairs": 46774597,
+            "lag1_correlation": 0.921170906102895,
+            "rmse_adjacent_difference_db": 1.6424762303750475
+          },
+          "vertical": {
+            "neighbor_pairs": 46769784,
+            "lag1_correlation": 0.9206906280694149,
+            "rmse_adjacent_difference_db": 1.647509017094146
+          }
+        }
+      },
+      "rtc_pooled_acquisitions": {
+        "sample_size": 1000000,
+        "median_db": -9.304689407348633,
+        "percentiles_db": {
+          "1": -22.045663833618164,
+          "2": -21.034318923950195,
+          "5": -19.109092712402344,
+          "25": -12.56218147277832,
+          "50": -9.304689407348633,
+          "75": -6.905712127685547,
+          "95": -4.0517473220825195,
+          "98": -2.8025124073028564,
+          "99": -1.7707077264785767
+        },
+        "lag1_texture": {
+          "horizontal": {
+            "neighbor_pairs": 25892864,
+            "lag1_correlation": 0.9057468103553687,
+            "rmse_adjacent_difference_db": 1.9612254271496057
+          },
+          "vertical": {
+            "neighbor_pairs": 25889040,
+            "lag1_correlation": 0.9178973960364941,
+            "rmse_adjacent_difference_db": 1.8303671813190403
+          }
+        }
+      },
+      "descriptive_shift": {
+        "median_difference_rtc_minus_training_db": 0.30949974060058594,
+        "wasserstein_1_db": 0.763781206368663,
+        "empirical_KS_D": 0.08717590570449829,
+        "KS_p_value_not_reported": "The observations are spatially autocorrelated and sample sizes make a conventional p-value misleading."
+      }
+    },
+    {
+      "band": "VH",
+      "training": {
+        "sample_size": 524392,
+        "median_db": -16.17366600036621,
+        "percentiles_db": {
+          "1": -34.68925094604492,
+          "2": -31.266538619995117,
+          "5": -26.802125930786133,
+          "25": -18.849220275878906,
+          "50": -16.17366600036621,
+          "75": -14.143522262573242,
+          "95": -11.522143363952637,
+          "98": -10.305872917175293,
+          "99": -9.289505004882812
+        },
+        "lag1_texture": {
+          "horizontal": {
+            "neighbor_pairs": 46774597,
+            "lag1_correlation": 0.9182337478281388,
+            "rmse_adjacent_difference_db": 1.9878658310789932
+          },
+          "vertical": {
+            "neighbor_pairs": 46769784,
+            "lag1_correlation": 0.9106461799288139,
+            "rmse_adjacent_difference_db": 2.078165787130574
+          }
+        }
+      },
+      "rtc_pooled_acquisitions": {
+        "sample_size": 1000000,
+        "median_db": -16.41806983947754,
+        "percentiles_db": {
+          "1": -26.638530731201172,
+          "2": -25.735570907592773,
+          "5": -24.220230102539062,
+          "25": -20.043886184692383,
+          "50": -16.41806983947754,
+          "75": -13.724554061889648,
+          "95": -11.002853393554688,
+          "98": -9.987129211425781,
+          "99": -9.286938667297363
+        },
+        "lag1_texture": {
+          "horizontal": {
+            "neighbor_pairs": 25892864,
+            "lag1_correlation": 0.9033886102781421,
+            "rmse_adjacent_difference_db": 1.8275148302555466
+          },
+          "vertical": {
+            "neighbor_pairs": 25889040,
+            "lag1_correlation": 0.9099704776861955,
+            "rmse_adjacent_difference_db": 1.7641467696990778
+          }
+        }
+      },
+      "descriptive_shift": {
+        "median_difference_rtc_minus_training_db": -0.24440383911132812,
+        "wasserstein_1_db": 0.8600674874873147,
+        "empirical_KS_D": 0.07562839984893799,
+        "KS_p_value_not_reported": "The observations are spatially autocorrelated and sample sizes make a conventional p-value misleading."
+      }
+    }
+  ],
+  "figure": "data/gherproof/processed/phase7b/figures/phase7b_radiometric_domain_shift.png",
+  "figure_training_source_sha256": "1c46a973029c6d05ea931f7c82b1bce9f20282229cc44eb712b0fb84773fcab5",
+  "interpretation": [
+    "The dB numerical distributions overlap centrally; tails, especially VH low-end quantiles, differ. Distribution similarity is not measurement equivalence or proof of water classification compatibility.",
+    "RTC Gamma0 and benchmark GRD are processed with different radiometric/geometric chains; event angle, terrain flattening, resampling, filtering and spatial texture cannot be normalized away by a log conversion.",
+    "Exact Planetary Computer GRD assets are raw uint16 Level-1 DN in radar geometry without CRS; their DN is not compared with model dB. They require calibration LUT, thermal-noise/border-noise treatment, orbit and terrain geocoding before a defensible comparison."
+  ],
+  "rtc_data_source_manifest": "data/gherproof/manifests/phase7_radiometric_compatibility.json",
+  "grd_metadata_manifest": "data/gherproof/manifests/phase7b_grd_metadata_summary.json"
+}

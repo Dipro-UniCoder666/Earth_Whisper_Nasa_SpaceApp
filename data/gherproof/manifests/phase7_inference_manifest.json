@@ -1,0 +1,582 @@
+{
+  "status": "experimental_inference_completed",
+  "device": "cpu",
+  "pairs": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "pre_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "pre_date": "2026-01-12",
+      "post_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "temporal_offsets_days": {
+        "pre_before_event": 2,
+        "post_after_event": 10
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "pre_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "pre_date": "2026-01-09",
+      "post_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "temporal_offsets_days": {
+        "pre_before_event": 5,
+        "post_after_event": 7
+      }
+    }
+  ],
+  "checkpoints": {
+    "scratch": {
+      "path": "models/gherproof/sen1floods11_attention_unet.pt",
+      "sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+      "architecture": "AttentionUNet",
+      "mean": [
+        -10.23175048828125,
+        -17.202211380004883
+      ],
+      "std": [
+        4.136703968048096,
+        4.915712356567383
+      ],
+      "threshold": 0.5,
+      "benchmark_only": true
+    },
+    "pretrained": {
+      "path": "models/gherproof/sen1floods11_resnet50_moco_unet.pt",
+      "sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+      "architecture": "ResNet50SARUNet",
+      "mean": [
+        -12.54847240447998,
+        -20.192371368408203
+      ],
+      "std": [
+        5.256977081298828,
+        5.911509037017822
+      ],
+      "threshold": 0.5,
+      "benchmark_only": true
+    }
+  },
+  "configuration": {
+    "bands": [
+      "VV",
+      "VH"
+    ],
+    "representation_source": "linear RTC Gamma0 intensity",
+    "conversion": "10*log10(value) once; positive finite only",
+    "clip_db": [
+      -60,
+      20
+    ],
+    "normalization": "checkpoint mean/std",
+    "patch": 256,
+    "overlap": 64,
+    "threshold": 0.5,
+    "threshold_sensitivity": [
+      0.4,
+      0.5,
+      0.6
+    ],
+    "mask": "common valid VV/VH; invalid normalized to zero and excluded from outputs"
+  },
+  "scenes": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "date": "2026-01-12",
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 1281215,
+      "exploratory_area_km2_at_10m": 128.1215,
+      "threshold_sensitivity": {
+        "0.4": 1570763,
+        "0.5": 1281215,
+        "0.6": 1017113
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_water_probability.tif",
+        "sha256": "4cdcec3e4a18bd9f3a07e5ce8b804c38b565b27e6adf813a0270a3ed3a1d3ddd",
+        "bytes": 20845424,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_mask_0p5.tif",
+        "sha256": "abfbba51aed6277c4153d1ce6b711aa6fbc92b3c5139f9d359c8a397759cb8a9",
+        "bytes": 680441,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_binary_entropy.tif",
+        "sha256": "3c2f63a8e0a950b24c448213b3eb8a2f62471a3beb5bd97c6fd291ae93ce4aa5",
+        "bytes": 20505131,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "date": "2026-01-12",
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 564519,
+      "exploratory_area_km2_at_10m": 56.4519,
+      "threshold_sensitivity": {
+        "0.4": 688113,
+        "0.5": 564519,
+        "0.6": 457168
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_water_probability.tif",
+        "sha256": "69cce80b699703035e2216dbf3ce8626f3abd225842b8cd3bc71a7f22f964428",
+        "bytes": 20319603,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_mask_0p5.tif",
+        "sha256": "a07e1e66f2a7ce53ad201488341f4cb50c8fd6c5ad94d2cbe0ba0bee618c788d",
+        "bytes": 328649,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_binary_entropy.tif",
+        "sha256": "ee4cbf7777cd21db5fabbf33e4ae8fc07d0b0a6cfb19323f15067c55b8737ba4",
+        "bytes": 20001835,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "date": "2026-01-24",
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 1519463,
+      "exploratory_area_km2_at_10m": 151.9463,
+      "threshold_sensitivity": {
+        "0.4": 1848838,
+        "0.5": 1519463,
+        "0.6": 1205805
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_water_probability.tif",
+        "sha256": "7fdeafc47a1e37ea83daa1c814bff7faf3fce23c2602023230ece7d387293a91",
+        "bytes": 20792824,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_mask_0p5.tif",
+        "sha256": "94d5e3ef7827ef46c7e73d4d03ccdfe580d0a56efdd7e93ea870e263afe5b035",
+        "bytes": 745579,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_binary_entropy.tif",
+        "sha256": "a2cc90f6be4f548a2e0b297f2e76afc7f617e3400141e424556bfa3158c5ce0a",
+        "bytes": 20441357,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "date": "2026-01-24",
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 576356,
+      "exploratory_area_km2_at_10m": 57.6356,
+      "threshold_sensitivity": {
+        "0.4": 724340,
+        "0.5": 576356,
+        "0.6": 456072
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_water_probability.tif",
+        "sha256": "c4507227cf3ade880dba0a76562168ed274dffc8ab1cc3355f5ca78427453fa2",
+        "bytes": 20319745,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_mask_0p5.tif",
+        "sha256": "55e646a3f9ab06a613d00be8aa7d89ea88a8f3dfd7c4ec4bfcc528ed118e8810",
+        "bytes": 344989,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_binary_entropy.tif",
+        "sha256": "4655e1e51cccf9b75f34ee8c310cd7f8ab1d833807a21a9539adafcca872a77c",
+        "bytes": 19979677,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "date": "2026-01-09",
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 702685,
+      "exploratory_area_km2_at_10m": 70.2685,
+      "threshold_sensitivity": {
+        "0.4": 928703,
+        "0.5": 702685,
+        "0.6": 519116
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_water_probability.tif",
+        "sha256": "8f610e6f33f3f2de0c319614a9e93e33ddecf4c4fec7dc066dffe602eb6e6392",
+        "bytes": 20959054,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_mask_0p5.tif",
+        "sha256": "a3af06e1b2ce64c0c59330be1b61d8dc5feb663fdb0822e4ae2ada8d44981ccc",
+        "bytes": 531609,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_binary_entropy.tif",
+        "sha256": "5652e84dfc93fc5c8ae4cb6605c9d888fa2c7a55f9bece630d5a5d10873d8260",
+        "bytes": 20597529,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "date": "2026-01-09",
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 88654,
+      "exploratory_area_km2_at_10m": 8.8654,
+      "threshold_sensitivity": {
+        "0.4": 129325,
+        "0.5": 88654,
+        "0.6": 61700
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_water_probability.tif",
+        "sha256": "f135b03e37ac64b4c33dae4ff082360942d61bf97b4cae9187008986237e3e9c",
+        "bytes": 20289459,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_mask_0p5.tif",
+        "sha256": "d27de2428f9b88e334612bc7bfca50d79074d328a09e7027cecfdf2884273350",
+        "bytes": 149797,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_binary_entropy.tif",
+        "sha256": "9daa54290e57ea49280a0446e8bba7a681250c67dc19bb90091cd987384a453e",
+        "bytes": 19954685,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "date": "2026-01-21",
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 954866,
+      "exploratory_area_km2_at_10m": 95.4866,
+      "threshold_sensitivity": {
+        "0.4": 1234592,
+        "0.5": 954866,
+        "0.6": 710409
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_water_probability.tif",
+        "sha256": "81f8fa03c260561ad2fc8703044f0684763b3ee4801d7eac08acef780253e764",
+        "bytes": 20910192,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_mask_0p5.tif",
+        "sha256": "9d11e3ed7740d0ac19366569acad8083fa7be6b71445f8f8da46c70045027738",
+        "bytes": 625861,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_binary_entropy.tif",
+        "sha256": "c92323844fb710ed72cd33d69b295c2f45fad5801564b4a70c31383fe7a04b72",
+        "bytes": 20517321,
+        "valid_pixels": 6475371
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "date": "2026-01-21",
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "valid_pixels": 6475371,
+      "water_pixels_threshold_0_5": 114701,
+      "exploratory_area_km2_at_10m": 11.4701,
+      "threshold_sensitivity": {
+        "0.4": 169509,
+        "0.5": 114701,
+        "0.6": 78535
+      },
+      "smoke": {
+        "tile_count": 176,
+        "tile_patch": 256,
+        "overlap": 64,
+        "covered_pixels": 6707316,
+        "repeatability_abs_difference": 0.0,
+        "input_finite_on_valid": true,
+        "invalid_normalized_zero": true
+      },
+      "probability": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_water_probability.tif",
+        "sha256": "33a028c381dd092f018879444934e1ed8977bef59e306fa6b4bf430f3db05e6a",
+        "bytes": 20319207,
+        "valid_pixels": 6475371
+      },
+      "mask": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_mask_0p5.tif",
+        "sha256": "6cbfed3866c0114304587e4fbd5691e599e6b7c75dcaefd4bfd55e334ca26456",
+        "bytes": 175215,
+        "valid_pixels": 6475371
+      },
+      "uncertainty": {
+        "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_binary_entropy.tif",
+        "sha256": "0832f5e0cb0efa6e1342be0d647203c7b6a0a7f04d538251d29ee294b0f0083f",
+        "bytes": 19950257,
+        "valid_pixels": 6475371
+      }
+    }
+  ],
+  "pair_outputs": {
+    "pair_2026-01-12_2026-01-24_rel12_ascending_scratch": {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "common_valid_pixels": 6475371,
+      "exploratory_new_water_candidate_pixels": 451750,
+      "exploratory_new_water_candidate_area_km2": 45.175,
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-12_2026-01-24_rel12_ascending/probability_post_minus_pre.tif",
+        "sha256": "61dd11685192c2edda1016aa46b7d368725059b8be369144d2ff6785925c5c85",
+        "bytes": 22299041,
+        "valid_pixels": 6475371
+      },
+      "new_water_candidate": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-12_2026-01-24_rel12_ascending/new_water_candidate.tif",
+        "sha256": "0071fe992023c41f60321fa92436b2e72d6a6c6a8729e259b341515ac3383006",
+        "bytes": 638688,
+        "valid_pixels": 6475371
+      }
+    },
+    "pair_2026-01-12_2026-01-24_rel12_ascending_pretrained": {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "common_valid_pixels": 6475371,
+      "exploratory_new_water_candidate_pixels": 146566,
+      "exploratory_new_water_candidate_area_km2": 14.6566,
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-12_2026-01-24_rel12_ascending/probability_post_minus_pre.tif",
+        "sha256": "66fa8f51051b619db0b5a19f8534dd6af9099d8968e4aaf00f0cd2f80fcfe4c7",
+        "bytes": 21595442,
+        "valid_pixels": 6475371
+      },
+      "new_water_candidate": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-12_2026-01-24_rel12_ascending/new_water_candidate.tif",
+        "sha256": "640ed03f8fd8cc1db7d3a2c304be04bcfec3c1b7d10e31339008528939f14031",
+        "bytes": 276745,
+        "valid_pixels": 6475371
+      }
+    },
+    "pair_2026-01-09_2026-01-21_rel150_descending_scratch": {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "common_valid_pixels": 6475371,
+      "exploratory_new_water_candidate_pixels": 413665,
+      "exploratory_new_water_candidate_area_km2": 41.3665,
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-09_2026-01-21_rel150_descending/probability_post_minus_pre.tif",
+        "sha256": "3c66dbf18960c40bea133cd79a249db0747f585a7d7e6d36e61a7878f214948a",
+        "bytes": 22362003,
+        "valid_pixels": 6475371
+      },
+      "new_water_candidate": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-09_2026-01-21_rel150_descending/new_water_candidate.tif",
+        "sha256": "d140b57e3be0751e68a16424e52af6579b1d8868975283101314c309ffafad00",
+        "bytes": 566286,
+        "valid_pixels": 6475371
+      }
+    },
+    "pair_2026-01-09_2026-01-21_rel150_descending_pretrained": {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "common_valid_pixels": 6475371,
+      "exploratory_new_water_candidate_pixels": 54322,
+      "exploratory_new_water_candidate_area_km2": 5.4322,
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-09_2026-01-21_rel150_descending/probability_post_minus_pre.tif",
+        "sha256": "f3ab496ab73a17096d772cd99cc4bfa8b8a8e4ee9c13b32d41fb113d3b31f7e1",
+        "bytes": 21619062,
+        "valid_pixels": 6475371
+      },
+      "new_water_candidate": {
+        "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-09_2026-01-21_rel150_descending/new_water_candidate.tif",
+        "sha256": "4a00cc412f02c09766e44dc0023ed8427abef2ab83d894bab3e6cb0eeadf3c2c",
+        "bytes": 158489,
+        "valid_pixels": 6475371
+      }
+    }
+  },
+  "model_disagreement": {
+    "disagreement_2026-01-12_2026-01-24_rel12_ascending": {
+      "binary_xor_pixels": 868656,
+      "binary_xor_fraction": 0.13414768049583567,
+      "xor": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/binary_xor_pre.tif",
+        "sha256": "3dbfb623a35f7916575ed1a11c4b32921ad0b611706394855428556ed0ded419",
+        "bytes": 780832,
+        "valid_pixels": 6475371
+      },
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/absolute_probability_difference_pre.tif",
+        "sha256": "9e53c4f458594f726b92d027185f62a2db09f5321dd9f472d8d3a394b07ee93c",
+        "bytes": 21618384,
+        "valid_pixels": 6475371
+      }
+    },
+    "disagreement_2026-01-12_2026-01-24_rel12_ascending_post": {
+      "binary_xor_pixels": 1058025,
+      "binary_xor_fraction": 0.1633921824710893,
+      "xor": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/binary_xor_post.tif",
+        "sha256": "f8b0b631c3d1449219a96f5e40df379018b5566c6455357b89ec2434574c6e1d",
+        "bytes": 851727,
+        "valid_pixels": 6475371
+      },
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/absolute_probability_difference_post.tif",
+        "sha256": "527545dd14357e2d75b07d148273e1da3f6bf437c88aa2cd7071105b0ba341a4",
+        "bytes": 21516999,
+        "valid_pixels": 6475371
+      }
+    },
+    "disagreement_2026-01-09_2026-01-21_rel150_descending": {
+      "binary_xor_pixels": 631223,
+      "binary_xor_fraction": 0.09748059223170379,
+      "xor": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/binary_xor_pre.tif",
+        "sha256": "20b050dde22d5fce6b5f8e318700cc2c38379382b91278844ed418218486a6eb",
+        "bytes": 569582,
+        "valid_pixels": 6475371
+      },
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/absolute_probability_difference_pre.tif",
+        "sha256": "a9960906dbb5dbb32f9fdffdcfba170ac1c0c08bfaf31a6786d68ff6671344d0",
+        "bytes": 21749550,
+        "valid_pixels": 6475371
+      }
+    },
+    "disagreement_2026-01-09_2026-01-21_rel150_descending_post": {
+      "binary_xor_pixels": 870049,
+      "binary_xor_fraction": 0.13436280330501527,
+      "xor": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/binary_xor_post.tif",
+        "sha256": "7d72d4045cba821564aab85e4c029c535e9e0e9ab5466cb7a8ccb576c5d35712",
+        "bytes": 678037,
+        "valid_pixels": 6475371
+      },
+      "probability_difference": {
+        "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/absolute_probability_difference_post.tif",
+        "sha256": "230fcc83cf40d8019b4f5e8d3043b8352448da29d634ee78451143ff912c5943",
+        "bytes": 21650269,
+        "valid_pixels": 6475371
+      }
+    }
+  },
+  "limitations": [
+    "RTC Gamma0 dB is not identical to training GRD dB; outputs are exploratory and not locally validated.",
+    "The provisional regional AOI is not an official village boundary.",
+    "Predicted water-like class and pre/post candidates do not prove flood, breach, drainage failure, affected cropland or causation.",
+    "No permanent-water removal: no authoritative permanent-water/pond reference layer was available."
+  ]
+}

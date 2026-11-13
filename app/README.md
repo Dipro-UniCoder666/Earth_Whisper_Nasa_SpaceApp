@@ -29,6 +29,9 @@ Open the printed local URL (typically `http://localhost:5173`).
 | `/investigate` | `src/pages/InvestigationPage.tsx` | Investigation start — location search |
 | `/investigate/map` | `src/pages/InvestigationMapPage.tsx` | Leaflet map, NISAR observation timeline, candidate panel |
 | `/investigate/case/:candidateId` | `src/pages/CaseInvestigationPage.tsx` | Evidence board — Earth Event Fingerprint |
+| `/investigate/analysis` | `src/pages/WhisperLabPage.tsx` | Preserved evidence analysis workbench, nested under Investigate |
+| `/dhara` | `src/features/gherproof/GherProofPage.tsx` | DHARA water monitoring and reported Sujatpur fisheries incident screening |
+| `/gherproof` | `src/features/gherproof/GherProofPage.tsx` | Backward-compatible route alias for DHARA |
 
 ## Structure
 
@@ -80,6 +83,18 @@ catalog of the team's four known prototype products and the real
 coherence values computed in `AquaByte_NISAR`. Every observation returned
 carries `availability: 'demonstration'`, and the UI surfaces that label —
 this is never presented as a live NASA query result.
+
+## DHARA
+
+DHARA means **Seeing Water Changes. Supporting Better Decisions.** It provides
+satellite-powered environmental monitoring and decision support within Earth
+Whisper. `/dhara` reads the event catalogue/status API. Search results are explicitly
+catalogue-only; there is no local event flood mask or area estimate. Sandhya
+and Monda investigation data remain separate from DHARA evidence. Legacy
+`/gherproof` routes and `/api/gherproof` service paths remain supported.
+
+For local development, start the backend at `http://127.0.0.1:8000` and run
+`npm run dev` in `app/`. Vite forwards `/api` calls to the backend.
 
 ## Evidence engine
 

@@ -1,0 +1,735 @@
+{
+  "updated_at_utc": "2026-11-12T10:04:08.421968+00:00",
+  "source_manifest": "data/gherproof/manifests/planetary_computer_event_imagery.json",
+  "collection_license": "CC-BY-4.0",
+  "attribution": "Sentinel-1 RTC provided by Microsoft Planetary Computer; RTC processing by Catalyst; underlying Sentinel-1 mission data by ESA/Copernicus.",
+  "aoi_wgs84": [
+    89.15,
+    22.93,
+    89.3,
+    23.08
+  ],
+  "aoi_status": "provisional locality search window only",
+  "analysis_grid": {
+    "crs": "EPSG:32645",
+    "resolution_m": 10.0,
+    "width": 1564,
+    "height": 1686,
+    "transform": [
+      10.0,
+      0.0,
+      720240.0,
+      0.0,
+      -10.0,
+      2554240.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -32768.0
+  },
+  "assets": [
+    {
+      "date": "2026-01-07",
+      "item_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+      "collection": "sentinel-1-rtc",
+      "polarization": "VV",
+      "status": "asset_accessible",
+      "raster_qc": {
+        "crs": "EPSG:32646",
+        "width": 28349,
+        "height": 21066,
+        "transform": [
+          10.0,
+          0.0,
+          103610.0,
+          0.0,
+          -10.0,
+          2673290.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          103610.0,
+          2462630.0,
+          387100.0,
+          2673290.0
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "dtype": "float32",
+        "count": 1,
+        "nodata": -32768.0,
+        "units": null,
+        "scale": 1.0,
+        "offset": 0.0,
+        "descriptions": [
+          "Sentinel-1 Calibrated and Terrain Corrected VV"
+        ],
+        "tags": {
+          "Acquisition_DateTime": "2026-01-07T12:04:40.52918061312Z",
+          "ArcLengthFirstPixel": "0.000000",
+          "ArcLengthLastPixel": "258350.000000",
+          "ColumnCount": "25836",
+          "DefaultBlue": "1",
+          "DefaultGreen": "2",
+          "DefaultRed": "1",
+          "IncidenceFarAngle": "46.281700",
+          "IncidenceNearAngle": "30.776497",
+          "LookDirection": "Right",
+          "Matrix_Type": "c2r",
+          "NominalLocation_Height": "366.838429",
+          "NO_DATA_VALUE": "-32768.000000",
+          "OrbitDirection": "Ascending",
+          "ProcessingElevation": "2026-01-07T12:04:26.11917800000Z;27.360190;2026-01-07T12:04:27.11917800000Z;26.226769;2026-01-07T12:04:28.11917800000Z;25.091558;2026-01-07T12:04:29.11917800000Z;23.502431;2026-01-07T12:04:30.11917800000Z;21.002714;2026-01-07T12:04:31.11917800000Z;21.002007;2026-01-07T12:04:32.11917800000Z;21.911485;2026-01-07T12:04:33.11917800000Z;21.911224;2026-01-07T12:04:34.11917800000Z;21.002151;2026-01-07T12:04:35.11917800000Z;18.274933;2026-01-07T12:04:36.11917800000Z;15.773961;2026-01-07T12:04:37.11917800000Z;15.091416;2026-01-07T12:04:38.11917800000Z;15.772636;2026-01-07T12:04:39.11917800000Z;16.136611;2026-01-07T12:04:40.11917800000Z;14.830127;2026-01-07T12:04:41.11917800000Z;14.049400;2026-01-07T12:04:42.11917800000Z;12.175834;2026-01-07T12:04:43.11917800000Z;7.593163;2026-01-07T12:04:44.11917800000Z;5.319665;2026-01-07T12:04:45.11917800000Z;5.547706;2026-01-07T12:04:46.11917800000Z;6.229874;2026-01-07T12:04:47.11917800000Z;6.004083;2026-01-07T12:04:48.11917800000Z;5.095215;2026-01-07T12:04:49.11917800000Z;3.846349;2026-01-07T12:04:50.11917800000Z;2.596053;2026-01-07T12:04:51.11917800000Z;2.709710;2026-01-07T12:04:52.11917800000Z;2.822992;2026-01-07T12:04:53.11917800000Z;3.276533;",
+          "ProductType": "ORTHO",
+          "ProjectionId": "Ground Range",
+          "PulseRepetitionFrequency": "1717.128974",
+          "RadarCenterWavelength": "0.055466",
+          "RowCount": "16730",
+          "SatPositions": "2026-01-07T12:03:21.73425500000Z;369582.142077;6738707.209003;2120822.164942;1486.328709;-2320.509639;7080.124634;2026-01-07T12:03:31.73425500000Z;384407.314909;6715113.899487;2191502.291525;1478.659294;-2398.106355;7055.767602;2026-01-07T12:03:41.73425500000Z;399154.398867;6690746.015374;2261934.859877;1470.711149;-2475.423033;7030.613456;2026-01-07T12:03:51.73425500000Z;413820.613149;6665606.402854;2332111.913088;1462.485580;-2552.450518;7004.665054;2026-01-07T12:04:01.73425400000Z;428403.190243;6639697.999477;2402025.523260;1453.983939;-2629.179689;6977.925343;2026-01-07T12:04:11.73425400000Z;442899.376375;6613023.833818;2471667.792442;1445.207621;-2705.601457;6950.397365;2026-01-07T12:04:21.73425500000Z;457306.431941;6585587.025147;2541030.853544;1436.158067;-2781.706776;6922.084255;2026-01-07T12:04:31.73425500000Z;471621.631954;6557390.783068;2610106.871271;1426.836762;-2857.486633;6892.989241;2026-01-07T12:04:41.73425500000Z;485842.266485;6528438.407089;2678888.043061;1417.245233;-2932.932061;6863.115645;2026-01-07T12:04:51.73425500000Z;499965.641128;6498733.286215;2747366.600096;1407.385053;-3008.034135;6832.466877;2026-01-07T12:05:01.73425500000Z;513989.077425;6468278.898479;2815534.808156;1397.257839;-3082.783973;6801.046442;2026-01-07T12:05:11.73425500000Z;527909.913302;6437078.810431;2883384.968493;1386.865249;-3157.172743;6768.857930;2026-01-07T12:05:21.73425400000Z;541725.503500;6405136.676649;2950909.418695;1376.208987;-3231.191662;6735.905022;2026-01-07T12:05:31.73425400000Z;555433.220003;6372456.239293;3018100.533541;1365.290800;-3304.831995;6702.191481;2026-01-07T12:05:41.73425500000Z;569030.452457;6339041.327683;3084950.725803;1354.112475;-3378.085058;6667.721153;2026-01-07T12:05:51.73425500000Z;582514.608609;6304895.857787;3151452.447109;1342.675846;-3450.942212;6632.497964;2026-01-07T12:06:01.73425500000Z;595883.114743;6270023.831729;3217598.188823;1330.982788;-3523.394867;6596.525923;",
+          "SlantRangeNearEdge": "799121.907400",
+          "TimeOfFirstLine": "2026-01-07T12:04:53.02966722624Z",
+          "TimeOfLastLine": "2026-01-07T12:04:28.02869400000Z",
+          "totalProcessedRangeBandwidth": "56500000.000000",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "Matrix_Element": "_1_1",
+          "Polarization": "VV",
+          "SARPixelContent": "intensity",
+          "Scale": "linear"
+        },
+        "mask_flags": [
+          "8"
+        ],
+        "asset_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "asset_roles": [
+          "data"
+        ],
+        "asset_href": "https://sentinel1euwestrtc.blob.core.windows.net/sentinel1-grd-rtc/GRD/2026/1/7/IW/DV/S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998/measurement/iw-vv.rtc.tiff",
+        "http_content_range": "bytes 0-16383/1871844330",
+        "statistics_on_common_grid": {
+          "valid_pixels_in_aoi": 472974,
+          "aoi_pixels": 2555756,
+          "valid_fraction_of_aoi": 0.1850622672899917,
+          "min": 0.0017241097521036863,
+          "p02": 0.009052783250808716,
+          "median": 0.12217050790786743,
+          "p98": 0.725775420665741,
+          "max": 87.16839599609375,
+          "nan_count_in_aoi": 0,
+          "infinite_count_in_aoi": 0
+        }
+      }
+    },
+    {
+      "date": "2026-01-07",
+      "item_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+      "collection": "sentinel-1-rtc",
+      "polarization": "VH",
+      "status": "asset_accessible",
+      "raster_qc": {
+        "crs": "EPSG:32646",
+        "width": 28349,
+        "height": 21066,
+        "transform": [
+          10.0,
+          0.0,
+          103610.0,
+          0.0,
+          -10.0,
+          2673290.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          103610.0,
+          2462630.0,
+          387100.0,
+          2673290.0
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "dtype": "float32",
+        "count": 1,
+        "nodata": -32768.0,
+        "units": null,
+        "scale": 1.0,
+        "offset": 0.0,
+        "descriptions": [
+          "Sentinel-1 Calibrated and Terrain Corrected VH"
+        ],
+        "tags": {
+          "Acquisition_DateTime": "2026-01-07T12:04:40.52918061312Z",
+          "ArcLengthFirstPixel": "0.000000",
+          "ArcLengthLastPixel": "258350.000000",
+          "ColumnCount": "25836",
+          "DefaultBlue": "1",
+          "DefaultGreen": "2",
+          "DefaultRed": "1",
+          "IncidenceFarAngle": "46.281700",
+          "IncidenceNearAngle": "30.776497",
+          "LookDirection": "Right",
+          "Matrix_Type": "c2r",
+          "NominalLocation_Height": "366.838429",
+          "NO_DATA_VALUE": "-32768.000000",
+          "OrbitDirection": "Ascending",
+          "ProcessingElevation": "2026-01-07T12:04:26.11917800000Z;27.360190;2026-01-07T12:04:27.11917800000Z;26.226769;2026-01-07T12:04:28.11917800000Z;25.091558;2026-01-07T12:04:29.11917800000Z;23.502431;2026-01-07T12:04:30.11917800000Z;21.002714;2026-01-07T12:04:31.11917800000Z;21.002007;2026-01-07T12:04:32.11917800000Z;21.911485;2026-01-07T12:04:33.11917800000Z;21.911224;2026-01-07T12:04:34.11917800000Z;21.002151;2026-01-07T12:04:35.11917800000Z;18.274933;2026-01-07T12:04:36.11917800000Z;15.773961;2026-01-07T12:04:37.11917800000Z;15.091416;2026-01-07T12:04:38.11917800000Z;15.772636;2026-01-07T12:04:39.11917800000Z;16.136611;2026-01-07T12:04:40.11917800000Z;14.830127;2026-01-07T12:04:41.11917800000Z;14.049400;2026-01-07T12:04:42.11917800000Z;12.175834;2026-01-07T12:04:43.11917800000Z;7.593163;2026-01-07T12:04:44.11917800000Z;5.319665;2026-01-07T12:04:45.11917800000Z;5.547706;2026-01-07T12:04:46.11917800000Z;6.229874;2026-01-07T12:04:47.11917800000Z;6.004083;2026-01-07T12:04:48.11917800000Z;5.095215;2026-01-07T12:04:49.11917800000Z;3.846349;2026-01-07T12:04:50.11917800000Z;2.596053;2026-01-07T12:04:51.11917800000Z;2.709710;2026-01-07T12:04:52.11917800000Z;2.822992;2026-01-07T12:04:53.11917800000Z;3.276533;",
+          "ProductType": "ORTHO",
+          "ProjectionId": "Ground Range",
+          "PulseRepetitionFrequency": "1717.128974",
+          "RadarCenterWavelength": "0.055466",
+          "RowCount": "16730",
+          "SatPositions": "2026-01-07T12:03:21.73425500000Z;369582.142077;6738707.209003;2120822.164942;1486.328709;-2320.509639;7080.124634;2026-01-07T12:03:31.73425500000Z;384407.314909;6715113.899487;2191502.291525;1478.659294;-2398.106355;7055.767602;2026-01-07T12:03:41.73425500000Z;399154.398867;6690746.015374;2261934.859877;1470.711149;-2475.423033;7030.613456;2026-01-07T12:03:51.73425500000Z;413820.613149;6665606.402854;2332111.913088;1462.485580;-2552.450518;7004.665054;2026-01-07T12:04:01.73425400000Z;428403.190243;6639697.999477;2402025.523260;1453.983939;-2629.179689;6977.925343;2026-01-07T12:04:11.73425400000Z;442899.376375;6613023.833818;2471667.792442;1445.207621;-2705.601457;6950.397365;2026-01-07T12:04:21.73425500000Z;457306.431941;6585587.025147;2541030.853544;1436.158067;-2781.706776;6922.084255;2026-01-07T12:04:31.73425500000Z;471621.631954;6557390.783068;2610106.871271;1426.836762;-2857.486633;6892.989241;2026-01-07T12:04:41.73425500000Z;485842.266485;6528438.407089;2678888.043061;1417.245233;-2932.932061;6863.115645;2026-01-07T12:04:51.73425500000Z;499965.641128;6498733.286215;2747366.600096;1407.385053;-3008.034135;6832.466877;2026-01-07T12:05:01.73425500000Z;513989.077425;6468278.898479;2815534.808156;1397.257839;-3082.783973;6801.046442;2026-01-07T12:05:11.73425500000Z;527909.913302;6437078.810431;2883384.968493;1386.865249;-3157.172743;6768.857930;2026-01-07T12:05:21.73425400000Z;541725.503500;6405136.676649;2950909.418695;1376.208987;-3231.191662;6735.905022;2026-01-07T12:05:31.73425400000Z;555433.220003;6372456.239293;3018100.533541;1365.290800;-3304.831995;6702.191481;2026-01-07T12:05:41.73425500000Z;569030.452457;6339041.327683;3084950.725803;1354.112475;-3378.085058;6667.721153;2026-01-07T12:05:51.73425500000Z;582514.608609;6304895.857787;3151452.447109;1342.675846;-3450.942212;6632.497964;2026-01-07T12:06:01.73425500000Z;595883.114743;6270023.831729;3217598.188823;1330.982788;-3523.394867;6596.525923;",
+          "SlantRangeNearEdge": "799121.907400",
+          "TimeOfFirstLine": "2026-01-07T12:04:53.02966722624Z",
+          "TimeOfLastLine": "2026-01-07T12:04:28.02869400000Z",
+          "totalProcessedRangeBandwidth": "56500000.000000",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "Matrix_Element": "_2_2",
+          "Polarization": "VH",
+          "SARPixelContent": "intensity",
+          "Scale": "linear"
+        },
+        "mask_flags": [
+          "8"
+        ],
+        "asset_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "asset_roles": [
+          "data"
+        ],
+        "asset_href": "https://sentinel1euwestrtc.blob.core.windows.net/sentinel1-grd-rtc/GRD/2026/1/7/IW/DV/S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998/measurement/iw-vh.rtc.tiff",
+        "http_content_range": "bytes 0-16383/1864179683",
+        "statistics_on_common_grid": {
+          "valid_pixels_in_aoi": 472974,
+          "aoi_pixels": 2555756,
+          "valid_fraction_of_aoi": 0.1850622672899917,
+          "min": 0.0009282120736315846,
+          "p02": 0.00518769258633256,
+          "median": 0.025955956429243088,
+          "p98": 0.1221829503774643,
+          "max": 4.572379112243652,
+          "nan_count_in_aoi": 0,
+          "infinite_count_in_aoi": 0
+        }
+      }
+    },
+    {
+      "date": "2026-01-19",
+      "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+      "collection": "sentinel-1-rtc",
+      "polarization": "VV",
+      "status": "asset_accessible",
+      "raster_qc": {
+        "crs": "EPSG:32646",
+        "width": 28348,
+        "height": 21065,
+        "transform": [
+          10.0,
+          0.0,
+          103670.0,
+          0.0,
+          -10.0,
+          2673280.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          103670.0,
+          2462630.0,
+          387150.0,
+          2673280.0
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "dtype": "float32",
+        "count": 1,
+        "nodata": -32768.0,
+        "units": null,
+        "scale": 1.0,
+        "offset": 0.0,
+        "descriptions": [
+          "Sentinel-1 Calibrated and Terrain Corrected VV"
+        ],
+        "tags": {
+          "Acquisition_DateTime": "2026-01-19T12:04:39.51274945469Z",
+          "ArcLengthFirstPixel": "0.000000",
+          "ArcLengthLastPixel": "258340.000000",
+          "ColumnCount": "25835",
+          "DefaultBlue": "1",
+          "DefaultGreen": "2",
+          "DefaultRed": "1",
+          "IncidenceFarAngle": "46.282684",
+          "IncidenceNearAngle": "30.778334",
+          "LookDirection": "Right",
+          "Matrix_Type": "c2r",
+          "NominalLocation_Height": "368.226116",
+          "NO_DATA_VALUE": "-32768.000000",
+          "OrbitDirection": "Ascending",
+          "ProcessingElevation": "2026-01-19T12:04:25.10297300000Z;27.360176;2026-01-19T12:04:26.10297300000Z;26.239848;2026-01-19T12:04:27.10297300000Z;25.091467;2026-01-19T12:04:28.10297300000Z;23.520780;2026-01-19T12:04:29.10297300000Z;21.013161;2026-01-19T12:04:30.10297300000Z;20.991423;2026-01-19T12:04:31.10297300000Z;21.911387;2026-01-19T12:04:32.10297300000Z;21.911123;2026-01-19T12:04:33.10297300000Z;21.012625;2026-01-19T12:04:34.10297300000Z;18.295887;2026-01-19T12:04:35.10297300000Z;15.781754;2026-01-19T12:04:36.10297300000Z;15.091346;2026-01-19T12:04:37.10297300000Z;15.764718;2026-01-19T12:04:38.10297300000Z;16.140237;2026-01-19T12:04:39.10297300000Z;15.458943;2026-01-19T12:04:40.10297300000Z;14.679442;2026-01-19T12:04:41.10297300000Z;12.199852;2026-01-19T12:04:42.10297300000Z;7.621966;2026-01-19T12:04:43.10297300000Z;5.316986;2026-01-19T12:04:44.10297300000Z;5.547637;2026-01-19T12:04:45.10297300000Z;6.221955;2026-01-19T12:04:46.10297300000Z;6.014540;2026-01-19T12:04:47.10297300000Z;5.095203;2026-01-19T12:04:48.10297300000Z;3.860741;2026-01-19T12:04:49.10297300000Z;2.596042;2026-01-19T12:04:50.10297300000Z;2.708356;2026-01-19T12:04:51.10297300000Z;2.823000;2026-01-19T12:04:52.10297300000Z;3.271219;",
+          "ProductType": "ORTHO",
+          "ProjectionId": "Ground Range",
+          "PulseRepetitionFrequency": "1717.128974",
+          "RadarCenterWavelength": "0.055466",
+          "RowCount": "16730",
+          "SatPositions": "2026-01-19T12:03:20.71892500000Z;369546.967423;6738696.685592;2120826.585032;1486.251923;-2320.525621;7080.138440;2026-01-19T12:03:30.71892500000Z;384371.374150;6715103.215596;2191506.849098;1478.582857;-2398.122456;7055.781250;2026-01-19T12:03:40.71892500000Z;399117.695529;6690735.169794;2261939.553318;1470.635068;-2475.439256;7030.626939;2026-01-19T12:03:50.71892600000Z;413783.150830;6665595.394358;2332116.740714;1462.409862;-2552.466865;7004.678365;2026-01-19T12:04:00.71892600000Z;428364.972616;6639686.826818;2402030.483321;1453.908592;-2629.196160;6977.938476;2026-01-19T12:04:10.71892600000Z;442860.407183;6613012.495732;2471672.883117;1445.132652;-2705.618056;6950.410312;2026-01-19T12:04:20.71892600000Z;457266.715000;6585575.520349;2541036.072947;1436.083484;-2781.723503;6922.097011;2026-01-19T12:04:30.71892600000Z;471581.171151;6557379.110257;2610112.217446;1426.762570;-2857.503491;6893.001798;2026-01-19T12:04:40.71892500000Z;485801.065777;6528426.564955;2678893.513985;1417.171441;-2932.949052;6863.127995;2026-01-19T12:04:50.71892500000Z;499923.704543;6498721.273428;2747372.193672;1407.311667;-3008.051258;6832.479015;2026-01-19T12:05:00.71892500000Z;513946.409059;6468266.713693;2815540.522217;1397.184866;-3082.801231;6801.058360;2026-01-19T12:05:10.71892600000Z;527866.517322;6437066.452294;2883390.800808;1386.792696;-3157.190137;6768.869621;2026-01-19T12:05:20.71892600000Z;541681.384139;6405124.143797;2950915.366957;1376.136861;-3231.209193;6735.916479;2026-01-19T12:05:30.71892600000Z;555388.381562;6372443.530348;3018106.595368;1365.219107;-3304.849664;6702.202697;2026-01-19T12:05:40.71892600000Z;568984.899304;6339028.441260;3084956.898747;1354.041223;-3378.102865;6667.732120;2026-01-19T12:05:50.71892600000Z;582468.345178;6304882.792494;3151458.728652;1342.605041;-3450.960159;6632.508676;2026-01-19T12:06:00.71892500000Z;595836.145536;6270010.586169;3217604.576370;1330.912436;-3523.412954;6596.536372;",
+          "SlantRangeNearEdge": "799121.907400",
+          "TimeOfFirstLine": "2026-01-19T12:04:52.01319090937Z",
+          "TimeOfLastLine": "2026-01-19T12:04:27.01230800000Z",
+          "totalProcessedRangeBandwidth": "56500000.000000",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "Matrix_Element": "_1_1",
+          "Polarization": "VV",
+          "SARPixelContent": "intensity",
+          "Scale": "linear"
+        },
+        "mask_flags": [
+          "8"
+        ],
+        "asset_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "asset_roles": [
+          "data"
+        ],
+        "asset_href": "https://sentinel1euwestrtc.blob.core.windows.net/sentinel1-grd-rtc/GRD/2026/1/19/IW/DV/S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6/measurement/iw-vv.rtc.tiff",
+        "http_content_range": "bytes 0-16383/1872529817",
+        "statistics_on_common_grid": {
+          "valid_pixels_in_aoi": 463292,
+          "aoi_pixels": 2555756,
+          "valid_fraction_of_aoi": 0.1812739557297332,
+          "min": 0.0014857954811304808,
+          "p02": 0.008924735710024834,
+          "median": 0.1019744724035263,
+          "p98": 0.7273951768875122,
+          "max": 98.92843627929688,
+          "nan_count_in_aoi": 0,
+          "infinite_count_in_aoi": 0
+        }
+      }
+    },
+    {
+      "date": "2026-01-19",
+      "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+      "collection": "sentinel-1-rtc",
+      "polarization": "VH",
+      "status": "asset_accessible",
+      "raster_qc": {
+        "crs": "EPSG:32646",
+        "width": 28348,
+        "height": 21065,
+        "transform": [
+          10.0,
+          0.0,
+          103670.0,
+          0.0,
+          -10.0,
+          2673280.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          103670.0,
+          2462630.0,
+          387150.0,
+          2673280.0
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "dtype": "float32",
+        "count": 1,
+        "nodata": -32768.0,
+        "units": null,
+        "scale": 1.0,
+        "offset": 0.0,
+        "descriptions": [
+          "Sentinel-1 Calibrated and Terrain Corrected VH"
+        ],
+        "tags": {
+          "Acquisition_DateTime": "2026-01-19T12:04:39.51274945469Z",
+          "ArcLengthFirstPixel": "0.000000",
+          "ArcLengthLastPixel": "258340.000000",
+          "ColumnCount": "25835",
+          "DefaultBlue": "1",
+          "DefaultGreen": "2",
+          "DefaultRed": "1",
+          "IncidenceFarAngle": "46.282684",
+          "IncidenceNearAngle": "30.778334",
+          "LookDirection": "Right",
+          "Matrix_Type": "c2r",
+          "NominalLocation_Height": "368.226116",
+          "NO_DATA_VALUE": "-32768.000000",
+          "OrbitDirection": "Ascending",
+          "ProcessingElevation": "2026-01-19T12:04:25.10297300000Z;27.360176;2026-01-19T12:04:26.10297300000Z;26.239848;2026-01-19T12:04:27.10297300000Z;25.091467;2026-01-19T12:04:28.10297300000Z;23.520780;2026-01-19T12:04:29.10297300000Z;21.013161;2026-01-19T12:04:30.10297300000Z;20.991423;2026-01-19T12:04:31.10297300000Z;21.911387;2026-01-19T12:04:32.10297300000Z;21.911123;2026-01-19T12:04:33.10297300000Z;21.012625;2026-01-19T12:04:34.10297300000Z;18.295887;2026-01-19T12:04:35.10297300000Z;15.781754;2026-01-19T12:04:36.10297300000Z;15.091346;2026-01-19T12:04:37.10297300000Z;15.764718;2026-01-19T12:04:38.10297300000Z;16.140237;2026-01-19T12:04:39.10297300000Z;15.458943;2026-01-19T12:04:40.10297300000Z;14.679442;2026-01-19T12:04:41.10297300000Z;12.199852;2026-01-19T12:04:42.10297300000Z;7.621966;2026-01-19T12:04:43.10297300000Z;5.316986;2026-01-19T12:04:44.10297300000Z;5.547637;2026-01-19T12:04:45.10297300000Z;6.221955;2026-01-19T12:04:46.10297300000Z;6.014540;2026-01-19T12:04:47.10297300000Z;5.095203;2026-01-19T12:04:48.10297300000Z;3.860741;2026-01-19T12:04:49.10297300000Z;2.596042;2026-01-19T12:04:50.10297300000Z;2.708356;2026-01-19T12:04:51.10297300000Z;2.823000;2026-01-19T12:04:52.10297300000Z;3.271219;",
+          "ProductType": "ORTHO",
+          "ProjectionId": "Ground Range",
+          "PulseRepetitionFrequency": "1717.128974",
+          "RadarCenterWavelength": "0.055466",
+          "RowCount": "16730",
+          "SatPositions": "2026-01-19T12:03:20.71892500000Z;369546.967423;6738696.685592;2120826.585032;1486.251923;-2320.525621;7080.138440;2026-01-19T12:03:30.71892500000Z;384371.374150;6715103.215596;2191506.849098;1478.582857;-2398.122456;7055.781250;2026-01-19T12:03:40.71892500000Z;399117.695529;6690735.169794;2261939.553318;1470.635068;-2475.439256;7030.626939;2026-01-19T12:03:50.71892600000Z;413783.150830;6665595.394358;2332116.740714;1462.409862;-2552.466865;7004.678365;2026-01-19T12:04:00.71892600000Z;428364.972616;6639686.826818;2402030.483321;1453.908592;-2629.196160;6977.938476;2026-01-19T12:04:10.71892600000Z;442860.407183;6613012.495732;2471672.883117;1445.132652;-2705.618056;6950.410312;2026-01-19T12:04:20.71892600000Z;457266.715000;6585575.520349;2541036.072947;1436.083484;-2781.723503;6922.097011;2026-01-19T12:04:30.71892600000Z;471581.171151;6557379.110257;2610112.217446;1426.762570;-2857.503491;6893.001798;2026-01-19T12:04:40.71892500000Z;485801.065777;6528426.564955;2678893.513985;1417.171441;-2932.949052;6863.127995;2026-01-19T12:04:50.71892500000Z;499923.704543;6498721.273428;2747372.193672;1407.311667;-3008.051258;6832.479015;2026-01-19T12:05:00.71892500000Z;513946.409059;6468266.713693;2815540.522217;1397.184866;-3082.801231;6801.058360;2026-01-19T12:05:10.71892600000Z;527866.517322;6437066.452294;2883390.800808;1386.792696;-3157.190137;6768.869621;2026-01-19T12:05:20.71892600000Z;541681.384139;6405124.143797;2950915.366957;1376.136861;-3231.209193;6735.916479;2026-01-19T12:05:30.71892600000Z;555388.381562;6372443.530348;3018106.595368;1365.219107;-3304.849664;6702.202697;2026-01-19T12:05:40.71892600000Z;568984.899304;6339028.441260;3084956.898747;1354.041223;-3378.102865;6667.732120;2026-01-19T12:05:50.71892600000Z;582468.345178;6304882.792494;3151458.728652;1342.605041;-3450.960159;6632.508676;2026-01-19T12:06:00.71892500000Z;595836.145536;6270010.586169;3217604.576370;1330.912436;-3523.412954;6596.536372;",
+          "SlantRangeNearEdge": "799121.907400",
+          "TimeOfFirstLine": "2026-01-19T12:04:52.01319090937Z",
+          "TimeOfLastLine": "2026-01-19T12:04:27.01230800000Z",
+          "totalProcessedRangeBandwidth": "56500000.000000",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "Matrix_Element": "_2_2",
+          "Polarization": "VH",
+          "SARPixelContent": "intensity",
+          "Scale": "linear"
+        },
+        "mask_flags": [
+          "8"
+        ],
+        "asset_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "asset_roles": [
+          "data"
+        ],
+        "asset_href": "https://sentinel1euwestrtc.blob.core.windows.net/sentinel1-grd-rtc/GRD/2026/1/19/IW/DV/S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6/measurement/iw-vh.rtc.tiff",
+        "http_content_range": "bytes 0-16383/1864508350",
+        "statistics_on_common_grid": {
+          "valid_pixels_in_aoi": 463292,
+          "aoi_pixels": 2555756,
+          "valid_fraction_of_aoi": 0.1812739557297332,
+          "min": 0.001230347086675465,
+          "p02": 0.004908382426947355,
+          "median": 0.02314126119017601,
+          "p98": 0.12821008265018463,
+          "max": 5.448866844177246,
+          "nan_count_in_aoi": 0,
+          "infinite_count_in_aoi": 0
+        }
+      }
+    }
+  ],
+  "common_valid_pixels": 463292,
+  "common_valid_fraction_of_aoi": 0.1812739557297332,
+  "pair_assessment": {
+    "classification": "conditionally_suitable",
+    "same_expected_platform_orbit_direction_mode_polarizations": true,
+    "all_four_asset_reads_succeeded": true,
+    "common_valid_pixels_all_dates_polarizations": 463292,
+    "common_valid_fraction_of_provisional_aoi": 0.1812739557297332,
+    "rationale": "Matched acquisition geometry and same RTC collection; conditionally suitable for cautious backscatter comparison. Does not establish event causation or water classification; processing baseline, moisture/crop/rainfall effects and absence of an authoritative enclosure boundary remain limitations."
+  },
+  "outputs": [
+    {
+      "date": "2026-01-07",
+      "kind": "two-polarization-analysis-ready-clip",
+      "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+      "bytes": 3174576,
+      "sha256": "5fd8836464deed7935ef838fb47028bec19393dbe09c33f20ce51c5d4bc336e0",
+      "crs": "EPSG:32645",
+      "width": 1564,
+      "height": 1686,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        720240.0,
+        0.0,
+        -10.0,
+        2554240.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "nodata": -32768.0,
+      "common_valid_pixels": 463292,
+      "valid_fraction_of_aoi": 0.1812739557297332
+    },
+    {
+      "date": "2026-01-19",
+      "kind": "two-polarization-analysis-ready-clip",
+      "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-19_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+      "bytes": 3173668,
+      "sha256": "47781c5af46fc7a2fa688489f30f07281997e9261e5091c614972eaad79e538b",
+      "crs": "EPSG:32645",
+      "width": 1564,
+      "height": 1686,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        720240.0,
+        0.0,
+        -10.0,
+        2554240.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "nodata": -32768.0,
+      "common_valid_pixels": 463292,
+      "valid_fraction_of_aoi": 0.1812739557297332
+    },
+    {
+      "kind": "validity-mask-stack",
+      "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_2026-01-19_rtc_validity_masks_10m_utm45n.tif",
+      "bytes": 33864,
+      "sha256": "5ed0dbb2dba04308786682618fbecfa770731ba0ce431686c9bec20b3272e91e",
+      "crs": "EPSG:32645",
+      "width": 1564,
+      "height": 1686,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "band_descriptions": [
+        "2026-01-07_both_VV_VH_valid",
+        "2026-01-19_both_VV_VH_valid",
+        "common_both_dates_and_polarizations_valid",
+        "provisional_AOI"
+      ],
+      "nodata": null,
+      "common_valid_pixels": 463292
+    }
+  ],
+  "limitations": [
+    "No authoritative Pallimangal enclosure geometry exists; coverage is measured only for the broad provisional locality bbox.",
+    "Gamma0 RTC backscatter is not a water probability or flood label.",
+    "Temporal backscatter differences may reflect crop stage, soil moisture, irrigation, rainfall, aquaculture, roughness or residual processing effects.",
+    "RTC source products are read remotely by byte ranges; full original scenes were not downloaded."
+  ],
+  "independent_output_validation": {
+    "validated_at_utc": "2026-11-12T10:10:51.765805+00:00",
+    "outputs": [
+      {
+        "date": "2026-01-07",
+        "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "sha256": "5fd8836464deed7935ef838fb47028bec19393dbe09c33f20ce51c5d4bc336e0",
+        "manifest_checksum_matches": true,
+        "bytes": 3174576,
+        "metadata": {
+          "crs": "EPSG:32645",
+          "width": 1564,
+          "height": 1686,
+          "transform": [
+            10.0,
+            0.0,
+            720240.0,
+            0.0,
+            -10.0,
+            2554240.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "count": 2,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "dtype": [
+            "float32",
+            "float32"
+          ],
+          "nodata": -32768.0
+        },
+        "dataset_mask_valid_pixels": 463292,
+        "valid_fraction_of_raster_grid": 0.1756954367697876,
+        "band_statistics": {
+          "VV": {
+            "valid_pixels": 463292,
+            "min": 0.0017241097521036863,
+            "p02": 0.009094255045056343,
+            "median": 0.12243017554283142,
+            "p98": 0.7313855290412903,
+            "max": 87.16839599609375,
+            "nan_count": 0,
+            "infinite_count": 0
+          },
+          "VH": {
+            "valid_pixels": 463292,
+            "min": 0.0009282120736315846,
+            "p02": 0.005198882892727852,
+            "median": 0.026028862223029137,
+            "p98": 0.12248606234788895,
+            "max": 4.572379112243652,
+            "nan_count": 0,
+            "infinite_count": 0
+          }
+        },
+        "tags": {
+          "acquisition_datetime": "2026-01-07T12:04:40.528434Z",
+          "aoi_status": "provisional locality only; not verified enclosure boundary",
+          "collection": "sentinel-1-rtc",
+          "item_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+          "processing": "AOI clip and nearest-neighbour reprojection to shared EPSG:32645 10m grid; no value normalization",
+          "source_provider": "Microsoft Planetary Computer",
+          "validity": "all four source VV/VH date assets valid, plus inside provisional AOI",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "VV": {
+            "measurement": "gamma0",
+            "polarization": "VV",
+            "source_collection": "sentinel-1-rtc",
+            "source_item": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+            "units": "not_declared_in_raster_metadata"
+          },
+          "VH": {
+            "measurement": "gamma0",
+            "polarization": "VH",
+            "source_collection": "sentinel-1-rtc",
+            "source_item": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+            "units": "not_declared_in_raster_metadata"
+          }
+        }
+      },
+      {
+        "date": "2026-01-19",
+        "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-19_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "sha256": "47781c5af46fc7a2fa688489f30f07281997e9261e5091c614972eaad79e538b",
+        "manifest_checksum_matches": true,
+        "bytes": 3173668,
+        "metadata": {
+          "crs": "EPSG:32645",
+          "width": 1564,
+          "height": 1686,
+          "transform": [
+            10.0,
+            0.0,
+            720240.0,
+            0.0,
+            -10.0,
+            2554240.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "count": 2,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "dtype": [
+            "float32",
+            "float32"
+          ],
+          "nodata": -32768.0
+        },
+        "dataset_mask_valid_pixels": 463292,
+        "valid_fraction_of_raster_grid": 0.1756954367697876,
+        "band_statistics": {
+          "VV": {
+            "valid_pixels": 463292,
+            "min": 0.0014857954811304808,
+            "p02": 0.008924735710024834,
+            "median": 0.1019744724035263,
+            "p98": 0.7273951768875122,
+            "max": 98.92843627929688,
+            "nan_count": 0,
+            "infinite_count": 0
+          },
+          "VH": {
+            "valid_pixels": 463292,
+            "min": 0.001230347086675465,
+            "p02": 0.004908382426947355,
+            "median": 0.02314126119017601,
+            "p98": 0.12821008265018463,
+            "max": 5.448866844177246,
+            "nan_count": 0,
+            "infinite_count": 0
+          }
+        },
+        "tags": {
+          "acquisition_datetime": "2026-01-19T12:04:39.512002Z",
+          "aoi_status": "provisional locality only; not verified enclosure boundary",
+          "collection": "sentinel-1-rtc",
+          "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+          "processing": "AOI clip and nearest-neighbour reprojection to shared EPSG:32645 10m grid; no value normalization",
+          "source_provider": "Microsoft Planetary Computer",
+          "validity": "all four source VV/VH date assets valid, plus inside provisional AOI",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": {
+          "VV": {
+            "measurement": "gamma0",
+            "polarization": "VV",
+            "source_collection": "sentinel-1-rtc",
+            "source_item": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+            "units": "not_declared_in_raster_metadata"
+          },
+          "VH": {
+            "measurement": "gamma0",
+            "polarization": "VH",
+            "source_collection": "sentinel-1-rtc",
+            "source_item": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+            "units": "not_declared_in_raster_metadata"
+          }
+        }
+      }
+    ],
+    "all_date_grids_aligned": true,
+    "date_internal_masks_identical": true,
+    "validity_mask_stack": {
+      "path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_2026-01-19_rtc_validity_masks_10m_utm45n.tif",
+      "sha256": "5ed0dbb2dba04308786682618fbecfa770731ba0ce431686c9bec20b3272e91e",
+      "bytes": 33864,
+      "crs": "EPSG:32645",
+      "width": 1564,
+      "height": 1686,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "band_descriptions": [
+        "2026-01-07_both_VV_VH_valid",
+        "2026-01-19_both_VV_VH_valid",
+        "common_both_dates_and_polarizations_valid",
+        "provisional_AOI"
+      ],
+      "pixel_counts": {
+        "2026-01-07_both_VV_VH_valid": 472974,
+        "2026-01-19_both_VV_VH_valid": 463292,
+        "common_both_dates_and_polarizations_valid": 463292,
+        "provisional_AOI": 2555756
+      },
+      "provisional_aoi_pixels": 2555756,
+      "common_valid_pixels_inside_aoi": 463292,
+      "common_valid_fraction_of_aoi": 0.1812739557297332,
+      "valid_pixels_outside_aoi": 0,
+      "coverage_map": "data/gherproof/processed/sentinel1/planetary_computer/coverage_validity.png"
+    },
+    "processing_reproduction": "scripts/gherproof/retrieve_planetary_computer_event.py then scripts/gherproof/validate_planetary_computer_event.py"
+  }
+}

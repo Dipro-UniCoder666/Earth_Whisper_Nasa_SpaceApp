@@ -1,0 +1,220 @@
+{
+  "status": "annotation_package_prepared_human_labels_pending",
+  "seed": 20261113,
+  "target_per_stratum_per_split": 15,
+  "spatial_design": {
+    "crs": "EPSG:32645",
+    "block_size_m": 5000.0,
+    "grouping": "contiguous west calibration / center validation / east final-test bands of complete 5 km block columns",
+    "guard_band_m": 1000.0,
+    "all_samples_from_a_block_column_assigned_to_one_group": true,
+    "unique_blocks_per_split": {
+      "calibration": 17,
+      "validation": 10,
+      "test": 7
+    },
+    "note": "Separated strips and guard margins reduce near-pixel leakage; spatial autocorrelation beyond this guard remains possible."
+  },
+  "source_dates": [
+    "2026-01-10",
+    "2026-01-20"
+  ],
+  "sampling_strata": {
+    "S01": "model_disagreement",
+    "S02": "consensus_water_like",
+    "S03": "optical_temporal_change",
+    "S04": "clear_scl_water_candidate",
+    "S05": "pond_or_open_water_spectral_candidate",
+    "S06": "vegetated_water_spectral_candidate",
+    "S07": "vegetation_spectral_candidate",
+    "S08": "wet_soil_ambiguous_proxy",
+    "S09": "dry_exposed_land_proxy",
+    "S10": "mixed_or_other_valid_context"
+  },
+  "stratum_counts_and_inclusion_probabilities": {
+    "S01:calibration": {
+      "candidate_pixels": 230321,
+      "selected": 15,
+      "inclusion_probability": 6.512649736671862e-05
+    },
+    "S01:validation": {
+      "candidate_pixels": 96728,
+      "selected": 15,
+      "inclusion_probability": 0.0001550740219998346
+    },
+    "S01:test": {
+      "candidate_pixels": 49629,
+      "selected": 15,
+      "inclusion_probability": 0.00030224264039170644
+    },
+    "S02:calibration": {
+      "candidate_pixels": 68377,
+      "selected": 15,
+      "inclusion_probability": 0.00021937201105634934
+    },
+    "S02:validation": {
+      "candidate_pixels": 3715,
+      "selected": 15,
+      "inclusion_probability": 0.004037685060565276
+    },
+    "S02:test": {
+      "candidate_pixels": 3555,
+      "selected": 15,
+      "inclusion_probability": 0.004219409282700422
+    },
+    "S03:calibration": {
+      "candidate_pixels": 28450,
+      "selected": 15,
+      "inclusion_probability": 0.0005272407732864675
+    },
+    "S03:validation": {
+      "candidate_pixels": 10639,
+      "selected": 15,
+      "inclusion_probability": 0.0014099069461415547
+    },
+    "S03:test": {
+      "candidate_pixels": 17118,
+      "selected": 15,
+      "inclusion_probability": 0.0008762705923589204
+    },
+    "S04:calibration": {
+      "candidate_pixels": 13121,
+      "selected": 15,
+      "inclusion_probability": 0.0011432055483575948
+    },
+    "S04:validation": {
+      "candidate_pixels": 18095,
+      "selected": 15,
+      "inclusion_probability": 0.0008289582757667864
+    },
+    "S04:test": {
+      "candidate_pixels": 2846,
+      "selected": 15,
+      "inclusion_probability": 0.005270555165144062
+    },
+    "S05:calibration": {
+      "candidate_pixels": 14908,
+      "selected": 15,
+      "inclusion_probability": 0.0010061711832573116
+    },
+    "S05:validation": {
+      "candidate_pixels": 10697,
+      "selected": 15,
+      "inclusion_probability": 0.001402262316537347
+    },
+    "S05:test": {
+      "candidate_pixels": 10372,
+      "selected": 15,
+      "inclusion_probability": 0.0014462013112225222
+    },
+    "S06:calibration": {
+      "candidate_pixels": 8847,
+      "selected": 15,
+      "inclusion_probability": 0.00169548999660902
+    },
+    "S06:validation": {
+      "candidate_pixels": 9379,
+      "selected": 15,
+      "inclusion_probability": 0.0015993176244802217
+    },
+    "S06:test": {
+      "candidate_pixels": 4252,
+      "selected": 15,
+      "inclusion_probability": 0.0035277516462841017
+    },
+    "S07:calibration": {
+      "candidate_pixels": 297406,
+      "selected": 15,
+      "inclusion_probability": 5.0436104180816795e-05
+    },
+    "S07:validation": {
+      "candidate_pixels": 210796,
+      "selected": 15,
+      "inclusion_probability": 7.115884551889031e-05
+    },
+    "S07:test": {
+      "candidate_pixels": 87097,
+      "selected": 15,
+      "inclusion_probability": 0.0001722217757213222
+    },
+    "S08:calibration": {
+      "candidate_pixels": 23457,
+      "selected": 15,
+      "inclusion_probability": 0.000639467962655071
+    },
+    "S08:validation": {
+      "candidate_pixels": 15228,
+      "selected": 15,
+      "inclusion_probability": 0.0009850275807722615
+    },
+    "S08:test": {
+      "candidate_pixels": 17494,
+      "selected": 15,
+      "inclusion_probability": 0.0008574368354864525
+    },
+    "S09:calibration": {
+      "candidate_pixels": 6226,
+      "selected": 15,
+      "inclusion_probability": 0.0024092515258592995
+    },
+    "S09:validation": {
+      "candidate_pixels": 3307,
+      "selected": 15,
+      "inclusion_probability": 0.004535833081342607
+    },
+    "S09:test": {
+      "candidate_pixels": 1397,
+      "selected": 15,
+      "inclusion_probability": 0.010737294201861132
+    },
+    "S10:calibration": {
+      "candidate_pixels": 67813,
+      "selected": 15,
+      "inclusion_probability": 0.00022119652573990238
+    },
+    "S10:validation": {
+      "candidate_pixels": 42470,
+      "selected": 15,
+      "inclusion_probability": 0.0003531904874028726
+    },
+    "S10:test": {
+      "candidate_pixels": 34337,
+      "selected": 15,
+      "inclusion_probability": 0.00043684655036840727
+    }
+  },
+  "sample_count": 450,
+  "split_counts": {
+    "calibration": 150,
+    "validation": 150,
+    "test": 150
+  },
+  "labels_completed": 0,
+  "label_fields": [
+    "pre_label",
+    "post_label"
+  ],
+  "permitted_labels": [
+    "water",
+    "non_water",
+    "uncertain",
+    "invalid"
+  ],
+  "model_predictions_embedded_in_annotation_package": false,
+  "context_chips": "10m false-color NIR/red/green optical context panels with fixed 0-0.4 reflectance display stretch; no model predictions",
+  "geopackage": {
+    "path": "data/gherproof/reference/phase7b/gherproof_optical_reference_samples.gpkg",
+    "sha256": "701c4a9140869eb20e94247051975e6e0d15237ede4b6b5207fb9991c9d74d00",
+    "feature_count": 450,
+    "layer": "samples",
+    "crs": "EPSG:32645"
+  },
+  "context_gallery_html": "data/gherproof/reference/phase7b/annotation_review_gallery.html",
+  "limitations": [
+    "These optical samples support human interpretation; they are not absolute ground truth.",
+    "Strata are sampling proxies, not ground labels.",
+    "Model-derived strata are coded in the reviewer GeoPackage and no model identifier or prediction score is included.",
+    "A single reviewer is expected; no inter-annotator agreement is available until a second independent reviewer labels the same samples.",
+    "Labels must be supplied by a human before evaluation; no predictions or labels were added to the annotation table."
+  ]
+}

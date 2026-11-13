@@ -1,0 +1,876 @@
+{
+  "status": "generated_independent_optical_weak_reference",
+  "created_at_utc": "2026-11-13T01:19:18.427833+00:00",
+  "methodology": {
+    "thresholds_fixed_before_model_comparison": {
+      "ndwi": 0.0,
+      "mndwi": 0.0
+    },
+    "threshold_sensitivity": [
+      -0.05,
+      0.0,
+      0.05
+    ],
+    "reflectance_source": "Phase 6B original stored-value SAFE-derived raster inputs; metadata offsets re-applied once for this derivation; existing Phase 7 scaled rasters used for cross-check only",
+    "reflectance_formula": "(DN + BOA_ADD_OFFSET) / BOA_QUANTIFICATION_VALUE",
+    "source_dn_zero_is_nodata": true,
+    "BOA_quantification_value_per_scene": {
+      "2026-01-10": 10000,
+      "2026-01-20": 10000
+    },
+    "BOA_add_offset_by_band_each_scene": {
+      "2026-01-10": {
+        "B03": -1000,
+        "B08": -1000,
+        "B11": -1000
+      },
+      "2026-01-20": {
+        "B03": -1000,
+        "B08": -1000,
+        "B11": -1000
+      }
+    },
+    "native_resolutions_m": {
+      "B03": 10,
+      "B08": 10,
+      "B11": 20
+    },
+    "common_grid": "EPSG:32645 native B11 20m grid; average 10m reflectance with all four inputs valid",
+    "index_minimum_denominator": 0.02,
+    "negative_reflectance": "excluded from normalized-difference index validity",
+    "scl_interpretation": "water candidate 6; non-water candidates 4/5; 2/7 uncertain; 0/1/3/8/9/10/11 invalid",
+    "water_rule": "SCL 6 AND NDWI>=0 AND MNDWI>=0",
+    "nonwater_rule": "SCL 4/5 AND NDWI<0 AND MNDWI<0",
+    "uncertain_rule": "conflicting indicators or SCL 2/7; clear context with unusable/low-signal index retained uncertain",
+    "model_prediction_used_in_label_creation": false
+  },
+  "scenes": [
+    {
+      "date": "2026-01-10",
+      "acquisition_datetime_utc": "2026-01-10T04:30:49.024000Z",
+      "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "counts": {
+        "invalid": 61514,
+        "weak_water": 175119,
+        "weak_nonwater": 973193,
+        "uncertain": 469098,
+        "weak_label_coverage_fraction_of_clear_observations": 0.7093411776188302,
+        "clear_observation_pixels": 1618843,
+        "valid_dual_index_pixels": 1617410
+      },
+      "ndwi_valid_pixels": 1617419,
+      "mndwi_valid_pixels": 1617410,
+      "index_invalid_low_signal_or_missing": 1433,
+      "reflectance_crosscheck": {
+        "B03": {
+          "overlap_pixels": 6472354,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B03_reflectance_10m.tif"
+        },
+        "B08": {
+          "overlap_pixels": 6472354,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B08_reflectance_10m.tif"
+        },
+        "B11": {
+          "overlap_pixels": 1618737,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B11_reflectance_20m.tif"
+        }
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "acquisition_datetime_utc": "2026-01-20T04:30:09.024000Z",
+      "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "counts": {
+        "invalid": 61554,
+        "weak_water": 154536,
+        "weak_nonwater": 963888,
+        "uncertain": 498946,
+        "weak_label_coverage_fraction_of_clear_observations": 0.6908786089818469,
+        "clear_observation_pixels": 1618843,
+        "valid_dual_index_pixels": 1617370
+      },
+      "ndwi_valid_pixels": 1617370,
+      "mndwi_valid_pixels": 1617370,
+      "index_invalid_low_signal_or_missing": 1473,
+      "reflectance_crosscheck": {
+        "B03": {
+          "overlap_pixels": 6472158,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B03_reflectance_10m.tif"
+        },
+        "B08": {
+          "overlap_pixels": 6472158,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B08_reflectance_10m.tif"
+        },
+        "B11": {
+          "overlap_pixels": 1618688,
+          "max_abs_difference": 0.0,
+          "allclose_at_1e-6": true,
+          "existing_reflectance_path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B11_reflectance_20m.tif"
+        }
+      }
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "date": "2026-01-10",
+      "threshold_ndwi": -0.05,
+      "threshold_mndwi": -0.05,
+      "weak_water_pixels": 190155,
+      "weak_nonwater_pixels": 929997,
+      "uncertain_pixels": 497258,
+      "invalid_pixels": 61514,
+      "water_count_change_vs_primary": 15036,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    },
+    {
+      "date": "2026-01-10",
+      "threshold_ndwi": 0.0,
+      "threshold_mndwi": 0.0,
+      "weak_water_pixels": 175119,
+      "weak_nonwater_pixels": 973193,
+      "uncertain_pixels": 469098,
+      "invalid_pixels": 61514,
+      "water_count_change_vs_primary": 0,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    },
+    {
+      "date": "2026-01-10",
+      "threshold_ndwi": 0.05,
+      "threshold_mndwi": 0.05,
+      "weak_water_pixels": 157425,
+      "weak_nonwater_pixels": 1018253,
+      "uncertain_pixels": 441732,
+      "invalid_pixels": 61514,
+      "water_count_change_vs_primary": -17694,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    },
+    {
+      "date": "2026-01-20",
+      "threshold_ndwi": -0.05,
+      "threshold_mndwi": -0.05,
+      "weak_water_pixels": 167861,
+      "weak_nonwater_pixels": 912114,
+      "uncertain_pixels": 537395,
+      "invalid_pixels": 61554,
+      "water_count_change_vs_primary": 13325,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    },
+    {
+      "date": "2026-01-20",
+      "threshold_ndwi": 0.0,
+      "threshold_mndwi": 0.0,
+      "weak_water_pixels": 154536,
+      "weak_nonwater_pixels": 963888,
+      "uncertain_pixels": 498946,
+      "invalid_pixels": 61554,
+      "water_count_change_vs_primary": 0,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    },
+    {
+      "date": "2026-01-20",
+      "threshold_ndwi": 0.05,
+      "threshold_mndwi": 0.05,
+      "weak_water_pixels": 139038,
+      "weak_nonwater_pixels": 1018266,
+      "uncertain_pixels": 460066,
+      "invalid_pixels": 61554,
+      "water_count_change_vs_primary": -15498,
+      "interpretation": "predeclared optical-only sensitivity; not chosen by SAR agreement"
+    }
+  ],
+  "temporal_change": {
+    "pre_date": "2026-01-10",
+    "post_date": "2026-01-20",
+    "counts": {
+      "invalid": 61668,
+      "persistent_water_candidate": 144170,
+      "possible_new_water_candidate": 671,
+      "possible_water_loss_candidate": 1316,
+      "stable_nonwater_candidate": 900758,
+      "uncertain_change": 570341
+    },
+    "raster": {
+      "path": "data/gherproof/processed/phase8b/optical/temporal_change/2026-01-10_to_2026-01-20_change_candidates.tif",
+      "sha256": "b1a7cf593329b68eef3a9684e4b2915fcc08b343166c12bc9f8ffb294711036b",
+      "bytes": 153891,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 persistent water candidate; 2 possible new water; 3 possible water loss; 4 stable nonwater; 5 uncertain change",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    "outputs": [
+      {
+        "kind": "temporal_change",
+        "acquisition_date": null,
+        "path": "data/gherproof/processed/phase8b/optical/temporal_change/2026-01-10_to_2026-01-20_change_candidates.tif",
+        "sha256": "b1a7cf593329b68eef3a9684e4b2915fcc08b343166c12bc9f8ffb294711036b",
+        "bytes": 153891,
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          729400.0,
+          2536400.0,
+          760520.0,
+          2557980.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          20.0
+        ],
+        "dtype": "uint8",
+        "nodata": 255.0,
+        "description": "0 invalid; 1 persistent water candidate; 2 possible new water; 3 possible water loss; 4 stable nonwater; 5 uncertain change",
+        "valid_pixels": 1678924,
+        "nan_count": 0,
+        "inf_count": 0,
+        "reopened": true
+      },
+      {
+        "kind": "possible_new_water_candidate",
+        "acquisition_date": null,
+        "path": "data/gherproof/processed/phase8b/optical/temporal_change/possible_new_water_candidate.tif",
+        "sha256": "a2c580a1ef7cb0cf01c08dea05bfd54a18080ed18911db204a6eaea4c1a10429",
+        "bytes": 142593,
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "bounds": [
+          729400.0,
+          2536400.0,
+          760520.0,
+          2557980.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          20.0
+        ],
+        "dtype": "uint8",
+        "nodata": 255.0,
+        "description": "1 possible optical new-water candidate; 0 other certain optical transitions; 255 uncertain or invalid",
+        "valid_pixels": 1046915,
+        "nan_count": 0,
+        "inf_count": 0,
+        "reopened": true
+      }
+    ],
+    "jointly_observed_pixels": 1617256,
+    "limitations": [
+      "Only two optical observations; changes may reflect aquaculture, crop, irrigation, wet soil, rainfall or classification variability.",
+      "No attribution to Pallimangal or a breach is supported."
+    ]
+  },
+  "outputs": [
+    {
+      "kind": "weak_reference",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_reference.tif",
+      "sha256": "07a21a4ca572ba3cba67adc477296bf56d809dde15f6a111fd72ffa2f752aef6",
+      "bytes": 161108,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 weak_water; 2 weak_nonwater; 3 uncertain",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "weak_water_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_water_mask.tif",
+      "sha256": "ac541f70ca90f263fee4db2e0fc383e54a63d3dea4ddcfe9ce3f55e03247662b",
+      "bytes": 160483,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak water; 0 weak nonwater; 255 uncertain/invalid",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "weak_nonwater_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_nonwater_mask.tif",
+      "sha256": "dec55e9bf72b367e02bdd3cebb44aead27d9491cb2309be31089cf42b21aa258",
+      "bytes": 160489,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak nonwater; 0 weak water; 255 uncertain/invalid",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "uncertainty_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/uncertainty_mask.tif",
+      "sha256": "6e5009c9d7a820f27fb64c05f5b10fcea086eef98add8f6eca62411c7a8a9c68",
+      "bytes": 147836,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 uncertain optical reference; 0 weak binary class; 255 invalid",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "ndwi_20m",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/ndwi_20m.tif",
+      "sha256": "358b47408f9e1d41a8a79bdc15c1a9b70c050adc49f868fec990034e8c1f56eb",
+      "bytes": 5835894,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "NDWI from 20m area-averaged B03/B08",
+      "valid_pixels": 1617419,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "mndwi_20m",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/mndwi_20m.tif",
+      "sha256": "49871f66b02b778529a5eafea0d1c172b49c7d0c7e88e8b2509afd066d62a03f",
+      "bytes": 5906852,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "MNDWI from area-averaged B03 and native B11",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "scl_class",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/scl_class.tif",
+      "sha256": "120abfc09d515444b16223fbd9f1771aab786ad906e5deb651cb75b112b31dc8",
+      "bytes": 179466,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "Sentinel-2 SCL class code",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-10",
+      "source_item": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859"
+    },
+    {
+      "kind": "weak_reference",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_reference.tif",
+      "sha256": "1734ebca32fdfd742295356636679e733ebb258bfac8e0142b14ea15c13b5b31",
+      "bytes": 159414,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 weak_water; 2 weak_nonwater; 3 uncertain",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "weak_water_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_water_mask.tif",
+      "sha256": "a47cf75883dde05acf1ba9eba421ab7e560e473f65453db03662a5a950f01fb6",
+      "bytes": 158747,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak water; 0 weak nonwater; 255 uncertain/invalid",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "weak_nonwater_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_nonwater_mask.tif",
+      "sha256": "c73c3262a480cccae3a31930ef54c7ee011e4e3f5171639a34fe8d6f119644a4",
+      "bytes": 158789,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak nonwater; 0 weak water; 255 uncertain/invalid",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "uncertainty_mask",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/uncertainty_mask.tif",
+      "sha256": "41594403db85c1c7e81221e11a693e5040bbbe8a77fa01a833f7c8b69758c32e",
+      "bytes": 147756,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 uncertain optical reference; 0 weak binary class; 255 invalid",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "ndwi_20m",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/ndwi_20m.tif",
+      "sha256": "f56fb3e24a14fef7bf238f63961be1cc4fbe14c96830018b8ee65c74727f9dd5",
+      "bytes": 5823002,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "NDWI from 20m area-averaged B03/B08",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "mndwi_20m",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/mndwi_20m.tif",
+      "sha256": "93665286fb6cd07ca875f36483a4845d88837ca0fbd7d54f10d82fc246959aff",
+      "bytes": 5928050,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "MNDWI from area-averaged B03 and native B11",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    },
+    {
+      "kind": "scl_class",
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/scl_class.tif",
+      "sha256": "b5136a2d7732cd5e2cc571c6caa856657d8ebe4e64196484e72f5c195fa4b2d9",
+      "bytes": 57648,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "Sentinel-2 SCL class code",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true,
+      "acquisition_date": "2026-01-20",
+      "source_item": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559"
+    }
+  ],
+  "limitations": [
+    "Weak references are automated optical indicators, not human labels or field truth.",
+    "SCL class 6 may include permanent/aquaculture water; not flood attribution.",
+    "SCL 4/5 and index signs can be confused by vegetation, wet soil, shadow, turbidity and mixed pixels.",
+    "Only Jan 10 and Jan 20 optical reflectance/index scenes are available for this comparison."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "incident_id": "incident-pallimangal-2026-01-14",
+  "title": "Reported southern embankment failure near Pallimangal Fisheries Enclosure",
+  "incident_type": "embankment_failure",
+  "incident_date": "2026-01-14",
+  "incident_date_status": "reported_inferred",
+  "reported_date": null,
+  "reported_date_note": "Sources were published on different dates (January 15–17, 2026); no single consolidated report date is asserted.",
+  "administrative_location": {
+    "site_description": "Sujatpur Pallimangal Fisheries Enclosure; reported Sujatpur mouza / Beel Kedaria / Bhavadah context",
+    "mouza": "Sujatpur",
+    "union": "Kultia (administrative context; enclosure location unverified)",
+    "upazila": "Manirampur (reported); locality described near Manirampur/Abhaynagar context",
+    "district": "Jashore",
+    "jurisdiction_note": "Reported locality context is near an administrative border; this record does not resolve jurisdiction for the enclosure or affected localities."
+  },
+  "mouza": "Sujatpur",
+  "affected_localities_reported": [
+    "Sujatpur",
+    "Hatgachha",
+    "Kultia",
+    "Moshiahati",
+    "Bedbhita",
+    "Balarabad"
+  ],
+  "description": "Secondary news accounts describe a southern embankment failure associated with the named Pallimangal fisheries enclosure. The date January 14 is an inference from reports published January 15–17 that describe the event as occurring Wednesday. This is a source-reported incident, not independently verified by the satellite evidence pipeline.",
+  "reporting_sources": [
+    {
+      "source_name": "Dhaka Post",
+      "source_type": "news",
+      "url": "https://www.dhakapost.com/country/424238",
+      "published_date": null,
+      "claim": "Reports the Sujatpur Pallimangal gher incident and names six affected-locality contexts. No enclosure coordinate or boundary is supplied. Publication date is represented as January 15 or 16 in existing project provenance; unresolved here.",
+      "claim_status": "reported_unverified",
+      "reliability": "secondary_reporting",
+      "evidence_id": "reported-event-2026-01-14"
+    },
+    {
+      "source_name": "Samakal",
+      "source_type": "news",
+      "url": "https://samakal.com/whole-country/article/334020/%E0%A6%AA%E0%A6%BE%E0%A7%9C-%E0%A6%AD%E0%A7%99%E0%A6%99%E0%A7%87-%E0%A6%A2%E0%A7%81%E0%A6%95%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A7%A7%E0%A7%AB%E0%A7%AE-%E0%A6%B9%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0-%E0%A6%9C%E0%A6%AE%E0%A6%BF%E0%A6%B0-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A4%E0%A6%BF",
+      "published_date": "2026-01-16",
+      "claim": "Places Pallimangal in Sujatpur mouza / Beel Kedaria / Bhavadah context, describes a south-side embankment beside a khal, and reports 158 hectares of crop damage. The reported area is not independently verified and is not a satellite measurement; it differs from the separately attributed Daily Country Today figure.",
+      "claim_status": "reported_unverified",
+      "reliability": "secondary_reporting",
+      "evidence_id": "reported-event-2026-01-14"
+    },
+    {
+      "source_name": "Daily Country Today",
+      "source_type": "news",
+      "url": "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded-as-embankment-collapses%2C-over-500-families-homeless-in-jashore",
+      "published_date": "2026-01-17",
+      "claim": "Headline reports 1,500 bighas and over 500 families; these remain attributed media claims, not verified impact measurements or satellite-derived areas.",
+      "claim_status": "reported_unverified",
+      "reliability": "secondary_reporting",
+      "evidence_id": "reported-event-2026-01-14"
+    }
+  ],
+  "source_reliability": "secondary_reporting",
+  "incident_status": "reported_unverified",
+  "related_asset_ids": ["asset-pallimangal-reported"],
+  "related_evidence_ids": [
+    "reported-event-2026-01-14",
+    "geography-provisional-regional-aoi",
+    "s1-rtc-2026-01-07-orbit114-partial",
+    "s1-rtc-2026-01-09",
+    "s1-rtc-2026-01-12",
+    "s1-rtc-2026-01-19-orbit114-partial",
+    "s1-rtc-2026-01-21",
+    "s1-rtc-2026-01-24",
+    "prediction-scratch-2026-01-09-probability",
+    "prediction-pretrained-2026-01-09-probability",
+    "prediction-scratch-2026-01-12-probability",
+    "prediction-pretrained-2026-01-12-probability",
+    "prediction-scratch-2026-01-21-probability",
+    "prediction-pretrained-2026-01-21-probability",
+    "prediction-scratch-2026-01-24-probability",
+    "prediction-pretrained-2026-01-24-probability",
+    "optical-weakref-2026-01-10-weak_reference",
+    "optical-weakref-2026-01-20-weak_reference",
+    "optical-weakref-temporal-temporal_change",
+    "phase8b-2026-01-09-all-model_disagreement_codes",
+    "phase8b-2026-01-12-all-model_disagreement_codes",
+    "phase8b-2026-01-21-all-model_disagreement_codes",
+    "phase8b-2026-01-24-all-model_disagreement_codes"
+  ]
+}

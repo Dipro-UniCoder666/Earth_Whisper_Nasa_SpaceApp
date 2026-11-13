@@ -1,0 +1,46 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "updated_at_utc": "2026-11-12",
+  "active_boundary_status": "not_delineated",
+  "candidate_count": 0,
+  "candidates": [],
+  "reviewed_non_boundary_layers": [
+    {
+      "layer": "provisional_search_window",
+      "path": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+      "status": "not_a_site_boundary",
+      "purpose": "Preserve broad Phase 4B search window only."
+    },
+    {
+      "layer": "common_valid_footprint",
+      "path": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+      "status": "measured_raster_footprint_not_site",
+      "purpose": "Show actual shared Jan 7/19 VV/VH valid pixels."
+    }
+  ],
+  "missing_candidate_evidence": [
+    "GPS coordinate or named local landmark tied to Pallimangal enclosure",
+    "Mouza cadastral sheet and parcel number, fisheries ID or operator/committee sketch",
+    "Independent human delineation on current imagery or authoritative polygon",
+    "Reviewer name, review date and confidence before workflow status can advance"
+  ],
+  "workflow": "Existing GherProof boundary-review API; no status transition performed.",
+  "phase5d_review": {
+    "reviewed_at": "2026-11-12",
+    "secondary_catalogue_result": "One third-party BS/RS J.L. 143 sheet-1 listing; preview not content-matched to official CS/RS sheets.",
+    "candidate_count": 0,
+    "boundary_status": "not_delineated",
+    "target_coverage": "unknown_without_supported_site_geometry",
+    "inference_ready": false,
+    "report": "docs/GHERPROOF_PHASE5D_REPORT.md",
+    "manifest": "data/gherproof/manifests/phase5d_free_source_search.json"
+  },
+  "mouza_jl_catalogue_reference": {
+    "value": 143,
+    "status": "confirmed_in_official_dlrs_catalogue_original_sheet_title_block_not_inspected",
+    "mouza_name": "Sujatapur / Sujatpur",
+    "jurisdiction": "Manirampur, Jashore",
+    "source": "https://map.settlement.gov.bd/",
+    "note": "Official DLRS location and map-search catalogue returns Sujatpur J.L. 143; full CS/RS originals remain purchase-gated and the printed title block has not been inspected. This catalogue result does not create site geometry."
+  }
+}

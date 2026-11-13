@@ -6,28 +6,40 @@ import { InvestigationPage } from '@/pages/InvestigationPage'
 import { CaseInvestigationPage } from '@/pages/CaseInvestigationPage'
 import { AboutPage } from '@/pages/AboutPage'
 import { WhisperLabPage } from '@/pages/WhisperLabPage'
-import { ROUTES } from '@/lib/constants'
+import { GherProofPage } from '@/features/gherproof/GherProofPage'
+import { DHARA_DESCRIPTION, DHARA_NAME, DHARA_TAGLINE, ROUTES } from '@/lib/constants'
 
 function DocumentTitleLayout() {
   const { pathname } = useLocation()
 
   useEffect(() => {
+    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]')
     if (pathname === '/') {
       document.title = 'Earth Whisper'
+      if (description) description.content = "Earth Whisper — an interactive Earth-observation investigation experience by AquaByte."
       return
     }
 
     const pageName = pathname.startsWith('/investigate/case/')
       ? 'Event Case File'
-      : pathname.startsWith('/investigate')
+      : pathname === ROUTES.investigationAnalysis
+        ? 'Analysis Workbench'
+        : pathname.startsWith('/dhara') || pathname.startsWith('/gherproof')
+          ? DHARA_NAME
+          : pathname.startsWith('/investigate')
         ? 'Investigate'
         : pathname.startsWith('/science')
-          ? 'Whisper Lab'
+          ? 'Analysis Workbench'
           : pathname.startsWith('/about')
             ? 'About'
             : 'Earth Whisper'
 
     document.title = pageName === 'Earth Whisper' ? pageName : `Earth Whisper - ${pageName}`
+    if (description && (pathname.startsWith('/dhara') || pathname.startsWith('/gherproof'))) {
+      description.content = `${DHARA_NAME} — ${DHARA_DESCRIPTION} ${DHARA_TAGLINE}`
+    } else if (description) {
+      description.content = "Earth Whisper — an interactive Earth-observation investigation experience by AquaByte."
+    }
   }, [pathname])
 
   return <Outlet />
@@ -44,9 +56,12 @@ export const router = createBrowserRouter([
         // AppLayout wraps science and about pages
         element: <AppLayout />,
         children: [
-          { path: ROUTES.science, element: <WhisperLabPage /> },
-          { path: ROUTES.analysis, element: <Navigate to={ROUTES.science} replace /> },
+          { path: ROUTES.science, element: <Navigate to={ROUTES.investigationAnalysis} replace /> },
+          { path: ROUTES.analysis, element: <Navigate to={ROUTES.investigationAnalysis} replace /> },
+          { path: ROUTES.investigationAnalysis, element: <WhisperLabPage /> },
           { path: ROUTES.about,   element: <AboutPage /> },
+          { path: ROUTES.gherproof, element: <GherProofPage /> },
+          { path: ROUTES.dhara, element: <GherProofPage /> },
         ],
       },
 

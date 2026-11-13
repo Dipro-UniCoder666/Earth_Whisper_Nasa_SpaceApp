@@ -1,0 +1,125 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "created_at_utc": "2026-11-12T16:59:19.460057+06:00",
+  "site_location_status": "reported_mouza_beel_context_identified_no_georeferenced_point",
+  "boundary_status": "not_delineated",
+  "enclosure_geometry": null,
+  "reported_site_context": {
+    "toponyms": [
+      "Sujatpur mouza",
+      "Beel Kedaria",
+      "Bhavadah"
+    ],
+    "confidence": "moderate for reported place-name association; low for exact coordinate or parcel",
+    "evidence": [
+      "Samakal 2026-01-16 reports Pallimangal fish farm in Sujatpur mouza in Beel Kedaria and south-side breach beside a khal",
+      "Dhaka Post 2026-01-16 and Daily Country Today 2026-01-17 corroborate named gher and affected villages"
+    ],
+    "coordinates": null
+  },
+  "coverage": {
+    "status": "not_evaluated_for_enclosure_without_geometry",
+    "jan_7_jan_19_common_valid_pixels_in_broad_window": 463292,
+    "common_valid_area_km2": 46.3292,
+    "fraction_of_provisional_window": 0.1812739557297332,
+    "provisional_window_pixel_count": 2555756,
+    "enclosure_total_area_m2": null,
+    "enclosure_valid_pixels": null,
+    "enclosure_coverage_fraction": null,
+    "buffers": [],
+    "reason": "No credible coordinate or enclosure polygon. Broad search-window coverage is not a substitute."
+  },
+  "context": {
+    "sentinel2": "data/gherproof/processed/sentinel2/2026-01-13_sentinel2_visual_provisional_locality.tif",
+    "s1_common_mask": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_2026-01-19_rtc_validity_masks_10m_utm45n.tif",
+    "gpkg": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+    "map": "data/gherproof/review/phase5/pallimangal_human_review_map.png"
+  },
+  "source_assessment": {
+    "administrative": "DPHE Jessore geo-code table confirms Jessore/Manirampur/Kultia/Sujatpur; official Kultia Union Parishad representative page corroborates Sujatpur village address",
+    "official_land_map_portal": "https://map.land.gov.bd/ describes digitized/georeferenced mouza/plot mapping, but no Sujatpur sheet or plot was retrieved",
+    "lged_map": "https://oldweb.lged.gov.bd/UploadedDocument/Map/KHULNA/jessore/monirampur/monirampur.pdf provides upazila/union/roads/embankment/khal/water-body context; it disclaims authority outside LGED and has no Pallimangal geometry",
+    "mouza_index": "https://www.zsojessore.gov.bd/maps.html is an official map index; target sheet not acquired",
+    "third_party_index": "https://mowjabd.vercel.app/ is a third-party interface; not used as government evidence",
+    "osm": "Existing search found no named Pallimangal feature; OSM is incomplete"
+  },
+  "land_reference_status": {
+    "cropland": "not_delineated_at_target_site; Clark class 5 is other landcover, not a crop label",
+    "permanent_water": "not_delineated_at_target_site; Clark class 4 is historical water, not permanence-validated",
+    "historical_clark_2022": {
+      "path": "data/gherproof/reference/clark_2022_locality_context_15m_utm45n.tif",
+      "source_member": "Bangladesh_Landcover_2022_v1exp.tif",
+      "source_crs": "WGS84 Normal Aspect Cylindrical Equal Area, standard parallel 15 degrees",
+      "native_resolution_m": 15,
+      "output_crs": "EPSG:32645",
+      "output_grid_resolution_m": 15,
+      "resampling": "nearest neighbour",
+      "class_legend": {
+        "1": "Mangrove",
+        "2": "Coastal wetland",
+        "3": "Pond aquaculture",
+        "4": "Water",
+        "5": "Other landcover",
+        "6": "Missing"
+      },
+      "provisional_window_class_counts": {
+        "Pond aquaculture": {
+          "pixels_15m": 25270,
+          "area_km2_nominal": 5.68575
+        },
+        "Water": {
+          "pixels_15m": 4051,
+          "area_km2_nominal": 0.911475
+        },
+        "Other landcover": {
+          "pixels_15m": 1106562,
+          "area_km2_nominal": 248.97645
+        }
+      },
+      "common_s1_support_class_counts": {
+        "Pond aquaculture": {
+          "pixels_15m": 8065,
+          "area_km2_nominal": 1.814625
+        },
+        "Other landcover": {
+          "pixels_15m": 197835,
+          "area_km2_nominal": 44.512875
+        }
+      },
+      "limitations": [
+        "2022 historical landcover, not temporally current in Jan 2026",
+        "Class 5 is generic other landcover, not an explicit cropland reference",
+        "Class 3 is country-scale pond aquaculture, not Pallimangal or parcel boundary",
+        "Class 4 is not a validated permanent-water reference",
+        "AOI is broad provisional locality, not target site"
+      ]
+    },
+    "osm": "no Pallimangal enclosure feature identified in prior documented query; OSM remains incomplete reference"
+  },
+  "readiness": "partially_ready",
+  "readiness_basis": [
+    "Administrative village-level reference is identified.",
+    "Existing S1 scene pair and common valid raster footprint are verified over part of the provisional window.",
+    "No exact site point/boundary; target coverage and outside agricultural coverage are unknown.",
+    "No reviewed cropland or permanent-water reference layers."
+  ],
+  "phase5c_update": {
+    "reviewed_at": "2026-11-12",
+    "mouza_jl": "official_dlrs_catalogue_confirms_143",
+    "official_maps": "CS and RS sheets 1/2 listed available and digitized, but full originals require purchase",
+    "site_geometry_created": false,
+    "target_coverage": "unknown_not_zero",
+    "historic_context": "2014 Beel Bakar schematic provides locality context only and is not georeferenced",
+    "report": "docs/GHERPROOF_PHASE5C_REPORT.md"
+  },
+  "phase5d_update": {
+    "reviewed_at": "2026-11-12",
+    "supported_candidates": 0,
+    "target_coverage": "unknown_not_zero",
+    "existing_common_valid_area_km2_broad_window": 46.3292,
+    "existing_broad_window_valid_fraction": 0.1812739557297332,
+    "why_not_recomputed": "No independently supported enclosure polygon; the third-party preview was not verified and no map was georeferenced.",
+    "additional_scene_search": "not_run_without_target_geometry",
+    "report": "docs/GHERPROOF_PHASE5D_REPORT.md"
+  }
+}

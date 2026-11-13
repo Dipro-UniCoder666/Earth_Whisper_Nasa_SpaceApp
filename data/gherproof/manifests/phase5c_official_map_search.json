@@ -1,0 +1,148 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "queried_at": "2026-11-12",
+  "source": {
+    "portal": "https://map.settlement.gov.bd/",
+    "catalogue_search_url": "https://map.settlement.gov.bd/api/search",
+    "location_endpoints": [
+      "/api/locations/divisions",
+      "/api/locations/districts?division=খুলনা",
+      "/api/locations/upazilas?division=খুলনা&district=যশোর",
+      "/api/locations/mouzas?division=খুলনা&district=যশোর&upazila=মনিরামপুর&search=সুজাত",
+      "/api/locations/survey-types?division=খুলনা&district=যশোর&upazila=মনিরামপুর&mouza=সুজাতপুর",
+      "/api/locations/sheet-numbers?division=খুলনা&district=যশোর&upazila=মনিরামপুর&mouza=সুজাতপুর"
+    ],
+    "methods": "Read-only HTTPS GET requests. No authentication, purchase, cart, order or transaction was initiated.",
+    "location_values": {
+      "division": "খুলনা",
+      "district": "যশোর",
+      "upazila": "মনিরামপুর",
+      "mouza": "সুজাতপুর",
+      "jl_number": "১৪৩"
+    }
+  },
+  "official_catalogue_confirmation": {
+    "mouza_and_jl_returned": true,
+    "jl_value": 143,
+    "survey_types_returned_for_this_mouza": ["CS", "RS"],
+    "not_returned_for_this_mouza": ["SA", "BRS", "BDS"],
+    "interpretation": "Official DLRS catalogue confirms Sujatpur / J.L. 143 as a catalogue association. Full original-sheet title-block inspection is still pending because originals require purchase.",
+    "sheet_numbers_endpoint": [],
+    "note": "The sheet-number metadata endpoint returned an empty array even though catalogue search returned sheet records. The catalogue search results are the source of the sheet numbers below."
+  },
+  "map_records": [
+    {
+      "record_id": "674849135945584000",
+      "survey_type": "CS",
+      "sheet_number": "1",
+      "status": "AVAILABLE",
+      "is_digitized": true,
+      "map_price_bdt": 500,
+      "delivery_fee_bdt": 70,
+      "court_fee_bdt": 20,
+      "preview_url": "https://map.settlement.gov.bd/uploads/previews/1cb73233feb750ef3abbb1c41b5af762.png",
+      "preview_file": "data/gherproof/reference/dlrs_portal_previews/Manirampur_Sujatpur_JL143_CS_sheet1_preview.png",
+      "preview_sha256": "9b9ed4f84f0e619c7a859888ce8d8b3bd8399ecabb94f3994ade20a9e54c724d",
+      "preview_dimensions_px": [227, 320],
+      "preview_bytes": 101471
+    },
+    {
+      "record_id": "674849414338318000",
+      "survey_type": "CS",
+      "sheet_number": "2",
+      "status": "AVAILABLE",
+      "is_digitized": true,
+      "map_price_bdt": 500,
+      "delivery_fee_bdt": 70,
+      "court_fee_bdt": 20,
+      "preview_url": "https://map.settlement.gov.bd/uploads/previews/df2bce67467708774743ef645e103bc9.png",
+      "preview_file": "data/gherproof/reference/dlrs_portal_previews/Manirampur_Sujatpur_JL143_CS_sheet2_preview.png",
+      "preview_sha256": "e4f73307172d6ab2e3819e0eb02daf1c5b43100f79b09f8168f1f258c54f9dc0",
+      "preview_dimensions_px": [227, 320],
+      "preview_bytes": 96674
+    },
+    {
+      "record_id": "717475995518533000",
+      "survey_type": "RS",
+      "sheet_number": "1",
+      "status": "AVAILABLE",
+      "is_digitized": true,
+      "map_price_bdt": 500,
+      "delivery_fee_bdt": 70,
+      "court_fee_bdt": 20,
+      "preview_url": "https://map.settlement.gov.bd/uploads/previews/b50c8353551862f9f45d6b294c94502a.png",
+      "preview_file": "data/gherproof/reference/dlrs_portal_previews/Manirampur_Sujatpur_JL143_RS_sheet1_preview.png",
+      "preview_sha256": "78e049081db996578350060e4b80dd88e0af53ca27f9e89d960fbaccb7112301",
+      "preview_dimensions_px": [227, 320],
+      "preview_bytes": 92951
+    },
+    {
+      "record_id": "717475991252926000",
+      "survey_type": "RS",
+      "sheet_number": "2",
+      "status": "AVAILABLE",
+      "is_digitized": true,
+      "map_price_bdt": 500,
+      "delivery_fee_bdt": 70,
+      "court_fee_bdt": 20,
+      "preview_url": "https://map.settlement.gov.bd/uploads/previews/fabbb3d4662241e9e3ba49c26ad1c759.png",
+      "preview_file": "data/gherproof/reference/dlrs_portal_previews/Manirampur_Sujatpur_JL143_RS_sheet2_preview.png",
+      "preview_sha256": "40e86a7ff729610bda2080dd60afc174b8b8d1847bc2d9af4d9f9889d6548749",
+      "preview_dimensions_px": [227, 320],
+      "preview_bytes": 94027
+    }
+  ],
+  "purchase_and_access": {
+    "full_originals_downloaded": false,
+    "portal_status": "digitized and available; purchase required for full-resolution official map",
+    "listed_price_per_map_record_bdt": 500,
+    "listed_delivery_fee_bdt": 70,
+    "listed_court_fee_bdt": 20,
+    "fee_application_uncertainty": "Public response does not specify whether delivery and court fees are assessed per sheet or per order; no aggregate total is calculated.",
+    "registration": "Portal register page requests name, email, phone, password and verification. No account was created.",
+    "scan_request": "Portal offers a scan request for maps not digitized; these four target records are digitized, so no scan request was submitted.",
+    "payment_or_order_started": false
+  },
+  "original_sheet_metadata": {
+    "printed_title_block_inspected": false,
+    "survey_dates": null,
+    "map_scales": null,
+    "legend_details": null,
+    "plot_numbers_legible_from_preview": false,
+    "crs": null,
+    "georeferencing_performed": false,
+    "control_points": [],
+    "rms_error": null
+  },
+  "historical_context_map": {
+    "title": "Beel Bakar Study",
+    "publisher": "Ulashi Sreejony Sangha (USS) and Oxfam",
+    "publication_date": "2014-03",
+    "source_url": "https://www.ulashi.org/pdf/uss_Beel%20Research_2014.pdf",
+    "source_file": "data/gherproof/reference/historical/Beel_Bakar_Study_2014_source.pdf",
+    "source_sha256": "04311a58e51671a4b933a53e8875ab94f521749789c0d07299bcc766651de2ae",
+    "figure": "Figure 2, printed page 3",
+    "derived_context_image": "data/gherproof/reference/historical/beel_bakar_map_figure2_context.png",
+    "derived_context_sha256": "694a2583159160d309a57681ebaa0108ba2077c95000619378f5bf1c2aec0555d",
+    "labels_visually_observed": ["Beel Bakar", "Mukteswari River", "Sujatpur", "Moshihati", "Bhaba Daha", "Kultia Union", "roads", "bridge symbols", "sluice-gate symbols"],
+    "limitations": ["Historical schematic only; no CRS, coordinate grid, or scale.", "Not cadastral or surveyed geometry.", "Shows Beel Bakar, not a confirmed Beel Kedaria boundary.", "Does not identify Pallimangal, a farm parcel, or January 2026 breach location."]
+  },
+  "site_and_coverage_status": {
+    "official_map_status": "official_map_requires_purchase",
+    "candidate_site_status": "site_unresolved",
+    "candidate_boundary_created": false,
+    "candidate_count": 0,
+    "s1_target_coverage": "not_evaluated_no_supported_site_geometry",
+    "common_valid_pixels_in_broad_search_window": 463292,
+    "common_valid_area_km2_in_broad_search_window": 46.3292,
+    "broad_window_valid_fraction": 0.1812739557297332,
+    "readiness_for_experimental_inference": "not_ready"
+  },
+  "review_outputs": {
+    "preview_montage": "data/gherproof/review/phase5/pallimangal_dlrs_preview_montage.png",
+    "review_map": "data/gherproof/review/phase5/pallimangal_phase5c_review_map.png",
+    "geopackage": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+    "report": "docs/GHERPROOF_PHASE5C_REPORT.md",
+    "remote_evidence_report": "docs/GHERPROOF_REMOTE_GEOLOCATION_EVIDENCE.md"
+  }
+}

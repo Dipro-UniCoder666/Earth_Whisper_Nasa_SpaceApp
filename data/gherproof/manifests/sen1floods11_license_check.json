@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-11-11T21:12:00Z",
+  "dataset": "Sen1Floods11 v1.1 hand-labeled Sentinel-1 inputs and labels",
+  "official_repository": "https://github.com/cloudtostreet/Sen1Floods11",
+  "repository_readme_license": "No explicit dataset license is stated in the official README.",
+  "official_stac_collections": [
+    {
+      "collection_id": "sen1floods11_hand_labeled_source",
+      "source_url": "https://storage.googleapis.com/sen1floods11/v1.1/catalog/sen1floods11_hand_labeled_source/collection.json",
+      "http_status": 200,
+      "license_value": "proprietary",
+      "description": "Sentinel-1 imagery overlapping hand-labeled chips"
+    },
+    {
+      "collection_id": "sen1floods11_hand_labeled_label",
+      "source_url": "https://storage.googleapis.com/sen1floods11/v1.1/catalog/sen1floods11_hand_labeled_label/collection.json",
+      "http_status": 200,
+      "license_value": "proprietary",
+      "description": "Labels overlapping hand-labeled chips"
+    }
+  ],
+  "decision": "Dataset inputs and labels were accessed for the user-requested local non-redistributed research experiment. Do not redistribute the source rasters, labels, or derived checkpoint; obtain written permission from Cloud to Street before publication, external model distribution, commercial use, or onward transfer.",
+  "citation": "Bonafilia, D., Tellman, B., Anderson, T., Issenberg, E. (2020). Sen1Floods11: a georeferenced dataset to train and test deep learning flood algorithms for Sentinel-1. CVPR Workshops, pp. 210–211."
+}

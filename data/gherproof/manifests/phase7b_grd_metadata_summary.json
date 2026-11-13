@@ -1,0 +1,475 @@
+{
+  "status": "metadata_extracted",
+  "product_count": 4,
+  "records": [
+    {
+      "grd_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "stac": {
+        "datetime": "2026-01-12T12:12:47.436905Z",
+        "start_datetime": "2026-01-12T12:12:34.937747Z",
+        "end_datetime": "2026-01-12T12:12:59.936064Z",
+        "platform": "sentinel-1a",
+        "sat:relative_orbit": 12,
+        "sat:orbit_state": "ascending",
+        "sar:instrument_mode": "IW",
+        "sar:polarizations": [
+          "VV",
+          "VH"
+        ],
+        "sar:frequency_band": "C",
+        "s1:product_type": null,
+        "s1:processing_level": "1",
+        "s1:resolution_meters": null,
+        "s1:mission_data_take_id": null,
+        "s1:instrument_configuration_id": null
+      },
+      "safe_manifest": {
+        "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_safe-manifest.xml",
+        "sha256": "6614060d91e09cd4268ba6653adb8ca5f2527128114ee3173e397cbf0d0e0eb7",
+        "product_class": "S",
+        "product_type": "GRD",
+        "mission_id": null,
+        "safe_start_time": "2026-01-12T12:12:34.937747",
+        "safe_stop_time": "2026-01-12T12:12:59.936064"
+      },
+      "polarizations": {
+        "vv": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-calibration-vv.xml",
+            "sha256": "48d9d6022839e9217622ceef357a75a6e6be0793784747441cacf353829b9784",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "start_time": "2026-01-12T12:12:34.937747",
+            "stop_time": "2026-01-12T12:12:59.936064",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17469,
+                "min": 557.4404,
+                "max": 662.25
+              },
+              "betaNought": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17469,
+                "min": 463.3167,
+                "max": 613.722
+              },
+              "dn": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-noise-vv.xml",
+            "sha256": "82a8442f7bc47ae6eb6209d60a1aad4852bd4ffc2fa44984209b37a33e993055",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "noise_vector_count": 0
+          }
+        },
+        "vh": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-calibration-vh.xml",
+            "sha256": "2552613246266ff65f7947cf5f05b318319320dd09c943d027eb112346fc4319",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "start_time": "2026-01-12T12:12:34.937747",
+            "stop_time": "2026-01-12T12:12:59.936064",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17469,
+                "min": 557.4404,
+                "max": 662.25
+              },
+              "betaNought": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17469,
+                "min": 463.3167,
+                "max": 613.722
+              },
+              "dn": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-noise-vh.xml",
+            "sha256": "bb92b07b140376cdeda3b1efa7474cdccd6b39a8415b2dccb50e6ec4ac618fff",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "noise_vector_count": 0
+          }
+        }
+      }
+    },
+    {
+      "grd_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "stac": {
+        "datetime": "2026-01-09T23:56:19.288128Z",
+        "start_datetime": "2026-01-09T23:56:06.788856Z",
+        "end_datetime": "2026-01-09T23:56:31.787400Z",
+        "platform": "sentinel-1a",
+        "sat:relative_orbit": 150,
+        "sat:orbit_state": "descending",
+        "sar:instrument_mode": "IW",
+        "sar:polarizations": [
+          "VV",
+          "VH"
+        ],
+        "sar:frequency_band": "C",
+        "s1:product_type": null,
+        "s1:processing_level": "1",
+        "s1:resolution_meters": null,
+        "s1:mission_data_take_id": null,
+        "s1:instrument_configuration_id": null
+      },
+      "safe_manifest": {
+        "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_safe-manifest.xml",
+        "sha256": "91b0c4a60e5bbe100070ae0d8ffab9cd608ae9b529736caec04f07885150f543",
+        "product_class": "S",
+        "product_type": "GRD",
+        "mission_id": null,
+        "safe_start_time": "2026-01-09T23:56:06.788856",
+        "safe_stop_time": "2026-01-09T23:56:31.787400"
+      },
+      "polarizations": {
+        "vv": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-calibration-vv.xml",
+            "sha256": "cff7fe0b76bffba59bedf0e20a3362592a581ab45200b982657b2484c8ad64b5",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "start_time": "2026-01-09T23:56:06.788856",
+            "stop_time": "2026-01-09T23:56:31.787400",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17118,
+                "min": 558.588,
+                "max": 661.9977
+              },
+              "betaNought": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17118,
+                "min": 465.3086,
+                "max": 613.405
+              },
+              "dn": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-noise-vv.xml",
+            "sha256": "9e776080fe4c34bafaaeb95734346ca86d20afc07ba1d64591cc24652680efbd",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "noise_vector_count": 0
+          }
+        },
+        "vh": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-calibration-vh.xml",
+            "sha256": "5e775dcd44b2d119dfc50d1d489bfe2f6a2f27d3f450459eddcc521c586e19fd",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "start_time": "2026-01-09T23:56:06.788856",
+            "stop_time": "2026-01-09T23:56:31.787400",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17118,
+                "min": 558.588,
+                "max": 661.9977
+              },
+              "betaNought": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17118,
+                "min": 465.3086,
+                "max": 613.405
+              },
+              "dn": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-noise-vh.xml",
+            "sha256": "4109ffd91836602480834548e9ac4e66018e1f0028f6f915a99422f13862682b",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "noise_vector_count": 0
+          }
+        }
+      }
+    },
+    {
+      "grd_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "stac": {
+        "datetime": "2026-01-24T12:12:45.938137Z",
+        "start_datetime": "2026-01-24T12:12:33.438979Z",
+        "end_datetime": "2026-01-24T12:12:58.437296Z",
+        "platform": "sentinel-1a",
+        "sat:relative_orbit": 12,
+        "sat:orbit_state": "ascending",
+        "sar:instrument_mode": "IW",
+        "sar:polarizations": [
+          "VV",
+          "VH"
+        ],
+        "sar:frequency_band": "C",
+        "s1:product_type": null,
+        "s1:processing_level": "1",
+        "s1:resolution_meters": null,
+        "s1:mission_data_take_id": null,
+        "s1:instrument_configuration_id": null
+      },
+      "safe_manifest": {
+        "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_safe-manifest.xml",
+        "sha256": "1734655ec78978557c7c4e84e70da91d096eb0f323dff24d63a3a11d00de697b",
+        "product_class": "S",
+        "product_type": "GRD",
+        "mission_id": null,
+        "safe_start_time": "2026-01-24T12:12:33.438979",
+        "safe_stop_time": "2026-01-24T12:12:58.437296"
+      },
+      "polarizations": {
+        "vv": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-calibration-vv.xml",
+            "sha256": "9d8312e96bd60703e66ecf27b7d046f7887f38741dd1e9d003b8d60d25f16643",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "start_time": "2026-01-24T12:12:33.438979",
+            "stop_time": "2026-01-24T12:12:58.437296",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17469,
+                "min": 557.4492,
+                "max": 662.2608
+              },
+              "betaNought": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17469,
+                "min": 463.332,
+                "max": 613.7356
+              },
+              "dn": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-noise-vv.xml",
+            "sha256": "17efe7ee8cf0db0aa0df607c799051f5b03dea4f993ac676fedb479d95ea0b66",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "noise_vector_count": 0
+          }
+        },
+        "vh": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-calibration-vh.xml",
+            "sha256": "47ce46445950b94ef5fa29281963b170cd3143b26c3e4cfad9296b33038928cd",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "start_time": "2026-01-24T12:12:33.438979",
+            "stop_time": "2026-01-24T12:12:58.437296",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17469,
+                "min": 557.4492,
+                "max": 662.2608
+              },
+              "betaNought": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17469,
+                "min": 463.332,
+                "max": 613.7356
+              },
+              "dn": {
+                "stored_values": 17469,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-noise-vh.xml",
+            "sha256": "75a2b862981a20430f6d95fbf75b2ff5e0cbafbd5fede65e2502e9b983568610",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "noise_vector_count": 0
+          }
+        }
+      }
+    },
+    {
+      "grd_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "stac": {
+        "datetime": "2026-01-21T23:56:18.062524Z",
+        "start_datetime": "2026-01-21T23:56:05.563281Z",
+        "end_datetime": "2026-01-21T23:56:30.561767Z",
+        "platform": "sentinel-1a",
+        "sat:relative_orbit": 150,
+        "sat:orbit_state": "descending",
+        "sar:instrument_mode": "IW",
+        "sar:polarizations": [
+          "VV",
+          "VH"
+        ],
+        "sar:frequency_band": "C",
+        "s1:product_type": null,
+        "s1:processing_level": "1",
+        "s1:resolution_meters": null,
+        "s1:mission_data_take_id": null,
+        "s1:instrument_configuration_id": null
+      },
+      "safe_manifest": {
+        "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_safe-manifest.xml",
+        "sha256": "d54648ed3bd4e08986309424bb60a4e8419d0b92c6c931534ca278defc85a84a",
+        "product_class": "S",
+        "product_type": "GRD",
+        "mission_id": null,
+        "safe_start_time": "2026-01-21T23:56:05.563281",
+        "safe_stop_time": "2026-01-21T23:56:30.561767"
+      },
+      "polarizations": {
+        "vv": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-calibration-vv.xml",
+            "sha256": "e7fe7f8c5bf73b316dd89688f628515c26a12644366929a012dfd4f3fbe6c6f2",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "start_time": "2026-01-21T23:56:05.563281",
+            "stop_time": "2026-01-21T23:56:30.561767",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17118,
+                "min": 558.5809,
+                "max": 661.986
+              },
+              "betaNought": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17118,
+                "min": 465.2964,
+                "max": 613.3903
+              },
+              "dn": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-noise-vv.xml",
+            "sha256": "cec746445818672cff71b026ff17f4a95d43a9867bd540202a8a2c35b524fa3a",
+            "product_type": "GRD",
+            "polarisation": "VV",
+            "noise_vector_count": 0
+          }
+        },
+        "vh": {
+          "calibration_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-calibration-vh.xml",
+            "sha256": "889c069f2c2882a007620d877b1f008435da75dd239b22b0ef22256b37f020b2",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "start_time": "2026-01-21T23:56:05.563281",
+            "stop_time": "2026-01-21T23:56:30.561767",
+            "absolute_calibration_constant": 1.0,
+            "calibration_vector_count": 27,
+            "lut_summary": {
+              "sigmaNought": {
+                "stored_values": 17118,
+                "min": 558.5809,
+                "max": 661.986
+              },
+              "betaNought": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              },
+              "gamma": {
+                "stored_values": 17118,
+                "min": 465.2964,
+                "max": 613.3903
+              },
+              "dn": {
+                "stored_values": 17118,
+                "min": 474.0,
+                "max": 474.0
+              }
+            }
+          },
+          "noise_xml": {
+            "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-noise-vh.xml",
+            "sha256": "14b53a712d703c06732507ea7f29f6130828d808f70e70565e35552a2c8a41d0",
+            "product_type": "GRD",
+            "polarisation": "VH",
+            "noise_vector_count": 0
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Calibration LUTs and thermal-noise vectors exist, but the acquired COG samples have no map CRS/geotransform and are uint16 raw measurement DNs.",
+    "Full orbit application, noise/border-noise handling, calibrated backscatter conversion and terrain-corrected geocoding were not run.",
+    "Raw DN summaries are not compared numerically with model training dB or RTC Gamma0."
+  ]
+}

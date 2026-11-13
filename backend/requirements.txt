@@ -1,9 +1,14 @@
-# Earth Whisper — backend dependencies
-#
-# This file is intentionally minimal. The backend has not been implemented
-# yet (see backend/README.md). Add dependencies here as each service is
-# actually built in a future prompt — do not pre-install packages for
-# functionality that doesn't exist.
+# Earth Whisper backend and geospatial processing dependencies
 
 fastapi>=0.115
 uvicorn[standard]>=0.30
+python-multipart>=0.0.20
+Pillow>=10.4
+shapely>=2.0
+h5py>=3.12
+rasterio>=1.4
+asf_search>=10.0
+earthaccess>=0.9
+scikit-learn>=1.5
+pytest>=8.0
+httpx>=0.27

@@ -1,0 +1,206 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "created_at_utc": "2026-11-11T21:15:00Z",
+  "boundary_status": "not_delineated",
+  "enclosure_name": "Sujatpur Pallimangal Fisheries Enclosure / Pallimangal Fish Farm",
+  "administrative_context": "Sujatpur mouza, Bhabadah area, Monirampur/Abhaynagar border area, Jashore, Bangladesh",
+  "reported_event": {
+    "date": "2026-01-14",
+    "date_basis": "Multiple reports published Jan 15-17 say the breach occurred Wednesday; Jan 14 is a calendar inference, not an official incident timestamp.",
+    "reported_boundary_location": "south side of the fish enclosure",
+    "geometry": null
+  },
+  "geometry": null,
+  "provisional_locality_search_window_wgs84": {
+    "bbox": [
+      89.15,
+      22.93,
+      89.3,
+      23.08
+    ],
+    "status": "broad catalogue search window only; not a village or enclosure boundary",
+    "source": "Existing event scene catalogue query; analyst-selected locality window"
+  },
+  "sources_reviewed": [
+    {
+      "source": "Samakal, Jan 16, 2026",
+      "url": "https://samakal.com/whole-country/article/334020/%E0%A6%AA%E0%A6%BE%E0%A7%9C-%E0%A6%AD%E0%A7%99%E0%A6%99%E0%A7%87-%E0%A6%A2%E0%A7%81%E0%A6%95%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A7%A7%E0%A7%AB%E0%A7%AE-%E0%A6%B9%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0-%E0%A6%9C%E0%A6%AE%E0%A6%BF%E0%A6%B0-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A4%E0%A6%BF",
+      "use": "Reports a Pallimangal fish farm in Sujatpur mouza near Beel Kedaria and a south-side embankment failure; secondary reporting, no georeferenced enclosure polygon."
+    },
+    {
+      "source": "Dhaka Post, Jan 15, 2026",
+      "url": "https://www.dhakapost.com/country/424238",
+      "use": "Reports the Sujatpur Pallimangal gher and the Wednesday breach; no coordinates or polygon."
+    },
+    {
+      "source": "Daily Country Today, Jan 17, 2026",
+      "url": "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded%2C-over-500-families-homeless-in-jashore",
+      "use": "Reports surrounding villages and the south-side embankment failure; no georeferenced boundary."
+    },
+    {
+      "source": "OpenStreetMap Nominatim and Overpass, queried 2026-11-12",
+      "url": "https://www.openstreetmap.org/",
+      "query": "Sujatpur / Pallimangal Fisheries Enclosure / Bengali Sujatpur name within the broad locality box",
+      "result": "No matching mapped features returned. This does not prove the feature is absent from OSM globally."
+    },
+    {
+      "source": "Clark Labs Bangladesh Land Cover and Change Maps, 2022",
+      "url": "https://www.clarku.edu/geospatial-analytics/aquaculture-data-download/",
+      "use": "Historical country-scale pond-aquaculture class can support context only. It is not a surveyed or exact 2026 enclosure boundary."
+    },
+    {
+      "source": "Sentinel-2B L2A visual COG via Microsoft Planetary Computer",
+      "item_id": "S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956",
+      "acquisition_datetime": "2026-01-13T04:40:39.024Z",
+      "asset": "10 m visual true-colour crop over broad locality box",
+      "manifest": "data/gherproof/manifests/pre_event_sentinel2_manifest.json",
+      "result": "The crop contains many water/pond-like and agricultural-looking parcels; without a verified target point, none can be assigned to Pallimangal."
+    }
+  ],
+  "land_context": {
+    "agricultural_land_geometry": null,
+    "permanent_water_geometry": null,
+    "aquaculture_geometry": null,
+    "reason": "The target enclosure cannot be located uniquely in the broad 15 km-scale visual crop. No features are inferred from appearance alone."
+  },
+  "required_to_delineate": [
+    "A GPS point, mouza cadastral parcel number, or official fisheries enclosure ID for Pallimangal.",
+    "A locally reviewed boundary trace on the Jan 13, 2026 imagery or an authoritative enclosure/cadastral GIS polygon.",
+    "A field-verified distinction among enclosure water, permanent water, adjacent ponds, and cropland."
+  ],
+  "limitations": [
+    "No polygon or coordinates were invented.",
+    "The broad locality bbox must not be used for enclosure or spillover area calculations.",
+    "The 2022 Clark aquaculture class is not an exact 2026 boundary.",
+    "The Sentinel-2 crop is context imagery, not a validated land-cover classification."
+  ],
+  "phase5_location_review": {
+    "reviewed_at_utc": "2026-11-12",
+    "administrative_reference": {
+      "district": "Jessore (Jashore)",
+      "upazila": "Manirampur",
+      "union": "Kultia",
+      "village": "Sujatpur",
+      "dphe_codes": {
+        "district": "41",
+        "upazila": "61",
+        "union": "473",
+        "village": "368"
+      },
+      "source": "Bangladesh DPHE, Jessore District Geo Code based Unique Water Point ID, p.72, https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dphe/2024/12/8ddc502f31b5419089076326e526d691.pdf",
+      "meaning": "Administrative village identification only; does not geolocate the Pallimangal enclosure."
+    },
+    "additional_context_sources": [
+      {
+        "source": "LGED Monirampur Upazila map",
+        "url": "https://oldweb.lged.gov.bd/UploadedDocument/Map/KHULNA/jessore/monirampur/monirampur.pdf",
+        "use": "Administrative/union context and transport features; no georeferenced enclosure feature or digital GIS layer extracted."
+      },
+      {
+        "source": "Kultia Union Parishad representative page",
+        "url": "https://kultiaup.jessore.gov.bd/pages/leaders",
+        "accessed": "2026-11-12",
+        "use": "A listed union representative gives Sujatpur village, Moshiahati post office, Manirampur, Jashore as address; corroborates administrative affiliation only."
+      },
+      {
+        "source": "Samakal incident report, 2026-01-16",
+        "url": "https://samakal.com/whole-country/article/334020/%E0%A6%AA%E0%A6%BE%E0%A7%9C-%E0%A6%AD%E0%A7%99%E0%A6%99%E0%A7%87-%E0%A6%A2%E0%A7%81%E0%A6%95%E0%A6%B2-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A7%A7%E0%A7%AB%E0%A7%AE-%E0%A6%B9%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%B0-%E0%A6%9C%E0%A6%AE%E0%A6%BF",
+        "use": "Places Pallimangal in Sujatpur mouza, Beel Kedaria, Bhavadah context; says south edge and adjacent khal. No coordinates or polygon; reported area/dimensions are not GIS geometry."
+      },
+      {
+        "source": "Dhaka Post incident report, 2026-01-16",
+        "url": "https://www.dhakapost.com/country/424238",
+        "use": "Reports Pallimangal gher, southern embankment failure, and affected villages; no coordinates or polygon."
+      },
+      {
+        "source": "Manirampur Upazila official portal map page",
+        "url": "https://file-khulna.portal.gov.bd/files/manirampur.jessore.gov.bd/page/c2a42546_e7ba_420e_af47_654850770978/e2061925c60a0396461f80bb618c6c37.pdf",
+        "use": "Government local context document includes Sujatpur/Kultia place references but no enclosure geometry or GIS."
+      },
+      {
+        "source": "Ministry of Land Mouza and Plot Based National Digital Land Zoning portal",
+        "url": "https://map.land.gov.bd/",
+        "accessed": "2026-11-12",
+        "use": "Official portal describes digitized/georeferenced mouza/plot sheets and exposes administrative, mouza, sheet and plot selectors; no Sujatpur sheet/record was selected or downloaded."
+      },
+      {
+        "source": "Jessore Settlement Office village/mouza maps portal",
+        "url": "https://www.zsojessore.gov.bd/maps.html",
+        "use": "Official map index exists; no Sujatpur cadastral sheet was acquired in this phase."
+      },
+      {
+        "source": "MowjaBD public interface",
+        "url": "https://mowjabd.vercel.app/",
+        "accessed": "2026-11-12",
+        "use": "Third-party interface claims to provide a live DLRMS search; not an official source, no map downloaded or used."
+      }
+    ],
+    "site_location_status": "reported_mouza_beel_context_identified_no_georeferenced_point",
+    "toponymic_confidence": "moderate for the reported Sujatpur mouza / Beel Kedaria / Bhavadah place-name context; low for exact coordinate or parcel",
+    "boundary_status": "not_delineated",
+    "geometry": null,
+    "candidate_geometries": [],
+    "reason": "Neither public reporting, the official administrative sources, OSM search nor the broad Jan 13 imagery crop uniquely identifies the named enclosure. No coordinate, candidate, or boundary has been asserted.",
+    "review_package": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+    "review_map": "data/gherproof/review/phase5/pallimangal_human_review_map.png"
+  },
+  "phase5b_cadastral_review": {
+    "reviewed_at": "2026-11-12",
+    "candidate_jl_number": 143,
+    "jl_number_status": "provisionally_corroborated_secondary_source_not_officially_verified",
+    "jl_number_source": "https://dolilsheba.com/mouza/land-office/152",
+    "jl_number_note": "Manirampur mouza list gives Sujatapur/Sujatpur 143, between Hat Gachha 142 and Kultia 144. DPHE independently confirms village administrative chain but not J.L. number.",
+    "official_sheet_recovered": false,
+    "available_survey_version": null,
+    "original_map_path": null,
+    "georeferencing_status": "not_attempted_no_map_or_control_points",
+    "georeferencing_rms": null,
+    "beel_kedaria_geometry": null,
+    "pallimangal_geometry": null,
+    "southern_khal_geometry": null,
+    "candidate_boundary_created": false,
+    "target_sentinel1_coverage": null,
+    "inference_readiness": "not_ready",
+    "report": "docs/GHERPROOF_PHASE5B_REPORT.md",
+    "provenance_register": "docs/GHERPROOF_CADASTRAL_MAP_PROVENANCE.md",
+    "search_manifest": "data/gherproof/manifests/phase5b_cadastral_search.json"
+  },
+  "phase5c_cadastral_review": {
+    "reviewed_at": "2026-11-12",
+    "official_catalogue": "DLRS catalogue confirms Sujatpur/Sujatapur J.L. 143",
+    "surveys": [
+      "CS",
+      "RS"
+    ],
+    "records": [
+      "674849135945584000",
+      "674849414338318000",
+      "717475995518533000",
+      "717475991252926000"
+    ],
+    "record_status": "available_digitized_purchase_gated",
+    "originals_downloaded": false,
+    "preview_dimensions": "227x320",
+    "preview_limit": "Thumbnails only; not suitable for parcel interpretation or georeferencing",
+    "georeferencing_status": "not_attempted_no_originals_or_control_points",
+    "candidate_boundary_created": false,
+    "site_status": "unresolved",
+    "coverage": "unknown_without_site_geometry",
+    "report": "docs/GHERPROOF_PHASE5C_REPORT.md",
+    "manifest": "data/gherproof/manifests/phase5c_official_map_search.json"
+  },
+  "phase5d_free_source_review": {
+    "reviewed_at": "2026-11-12",
+    "full_resolution_secondary_sheet_recovered": false,
+    "secondary_listing": "BS/RS J.L. 143 sheet 1 listing at Digital Mouza Map; fee prompt observed, no checkout/download",
+    "preview_match": "not_confirmed_against_four_DLRS_previews",
+    "ministry_public_query": "Jashore absent from retrieved Khulna district options",
+    "candidate_boundary_created": false,
+    "georeferencing": "not_attempted_no_full_sheet_and_no_controls",
+    "target_coverage": "unknown_without_supported_geometry",
+    "inference_readiness": "not_ready",
+    "report": "docs/GHERPROOF_PHASE5D_REPORT.md",
+    "source_register": "docs/GHERPROOF_FREE_CADASTRAL_SOURCES.md",
+    "manifest": "data/gherproof/manifests/phase5d_free_source_search.json"
+  }
+}

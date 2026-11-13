@@ -1,0 +1,1189 @@
+{
+  "created_at_utc": "2026-11-12T20:58:11.880989+00:00",
+  "aoi": {
+    "status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+    "grid_epsg": "EPSG:32645",
+    "s1_resolution_m": 10,
+    "s1_width": 3111,
+    "s1_height": 2156,
+    "s1_aoi_pixels": 6475371,
+    "s1_area_km2": 647.5371,
+    "s2_grid_epsg": "EPSG:32645",
+    "s2_resolution_m": 20,
+    "s2_width": 1556,
+    "s2_height": 1079,
+    "s2_aoi_pixels": 1618843,
+    "s2_area_km2": 647.5372
+  },
+  "sentinel1_scenes": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "date": "2026-01-12T12:12:47.436905Z",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "status": "raster_verified",
+      "vv_fraction": 1.0,
+      "vh_fraction": 1.0,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 381961,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 412402,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 407964,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 398772,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "date": "2026-01-09T23:56:19.288128Z",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "status": "raster_verified",
+      "vv_fraction": 1.0,
+      "vh_fraction": 1.0,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 381961,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 412402,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 407964,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 398772,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+      "date": "2026-01-07T12:04:40.528434Z",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "status": "partial_or_failed",
+      "vv_fraction": null,
+      "vh_fraction": 0.8996052890251385
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260131T120426_20260131T120451_063011_07E81A_rtc",
+      "date": "2026-01-31T12:04:39.097437Z",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "status": "raster_verified",
+      "vv_fraction": 0.9030333551544769,
+      "vh_fraction": 0.9030333551544769,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 313614,
+          "valid_fraction": 0.8210628833833821
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 282331,
+          "valid_fraction": 0.6846014325827712
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 220672,
+          "valid_fraction": 0.5409104724926709
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 156587,
+          "valid_fraction": 0.39267300612881545
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "date": "2026-01-24T12:12:45.938137Z",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "status": "raster_verified",
+      "vv_fraction": 1.0,
+      "vh_fraction": 1.0,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 381961,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 412402,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 407964,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 398772,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+      "date": "2026-01-19T12:04:39.512002Z",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "status": "raster_verified",
+      "vv_fraction": 0.8977145865464697,
+      "vh_fraction": 0.8977145865464697,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 305563,
+          "valid_fraction": 0.7999848152036464
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 273551,
+          "valid_fraction": 0.663311526132269
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 211826,
+          "valid_fraction": 0.5192271867125531
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 147823,
+          "valid_fraction": 0.3706955352933506
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "date": "2026-01-21T23:56:18.062524Z",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "status": "raster_verified",
+      "vv_fraction": 1.0,
+      "vh_fraction": 1.0,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 381961,
+          "valid_pixels": 381961,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 394340,
+          "valid_pixels": 394340,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 404249,
+          "valid_pixels": 404249,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 396806,
+          "valid_pixels": 396806,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 412402,
+          "valid_pixels": 412402,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 407008,
+          "valid_pixels": 407008,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 407964,
+          "valid_pixels": 407964,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 419342,
+          "valid_pixels": 419342,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 412045,
+          "valid_pixels": 412045,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 398772,
+          "valid_pixels": 398772,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 404740,
+          "valid_pixels": 404740,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 394910,
+          "valid_pixels": 394910,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 382806,
+          "valid_pixels": 382806,
+          "valid_fraction": 1.0
+        }
+      ]
+    }
+  ],
+  "sentinel1_pairs": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "common_valid_pixels": 6475371,
+      "common_valid_fraction": 1.0,
+      "common_valid_area_km2": 647.5371,
+      "coverage_raster": {
+        "path": "data/gherproof/regional/processed/phase6b/sentinel1/pair_masks/2026-01-12_2026-01-24_rel12_ascending_common_valid_10m.tif",
+        "sha256": "f8dec7c621e0e9fa367df118c6200bf7dd6b5e2586b23d7820b30918e9f671d3",
+        "bytes": 39714
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "common_valid_pixels": 6475371,
+      "common_valid_fraction": 1.0,
+      "common_valid_area_km2": 647.5371,
+      "coverage_raster": {
+        "path": "data/gherproof/regional/processed/phase6b/sentinel1/pair_masks/2026-01-09_2026-01-21_rel150_descending_common_valid_10m.tif",
+        "sha256": "3b0318ffcb011c32332efaad50453edc9cc8df4c9d7e2f0c46dbf9e213fe2308",
+        "bytes": 39718
+      }
+    }
+  ],
+  "sentinel2_scenes": [
+    {
+      "item_id": "S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956",
+      "date": "2026-01-13T04:40:39.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618715,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999209311835675,
+      "class_counts": {
+        "4": 211153,
+        "5": 1139688,
+        "6": 267874,
+        "7": 128
+      }
+    },
+    {
+      "item_id": "S2A_MSIL2A_20260110T044241_R033_T45QYF_20260110T072709",
+      "date": "2026-01-10T04:42:41.024000Z",
+      "platform": "Sentinel-2A",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618792,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999684960184527,
+      "class_counts": {
+        "4": 286496,
+        "5": 1057561,
+        "6": 274735,
+        "7": 51
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "date": "2026-01-10T04:30:49.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618737,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999345211363918,
+      "class_counts": {
+        "4": 342609,
+        "5": 1000577,
+        "6": 275551,
+        "7": 106
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260108T044151_R033_T45QYF_20260108T075009",
+      "date": "2026-01-08T04:41:51.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618269,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9996454257763107,
+      "class_counts": {
+        "0": 185,
+        "4": 313309,
+        "5": 1030182,
+        "6": 274778,
+        "7": 389
+      }
+    },
+    {
+      "item_id": "S2A_MSIL2A_20260107T043241_R133_T45QYF_20260107T075314",
+      "date": "2026-01-07T04:32:41.024000Z",
+      "platform": "Sentinel-2A",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1617973,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9994625791383105,
+      "class_counts": {
+        "4": 275637,
+        "5": 1060071,
+        "6": 282265,
+        "7": 184,
+        "10": 686
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260105T043201_R133_T45QYF_20260105T074417",
+      "date": "2026-01-05T04:32:01.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 0,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.0,
+      "class_counts": {
+        "8": 13524,
+        "9": 1605319
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260103T044109_R033_T45QYF_20260103T070213",
+      "date": "2026-01-03T04:41:09.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1612759,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9962417603189438,
+      "class_counts": {
+        "5": 1410873,
+        "6": 201886,
+        "7": 4607,
+        "8": 1477
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260130T042929_R133_T45QYF_20260130T081341",
+      "date": "2026-01-30T04:29:29.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 13657,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.008436272078268244,
+      "class_counts": {
+        "5": 7643,
+        "6": 6014,
+        "8": 533427,
+        "10": 1071759
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260128T044041_R033_T45QYF_20260128T080011",
+      "date": "2026-01-28T04:40:41.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618768,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999536706153715,
+      "class_counts": {
+        "4": 162757,
+        "5": 1212768,
+        "6": 243243,
+        "7": 75
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260125T043051_R133_T45QYF_20260125T075409",
+      "date": "2026-01-25T04:30:51.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618591,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9998443332676485,
+      "class_counts": {
+        "4": 68,
+        "5": 1373788,
+        "6": 244735,
+        "7": 252
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260123T043959_R033_T45QYF_20260123T064016",
+      "date": "2026-01-23T04:39:59.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618484,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9997782366789121,
+      "class_counts": {
+        "4": 69376,
+        "5": 1289114,
+        "6": 259994,
+        "7": 359
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "date": "2026-01-20T04:30:09.024000Z",
+      "platform": "Sentinel-2B",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618688,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999042526051013,
+      "class_counts": {
+        "4": 2861,
+        "5": 1353480,
+        "6": 262347,
+        "7": 155
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260118T044131_R033_T45QYF_20260118T075208",
+      "date": "2026-01-18T04:41:31.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 33,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618723,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999258729845946,
+      "class_counts": {
+        "4": 116990,
+        "5": 1234920,
+        "6": 266813,
+        "7": 92,
+        "10": 28
+      }
+    },
+    {
+      "item_id": "S2C_MSIL2A_20260115T043131_R133_T45QYF_20260115T073709",
+      "date": "2026-01-15T04:31:31.025000Z",
+      "platform": "Sentinel-2C",
+      "relative_orbit": 133,
+      "direction": "descending",
+      "baseline": "05.11",
+      "status": "raster_verified_scl",
+      "clear_pixels": 1618689,
+      "aoi_pixels": 1618843,
+      "clear_fraction": 0.9999048703302297,
+      "class_counts": {
+        "5": 1357033,
+        "6": 261656,
+        "7": 154
+      }
+    }
+  ],
+  "sentinel2_selected_pair": {
+    "pre_item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+    "pre_date": "2026-01-10",
+    "pre_platform": "Sentinel-2B",
+    "pre_relative_orbit": "133",
+    "post_item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+    "post_date": "2026-01-20",
+    "post_platform": "Sentinel-2B",
+    "post_relative_orbit": "133",
+    "mgrs_tile": "45QYF",
+    "same_platform": true,
+    "pre_baseline": "05.11",
+    "post_baseline": "05.11",
+    "common_clear_pixels_20m": 1618583,
+    "common_clear_area_km2": 647.4332,
+    "common_clear_fraction_of_aoi": 0.9998393914666215,
+    "grid_cells_4x4": [
+      {
+        "row": 0,
+        "column": 0,
+        "aoi_pixels": 95104,
+        "valid_pixels": 95104,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "aoi_pixels": 98191,
+        "valid_pixels": 98191,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "aoi_pixels": 100679,
+        "valid_pixels": 100679,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "aoi_pixels": 98832,
+        "valid_pixels": 98832,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "aoi_pixels": 103299,
+        "valid_pixels": 103299,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "aoi_pixels": 105030,
+        "valid_pixels": 105004,
+        "valid_fraction": 0.9997524516804722
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "aoi_pixels": 105030,
+        "valid_pixels": 105030,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "aoi_pixels": 101937,
+        "valid_pixels": 101937,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "aoi_pixels": 102178,
+        "valid_pixels": 102178,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "aoi_pixels": 105030,
+        "valid_pixels": 104820,
+        "valid_fraction": 0.9980005712653528
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "aoi_pixels": 105030,
+        "valid_pixels": 105030,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "aoi_pixels": 103196,
+        "valid_pixels": 103196,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "aoi_pixels": 99687,
+        "valid_pixels": 99663,
+        "valid_fraction": 0.9997592464413615
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "aoi_pixels": 101185,
+        "valid_pixels": 101185,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "aoi_pixels": 98731,
+        "valid_pixels": 98731,
+        "valid_fraction": 1.0
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "aoi_pixels": 95704,
+        "valid_pixels": 95704,
+        "valid_fraction": 1.0
+      }
+    ],
+    "status": "SCL_pixel_validated"
+  },
+  "figures": [
+    "data/gherproof/regional/processed/phase6b/figures/phase6b_candidate_coverage.png",
+    "data/gherproof/regional/processed/phase6b/figures/phase6b_pixel_validity_maps.png"
+  ]
+}

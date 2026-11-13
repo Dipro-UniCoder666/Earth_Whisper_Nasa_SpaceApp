@@ -1,0 +1,304 @@
+{
+  "created_at_utc": "2026-11-12T18:35:08.072990+00:00",
+  "aoi_bbox_wgs84": [
+    89.24,
+    22.92,
+    89.54,
+    23.11
+  ],
+  "grid": {
+    "crs": "EPSG:32645",
+    "resolution_m": 10,
+    "width": 3111,
+    "height": 2156,
+    "aoi_pixels": 6475371
+  },
+  "existing_jan07_jan19": {
+    "assets": [
+      {
+        "date": "2026-01-07",
+        "polarization": "VV",
+        "source_path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "source_crs": "EPSG:32645",
+        "source_resolution_m": [
+          10.0,
+          10.0
+        ],
+        "source_bounds": [
+          720240.0,
+          2537380.0,
+          735880.0,
+          2554240.0
+        ],
+        "source_shape": [
+          1686,
+          1564
+        ],
+        "source_nodata": -32768.0,
+        "valid_pixels_in_provisional_region": 463292
+      },
+      {
+        "date": "2026-01-07",
+        "polarization": "VH",
+        "source_path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-07_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "source_crs": "EPSG:32645",
+        "source_resolution_m": [
+          10.0,
+          10.0
+        ],
+        "source_bounds": [
+          720240.0,
+          2537380.0,
+          735880.0,
+          2554240.0
+        ],
+        "source_shape": [
+          1686,
+          1564
+        ],
+        "source_nodata": -32768.0,
+        "valid_pixels_in_provisional_region": 463292
+      },
+      {
+        "date": "2026-01-19",
+        "polarization": "VV",
+        "source_path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-19_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "source_crs": "EPSG:32645",
+        "source_resolution_m": [
+          10.0,
+          10.0
+        ],
+        "source_bounds": [
+          720240.0,
+          2537380.0,
+          735880.0,
+          2554240.0
+        ],
+        "source_shape": [
+          1686,
+          1564
+        ],
+        "source_nodata": -32768.0,
+        "valid_pixels_in_provisional_region": 463292
+      },
+      {
+        "date": "2026-01-19",
+        "polarization": "VH",
+        "source_path": "data/gherproof/processed/sentinel1/planetary_computer/2026-01-19_sentinel1_rtc_vv_vh_10m_utm45n.tif",
+        "source_crs": "EPSG:32645",
+        "source_resolution_m": [
+          10.0,
+          10.0
+        ],
+        "source_bounds": [
+          720240.0,
+          2537380.0,
+          735880.0,
+          2554240.0
+        ],
+        "source_shape": [
+          1686,
+          1564
+        ],
+        "source_nodata": -32768.0,
+        "valid_pixels_in_provisional_region": 463292
+      }
+    ],
+    "common_valid_pixels": 463292,
+    "common_valid_area_km2": 46.3292,
+    "fraction_of_provisional_aoi": 0.07154678859327133,
+    "coverage_raster": "data/gherproof/regional/processed/sentinel1/existing_jan07_jan19_common_valid_coverage_10m_utm45n.tif",
+    "coverage_raster_sha256": "6adbe96486eded5156ffa8c5c05126ab0c96de809c3d2cbe0d6201a964f58d8c",
+    "coverage_preview": "data/gherproof/regional/phase6_existing_s1_coverage.png",
+    "interpretation": "only locally clipped January 7/19 assets were evaluated; all pixels outside their local clips remain unvalidated"
+  },
+  "reporting_sectors": [
+    {
+      "name": "western_provisional_reporting_sector",
+      "status": "provisional search context only",
+      "aoi_pixels": 3236780,
+      "common_jan07_jan19_valid_pixels": 463292,
+      "common_valid_area_km2": 46.3292,
+      "fraction": 0.14313360809199266
+    },
+    {
+      "name": "eastern_provisional_reporting_sector",
+      "status": "provisional search context only",
+      "aoi_pixels": 3237381,
+      "common_jan07_jan19_valid_pixels": 0,
+      "common_valid_area_km2": 0.0,
+      "fraction": 0.0
+    }
+  ],
+  "limitations": [
+    "No official or source-verified village polygons were found for spatial per-village coverage.",
+    "West/east reporting sectors are provisional search polygons and must not be interpreted as upazila or village boundaries.",
+    "No no-data pixel is classified as dry land."
+  ],
+  "phase6b_pixel_validation": {
+    "sentinel1_manifest": "data/gherproof/manifests/phase6b_sentinel1_pixel_validation.json",
+    "sentinel2_manifest": "data/gherproof/manifests/phase6b_sentinel2_pixel_validation.json",
+    "raster_qc_manifest": "data/gherproof/manifests/phase6b_raster_qc_manifest.json",
+    "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+    "sentinel1_complete_scenes": 6,
+    "sentinel1_partial_scene_ids": [
+      "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc"
+    ],
+    "sentinel1_pairs": [
+      {
+        "pre_date": "2026-01-12",
+        "post_date": "2026-01-24",
+        "relative_orbit": 12,
+        "direction": "ascending",
+        "common_valid_fraction": 1.0,
+        "area_km2": 647.5371
+      },
+      {
+        "pre_date": "2026-01-09",
+        "post_date": "2026-01-21",
+        "relative_orbit": 150,
+        "direction": "descending",
+        "common_valid_fraction": 1.0,
+        "area_km2": 647.5371
+      }
+    ],
+    "sentinel2_scl_verified_scenes": 14,
+    "sentinel2_selected_pair": {
+      "pre_item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "pre_date": "2026-01-10",
+      "pre_platform": "Sentinel-2B",
+      "pre_relative_orbit": "133",
+      "post_item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "post_date": "2026-01-20",
+      "post_platform": "Sentinel-2B",
+      "post_relative_orbit": "133",
+      "mgrs_tile": "45QYF",
+      "same_platform": true,
+      "pre_baseline": "05.11",
+      "post_baseline": "05.11",
+      "common_clear_pixels_20m": 1618583,
+      "common_clear_area_km2": 647.4332,
+      "common_clear_fraction_of_aoi": 0.9998393914666215,
+      "grid_cells_4x4": [
+        {
+          "row": 0,
+          "column": 0,
+          "aoi_pixels": 95104,
+          "valid_pixels": 95104,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "aoi_pixels": 98191,
+          "valid_pixels": 98191,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "aoi_pixels": 100679,
+          "valid_pixels": 100679,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "aoi_pixels": 98832,
+          "valid_pixels": 98832,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "aoi_pixels": 103299,
+          "valid_pixels": 103299,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "aoi_pixels": 105030,
+          "valid_pixels": 105004,
+          "valid_fraction": 0.9997524516804722
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "aoi_pixels": 105030,
+          "valid_pixels": 105030,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "aoi_pixels": 101937,
+          "valid_pixels": 101937,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "aoi_pixels": 102178,
+          "valid_pixels": 102178,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "aoi_pixels": 105030,
+          "valid_pixels": 104820,
+          "valid_fraction": 0.9980005712653528
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "aoi_pixels": 105030,
+          "valid_pixels": 105030,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "aoi_pixels": 103196,
+          "valid_pixels": 103196,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "aoi_pixels": 99687,
+          "valid_pixels": 99663,
+          "valid_fraction": 0.9997592464413615
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "aoi_pixels": 101185,
+          "valid_pixels": 101185,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "aoi_pixels": 98731,
+          "valid_pixels": 98731,
+          "valid_fraction": 1.0
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "aoi_pixels": 95704,
+          "valid_pixels": 95704,
+          "valid_fraction": 1.0
+        }
+      ],
+      "status": "SCL_pixel_validated"
+    },
+    "limitations": [
+      "regional AOI is provisional bbox, not official village geometry",
+      "no event inference or village-specific claim",
+      "remote product completeness does not establish water presence or cause"
+    ]
+  }
+}

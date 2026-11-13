@@ -6,6 +6,7 @@ import { HeroAtmosphere } from '@/components/layout/HeroAtmosphere'
 
 interface SecondaryPageLayoutProps {
   children: ReactNode
+  quiet?: boolean
 }
 
 /**
@@ -18,7 +19,7 @@ interface SecondaryPageLayoutProps {
  *   - Scrollable content sits above both layers
  *   - Landing Footer at the bottom
  */
-export function SecondaryPageLayout({ children }: SecondaryPageLayoutProps) {
+export function SecondaryPageLayout({ children, quiet = false }: SecondaryPageLayoutProps) {
   return (
     <div
       data-theme="dark"
@@ -36,7 +37,8 @@ export function SecondaryPageLayout({ children }: SecondaryPageLayoutProps) {
           position: 'fixed',
           inset: 0,
           zIndex: 0,
-          backgroundImage: 'url(/images/Other_Page.svg)',
+          backgroundImage: quiet ? 'none' : 'url(/images/Other_Page.svg)',
+          backgroundColor: quiet ? '#07111b' : undefined,
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
@@ -50,14 +52,14 @@ export function SecondaryPageLayout({ children }: SecondaryPageLayoutProps) {
           position: 'fixed',
           inset: 0,
           zIndex: 1,
-          background: 'linear-gradient(180deg, rgba(4,9,18,0.52) 0%, rgba(4,9,18,0.42) 40%, rgba(4,9,18,0.58) 100%)',
+          background: quiet ? 'rgba(4,9,18,0.16)' : 'linear-gradient(180deg, rgba(4,9,18,0.52) 0%, rgba(4,9,18,0.42) 40%, rgba(4,9,18,0.58) 100%)',
         }}
       />
 
       {/* ── Skip link ── */}
       {/* Keep the shared hero atmosphere inside the top hero band so it does
           not continue behind the page footer or lower content. */}
-      <div
+      {!quiet && <div
         aria-hidden="true"
         style={{
           position: 'absolute',
@@ -69,7 +71,7 @@ export function SecondaryPageLayout({ children }: SecondaryPageLayoutProps) {
         }}
       >
         <HeroAtmosphere />
-      </div>
+      </div>}
 
       <SkipLink />
 

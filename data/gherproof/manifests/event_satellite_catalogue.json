@@ -1,0 +1,1623 @@
+{
+  "queried_at_utc": "2026-11-11T20:09:12.400362+00:00",
+  "catalog": "Copernicus Data Space Ecosystem STAC API v1",
+  "query_period_utc": [
+    "2026-01-01",
+    "2026-01-30"
+  ],
+  "bbox_wgs84": [
+    89.15,
+    22.93,
+    89.3,
+    23.08
+  ],
+  "bbox_status": "provisional locality search window, not authoritative enclosure boundary",
+  "items": [
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181_COG",
+      "datetime": "2026-01-24T12:12:33.438979Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_state": "ascending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        87.142601,
+        21.837473,
+        89.921783,
+        23.77396
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.142601,
+              23.347193
+            ],
+            [
+              89.630501,
+              23.77396
+            ],
+            [
+              89.921783,
+              22.267492
+            ],
+            [
+              87.461731,
+              21.837473
+            ],
+            [
+              87.142601,
+              23.347193
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/24/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181_COG.SAFE/measurement/s1a-iw-grd-vh-20260124t121233-20260124t121258-062909-07e438-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(24e645c8-4eef-49db-b7ad-49adede1d44a)/Nodes(S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260124t121233-20260124t121258-062909-07e438-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 569984054,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610c5643576f37718b7083e9f6fe895348b",
+          "shape": [
+            25837,
+            16730
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/24/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181_COG.SAFE/measurement/s1a-iw-grd-vv-20260124t121233-20260124t121258-062909-07e438-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(24e645c8-4eef-49db-b7ad-49adede1d44a)/Nodes(S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260124t121233-20260124t121258-062909-07e438-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 656631097,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610d263faeab44cd7190092cc8f1c8470f3",
+          "shape": [
+            25837,
+            16730
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(24e645c8-4eef-49db-b7ad-49adede1d44a)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1234397542,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501108fb2151e6d279c7587d075748e003dc1",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(7e9aa2a5-f624-4c97-be12-ca2fe4112089)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 118704,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501103c5ca2864c31000d6da87842f8d297d3",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B_COG",
+      "datetime": "2026-01-21T23:56:05.563281Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_state": "descending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        88.523521,
+        22.581196,
+        91.267563,
+        24.50758
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.946823,
+              22.581196
+            ],
+            [
+              88.523521,
+              23.001173
+            ],
+            [
+              88.815865,
+              24.50758
+            ],
+            [
+              91.267563,
+              24.090702
+            ],
+            [
+              90.946823,
+              22.581196
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/21/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B_COG.SAFE/measurement/s1a-iw-grd-vh-20260121t235605-20260121t235630-062872-07e2ff-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(6a060782-634a-42b3-a4aa-bd882d1f843e)/Nodes(S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260121t235605-20260121t235630-062872-07e2ff-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 575873343,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610c88bdd62f141a85f38c9790e73379d59",
+          "shape": [
+            25314,
+            16742
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/21/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B_COG.SAFE/measurement/s1a-iw-grd-vv-20260121t235605-20260121t235630-062872-07e2ff-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(6a060782-634a-42b3-a4aa-bd882d1f843e)/Nodes(S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260121t235605-20260121t235630-062872-07e2ff-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 670958049,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610381b177227f1cdb53c0b3d1775faa9f6",
+          "shape": [
+            25314,
+            16742
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(6a060782-634a-42b3-a4aa-bd882d1f843e)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1254303230,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110d96cd8dc392cbef0a5c320251651d1a4",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(056dde62-7ee6-4a9d-9038-c8e2e877a68b)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 122542,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501107c9b63ddb5e176ab69e99e48e1c916ba",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG",
+      "datetime": "2026-01-19T12:04:27.012308Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 114,
+      "orbit_state": "ascending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        89.114082,
+        22.230318,
+        91.901962,
+        24.16563
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.114082,
+              23.739773
+            ],
+            [
+              91.609451,
+              24.16563
+            ],
+            [
+              91.901962,
+              22.659374
+            ],
+            [
+              89.435059,
+              22.230318
+            ],
+            [
+              89.114082,
+              23.739773
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/19/S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE/measurement/s1a-iw-grd-vh-20260119t120427-20260119t120452-062836-07e1d9-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b5dd9e23-6c0f-4cbc-8d45-cc7a0c133b2d)/Nodes(S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260119t120427-20260119t120452-062836-07e1d9-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 573468706,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610a8a511c655cb3798b3e0b9b45b206e3d",
+          "shape": [
+            25835,
+            16730
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/19/S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE/measurement/s1a-iw-grd-vv-20260119t120427-20260119t120452-062836-07e1d9-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b5dd9e23-6c0f-4cbc-8d45-cc7a0c133b2d)/Nodes(S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260119t120427-20260119t120452-062836-07e1d9-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 662506694,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "16105d11e3755fc181cb26dd5a9d822a98aa",
+          "shape": [
+            25835,
+            16730
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(b5dd9e23-6c0f-4cbc-8d45-cc7a0c133b2d)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1243800392,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d5011044f64aac4926804fc89e809333c2dec1",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(334c8e92-1227-4182-b3e1-fbef37d61c77)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 118387,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110e0d6fc6fd6911ec648c53e8a6a5e2e0e",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB_COG",
+      "datetime": "2026-01-12T12:12:34.937747Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_state": "ascending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        87.141052,
+        21.837538,
+        89.920334,
+        23.774021
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.141052,
+              23.34726
+            ],
+            [
+              89.629059,
+              23.774021
+            ],
+            [
+              89.920334,
+              22.267551
+            ],
+            [
+              87.460175,
+              21.837538
+            ],
+            [
+              87.141052,
+              23.34726
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/12/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB_COG.SAFE/measurement/s1a-iw-grd-vh-20260112t121234-20260112t121259-062734-07dde0-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(43c2c390-9576-4281-9fa7-8c2204bbbe57)/Nodes(S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260112t121234-20260112t121259-062734-07dde0-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 568343664,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "16109cc91b75e418453683259dbe84324de1",
+          "shape": [
+            25838,
+            16730
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/12/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB_COG.SAFE/measurement/s1a-iw-grd-vv-20260112t121234-20260112t121259-062734-07dde0-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(43c2c390-9576-4281-9fa7-8c2204bbbe57)/Nodes(S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260112t121234-20260112t121259-062734-07dde0-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 657630900,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610df3173e7ce2c610a9440b2c7d46802b7",
+          "shape": [
+            25838,
+            16730
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(43c2c390-9576-4281-9fa7-8c2204bbbe57)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1233723538,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501109d01c3689a874e100cc4d5ba7403b0b3",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(42b01223-00ad-4fc6-9c89-27a6c6dcd222)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 117394,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110c38a104fb38759bb3cc091db83e69c60",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734_COG",
+      "datetime": "2026-01-09T23:56:06.788856Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_state": "descending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        88.523315,
+        22.581247,
+        91.26738,
+        24.507654
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.946617,
+              22.581247
+            ],
+            [
+              88.523315,
+              23.001249
+            ],
+            [
+              88.815681,
+              24.507654
+            ],
+            [
+              91.26738,
+              24.09075
+            ],
+            [
+              90.946617,
+              22.581247
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/09/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734_COG.SAFE/measurement/s1a-iw-grd-vh-20260109t235606-20260109t235631-062697-07dc80-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(50a48f32-bf2b-4e12-adc6-d41f0f3e8cae)/Nodes(S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260109t235606-20260109t235631-062697-07dc80-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 572384985,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610e668a2c8be66ee31308a9bba0c7dd6fa",
+          "shape": [
+            25314,
+            16742
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/09/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734_COG.SAFE/measurement/s1a-iw-grd-vv-20260109t235606-20260109t235631-062697-07dc80-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(50a48f32-bf2b-4e12-adc6-d41f0f3e8cae)/Nodes(S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260109t235606-20260109t235631-062697-07dc80-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 670075518,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610686d45a47d987ba5c194f254c367f027",
+          "shape": [
+            25314,
+            16742
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(50a48f32-bf2b-4e12-adc6-d41f0f3e8cae)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1249949105,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d5011060ab6085215de3d3839c95357241d166",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(6103d431-abd7-4911-a869-8fb670b738bc)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 120511,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110f67c0a9a87b117fb736db486bb16393f",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-1-grd",
+      "id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG",
+      "datetime": "2026-01-07T12:04:28.028694Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 114,
+      "orbit_state": "ascending",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "instrument_mode": "IW",
+      "processing_level": "L1",
+      "bbox": [
+        89.113495,
+        22.230316,
+        91.901497,
+        24.165672
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.113495,
+              23.739767
+            ],
+            [
+              91.608963,
+              24.165672
+            ],
+            [
+              91.901497,
+              22.65942
+            ],
+            [
+              89.434502,
+              22.230316
+            ],
+            [
+              89.113495,
+              23.739767
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "vh": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/07/S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE/measurement/s1a-iw-grd-vh-20260107t120428-20260107t120453-062661-07db1b-002-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c13324b1-90eb-4ca4-bbf8-c92e11f8d20d)/Nodes(S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260107t120428-20260107t120453-062661-07db1b-002-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 572402839,
+          "title": "VH: Vertical transmit, horizontal receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "1610219ec257a5b5ddede87466f01771bfb8",
+          "shape": [
+            25836,
+            16730
+          ]
+        },
+        "vv": {
+          "href": "s3://eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/01/07/S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE/measurement/s1a-iw-grd-vv-20260107t120428-20260107t120453-062661-07db1b-001-cog.tiff",
+          "https_href": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c13324b1-90eb-4ca4-bbf8-c92e11f8d20d)/Nodes(S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260107t120428-20260107t120453-062661-07db1b-001-cog.tiff)/$value",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "size": 664403282,
+          "title": "VV: Vertical transmit, vertical receive",
+          "nodata": 0,
+          "data_type": "uint16",
+          "checksum": "161005f318ec3f462bee040e3a4c577aa5ea",
+          "shape": [
+            25836,
+            16730
+          ]
+        },
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c13324b1-90eb-4ca4-bbf8-c92e11f8d20d)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1244623701,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501104326790bd86ddb28b4e56bb92966d69f",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(4af50af9-d7b5-4952-a492-ad279525bdb5)/$value",
+          "https_href": null,
+          "type": "image/png",
+          "size": 116922,
+          "title": "Thumbnail",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501102fb261fcadbedc6b779ea8e627d4339d",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260130T042929_N0511_R133_T45QYF_20260130T081341",
+      "datetime": "2026-01-30T04:29:29.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.04128403941722,
+        22.49054569679087,
+        90.0324758349017,
+        23.49317422139153
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.04128403941722,
+              22.505454244201328
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              89.2747531565919,
+              23.49317422139153
+            ],
+            [
+              89.04128403941722,
+              22.505454244201328
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(4ee44a86-83b6-46dd-a248-505df67a5c83)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 983119989,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110022c5dbd6695feb24990719ac2d9b065",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(21e36bab-b4b1-4df2-a71f-6fa07a974c8e)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 19261,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110d52ebbbe4d127c9082492e2d8597c4cd",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260128T044041_N0511_R033_T45QYF_20260128T080011",
+      "datetime": "2026-01-28T04:40:41.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499143508707625,
+        89.70699152031827,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.70699152031827,
+              23.486249123980294
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              89.45151764621137,
+              22.499143508707622
+            ],
+            [
+              89.70699152031827,
+              23.486249123980294
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(d3a5c77d-4222-4358-b48f-af7ad532fca2)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 783762056,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110c0cd3d7759857497cb2710d7b6bafe1b",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(ac29d080-4acd-4298-bb1c-49fc2a369468)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 15303,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d501108bfb793792e064f2be88c3eab87a9501",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260125T043051_N0511_R133_T45QYF_20260125T075409",
+      "datetime": "2026-01-25T04:30:51.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.03774607230147,
+        22.49054569679087,
+        90.0324758349017,
+        23.49323343097901
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.03774607230147,
+              22.505508669714708
+            ],
+            [
+              89.27105751829413,
+              23.49323343097901
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.03774607230147,
+              22.505508669714708
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(56406269-2e1b-4cb0-bcd1-d40319e13e34)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1040293986,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501106bae7c37c1f526c4403e8c434a4e0fee",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(8f218da6-0297-484f-96d6-c148c6828d9b)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 18536,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d501106445433d11bafbba8a4fd9cc921e8a6c",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260123T043959_N0511_R033_T45QYF_20260123T064016",
+      "datetime": "2026-01-23T04:39:59.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499206144761043,
+        89.70279802296074,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.70279802296074,
+              23.486316310005716
+            ],
+            [
+              89.44744594741584,
+              22.499206144761043
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.70279802296074,
+              23.486316310005716
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(dac562af-94de-4119-a8b8-363428f1485b)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 763929550,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501108afe3761d7cda26aaec873c04c09950c",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(7cae0730-2188-4a08-91a4-6b603103cdde)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 15488,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d501102f30cfe8abca75c4335f2cf10dbce733",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260120T043009_N0511_R133_T45QYF_20260120T062559",
+      "datetime": "2026-01-20T04:30:09.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.03725395000332,
+        22.49054569679087,
+        90.0324758349017,
+        23.493241320483815
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.03725395000332,
+              22.50551624016628
+            ],
+            [
+              89.27056508527198,
+              23.49324132048381
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.03725395000332,
+              22.50551624016628
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(1f6b5035-a596-4d3f-bc31-c5e1ba562788)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1035803871,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501106b089f119eecb9b086271b65a0d21617",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(284d8504-714e-4915-8c5c-de81847bfeba)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 19576,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110ab5924d6baa2530b56002d72a3d2f08c",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260118T044131_N0511_R033_T45QYF_20260118T075208",
+      "datetime": "2026-01-18T04:41:31.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499242772219713,
+        89.70014350279267,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.70014350279266,
+              23.486358839342046
+            ],
+            [
+              89.445064954821,
+              22.49924277221971
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.70014350279266,
+              23.486358839342046
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(179d0d20-9071-4806-b567-e09bd46f2b2e)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 771929732,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d5011032193b9f6f71d0040e1a934cb3c1d449",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(1809e6d5-d204-4c90-86de-ea904226f560)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 15755,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d501106cb79b466b502daedb7cc22a63939d1b",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260115T043131_N0511_R133_T45QYF_20260115T073709",
+      "datetime": "2026-01-15T04:31:31.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.03585061664107,
+        22.49054569679087,
+        90.0324758349017,
+        23.493261999677262
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.03585061664106,
+              22.505537828026252
+            ],
+            [
+              89.26927436830326,
+              23.493261999677262
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.03585061664106,
+              22.505537828026252
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c9f6bf60-16e1-4f3c-9aa7-d2ddae1e1623)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1031199706,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501107d6aa0cdf0231772c407cfe9bee91a12",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(6d58f78f-947f-4ac4-beb9-0217185a49a4)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 19117,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d501108a7b1800fffc310a549fdc397bda9597",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260113T044039_N0511_R033_T45QYF_20260113T070956",
+      "datetime": "2026-01-13T04:40:39.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499237847751914,
+        89.70154226100723,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.70154226100722,
+              23.486336429168162
+            ],
+            [
+              89.44538507316365,
+              22.49923784775191
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.70154226100722,
+              23.486336429168162
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(573dafbe-edfc-48f1-93fb-dc0d9e7abd4a)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 778095865,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501106245a4d9be8ba57959983bad64f24153",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(62e4eb29-1fb6-440b-bc63-3c244609e7bf)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 15489,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110023b66d165fb016d6766d4f9bcd8d8b9",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2A_MSIL2A_20260110T044241_N0511_R033_T45QYF_20260110T072709",
+      "datetime": "2026-01-10T04:42:41.024000Z",
+      "platform": "sentinel-2a",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499391299155477,
+        89.69150907590262,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.6915090759026,
+              23.48649717562203
+            ],
+            [
+              89.43540986142908,
+              22.499391299155473
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.6915090759026,
+              23.48649717562203
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(df42be6a-dc6d-4133-b0d3-71d415a3977b)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 770487392,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110398590df04eadafdff0e88f8d2c0fd0d",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(1a1c9d80-8088-4236-9234-8b4524d7d484)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 16636,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110dd585b2e6e1683507edec018cac8ffff",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260110T043049_N0511_R133_T45QYF_20260110T065859",
+      "datetime": "2026-01-10T04:30:49.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.03567908635688,
+        22.49054569679087,
+        90.0324758349017,
+        23.493261620837547
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.03567908635688,
+              22.50554046672341
+            ],
+            [
+              89.26929801404411,
+              23.493261620837547
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.03567908635688,
+              22.50554046672341
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(77b2c5cb-ade2-4a6e-996d-dd2e19a25798)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1047890461,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d50110662d093cdd5f1c495fa4231413a53cc2",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(f1b90bbc-7c93-43eb-a5e7-f1225cfb8885)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 20614,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d5011051dc3e0a45eeaf0a58a21abeb508faf6",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260108T044151_N0511_R033_T45QYF_20260108T075009",
+      "datetime": "2026-01-08T04:41:51.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.499444391864284,
+        89.68690363177907,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.68690363177907,
+              23.486570961643476
+            ],
+            [
+              89.43195853417073,
+              22.499444391864284
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.68690363177907,
+              23.486570961643476
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(a03cc25b-2ebc-44c9-acaa-bc2cfb429dc8)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 760961427,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501109158767f1babaf314880759754d6a513",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(a95316ef-f291-4771-917e-cab362e9b987)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 16767,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110a5872870e468b12dd3e057e3ba029d67",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2A_MSIL2A_20260107T043241_N0511_R133_T45QYF_20260107T075314",
+      "datetime": "2026-01-07T04:32:41.024000Z",
+      "platform": "sentinel-2a",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.027333396444,
+        22.49054569679087,
+        90.0324758349017,
+        23.493392115705028
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.027333396444,
+              22.505668850748215
+            ],
+            [
+              89.26115301843672,
+              23.493392115705024
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.027333396444,
+              22.505668850748215
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(c7aa97f5-3672-45a3-bb08-a8daefdf40ba)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 1040703115,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501101b650fc4cd7795d67cee585fff450dfa",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(ffa15b83-d07f-4adf-9153-0310b4d696c2)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 21539,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110d129d847a77ef6887df86568497fd443",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2C_MSIL2A_20260105T043201_N0511_R133_T45QYF_20260105T074417",
+      "datetime": "2026-01-05T04:32:01.025000Z",
+      "platform": "sentinel-2c",
+      "relative_orbit": 133,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        89.02030485752064,
+        22.49054569679087,
+        90.0324758349017,
+        23.49351600388582
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.02030485752064,
+              22.50577697268001
+            ],
+            [
+              89.2534203872014,
+              23.49351600388582
+            ],
+            [
+              90.03247583490172,
+              23.481034384212897
+            ],
+            [
+              90.01042419468972,
+              22.49054569679087
+            ],
+            [
+              89.02030485752064,
+              22.50577697268001
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(7d24cafe-4da7-4855-9bc2-404dd40ed081)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 782044086,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d5011033340b47f13c8eeaf23b38ea30b916f4",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(1387ca4e-4da7-4a1d-878f-16e968124a98)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 4887,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d5011076b7498839ba8f1c2396625177eeda8e",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "collection": "sentinel-2-l2a",
+      "id": "S2B_MSIL2A_20260103T044109_N0511_R033_T45QYF_20260103T070213",
+      "datetime": "2026-01-03T04:41:09.024000Z",
+      "platform": "sentinel-2b",
+      "relative_orbit": 33,
+      "orbit_state": "descending",
+      "polarizations": null,
+      "instrument_mode": null,
+      "processing_level": "L2",
+      "bbox": [
+        88.9439259937172,
+        22.49931875443119,
+        89.69594683008721,
+        23.498246176850945
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.69594683008721,
+              23.486426076241234
+            ],
+            [
+              89.44012568004109,
+              22.499318754431187
+            ],
+            [
+              88.9439259937172,
+              22.506951929579664
+            ],
+            [
+              88.95818089796742,
+              23.49824617685094
+            ],
+            [
+              89.69594683008721,
+              23.486426076241234
+            ]
+          ]
+        ]
+      },
+      "asset_summary": {
+        "Product": {
+          "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(4aa47b7d-83d4-4268-9db2-15c5bea71b77)/$value",
+          "https_href": null,
+          "type": "application/zip",
+          "size": 738616216,
+          "title": "Zipped product",
+          "nodata": null,
+          "data_type": null,
+          "checksum": "d501104220130026723cf78e26bb307724d4da",
+          "shape": null
+        },
+        "thumbnail": {
+          "href": "https://datahub.creodias.eu/odata/v1/Assets(1eb15a92-a956-4f9d-ae25-f8958a4d32e8)/$value",
+          "https_href": null,
+          "type": "image/jpeg",
+          "size": 15818,
+          "title": "Quicklook",
+          "nodata": null,
+          "data_type": "uint8",
+          "checksum": "d50110e37883eb5f836518273963a09e3792c5",
+          "shape": [
+            343,
+            343
+          ]
+        }
+      }
+    }
+  ]
+}

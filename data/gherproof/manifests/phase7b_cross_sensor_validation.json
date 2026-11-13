@@ -1,0 +1,2221 @@
+{
+  "status": "complete_corrected_20m_alignment",
+  "source_products_preserved": true,
+  "phase7_ndwi_alignment_issue": "The original Phase 7 NDWI agreement output files were written with the 10m NDWI raster profile although their comparison arrays were 20m. Their prior counts were computed from 20m arrays, but those raster files are mis-georeferenced/resized in the output grid. Phase 7 outputs were not overwritten. This Phase 7B rebuild writes all NDWI and MNDWI comparisons on the exact selected-pair 20m native B11/MNDWI grid.",
+  "comparison_count": 24,
+  "geotiff_count": 48,
+  "comparisons": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 207708,
+        "post_positive_overlap": 131865,
+        "post_SAR_only": 245170,
+        "post_optical_only": 75843,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 14549,
+        "change_positive_overlap": 2487,
+        "change_SAR_only": 108713,
+        "change_optical_only": 12062
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "be69520e119c02d286ac605b4223a6742ff221f6af5349f972f3886b58fe5fcc",
+        "valid_pixels": 1618583,
+        "bytes": 184359
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "7188e028cd4ba01e5f0476ec859702b0871d201fd87427d54b0a94227dd2ccbd",
+        "valid_pixels": 1618583,
+        "bytes": 115457
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 178323,
+        "post_positive_overlap": 119268,
+        "post_SAR_only": 257767,
+        "post_optical_only": 59055,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 11039,
+        "change_positive_overlap": 1765,
+        "change_SAR_only": 109435,
+        "change_optical_only": 9274
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "943076f281afc3ee58a09d81e0646ce60d6af9ddf5c3b29a308ee1a61c96c997",
+        "valid_pixels": 1618583,
+        "bytes": 174793
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "13e55d8d91e19da484ec496b62cf16384e9d7c38dd701669477730c84a1e9acc",
+        "valid_pixels": 1618583,
+        "bytes": 110715
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 153019,
+        "post_positive_overlap": 108014,
+        "post_SAR_only": 269021,
+        "post_optical_only": 45005,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 9591,
+        "change_positive_overlap": 1414,
+        "change_SAR_only": 109786,
+        "change_optical_only": 8177
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "5378db2c53f26d7d21410616869d6ab2acd21afad05ce547ca5bc0fbe5c71ead",
+        "valid_pixels": 1618583,
+        "bytes": 167414
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "9868b4c1492ed6834296f8458763aae289528fb632fd209a7c0ce9ce17cdc478",
+        "valid_pixels": 1618583,
+        "bytes": 108500
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 676329,
+        "post_positive_overlap": 320072,
+        "post_SAR_only": 56963,
+        "post_optical_only": 356257,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 72338,
+        "change_positive_overlap": 19275,
+        "change_SAR_only": 91925,
+        "change_optical_only": 53063
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "e0404c7cf56e2ce390b24ca48165df26a69cec19d6acaab517e081f94524784a",
+        "valid_pixels": 1618583,
+        "bytes": 227512
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "c20aab12cab0d2fb1e487dc6be2a3d10a8f0111d0acc9b9ccf9f8c38e7fa5e02",
+        "valid_pixels": 1618583,
+        "bytes": 146598
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 618416,
+        "post_positive_overlap": 305307,
+        "post_SAR_only": 71728,
+        "post_optical_only": 313109,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 74297,
+        "change_positive_overlap": 19665,
+        "change_SAR_only": 91535,
+        "change_optical_only": 54632
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "b176b4f1de635c6aac4b7e26d16f47984cd9e778c5e6aa46485f3a8e92dd92ec",
+        "valid_pixels": 1618583,
+        "bytes": 231254
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "34f084e35e0b7228ca222032603b9dfb982d6f8af38e764c10302770bdae4966",
+        "valid_pixels": 1618583,
+        "bytes": 148226
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 377035,
+        "optical_post_candidate": 557106,
+        "post_positive_overlap": 287280,
+        "post_SAR_only": 89755,
+        "post_optical_only": 269826,
+        "SAR_change_candidate": 111200,
+        "optical_change_candidate": 73987,
+        "change_positive_overlap": 19463,
+        "change_SAR_only": 91737,
+        "change_optical_only": 54524
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "1e18ecca99ace5efbd188a23d9414ead8b42d0778e062712c44aa0a54108d97a",
+        "valid_pixels": 1618583,
+        "bytes": 232901
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "6b60480ee62e3d76436440571435175b08b967732f50b56a30b44b29212595b0",
+        "valid_pixels": 1618583,
+        "bytes": 148389
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 207708,
+        "post_positive_overlap": 102864,
+        "post_SAR_only": 39869,
+        "post_optical_only": 104844,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 14549,
+        "change_positive_overlap": 1480,
+        "change_SAR_only": 34501,
+        "change_optical_only": 13069
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "b9a6f25b8f35fefe4dd111a73b28ad1411b378e82a90b0313decabb2a4d9e7c0",
+        "valid_pixels": 1618583,
+        "bytes": 126766
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "1b010b35f1aa584143b180235a05b09bff44e212052a4507e8ce00e037df488e",
+        "valid_pixels": 1618583,
+        "bytes": 66566
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 178323,
+        "post_positive_overlap": 97134,
+        "post_SAR_only": 45599,
+        "post_optical_only": 81189,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 11039,
+        "change_positive_overlap": 1176,
+        "change_SAR_only": 34805,
+        "change_optical_only": 9863
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "05fc4734a5a4a2060f528c6e2224901211514b287dec106dc9eb833d8f925b7c",
+        "valid_pixels": 1618583,
+        "bytes": 116234
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "e3f6c92f5d17cca1ea64676283ddbd494ba36176315bb0a6465eea75e688e747",
+        "valid_pixels": 1618583,
+        "bytes": 61640
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 153019,
+        "post_positive_overlap": 90585,
+        "post_SAR_only": 52148,
+        "post_optical_only": 62434,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 9591,
+        "change_positive_overlap": 976,
+        "change_SAR_only": 35005,
+        "change_optical_only": 8615
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "43aa20dacecc4555ad9767664d56f3b5141119fb488e72dd92ddeff4e3d8da97",
+        "valid_pixels": 1618583,
+        "bytes": 108257
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "cb18d5bcd87f8177e70b2fd8f0aca54f3eb52d1f7b1847ec95a3656e1f68de7c",
+        "valid_pixels": 1618583,
+        "bytes": 59165
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 676329,
+        "post_positive_overlap": 137557,
+        "post_SAR_only": 5176,
+        "post_optical_only": 538772,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 72338,
+        "change_positive_overlap": 5597,
+        "change_SAR_only": 30384,
+        "change_optical_only": 66741
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "5cea4052c6100abe6ed4a71abbffdc6cadefd17d68bc9ad6d149f5d8f352cbe7",
+        "valid_pixels": 1618583,
+        "bytes": 181561
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "85812a344a2cc598ca45baa18663f33764727753abee62bd08225c1ccb6f17eb",
+        "valid_pixels": 1618583,
+        "bytes": 101829
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 618416,
+        "post_positive_overlap": 135758,
+        "post_SAR_only": 6975,
+        "post_optical_only": 482658,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 74297,
+        "change_positive_overlap": 6046,
+        "change_SAR_only": 29935,
+        "change_optical_only": 68251
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "3f4004c06b7a7c335e134327990e8055da374560c164e37c707077f756f50d30",
+        "valid_pixels": 1618583,
+        "bytes": 185367
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "f63f36569473bab25f33fdd4af7de0f6d289efc84e8d45b58ad5256e9e876819",
+        "valid_pixels": 1618583,
+        "bytes": 103255
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": 2,
+        "S1_post_minus_S2_post": 4
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 142733,
+        "optical_post_candidate": 557106,
+        "post_positive_overlap": 133353,
+        "post_SAR_only": 9380,
+        "post_optical_only": 423753,
+        "SAR_change_candidate": 35981,
+        "optical_change_candidate": 73987,
+        "change_positive_overlap": 6373,
+        "change_SAR_only": 29608,
+        "change_optical_only": 67614
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "59d45ff8f24a30c30e3c3b0fb8e3d68dfb63322f944e048b1208559279ab5237",
+        "valid_pixels": 1618583,
+        "bytes": 186666
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "8db6fa30a12cbfc884fad3ac205a3dee1dc8188e17d0f52c2a8f273d92eaa23a",
+        "valid_pixels": 1618583,
+        "bytes": 103544
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 207708,
+        "post_positive_overlap": 50845,
+        "post_SAR_only": 184204,
+        "post_optical_only": 156863,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 14549,
+        "change_positive_overlap": 2292,
+        "change_SAR_only": 99486,
+        "change_optical_only": 12257
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "4cdd8ad808adb1e9f57392b8fd5c716071a485f1cc69a83b25be0d232732ae4f",
+        "valid_pixels": 1618583,
+        "bytes": 168361
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "44d49570b352369a2f49e46a214b83fd5eeaed77a45a062b42dd0d768c45b661",
+        "valid_pixels": 1618583,
+        "bytes": 106967
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 178323,
+        "post_positive_overlap": 42143,
+        "post_SAR_only": 192906,
+        "post_optical_only": 136180,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 11039,
+        "change_positive_overlap": 1510,
+        "change_SAR_only": 100268,
+        "change_optical_only": 9529
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "0e15793639dec2d7ebbec23d0ac9957eae4d2fb5288a24729e7b3c1b28a233e7",
+        "valid_pixels": 1618583,
+        "bytes": 159065
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "04b7c2d60ffeffe495297d0997fab857ce825968f290a1aa8a8cd51e5e87826f",
+        "valid_pixels": 1618583,
+        "bytes": 102379
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 153019,
+        "post_positive_overlap": 35268,
+        "post_SAR_only": 199781,
+        "post_optical_only": 117751,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 9591,
+        "change_positive_overlap": 1208,
+        "change_SAR_only": 100570,
+        "change_optical_only": 8383
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "2f512fac0ed43e4e7d296497f2f73fc0329f1b74efd59c5846b30b761ba54613",
+        "valid_pixels": 1618583,
+        "bytes": 151620
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "751775380bccb6f1b92b15e884a2e090b91a14ade39e6bedd2760de709d0b4d8",
+        "valid_pixels": 1618583,
+        "bytes": 100056
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 676329,
+        "post_positive_overlap": 195318,
+        "post_SAR_only": 39731,
+        "post_optical_only": 481011,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 72338,
+        "change_positive_overlap": 17677,
+        "change_SAR_only": 84101,
+        "change_optical_only": 54661
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "3bc2ea24c9585870e8f84aa14b949f2cac92b514fc2170ab782fb966b9efcfb3",
+        "valid_pixels": 1618583,
+        "bytes": 211652
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "7826e6180668cdd7bef86a739db90060c244f0d7790dfbf9b867a16f34bffa45",
+        "valid_pixels": 1618583,
+        "bytes": 138198
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 618416,
+        "post_positive_overlap": 184714,
+        "post_SAR_only": 50335,
+        "post_optical_only": 433702,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 74297,
+        "change_positive_overlap": 18595,
+        "change_SAR_only": 83183,
+        "change_optical_only": 55702
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "73d4f3c6f1eb06c1e6b62c5f252fb3fb313721ae8de6bc53b41f8b8d5a6832e6",
+        "valid_pixels": 1618583,
+        "bytes": 215780
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "94fe841b9502ccd8aa856874c087665744655569b4aec5e6dd1d8dc44db94e8d",
+        "valid_pixels": 1618583,
+        "bytes": 139582
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 235049,
+        "optical_post_candidate": 557106,
+        "post_positive_overlap": 171934,
+        "post_SAR_only": 63115,
+        "post_optical_only": 385172,
+        "SAR_change_candidate": 101778,
+        "optical_change_candidate": 73987,
+        "change_positive_overlap": 19268,
+        "change_SAR_only": 82510,
+        "change_optical_only": 54719
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "cd20b6d09befff3a3d5802ec66e8e13e0af0deac58366ebac63ba6d0577c1793",
+        "valid_pixels": 1618583,
+        "bytes": 217253
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "d165c01a7758d8d2f8c7c5f0b2da76e09c4410c9f2f8b6994cf8e8e57e216eb5",
+        "valid_pixels": 1618583,
+        "bytes": 139737
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 207708,
+        "post_positive_overlap": 18199,
+        "post_SAR_only": 9510,
+        "post_optical_only": 189509,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 14549,
+        "change_positive_overlap": 550,
+        "change_SAR_only": 12561,
+        "change_optical_only": 13999
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "68023e55d252374d62c77c10beaf4442026c46ba2a97095f905691c366ad0b41",
+        "valid_pixels": 1618583,
+        "bytes": 102712
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "5d45d44c10d00223fa18cf49f967958812858d99ce1644075a3188ab17d3e4bc",
+        "valid_pixels": 1618583,
+        "bytes": 49366
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 178323,
+        "post_positive_overlap": 16540,
+        "post_SAR_only": 11169,
+        "post_optical_only": 161783,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 11039,
+        "change_positive_overlap": 459,
+        "change_SAR_only": 12652,
+        "change_optical_only": 10580
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "6399a5c1e3f8cd6a4a0f0eeed96f6a0d8e2dadd06c202206c656007ad9008538",
+        "valid_pixels": 1618583,
+        "bytes": 91828
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "be379308592d5bf914b3d40bd283c5ee4b3d98685d2dc825fc7dfd64b23c242b",
+        "valid_pixels": 1618583,
+        "bytes": 44042
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 153019,
+        "post_positive_overlap": 14736,
+        "post_SAR_only": 12973,
+        "post_optical_only": 138283,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 9591,
+        "change_positive_overlap": 458,
+        "change_SAR_only": 12653,
+        "change_optical_only": 9133
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "f40a0dcafef2b556b5ed3f2633bb5a7309a4b004361e765d4af0b677a9748dad",
+        "valid_pixels": 1618583,
+        "bytes": 83657
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "0810184e977b9e416872e07720dfafef485ff85c20c0e1e387dfdd98f94a3ff9",
+        "valid_pixels": 1618583,
+        "bytes": 41303
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": -0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 676329,
+        "post_positive_overlap": 25177,
+        "post_SAR_only": 2532,
+        "post_optical_only": 651152,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 72338,
+        "change_positive_overlap": 1127,
+        "change_SAR_only": 11984,
+        "change_optical_only": 71211
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "022dba80e0d46c3c29d413767a5bf320c9b51cd2effff31340f644e10bb1e3fe",
+        "valid_pixels": 1618583,
+        "bytes": 159097
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "0fdbf2174506b0985a6a9b72396094ba29b2ca4f5d7f44e1733ab5320682ae22",
+        "valid_pixels": 1618583,
+        "bytes": 85419
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": 0,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 618416,
+        "post_positive_overlap": 24679,
+        "post_SAR_only": 3030,
+        "post_optical_only": 593737,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 74297,
+        "change_positive_overlap": 1206,
+        "change_SAR_only": 11905,
+        "change_optical_only": 73091
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "c4af930b2f36cd770e1fc0a85669a9d4b6e2be3041c69d3bffca2c6fa92208d0",
+        "valid_pixels": 1618583,
+        "bytes": 163103
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "7fefbb2b6f1cef173310fb2b82b076852b77d2d4cb98de26efa8bd9ac6a95b29",
+        "valid_pixels": 1618583,
+        "bytes": 87059
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "optical_threshold": 0.05,
+      "grid": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079,
+        "resolution": [
+          20.0,
+          0.0
+        ]
+      },
+      "time_offsets_days": {
+        "S1_pre_minus_S2_pre": -1,
+        "S1_post_minus_S2_post": 1
+      },
+      "counts": {
+        "valid_pixels": 1618583,
+        "SAR_post_class_candidate": 27709,
+        "optical_post_candidate": 557106,
+        "post_positive_overlap": 24069,
+        "post_SAR_only": 3640,
+        "post_optical_only": 533037,
+        "SAR_change_candidate": 13111,
+        "optical_change_candidate": 73987,
+        "change_positive_overlap": 1284,
+        "change_SAR_only": 11827,
+        "change_optical_only": 72703
+      },
+      "agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "119779f9de1bd9bcb904e6b65a3f7082eba1bb0a88ae9892515d0c9b203868f5",
+        "valid_pixels": 1618583,
+        "bytes": 164468
+      },
+      "change_agreement_layer": {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "23ca69daa8d5e750219cd492db4aedd5aeff816984f2cd6a2226fb22b93e43fc",
+        "valid_pixels": 1618583,
+        "bytes": 87374
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "be69520e119c02d286ac605b4223a6742ff221f6af5349f972f3886b58fe5fcc",
+      "valid_pixels": 1618583,
+      "bytes": 184359
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "7188e028cd4ba01e5f0476ec859702b0871d201fd87427d54b0a94227dd2ccbd",
+      "valid_pixels": 1618583,
+      "bytes": 115457
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "943076f281afc3ee58a09d81e0646ce60d6af9ddf5c3b29a308ee1a61c96c997",
+      "valid_pixels": 1618583,
+      "bytes": 174793
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "13e55d8d91e19da484ec496b62cf16384e9d7c38dd701669477730c84a1e9acc",
+      "valid_pixels": 1618583,
+      "bytes": 110715
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "5378db2c53f26d7d21410616869d6ab2acd21afad05ce547ca5bc0fbe5c71ead",
+      "valid_pixels": 1618583,
+      "bytes": 167414
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "9868b4c1492ed6834296f8458763aae289528fb632fd209a7c0ce9ce17cdc478",
+      "valid_pixels": 1618583,
+      "bytes": 108500
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "e0404c7cf56e2ce390b24ca48165df26a69cec19d6acaab517e081f94524784a",
+      "valid_pixels": 1618583,
+      "bytes": 227512
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "c20aab12cab0d2fb1e487dc6be2a3d10a8f0111d0acc9b9ccf9f8c38e7fa5e02",
+      "valid_pixels": 1618583,
+      "bytes": 146598
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "b176b4f1de635c6aac4b7e26d16f47984cd9e778c5e6aa46485f3a8e92dd92ec",
+      "valid_pixels": 1618583,
+      "bytes": 231254
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "34f084e35e0b7228ca222032603b9dfb982d6f8af38e764c10302770bdae4966",
+      "valid_pixels": 1618583,
+      "bytes": 148226
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "1e18ecca99ace5efbd188a23d9414ead8b42d0778e062712c44aa0a54108d97a",
+      "valid_pixels": 1618583,
+      "bytes": 232901
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "6b60480ee62e3d76436440571435175b08b967732f50b56a30b44b29212595b0",
+      "valid_pixels": 1618583,
+      "bytes": 148389
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "b9a6f25b8f35fefe4dd111a73b28ad1411b378e82a90b0313decabb2a4d9e7c0",
+      "valid_pixels": 1618583,
+      "bytes": 126766
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "1b010b35f1aa584143b180235a05b09bff44e212052a4507e8ce00e037df488e",
+      "valid_pixels": 1618583,
+      "bytes": 66566
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "05fc4734a5a4a2060f528c6e2224901211514b287dec106dc9eb833d8f925b7c",
+      "valid_pixels": 1618583,
+      "bytes": 116234
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "e3f6c92f5d17cca1ea64676283ddbd494ba36176315bb0a6465eea75e688e747",
+      "valid_pixels": 1618583,
+      "bytes": 61640
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "43aa20dacecc4555ad9767664d56f3b5141119fb488e72dd92ddeff4e3d8da97",
+      "valid_pixels": 1618583,
+      "bytes": 108257
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "cb18d5bcd87f8177e70b2fd8f0aca54f3eb52d1f7b1847ec95a3656e1f68de7c",
+      "valid_pixels": 1618583,
+      "bytes": 59165
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "5cea4052c6100abe6ed4a71abbffdc6cadefd17d68bc9ad6d149f5d8f352cbe7",
+      "valid_pixels": 1618583,
+      "bytes": 181561
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "85812a344a2cc598ca45baa18663f33764727753abee62bd08225c1ccb6f17eb",
+      "valid_pixels": 1618583,
+      "bytes": 101829
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "3f4004c06b7a7c335e134327990e8055da374560c164e37c707077f756f50d30",
+      "valid_pixels": 1618583,
+      "bytes": 185367
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "f63f36569473bab25f33fdd4af7de0f6d289efc84e8d45b58ad5256e9e876819",
+      "valid_pixels": 1618583,
+      "bytes": 103255
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "59d45ff8f24a30c30e3c3b0fb8e3d68dfb63322f944e048b1208559279ab5237",
+      "valid_pixels": 1618583,
+      "bytes": 186666
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "8db6fa30a12cbfc884fad3ac205a3dee1dc8188e17d0f52c2a8f273d92eaa23a",
+      "valid_pixels": 1618583,
+      "bytes": 103544
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "4cdd8ad808adb1e9f57392b8fd5c716071a485f1cc69a83b25be0d232732ae4f",
+      "valid_pixels": 1618583,
+      "bytes": 168361
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "44d49570b352369a2f49e46a214b83fd5eeaed77a45a062b42dd0d768c45b661",
+      "valid_pixels": 1618583,
+      "bytes": 106967
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "0e15793639dec2d7ebbec23d0ac9957eae4d2fb5288a24729e7b3c1b28a233e7",
+      "valid_pixels": 1618583,
+      "bytes": 159065
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "04b7c2d60ffeffe495297d0997fab857ce825968f290a1aa8a8cd51e5e87826f",
+      "valid_pixels": 1618583,
+      "bytes": 102379
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "2f512fac0ed43e4e7d296497f2f73fc0329f1b74efd59c5846b30b761ba54613",
+      "valid_pixels": 1618583,
+      "bytes": 151620
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "751775380bccb6f1b92b15e884a2e090b91a14ade39e6bedd2760de709d0b4d8",
+      "valid_pixels": 1618583,
+      "bytes": 100056
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "3bc2ea24c9585870e8f84aa14b949f2cac92b514fc2170ab782fb966b9efcfb3",
+      "valid_pixels": 1618583,
+      "bytes": 211652
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "7826e6180668cdd7bef86a739db90060c244f0d7790dfbf9b867a16f34bffa45",
+      "valid_pixels": 1618583,
+      "bytes": 138198
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "73d4f3c6f1eb06c1e6b62c5f252fb3fb313721ae8de6bc53b41f8b8d5a6832e6",
+      "valid_pixels": 1618583,
+      "bytes": 215780
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "94fe841b9502ccd8aa856874c087665744655569b4aec5e6dd1d8dc44db94e8d",
+      "valid_pixels": 1618583,
+      "bytes": 139582
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "cd20b6d09befff3a3d5802ec66e8e13e0af0deac58366ebac63ba6d0577c1793",
+      "valid_pixels": 1618583,
+      "bytes": 217253
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "d165c01a7758d8d2f8c7c5f0b2da76e09c4410c9f2f8b6994cf8e8e57e216eb5",
+      "valid_pixels": 1618583,
+      "bytes": 139737
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "68023e55d252374d62c77c10beaf4442026c46ba2a97095f905691c366ad0b41",
+      "valid_pixels": 1618583,
+      "bytes": 102712
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "5d45d44c10d00223fa18cf49f967958812858d99ce1644075a3188ab17d3e4bc",
+      "valid_pixels": 1618583,
+      "bytes": 49366
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "6399a5c1e3f8cd6a4a0f0eeed96f6a0d8e2dadd06c202206c656007ad9008538",
+      "valid_pixels": 1618583,
+      "bytes": 91828
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "be379308592d5bf914b3d40bd283c5ee4b3d98685d2dc825fc7dfd64b23c242b",
+      "valid_pixels": 1618583,
+      "bytes": 44042
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "f40a0dcafef2b556b5ed3f2633bb5a7309a4b004361e765d4af0b677a9748dad",
+      "valid_pixels": 1618583,
+      "bytes": 83657
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "0810184e977b9e416872e07720dfafef485ff85c20c0e1e387dfdd98f94a3ff9",
+      "valid_pixels": 1618583,
+      "bytes": 41303
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "022dba80e0d46c3c29d413767a5bf320c9b51cd2effff31340f644e10bb1e3fe",
+      "valid_pixels": 1618583,
+      "bytes": 159097
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+      "sha256": "0fdbf2174506b0985a6a9b72396094ba29b2ca4f5d7f44e1733ab5320682ae22",
+      "valid_pixels": 1618583,
+      "bytes": 85419
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "c4af930b2f36cd770e1fc0a85669a9d4b6e2be3041c69d3bffca2c6fa92208d0",
+      "valid_pixels": 1618583,
+      "bytes": 163103
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+      "sha256": "7fefbb2b6f1cef173310fb2b82b076852b77d2d4cb98de26efa8bd9ac6a95b29",
+      "valid_pixels": 1618583,
+      "bytes": 87059
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "119779f9de1bd9bcb904e6b65a3f7082eba1bb0a88ae9892515d0c9b203868f5",
+      "valid_pixels": 1618583,
+      "bytes": 164468
+    },
+    {
+      "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+      "sha256": "23ca69daa8d5e750219cd492db4aedd5aeff816984f2cd6a2226fb22b93e43fc",
+      "valid_pixels": 1618583,
+      "bytes": 87374
+    }
+  ],
+  "limitations": [
+    "Cross-sensor agreement remains corroboration only; optical indices and model predictions are not reference truth.",
+    "S1/S2 acquisition dates are non-coincident; exact offsets are listed per comparison.",
+    "No fused confirmed flood map or impact area is produced."
+  ],
+  "qc": {
+    "status": "pass",
+    "rasters": [
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "be69520e119c02d286ac605b4223a6742ff221f6af5349f972f3886b58fe5fcc",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "7188e028cd4ba01e5f0476ec859702b0871d201fd87427d54b0a94227dd2ccbd",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "943076f281afc3ee58a09d81e0646ce60d6af9ddf5c3b29a308ee1a61c96c997",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "13e55d8d91e19da484ec496b62cf16384e9d7c38dd701669477730c84a1e9acc",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "5378db2c53f26d7d21410616869d6ab2acd21afad05ce547ca5bc0fbe5c71ead",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "9868b4c1492ed6834296f8458763aae289528fb632fd209a7c0ce9ce17cdc478",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "e0404c7cf56e2ce390b24ca48165df26a69cec19d6acaab517e081f94524784a",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "c20aab12cab0d2fb1e487dc6be2a3d10a8f0111d0acc9b9ccf9f8c38e7fa5e02",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "b176b4f1de635c6aac4b7e26d16f47984cd9e778c5e6aa46485f3a8e92dd92ec",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "34f084e35e0b7228ca222032603b9dfb982d6f8af38e764c10302770bdae4966",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "1e18ecca99ace5efbd188a23d9414ead8b42d0778e062712c44aa0a54108d97a",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "6b60480ee62e3d76436440571435175b08b967732f50b56a30b44b29212595b0",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "b9a6f25b8f35fefe4dd111a73b28ad1411b378e82a90b0313decabb2a4d9e7c0",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "1b010b35f1aa584143b180235a05b09bff44e212052a4507e8ce00e037df488e",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "05fc4734a5a4a2060f528c6e2224901211514b287dec106dc9eb833d8f925b7c",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "e3f6c92f5d17cca1ea64676283ddbd494ba36176315bb0a6465eea75e688e747",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "43aa20dacecc4555ad9767664d56f3b5141119fb488e72dd92ddeff4e3d8da97",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "cb18d5bcd87f8177e70b2fd8f0aca54f3eb52d1f7b1847ec95a3656e1f68de7c",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "5cea4052c6100abe6ed4a71abbffdc6cadefd17d68bc9ad6d149f5d8f352cbe7",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "85812a344a2cc598ca45baa18663f33764727753abee62bd08225c1ccb6f17eb",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "3f4004c06b7a7c335e134327990e8055da374560c164e37c707077f756f50d30",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "f63f36569473bab25f33fdd4af7de0f6d289efc84e8d45b58ad5256e9e876819",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "59d45ff8f24a30c30e3c3b0fb8e3d68dfb63322f944e048b1208559279ab5237",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "8db6fa30a12cbfc884fad3ac205a3dee1dc8188e17d0f52c2a8f273d92eaa23a",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "4cdd8ad808adb1e9f57392b8fd5c716071a485f1cc69a83b25be0d232732ae4f",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "44d49570b352369a2f49e46a214b83fd5eeaed77a45a062b42dd0d768c45b661",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "0e15793639dec2d7ebbec23d0ac9957eae4d2fb5288a24729e7b3c1b28a233e7",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "04b7c2d60ffeffe495297d0997fab857ce825968f290a1aa8a8cd51e5e87826f",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "2f512fac0ed43e4e7d296497f2f73fc0329f1b74efd59c5846b30b761ba54613",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "751775380bccb6f1b92b15e884a2e090b91a14ade39e6bedd2760de709d0b4d8",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "3bc2ea24c9585870e8f84aa14b949f2cac92b514fc2170ab782fb966b9efcfb3",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "7826e6180668cdd7bef86a739db90060c244f0d7790dfbf9b867a16f34bffa45",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "73d4f3c6f1eb06c1e6b62c5f252fb3fb313721ae8de6bc53b41f8b8d5a6832e6",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "94fe841b9502ccd8aa856874c087665744655569b4aec5e6dd1d8dc44db94e8d",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "cd20b6d09befff3a3d5802ec66e8e13e0af0deac58366ebac63ba6d0577c1793",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "d165c01a7758d8d2f8c7c5f0b2da76e09c4410c9f2f8b6994cf8e8e57e216eb5",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "68023e55d252374d62c77c10beaf4442026c46ba2a97095f905691c366ad0b41",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "5d45d44c10d00223fa18cf49f967958812858d99ce1644075a3188ab17d3e4bc",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "6399a5c1e3f8cd6a4a0f0eeed96f6a0d8e2dadd06c202206c656007ad9008538",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "be379308592d5bf914b3d40bd283c5ee4b3d98685d2dc825fc7dfd64b23c242b",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "f40a0dcafef2b556b5ed3f2633bb5a7309a4b004361e765d4af0b677a9748dad",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "0810184e977b9e416872e07720dfafef485ff85c20c0e1e387dfdd98f94a3ff9",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "022dba80e0d46c3c29d413767a5bf320c9b51cd2effff31340f644e10bb1e3fe",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/change_agreement_codes_20m.tif",
+        "sha256": "0fdbf2174506b0985a6a9b72396094ba29b2ca4f5d7f44e1733ab5320682ae22",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "c4af930b2f36cd770e1fc0a85669a9d4b6e2be3041c69d3bffca2c6fa92208d0",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/change_agreement_codes_20m.tif",
+        "sha256": "7fefbb2b6f1cef173310fb2b82b076852b77d2d4cb98de26efa8bd9ac6a95b29",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "119779f9de1bd9bcb904e6b65a3f7082eba1bb0a88ae9892515d0c9b203868f5",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "data/gherproof/processed/phase7b/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/change_agreement_codes_20m.tif",
+        "sha256": "23ca69daa8d5e750219cd492db4aedd5aeff816984f2cd6a2226fb22b93e43fc",
+        "grid_matches_native_20m": true,
+        "valid_pixels": 1618583,
+        "codes_present": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "grid_reference": {
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "width": 1556,
+      "height": 1079
+    }
+  }
+}

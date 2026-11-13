@@ -1,0 +1,264 @@
+{
+  "status": "processed",
+  "formula": "(DN + BOA_ADD_OFFSET)/BOA_QUANTIFICATION_VALUE",
+  "dn_zero_nodata": true,
+  "scenes": [
+    {
+      "date": "2026-01-10",
+      "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "baseline": "05.11",
+      "quantification_value": 10000,
+      "offsets": {
+        "B03": -1000,
+        "B04": -1000,
+        "B08": -1000,
+        "B11": -1000
+      },
+      "bands": {
+        "B03": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B03_reflectance_10m.tif",
+          "sha256": "7e490228b8c8fd6e77549b3b9b6ae83fd467e4ee1f60886dbaf70318b2cc04d7",
+          "bytes": 18808991,
+          "valid_pixels": 6472354
+        },
+        "B04": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B04_reflectance_10m.tif",
+          "sha256": "59c7af283174838c82958a8414ef1499cc2ae2b145869550a0e2585a5f07a65f",
+          "bytes": 19338425,
+          "valid_pixels": 6472354
+        },
+        "B08": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B08_reflectance_10m.tif",
+          "sha256": "2f9b42f8331401eb54c3900aa581c5d4a316b1f5cb7256db16f4e56a734ba814",
+          "bytes": 20046001,
+          "valid_pixels": 6472354
+        }
+      },
+      "source_10m": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_10m/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_B03_B04_B08_10m_utm45n.tif",
+      "source_20m": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_20m/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_B11_20m_utm45n.tif",
+      "ndwi": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_NDWI_10m.tif",
+        "sha256": "ec0a47cdd14cfc027e51e344fb0cb0db90876f0c1cd92602003f47bd7a964c1b",
+        "bytes": 21017996,
+        "valid_pixels": 6472354
+      },
+      "ndwi_summary": {
+        "valid_pixels": 6472354,
+        "min": -0.8402498364448547,
+        "max": 2.5102040767669678,
+        "percentiles": {
+          "1": -0.7401960492134094,
+          "2": -0.7260459065437317,
+          "25": -0.5905304551124573,
+          "50": -0.39241355657577515,
+          "75": -0.160583958029747,
+          "98": 0.331597238779068,
+          "99": 0.3731900453567505
+        },
+        "exploratory_candidate_pixels": {
+          "-0.05": 991066,
+          "0": 854161,
+          "0.05": 739283
+        }
+      },
+      "grid10": {
+        "crs": "EPSG:32645",
+        "transform": [
+          10.0,
+          0.0,
+          729410.0,
+          0.0,
+          -10.0,
+          2557970.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 3111,
+        "height": 2156
+      },
+      "B11": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B11_reflectance_20m.tif",
+        "sha256": "499edddb6d47650f1fea58d3076610b5f75f87e2db345e48e64e51f52316fc5c",
+        "bytes": 5197871,
+        "valid_pixels": 1618737
+      },
+      "mndwi": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_MNDWI_20m.tif",
+        "sha256": "6b2b4d91cdf2a155cfb6aab0d46222f69a989a0af3279d67f55ab54c0323c463",
+        "bytes": 5468232,
+        "valid_pixels": 1618737
+      },
+      "mndwi_summary": {
+        "valid_pixels": 1618737,
+        "min": -0.7816891074180603,
+        "max": 1.411949634552002,
+        "percentiles": {
+          "1": -0.585474967956543,
+          "2": -0.569590151309967,
+          "25": -0.4407719671726227,
+          "50": -0.20435383915901184,
+          "75": 0.20334360003471375,
+          "98": 0.7337586879730225,
+          "99": 0.759615421295166
+        },
+        "exploratory_candidate_pixels": {
+          "-0.05": 663992,
+          "0": 615482,
+          "0.05": 564675
+        }
+      },
+      "grid20": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "baseline": "05.11",
+      "quantification_value": 10000,
+      "offsets": {
+        "B03": -1000,
+        "B04": -1000,
+        "B08": -1000,
+        "B11": -1000
+      },
+      "bands": {
+        "B03": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B03_reflectance_10m.tif",
+          "sha256": "60a9a7007f2a30df59d2164e2d36200f840fa03664f5dd46e737384ddb17fc6d",
+          "bytes": 18683231,
+          "valid_pixels": 6472158
+        },
+        "B04": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B04_reflectance_10m.tif",
+          "sha256": "e79941b4c8af80e4a6fab10f308b8c51e515a650f5a99ee342f50eb259ea2f91",
+          "bytes": 19165659,
+          "valid_pixels": 6472158
+        },
+        "B08": {
+          "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B08_reflectance_10m.tif",
+          "sha256": "d9df1e105c1b0a0d7c8a9cc3765194207fb40d67f6294c389d5211c30ca62d19",
+          "bytes": 20036097,
+          "valid_pixels": 6472158
+        }
+      },
+      "source_10m": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_10m/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_B03_B04_B08_10m_utm45n.tif",
+      "source_20m": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_20m/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_B11_20m_utm45n.tif",
+      "ndwi": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_NDWI_10m.tif",
+        "sha256": "b2fe8d06d897a9d98a1d496b132b493c2283c548231fea0e8960468acb1a8779",
+        "bytes": 20983996,
+        "valid_pixels": 6472158
+      },
+      "ndwi_summary": {
+        "valid_pixels": 6472158,
+        "min": -0.838702380657196,
+        "max": 0.6870502829551697,
+        "percentiles": {
+          "1": -0.7291103005409241,
+          "2": -0.7144508957862854,
+          "25": -0.5768917798995972,
+          "50": -0.3850415349006653,
+          "75": -0.17769668996334076,
+          "98": 0.3090378940105438,
+          "99": 0.3577127456665039
+        },
+        "exploratory_candidate_pixels": {
+          "-0.05": 866824,
+          "0": 747167,
+          "0.05": 648119
+        }
+      },
+      "grid10": {
+        "crs": "EPSG:32645",
+        "transform": [
+          10.0,
+          0.0,
+          729410.0,
+          0.0,
+          -10.0,
+          2557970.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 3111,
+        "height": 2156
+      },
+      "B11": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B11_reflectance_20m.tif",
+        "sha256": "92a74fd2e98b1bc6a8c506aa2dab0c4fb50597882b57c871a74916fc00dca410",
+        "bytes": 5162137,
+        "valid_pixels": 1618688
+      },
+      "mndwi": {
+        "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_MNDWI_20m.tif",
+        "sha256": "3b537a609b5d51a01207221dfbd7a7d8ae2afe4dce325dcd0cce0ba80e4876b3",
+        "bytes": 5495678,
+        "valid_pixels": 1618688
+      },
+      "mndwi_summary": {
+        "valid_pixels": 1618688,
+        "min": -0.7657544612884521,
+        "max": 0.8232825398445129,
+        "percentiles": {
+          "1": -0.5965035557746887,
+          "2": -0.5814162492752075,
+          "25": -0.4525947868824005,
+          "50": -0.18028120696544647,
+          "75": 0.1752055585384369,
+          "98": 0.6499127149581909,
+          "99": 0.6795192360877991
+        },
+        "exploratory_candidate_pixels": {
+          "-0.05": 676339,
+          "0": 618423,
+          "0.05": 557110
+        }
+      },
+      "grid20": {
+        "crs": "EPSG:32645",
+        "transform": [
+          20.0,
+          0.0,
+          729400.0,
+          0.0,
+          -20.0,
+          2557980.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 1556,
+        "height": 1079
+      }
+    }
+  ],
+  "threshold_sensitivity": {
+    "candidate_thresholds": [
+      -0.05,
+      0,
+      0.05
+    ],
+    "meaning": "exploratory index threshold counts only; not validated water masks"
+  },
+  "optical_limitations": [
+    "SCL class 6 is included among clear SCL pixels but denotes water class in SCL; it is a quality/land-cover classification, not an independent label.",
+    "Optical index thresholds are exploratory and sensitive to turbidity, vegetation, wet soil, shadow, ponds and mixed pixels.",
+    "No optical/SAR fusion is a confirmed flood map."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "created_at_utc": "2026-11-11T22:28:02.162040+00:00",
+  "device": "cpu",
+  "split_protocol": {
+    "training": "210 usable chips from official train split excluding all event 11 chips",
+    "validation": "event 11, 41 usable chips",
+    "test": "separate Bolivia event 1, 15 chips",
+    "threshold": 0.5,
+    "test_used_for_selection": false
+  },
+  "experiment_1_scratch_baseline": {
+    "checkpoint": "models/gherproof/sen1floods11_attention_unet.pt",
+    "sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+    "validation": {
+      "threshold": 0.5,
+      "iou": 0.5087645717324306,
+      "precision": 0.6468678134924225,
+      "recall": 0.7044065265744817,
+      "f1": 0.6744121399248453,
+      "pr_auc_trapezoidal": 0.7268385169541247,
+      "average_precision": 0.7268402983601776,
+      "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+        [
+          9509438,
+          222504
+        ],
+        [
+          171036,
+          407583
+        ]
+      ],
+      "valid_pixels": 10310561,
+      "water_prevalence": 0.05611906083480812,
+      "chip_count": 41
+    },
+    "bolivia_test": {
+      "threshold": 0.5,
+      "iou": 0.6275512676719422,
+      "precision": 0.7423303714016625,
+      "recall": 0.8023195345883279,
+      "f1": 0.7711600612982162,
+      "pr_auc_trapezoidal": 0.7469289771120851,
+      "average_precision": 0.7469309297596322,
+      "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+        [
+          2246682,
+          125851
+        ],
+        [
+          89332,
+          362569
+        ]
+      ],
+      "valid_pixels": 2824434,
+      "water_prevalence": 0.1599970117906809,
+      "chip_count": 15
+    },
+    "inference_speed": {
+      "input_patch": [
+        256,
+        256
+      ],
+      "single_patch_seconds": 0.04925300000104471,
+      "single_patch_ms": 49.25300000104471,
+      "parameter_count": 509564,
+      "peak_cuda_bytes": null
+    }
+  },
+  "experiment_2_direct_pretrained_inference": {
+    "status": "not_applicable_task_incompatible",
+    "reason": "Published MoCo weights are an encoder-only self-supervised representation (no segmentation decoder, no water/non-water output layer, and no water-label convention). Direct probabilities/masks would be fabricated; no inference metrics are produced."
+  },
+  "experiment_3_pretrained_finetune": {
+    "status": "evaluated",
+    "checkpoint": "models/gherproof/sen1floods11_resnet50_moco_unet.pt",
+    "sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+    "validation_event": {
+      "threshold": 0.5,
+      "iou": 0.5504542163590161,
+      "precision": 0.6848954318894198,
+      "recall": 0.7371344528956014,
+      "f1": 0.7100554283397885,
+      "pr_auc_trapezoidal": 0.7412299161148701,
+      "average_precision": 0.7412305291746999,
+      "confusion_matrix_true_0_1_pred_0_1": [
+        [
+          9535710,
+          196232
+        ],
+        [
+          152099,
+          426520
+        ]
+      ],
+      "valid_pixels": 10310561,
+      "water_prevalence": 0.05611906083480812,
+      "chips": 41
+    },
+    "bolivia_event_test": {
+      "threshold": 0.5,
+      "iou": 0.5941944561815176,
+      "precision": 0.8904688571050925,
+      "recall": 0.6410474860644256,
+      "f1": 0.7454479017631984,
+      "pr_auc_trapezoidal": 0.8405770533996249,
+      "average_precision": 0.8405785725569848,
+      "confusion_matrix_true_0_1_pred_0_1": [
+        [
+          2336900,
+          35633
+        ],
+        [
+          162211,
+          289690
+        ]
+      ],
+      "valid_pixels": 2824434,
+      "water_prevalence": 0.1599970117906809,
+      "chips": 15
+    },
+    "inference_speed": {
+      "input_patch": [
+        256,
+        256
+      ],
+      "single_patch_seconds": 0.15829870000015944,
+      "single_patch_ms": 158.29870000015944,
+      "parameter_count": 37244737,
+      "peak_cuda_bytes": null
+    },
+    "normalization_mean_db": [
+      -12.54847240447998,
+      -20.192371368408203
+    ],
+    "normalization_std_db": [
+      5.256977081298828,
+      5.911509037017822
+    ]
+  }
+}

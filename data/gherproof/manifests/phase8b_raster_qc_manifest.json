@@ -1,0 +1,2598 @@
+{
+  "status": "all_phase8b_geotiffs_reopened",
+  "raster_count": 72,
+  "rasters": [
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-09/model_disagreement_codes.tif",
+      "sha256": "6aa397a38dc235d85542df3c387e95a786b90a569cf17bff683832b038f8126b",
+      "bytes": 82768,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 models agree; 2 scratch/pretrained binary predictions disagree; 255 unavailable",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-09/multi_source_candidate_codes.tif",
+      "sha256": "54e9ff04050361bef7647fd7b6de16c610e75e8da436eec6d1055237a617dec5",
+      "bytes": 181192,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 multi_source_candidate_agreement water; 2 all-source weak-nonwater agreement; 3 source disagreement; 4 optical uncertain; 255 unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-12/model_disagreement_codes.tif",
+      "sha256": "b244ecb57bd548c96c6bd4bb686a689e28f4444bbcda8495748e0fbfe06138e0",
+      "bytes": 110444,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 models agree; 2 scratch/pretrained binary predictions disagree; 255 unavailable",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-12/multi_source_candidate_codes.tif",
+      "sha256": "7163b9b8df25864e43585141cf68240fc098498835633ef3474e4b4db82b236e",
+      "bytes": 196398,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 multi_source_candidate_agreement water; 2 all-source weak-nonwater agreement; 3 source disagreement; 4 optical uncertain; 255 unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-21/model_disagreement_codes.tif",
+      "sha256": "efe35afb0a91aa43b097b2d5a6b632712c77d3e27be10814015b9753d9eb2cfc",
+      "bytes": 97458,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 models agree; 2 scratch/pretrained binary predictions disagree; 255 unavailable",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-21/multi_source_candidate_codes.tif",
+      "sha256": "65509482de42e257a8e263889790ee47dac30a12766db292f607d49c70c391d8",
+      "bytes": 182860,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 multi_source_candidate_agreement water; 2 all-source weak-nonwater agreement; 3 source disagreement; 4 optical uncertain; 255 unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-24/model_disagreement_codes.tif",
+      "sha256": "93de956c496f1cf95abc614c6f6421a8cce610833c3eeb4a73e29928515958c3",
+      "bytes": 119606,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 models agree; 2 scratch/pretrained binary predictions disagree; 255 unavailable",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/model_consensus/2026-01-24/multi_source_candidate_codes.tif",
+      "sha256": "0270967dfc88141e9e167a876e982a4911316f5718a8d5deef828d9b5015d3b5",
+      "bytes": 196132,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 multi_source_candidate_agreement water; 2 all-source weak-nonwater agreement; 3 source disagreement; 4 optical uncertain; 255 unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/agreement_codes.tif",
+      "sha256": "77008164fbf78eaadb9e234337a3d1e7c8ded1e50769ed0de36b5b737c2d5db9",
+      "bytes": 165406,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/joint_coverage_codes.tif",
+      "sha256": "af5092b0376467c49bab0b1c98bcab2e32054f05f778b444704fa05d53c7608a",
+      "bytes": 7617,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/model_water_prediction_20m.tif",
+      "sha256": "cd7efc691f99c0e3ed233c3f39ffd7ea066f4e01bac76d3f9789b4bcec58fa42",
+      "bytes": 23934,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/probability_20m_mean.tif",
+      "sha256": "b9304af3adc9b3d7f10b76a9bd5f39cc7b3f212320edec843f944ded24dc8a44",
+      "bytes": 5850640,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/sar_optical_agreement_mask.tif",
+      "sha256": "79df9748cc426ada0dc48f07d711413b7c533ae234ab36dd0eaf5df4f6112993",
+      "bytes": 163388,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_pretrained/sar_optical_disagreement_mask.tif",
+      "sha256": "7ef82569134518de852c6233a4d52efd1e1ea5e712c514d1125caeb6e43308aa",
+      "bytes": 163354,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/agreement_codes.tif",
+      "sha256": "a8aca153a5f97a65c1c0e7d94abd44549132130dd688558958c3f68d72ac02d5",
+      "bytes": 185069,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/joint_coverage_codes.tif",
+      "sha256": "de4e6fe94e7cf5963fe253d8c97065c32728f91d2d20d030849449a43ee9bfae",
+      "bytes": 7614,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/model_water_prediction_20m.tif",
+      "sha256": "30a27740518ed28ed10ec629ece5966f27394d4ecff5f43af1660e735e50dbc1",
+      "bytes": 77965,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/probability_20m_mean.tif",
+      "sha256": "5385274c4a1d004e26ed659d4255207b45d14efbbda42321ea9d7b077ba67fa3",
+      "bytes": 5926693,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/sar_optical_agreement_mask.tif",
+      "sha256": "eda92bcfbfad06491732a4226788c08bc737af24ca38319fb96a13a52c02f0ec",
+      "bytes": 180877,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-09_scratch/sar_optical_disagreement_mask.tif",
+      "sha256": "e4f8ff95b4650349e08369bd3653b9b780d105af222a2a04cd957b3795407051",
+      "bytes": 180871,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/agreement_codes.tif",
+      "sha256": "5992d69cd7a9bc15abfce925cd53a24d1bb1d28fb13323cd040886c64e83a3ed",
+      "bytes": 174492,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/joint_coverage_codes.tif",
+      "sha256": "64c3a56ffe739a76fa81c0a778f98fdece9392cb83faf1749ade78e5fb73d482",
+      "bytes": 7617,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/model_water_prediction_20m.tif",
+      "sha256": "078012b772e714b99e81181fdf8e4a116890b14cb7d120f0a99094ce59fa378d",
+      "bytes": 50882,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/probability_20m_mean.tif",
+      "sha256": "5afcd82211f9203d8ecb51cc1fa8393bbc83b234c9e199d34927055f81a304a7",
+      "bytes": 5895384,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/sar_optical_agreement_mask.tif",
+      "sha256": "9e63a9cc513a8cfb29cc4cede7c029f4e6c464fafcdb6b05e6608d49ea8198d1",
+      "bytes": 169268,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_pretrained/sar_optical_disagreement_mask.tif",
+      "sha256": "41147a040a1d17366b406ebf202baea6262661f4a82f155e9ab0299d131aa7ce",
+      "bytes": 169256,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/agreement_codes.tif",
+      "sha256": "b8d5cc132628942ab249e4913c09cabbe90183edb02e37d1a6abb18d9b368e32",
+      "bytes": 196343,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/joint_coverage_codes.tif",
+      "sha256": "4cb62f7cc400be1eaa7dae6873f5e700ae6206b918be6b9a792284081a966c25",
+      "bytes": 7614,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/model_water_prediction_20m.tif",
+      "sha256": "daf5176f8a88418ef22cc33b730a12d3ab943ab99a8ba63fb6f106dd3d83b61b",
+      "bytes": 97923,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/probability_20m_mean.tif",
+      "sha256": "5a6d22783d4bb9268ee4a917d59a282ffe1ccb403a19d6f78a3b0be680fd98bc",
+      "bytes": 5924299,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/sar_optical_agreement_mask.tif",
+      "sha256": "d2275d5a45dd71330ebcac4e0676664bd6fdbc5074d929523eadf5420ddda885",
+      "bytes": 189439,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-12_scratch/sar_optical_disagreement_mask.tif",
+      "sha256": "81088a72623e11bc9ac1fee230cefb6e71557a3b56fec7e1fcdde9dcd6d4fb95",
+      "bytes": 189433,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/agreement_codes.tif",
+      "sha256": "eff817905ccdf02a6542a992fc0818ba9b570232d51492740acb1eda7ed14ce9",
+      "bytes": 164906,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/joint_coverage_codes.tif",
+      "sha256": "1ca3717d65c8722045f64c90d935cb59de9ed87666a33916897267b5978de89f",
+      "bytes": 7659,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/model_water_prediction_20m.tif",
+      "sha256": "581bd2c21de7414f619b7cee15d32192a07d4d37bad89498508edb6d631a8ab3",
+      "bytes": 28084,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/probability_20m_mean.tif",
+      "sha256": "cd34951fa1b6de2ede0bb2c75779cc8006fba04fee4bdd7be24e83b978041258",
+      "bytes": 5873756,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/sar_optical_agreement_mask.tif",
+      "sha256": "1ccf7fc85e916e328fbe9c8a29e56ba1ce5746e7220ef2c8bf4e05fe2b5a385f",
+      "bytes": 162380,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_pretrained/sar_optical_disagreement_mask.tif",
+      "sha256": "ee5863b4e6b7b646527507b4d5c4d8bb2d496abfb2477d75422092209fd47508",
+      "bytes": 162274,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/agreement_codes.tif",
+      "sha256": "a0d4b655be291f8dfc0a7ff054261d2d53160e7c3852207d2acb7b54f87b2fae",
+      "bytes": 186753,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/joint_coverage_codes.tif",
+      "sha256": "07837d163ad0f4471991eb256d5102204662fc8ce657b14e888dcd4b172a4668",
+      "bytes": 7656,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/model_water_prediction_20m.tif",
+      "sha256": "d181f3f3c9fa1bb1727432ccb97433bb77c00b2a9a592ad80eb7e6c3dbec3096",
+      "bytes": 90521,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/probability_20m_mean.tif",
+      "sha256": "dfc484ba0f3243b59cd758c1a892e1413d9707013bd29f25bdcb36cd024a3985",
+      "bytes": 5932731,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/sar_optical_agreement_mask.tif",
+      "sha256": "c0c41ba23b4a7b9872c836c7f0141100218d1e4eed794749420ae6ed60f6a515",
+      "bytes": 181931,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-21_scratch/sar_optical_disagreement_mask.tif",
+      "sha256": "23729754b9a6b3ae3a62317c52f2ed083d1bf3b6f7868602abfb54d2538b2846",
+      "bytes": 181853,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/agreement_codes.tif",
+      "sha256": "a86e55afb7181631d2916f2e22ab114c1ef2f218ba54437531fc0cd14f74f586",
+      "bytes": 172220,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/joint_coverage_codes.tif",
+      "sha256": "2ed5ca59fba5cb0ecfe7d4e3e4cbd5bbf925d722cf925035a3a29090dc4f36e0",
+      "bytes": 7659,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/model_water_prediction_20m.tif",
+      "sha256": "27b163dff2fcb1abf132eb7632577de434aaaaf1a5c79195ca24b38ab7fa7333",
+      "bytes": 53384,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/probability_20m_mean.tif",
+      "sha256": "a6f071977cd303a36f062ce678584e2496219254d0a5762c11acbcbfc54e8edf",
+      "bytes": 5906504,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/sar_optical_agreement_mask.tif",
+      "sha256": "a367d04b84e61e0bc519f7e88a7c697e88e93e5419ea0229a17c1f3408b06e3e",
+      "bytes": 167218,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_pretrained/sar_optical_disagreement_mask.tif",
+      "sha256": "bfa58bb9d629fa59f623c7dfee424e4daec382bf6250d7bf817c4e8428c9bcd1",
+      "bytes": 167176,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/agreement_codes.tif",
+      "sha256": "bcd3513e08d12b9f76dff089a14fa4581467a2cae6c656e0cf2564608122be44",
+      "bytes": 195939,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 water candidate agreement; 2 nonwater agreement; 3 weak-reference disagreement; 4 optical uncertain; 255 SAR unavailable",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/joint_coverage_codes.tif",
+      "sha256": "b088e5cadb79751183654d910d5d6db819eb9c40663b7e3ff745c8553ea3bb94",
+      "bytes": 7656,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 both valid; 2 SAR only; 3 optical only; 0 neither",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/model_water_prediction_20m.tif",
+      "sha256": "ec023e34721fcbd7e6840ac725b7ee802f38db8e8d49e4506e873f403c371a13",
+      "bytes": 106017,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 model-predicted water; 0 model-predicted nonwater; 255 invalid SAR",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/probability_20m_mean.tif",
+      "sha256": "2554c42a6bfbd74564ec96945440fc800735f9fdf45a7d84766f6e7370a28064",
+      "bytes": 5925083,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "Mean Sentinel-1 probability over valid 10m contributors; 20m",
+      "valid_pixels": 1617537,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/sar_optical_agreement_mask.tif",
+      "sha256": "25e3e0695390872e2bfb06499a370980a201cff9a4415049fdc483933efccf33",
+      "bytes": 188837,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference agree; 0 disagree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/comparison/sar_optical/2026-01-24_scratch/sar_optical_disagreement_mask.tif",
+      "sha256": "2314ca463cd722a98bd09528fecac3f673b79b5187ef0ba2f87f820dcb28a154",
+      "bytes": 188829,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 SAR and optical weak reference disagree; 0 agree; 255 unavailable or uncertain",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/mndwi_20m.tif",
+      "sha256": "49871f66b02b778529a5eafea0d1c172b49c7d0c7e88e8b2509afd066d62a03f",
+      "bytes": 5906852,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "MNDWI from area-averaged B03 and native B11",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/ndwi_20m.tif",
+      "sha256": "358b47408f9e1d41a8a79bdc15c1a9b70c050adc49f868fec990034e8c1f56eb",
+      "bytes": 5835894,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "NDWI from 20m area-averaged B03/B08",
+      "valid_pixels": 1617419,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/scl_class.tif",
+      "sha256": "120abfc09d515444b16223fbd9f1771aab786ad906e5deb651cb75b112b31dc8",
+      "bytes": 179466,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "Sentinel-2 SCL class code",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/uncertainty_mask.tif",
+      "sha256": "6e5009c9d7a820f27fb64c05f5b10fcea086eef98add8f6eca62411c7a8a9c68",
+      "bytes": 147836,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 uncertain optical reference; 0 weak binary class; 255 invalid",
+      "valid_pixels": 1617410,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_nonwater_mask.tif",
+      "sha256": "dec55e9bf72b367e02bdd3cebb44aead27d9491cb2309be31089cf42b21aa258",
+      "bytes": 160489,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak nonwater; 0 weak water; 255 uncertain/invalid",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_reference.tif",
+      "sha256": "07a21a4ca572ba3cba67adc477296bf56d809dde15f6a111fd72ffa2f752aef6",
+      "bytes": 161108,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 weak_water; 2 weak_nonwater; 3 uncertain",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-10/weak_water_mask.tif",
+      "sha256": "ac541f70ca90f263fee4db2e0fc383e54a63d3dea4ddcfe9ce3f55e03247662b",
+      "bytes": 160483,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak water; 0 weak nonwater; 255 uncertain/invalid",
+      "valid_pixels": 1148312,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/mndwi_20m.tif",
+      "sha256": "93665286fb6cd07ca875f36483a4845d88837ca0fbd7d54f10d82fc246959aff",
+      "bytes": 5928050,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "MNDWI from area-averaged B03 and native B11",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/ndwi_20m.tif",
+      "sha256": "f56fb3e24a14fef7bf238f63961be1cc4fbe14c96830018b8ee65c74727f9dd5",
+      "bytes": 5823002,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "description": "NDWI from 20m area-averaged B03/B08",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/scl_class.tif",
+      "sha256": "b5136a2d7732cd5e2cc571c6caa856657d8ebe4e64196484e72f5c195fa4b2d9",
+      "bytes": 57648,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "Sentinel-2 SCL class code",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/uncertainty_mask.tif",
+      "sha256": "41594403db85c1c7e81221e11a693e5040bbbe8a77fa01a833f7c8b69758c32e",
+      "bytes": 147756,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 uncertain optical reference; 0 weak binary class; 255 invalid",
+      "valid_pixels": 1617370,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_nonwater_mask.tif",
+      "sha256": "c73c3262a480cccae3a31930ef54c7ee011e4e3f5171639a34fe8d6f119644a4",
+      "bytes": 158789,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak nonwater; 0 weak water; 255 uncertain/invalid",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_reference.tif",
+      "sha256": "1734ebca32fdfd742295356636679e733ebb258bfac8e0142b14ea15c13b5b31",
+      "bytes": 159414,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 weak_water; 2 weak_nonwater; 3 uncertain",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/2026-01-20/weak_water_mask.tif",
+      "sha256": "a47cf75883dde05acf1ba9eba421ab7e560e473f65453db03662a5a950f01fb6",
+      "bytes": 158747,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 weak water; 0 weak nonwater; 255 uncertain/invalid",
+      "valid_pixels": 1118424,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/temporal_change/2026-01-10_to_2026-01-20_change_candidates.tif",
+      "sha256": "b1a7cf593329b68eef3a9684e4b2915fcc08b343166c12bc9f8ffb294711036b",
+      "bytes": 153891,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "0 invalid; 1 persistent water candidate; 2 possible new water; 3 possible water loss; 4 stable nonwater; 5 uncertain change",
+      "valid_pixels": 1678924,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase8b/optical/temporal_change/possible_new_water_candidate.tif",
+      "sha256": "a2c580a1ef7cb0cf01c08dea05bfd54a18080ed18911db204a6eaea4c1a10429",
+      "bytes": 142593,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution": [
+        20.0,
+        20.0
+      ],
+      "dtype": "uint8",
+      "nodata": 255.0,
+      "description": "1 possible optical new-water candidate; 0 other certain optical transitions; 255 uncertain or invalid",
+      "valid_pixels": 1046915,
+      "nan_count": 0,
+      "inf_count": 0,
+      "reopened": true
+    }
+  ]
+}

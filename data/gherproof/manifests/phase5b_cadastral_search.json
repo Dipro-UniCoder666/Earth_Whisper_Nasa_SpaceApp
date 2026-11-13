@@ -1,0 +1,115 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "reviewed_at": "2026-11-12",
+  "requested_target": {
+    "mouza_name": ["Sujatpur", "Sujatapur", "সুজাতপুর"],
+    "union": "Kultia",
+    "upazila": "Manirampur",
+    "district": "Jashore (Jessore)",
+    "reported_context": ["Beel Kedaria", "Bhavadah"]
+  },
+  "candidate_jl_number": {
+    "value": 143,
+    "status": "provisionally_corroborated_secondary_source_not_officially_verified",
+    "source_url": "https://dolilsheba.com/mouza/land-office/152",
+    "source_type": "secondary_mouza_listing",
+    "source_observation": "The Manirampur mouza listing gives Sujatapur/Sujatpur J.L. 143, between Hat Gachha 142 and Kultia 144.",
+    "independent_administrative_corroboration": "DPHE code table confirms Jessore 41 / Manirampur 61 / Kultia 473 / Sujatpur 368, but has no J.L. number.",
+    "official_confirmation": false,
+    "verification_needed": "Confirm the J.L. number and spelling on the official Sujatpur cadastral sheet or DLRS index for the same Manirampur administrative circle."
+  },
+  "source_checks": [
+    {
+      "source_name": "Ministry of Land digital land zoning portal",
+      "url": "https://map.land.gov.bd/",
+      "authority": "official",
+      "observed": "Portal describes digitized/georeferenced mouza sheets and offers division, district, upazila, mouza, sheet and plot selectors.",
+      "target_availability_confirmed": false,
+      "map_recovered": false,
+      "limitation": "Accessible static page content did not return a selected Manirampur/Kultia/Sujatpur sheet, plot or downloadable file. This is not proof of non-availability."
+    },
+    {
+      "source_name": "Jessore Zonal Settlement Office mouza map index",
+      "url": "https://zsojessore.gov.bd/maps.html",
+      "authority": "official",
+      "observed": "Page exposes a Manirampur selector and Village MAPs / Mouza maps section.",
+      "target_availability_confirmed": false,
+      "map_recovered": false,
+      "limitation": "Accessible page content did not expose a named Sujatpur sheet or direct file."
+    },
+    {
+      "source_name": "Digital Record Room / ePorcha",
+      "url": "https://eporcha.gov.bd/",
+      "authority": "official_service",
+      "target_availability_confirmed": false,
+      "map_recovered": false,
+      "limitation": "Service page could not be inspected through this run's web access; availability remains unknown. No purchase or transaction initiated."
+    },
+    {
+      "source_name": "MowjaBD public interface",
+      "url": "https://mowjabd.vercel.app/",
+      "authority": "third_party",
+      "observed": "Interface describes a DLRMS search and a separate public map-file library.",
+      "target_availability_confirmed": false,
+      "map_recovered": false,
+      "limitation": "No target map file identified; not treated as an authoritative source."
+    },
+    {
+      "source_name": "DPHE administrative code table",
+      "url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dphe/2024/12/8ddc502f31b5419089076326e526d691.pdf",
+      "authority": "official_administrative_reference",
+      "observed": "Jessore / Manirampur / Kultia / Sujatpur codes 41 / 61 / 473 / 368.",
+      "jl_number_confirmed": false,
+      "limitation": "Administrative reference only; no coordinates, cadastral sheet, plot or J.L. number."
+    }
+  ],
+  "recovery_result": {
+    "official_cadastral_map_recovered": false,
+    "original_file_path": null,
+    "original_filename": null,
+    "survey_version": null,
+    "sheet_numbers": [],
+    "scale": null,
+    "map_date": null,
+    "crs": null,
+    "control_points": [],
+    "georeferencing_performed": false,
+    "rms_error": null,
+    "reason": "No target cadastral image/PDF or georeferenced layer was exposed or recovered from accessible official pages during this review."
+  },
+  "geographic_interpretation": {
+    "beel_kedaria_identified_geospatially": false,
+    "pallimangal_separated_from_adjacent_ponds": false,
+    "south_khal_located": false,
+    "south_embankment_located": false,
+    "candidate_boundary_created": false,
+    "geometry": null,
+    "basis": "Existing reports provide textual place context only. Current S2 shows multiple pond-like parcels without an identifying marker."
+  },
+  "sentinel1_coverage": {
+    "target_coverage_status": "not_evaluated_no_supported_site_geometry",
+    "jan_7_jan_19_common_valid_pixels_in_broad_window": 463292,
+    "common_valid_area_km2_in_broad_window": 46.3292,
+    "provisional_window_fraction": 0.1812739557297332,
+    "target_valid_pixels": null,
+    "target_valid_area_ha": null,
+    "target_coverage_percent": null,
+    "additional_acquisitions_needed": "Cannot assess until target point or polygon is independently located."
+  },
+  "review_package": {
+    "geopackage": "data/gherproof/review/phase5/pallimangal_phase5_review.gpkg",
+    "map": "data/gherproof/review/phase5/pallimangal_phase5b_review_map.png",
+    "candidate_geojson_created": false,
+    "candidate_count": 0
+  },
+  "inference_readiness": "not_ready",
+  "report": "docs/GHERPROOF_PHASE5B_REPORT.md",
+  "provenance_report": "docs/GHERPROOF_CADASTRAL_MAP_PROVENANCE.md",
+  "limitations": [
+    "J.L. 143 is from a secondary listing and has not been verified against an official survey sheet.",
+    "No cadastral sheet, survey type, map date, plot schedule, CRS or georeferencing control was recovered.",
+    "No coordinates or boundaries were invented; all site-specific Sentinel-1 coverage remains unknown.",
+    "News-reported farm area and breach dimensions are not used to create geometry.",
+    "No model inference, flood map or affected-area calculation was performed."
+  ]
+}

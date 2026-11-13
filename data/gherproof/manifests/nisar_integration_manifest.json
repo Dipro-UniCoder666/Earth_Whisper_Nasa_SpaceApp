@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-11-13T06:58:22Z",
+  "project": "Earth Whisper / DHARA",
+  "archive": {
+    "provider": "NASA Alaska Satellite Facility DAAC",
+    "search_endpoint": "https://api.daac.asf.alaska.edu/services/search/param",
+    "search_collection": "NISAR_L2_GCOV_V1 and NISAR_L2_GCOV_PROVISIONAL_V1; BETA queried for January event windows",
+    "aoi_path": "data/gherproof/regional/six_village_regional_search_extent.geojson",
+    "aoi_status": "Provisional regional search envelope; not an official village, site, enclosure or fisheries boundary",
+    "event_windows": [
+      {"label": "pre-event", "start": "2026-01-01", "end": "2026-01-13", "maturity_searched": "BETA", "GCOV_footprint_matches": 0},
+      {"label": "post-event", "start": "2026-01-15", "end": "2026-01-31", "maturity_searched": "BETA", "GCOV_footprint_matches": 0}
+    ],
+    "later_search": {
+      "provisional_window": "2026-06-17 through part of 2026-10-23",
+      "provisional_GCOV_matches_over_AOI": 40,
+      "validated_window": "2026-10-21 through 2026-11-13",
+      "validated_GCOV_matches_over_AOI": 6,
+      "selection_note": "Selected the two validated, same-track/same-direction/same-polarization L2 GCOV acquisitions on relative orbit 170. Other matching validated products were catalogued but not processed in this bounded task."
+    }
+  },
+  "selected_acquisitions": [
+    {
+      "date": "2026-10-23",
+      "datetime_utc": "2026-10-23T23:29:18Z",
+      "product_id": "NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001",
+      "collection": "NISAR_L2_GCOV_V1",
+      "maturity": "VALIDATED",
+      "crid": "P05036",
+      "cycle": 33,
+      "relative_orbit": 170,
+      "direction": "ascending",
+      "instrument_band": "L-band",
+      "product_polarizations": ["HH", "HV"],
+      "covariance_layers": ["HHHH", "HVHV"],
+      "frequency_grids": [{"name": "frequencyA", "range_bandwidth_mhz": 40, "resolution_m": 10, "shape_rows_columns": [33912, 34632]}, {"name": "frequencyB", "range_bandwidth_mhz": 5, "resolution_m": 80, "shape_rows_columns": [4239, 4329]}],
+      "hdf5_size_bytes": 6593445888,
+      "hdf5_fully_downloaded": false,
+      "regional_window_bytes_read_by_HTTP_range": {"frequencyA": 101711872, "frequencyB": 13631488}
+    },
+    {
+      "date": "2026-11-04",
+      "datetime_utc": "2026-11-04T23:29:18Z",
+      "product_id": "NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001",
+      "collection": "NISAR_L2_GCOV_V1",
+      "maturity": "VALIDATED",
+      "crid": "P05036",
+      "cycle": 34,
+      "relative_orbit": 170,
+      "direction": "ascending",
+      "instrument_band": "L-band",
+      "product_polarizations": ["HH", "HV"],
+      "covariance_layers": ["HHHH", "HVHV"],
+      "frequency_grids": [{"name": "frequencyA", "range_bandwidth_mhz": 40, "resolution_m": 10, "shape_rows_columns": [33912, 34632]}, {"name": "frequencyB", "range_bandwidth_mhz": 5, "resolution_m": 80, "shape_rows_columns": [4239, 4329]}],
+      "hdf5_size_bytes": 6568280064,
+      "hdf5_fully_downloaded": false,
+      "regional_window_bytes_read_by_HTTP_range": {"frequencyA": 102760448, "frequencyB": 11534336}
+    }
+  ],
+  "processing": {
+    "script": "scripts/gherproof/inspect_nisar_remote_gcov.py",
+    "input_grids": ["/science/LSAR/GCOV/grids/frequencyA", "/science/LSAR/GCOV/grids/frequencyB"],
+    "source_crs": "EPSG:32645",
+    "source_shape_rows_columns": [33912, 34632],
+    "frequency_grids": [{"name": "frequencyA", "range_bandwidth_mhz": 40, "shape_rows_columns": [33912, 34632], "resolution_m": 10}, {"name": "frequencyB", "range_bandwidth_mhz": 5, "shape_rows_columns": [4239, 4329], "resolution_m": 80}],
+    "source_chunking": [512, 512],
+    "source_compression": "gzip",
+    "source_dtype": "float32",
+    "source_units": "1 (dimensionless gamma0 power)",
+    "source_terms": {
+      "HHHH": "real-valued HH backscatter covariance diagonal term",
+      "HVHV": "real-valued HV backscatter covariance diagonal term"
+    },
+    "gamma_to_sigma_factor_applied": false,
+    "validity_rule": "Within AOI, GCOV subswath mask must be 1..254 and the inputDataExceptionMask focused-validity bit must be set for the polarization (HH=256, HV=512); raw quality masks are preserved as separate bands.",
+    "qfsp_h1_exception_bit_2_in_focused_valid_AOI_pixels": 0,
+    "regional_output_crs": "EPSG:32645",
+    "regional_outputs": [{"frequency_grid": "frequencyA", "resolution_m": [10, 10], "width_height": [3111, 2155], "valid_pixels_per_polarization_per_date": 6475371, "aoi_pixels": 6475371, "valid_fraction": 1.0}, {"frequency_grid": "frequencyB", "resolution_m": [80, 80], "width_height": [388, 270], "valid_pixels_per_polarization_per_date": 101170, "aoi_pixels": 101170, "valid_fraction": 1.0}],
+    "qfsp_h1_exception_bit_2_in_focused_valid_AOI_pixels_per_frequency_date_polarization": 0,
+    "local_data_directory": "data/gherproof/processed/nisar/validated",
+    "local_output_directory_bytes": 117542508,
+    "source_checksum_status": "No complete source HDF5 was downloaded; therefore a complete local checksum was not computed. Output GeoTIFF checksums are in nisar_raster_qc_manifest.json and evidence_registry.json."
+  },
+  "temporal_comparison": {
+    "dates": ["2026-10-23", "2026-11-04"],
+    "relative_orbit": 170,
+    "direction": "ascending",
+    "maturity": "VALIDATED for both scenes",
+    "method": "10*log10(later linear gamma0 power / earlier linear gamma0 power), per matching covariance term, using common valid masks",
+    "median_change_db": {"frequencyA": {"HHHH": -0.1544963, "HVHV": -0.05126883}, "frequencyB": {"HHHH": -0.12276746, "HVHV": -0.18889818}},
+    "valid_common_fraction_of_AOI": {"frequencyA": 1.0, "frequencyB": 1.0},
+    "outputs": ["data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_gamma0_change_db.tif", "data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_frequencyB_80m_gamma0_change_db.tif"],
+    "interpretation": "Exploratory radar-backscatter change only; not water, flood, drainage, or fisheries-impact classification."
+  },
+  "application_integration": {
+    "evidence_registry": "data/gherproof/manifests/evidence_registry.json",
+    "map_source": "DHARA Satellite View layer selector",
+    "nisar_observation_layers": 4,
+    "nisar_temporal_comparison_layer": 2,
+    "polarization_selector": "HHHH / HVHV band selector for NISAR layers",
+    "model_input": false,
+    "january_event_pair_available": false
+  },
+  "limitations": [
+    "No January 2026 NISAR GCOV acquisitions matched the provisional AOI in either event window; NISAR provides no direct observation of the reported incident.",
+    "Later acquisitions are not event evidence and cannot confirm a breach, flood, fish escape, damage or financial loss.",
+    "No verified Pallimangal enclosure or village boundary is available; all reported coverage refers to the provisional regional search envelope.",
+    "Backscatter changes can reflect surface moisture, vegetation, roughness, crop conditions, irrigation, aquaculture, rainfall, tidal influence, speckle and acquisition effects.",
+    "No local field-reference labels were used; this is not a water-likelihood model.",
+    "NISAR and Sentinel-1 are different frequency bands and are never combined as interchangeable measurements or supplied to Sentinel-1-trained models."
+  ]
+}

@@ -1,0 +1,1159 @@
+{
+  "created_at_utc": "2026-11-12T21:17:22.000293+00:00",
+  "status": "audited_preprocessing_compatibility",
+  "training_source": {
+    "dataset": "Sen1Floods11 v1.1 HandLabeled S1Hand",
+    "split_file": "data/gherproof/raw/sen1floods11/v1.1/splits/flood_handlabeled/flood_train_data.csv",
+    "official_train_rows": 252,
+    "event_11_validation_rows_excluded": 41,
+    "training_rows_used_for_stats": 210,
+    "training_valid_pixel_count_exact": 46968696,
+    "bands": [
+      "VV",
+      "VH"
+    ],
+    "unit": "dB per official dataset README",
+    "source_data_metadata_example": {
+      "crs": "EPSG:4326",
+      "transform": [
+        8.983152841195215e-05,
+        0.0,
+        -1.1498435636729876,
+        0.0,
+        -8.983152841195215e-05,
+        9.474710964665418,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        -1.1498435636729876,
+        9.428717222118498,
+        -1.103849821126068,
+        9.474710964665418
+      ],
+      "res": [
+        8.983152841195215e-05,
+        8.983152841195215e-05
+      ],
+      "nodata": NaN,
+      "units": [
+        null,
+        null
+      ],
+      "descriptions": [
+        "VV",
+        "VH"
+      ]
+    },
+    "preprocess": {
+      "clip_range_db": [
+        -60,
+        20
+      ],
+      "scratch_normalization_mean_db": [
+        -10.23175048828125,
+        -17.202211380004883
+      ],
+      "scratch_normalization_std_db": [
+        4.136703968048096,
+        4.915712356567383
+      ],
+      "pretrained_normalization_mean_db": [
+        -12.54847240447998,
+        -20.192371368408203
+      ],
+      "pretrained_normalization_std_db": [
+        5.256977081298828,
+        5.911509037017822
+      ],
+      "normalization_statistic": "population per-channel mean/std over valid pixels in actual 210-chip train subset for scratch; pretrained fixed upstream SSL4EO-S12 stats",
+      "invalid_input": "set normalized values to 0 for any invalid pixel; training label -1 becomes ignore, invalid mask applied to loss",
+      "chip_shape": [
+        512,
+        512
+      ],
+      "random_train_patch": [
+        256,
+        256
+      ],
+      "train_augmentation": [
+        "random 90-degree rotations",
+        "optional horizontal flip"
+      ],
+      "validation_patch": "full 512x512 chips, no padding/cropping in evaluation",
+      "threshold": 0.5,
+      "threshold_method": "fixed 0.5; not tuned on Bolivia or local event"
+    },
+    "per_band_distribution_sampled": [
+      {
+        "band": "VV",
+        "training_chip_count": 210,
+        "valid_pixels_exact": 46968696,
+        "checkpoint_mean_db_scratch": -10.23175048828125,
+        "checkpoint_std_db_scratch": 4.136703968048096,
+        "checkpoint_mean_db_pretrained": -12.54847240447998,
+        "checkpoint_std_db_pretrained": 5.256977081298828,
+        "exact_clipped_min": -60.0,
+        "exact_clipped_max": 20.0,
+        "clip_count_across_bands": 171,
+        "sampled_percentiles_db": {
+          "1": -24.26851463317871,
+          "2": -22.308788299560547,
+          "5": -18.36224365234375,
+          "25": -11.852273941040039,
+          "50": -9.614189147949219,
+          "75": -7.721207618713379,
+          "95": -4.985292434692383,
+          "98": -3.4790706634521484,
+          "99": -2.1013331413269043
+        }
+      },
+      {
+        "band": "VH",
+        "training_chip_count": 210,
+        "valid_pixels_exact": 46968696,
+        "checkpoint_mean_db_scratch": -17.202211380004883,
+        "checkpoint_std_db_scratch": 4.915712356567383,
+        "checkpoint_mean_db_pretrained": -20.192371368408203,
+        "checkpoint_std_db_pretrained": 5.911509037017822,
+        "exact_clipped_min": -60.0,
+        "exact_clipped_max": 17.376384735107422,
+        "clip_count_across_bands": 47,
+        "sampled_percentiles_db": {
+          "1": -34.68925094604492,
+          "2": -31.266538619995117,
+          "5": -26.802125930786133,
+          "25": -18.849220275878906,
+          "50": -16.17366600036621,
+          "75": -14.143522262573242,
+          "95": -11.522143363952637,
+          "98": -10.305872917175293,
+          "99": -9.289505004882812
+        }
+      }
+    ]
+  },
+  "checkpoints": {
+    "scratch": {
+      "path": "models/gherproof/sen1floods11_attention_unet.pt",
+      "sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+      "architecture": "AttentionUNet",
+      "input_bands": [
+        "VV_dB",
+        "VH_dB"
+      ],
+      "normalization_mean": [
+        -10.23175048828125,
+        -17.202211380004883
+      ],
+      "normalization_std": [
+        4.136703968048096,
+        4.915712356567383
+      ],
+      "threshold": 0.5
+    },
+    "pretrained": {
+      "path": "models/gherproof/sen1floods11_resnet50_moco_unet.pt",
+      "sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+      "architecture": "ResNet50SARUNet",
+      "input_bands": [
+        "VV_dB",
+        "VH_dB"
+      ],
+      "normalization_mean": [
+        -12.54847240447998,
+        -20.192371368408203
+      ],
+      "normalization_std": [
+        5.256977081298828,
+        5.911509037017822
+      ],
+      "threshold": 0.5
+    }
+  },
+  "rtc_measurement": {
+    "provider": "Microsoft Planetary Computer Sentinel-1 RTC",
+    "metadata_interpretation": "Gamma naught linear intensity, from RTC STAC asset descriptions and per-band Scale=linear tags",
+    "conversion": "dB=10*log10(linear) once; zero, negative, nonfinite and source nodata are excluded; model input then clipped to [-60,20] dB and normalized using each checkpoint metadata",
+    "scenes": [
+      {
+        "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+        "date": "2026-01-12",
+        "platform": "sentinel-1a",
+        "relative_orbit": 12,
+        "orbit_direction": "ascending",
+        "source_raster": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_rtc_vv_vh_10m_utm45n.tif",
+        "source_raster_sha256": "3a53b9121226280ebbba0ad6184b4ee55f27a2edbfd041b32ea90b31d0675dc0",
+        "source_raster_metadata": {
+          "crs": "EPSG:32645",
+          "transform": [
+            10.0,
+            0.0,
+            729410.0,
+            0.0,
+            -10.0,
+            2557970.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "bounds": [
+            729410.0,
+            2536410.0,
+            760520.0,
+            2557970.0
+          ],
+          "resolution_m": [
+            10.0,
+            10.0
+          ],
+          "width": 3111,
+          "height": 2156,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "nodata": -32768.0,
+          "tags": {
+            "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+            "collection": "sentinel-1-rtc",
+            "datetime": "2026-01-12T12:12:47.436905Z",
+            "instrument_mode": "IW",
+            "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+            "orbit_direction": "ascending",
+            "platform": "sentinel-1a",
+            "polarizations": "VV,VH",
+            "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+            "relative_orbit": "12",
+            "AREA_OR_POINT": "Area"
+          }
+        },
+        "common_positive_valid_pixels": 6475371,
+        "common_positive_valid_fraction_of_aoi": 1.0,
+        "vv_vh_linear_correlation": 0.13386462583876788,
+        "bands": [
+          {
+            "band": "VV",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0006444070604629815,
+            "linear_max": 1050.0501708984375,
+            "linear_percentiles": {
+              "1": 0.005565882194787264,
+              "2": 0.00692509301006794,
+              "5": 0.010555008426308632,
+              "25": 0.04990694671869278,
+              "50": 0.11035267263650894,
+              "75": 0.19511833786964417,
+              "95": 0.37306421995162964,
+              "98": 0.4902367889881134,
+              "99": 0.6056311726570129
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -31.908397674560547,
+              "max": 30.212099075317383,
+              "mean": -10.404314994812012,
+              "std_population": 4.629477024078369,
+              "percentiles": {
+                "1": -22.544660568237305,
+                "2": -21.59574317932129,
+                "5": -19.765413284301758,
+                "25": -13.018389701843262,
+                "50": -9.572171211242676,
+                "75": -7.097019195556641,
+                "95": -4.282163619995117,
+                "98": -3.0959410667419434,
+                "99": -2.17791748046875
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 34,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 5.2506644020859965e-06,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -31.908397674560547,
+              "max": 20.0,
+              "mean": -10.404330253601074,
+              "std_population": 4.62936544418335,
+              "percentiles": {
+                "1": -22.544660568237305,
+                "2": -21.59574317932129,
+                "5": -19.765413284301758,
+                "25": -13.018389701843262,
+                "50": -9.572171211242676,
+                "75": -7.097019195556641,
+                "95": -4.282163619995117,
+                "98": -3.0959410667419434,
+                "99": -2.17791748046875
+              }
+            }
+          },
+          {
+            "band": "VH",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.00030942136072553694,
+            "linear_max": 47.04977798461914,
+            "linear_percentiles": {
+              "1": 0.001832256792113185,
+              "2": 0.0022332691587507725,
+              "5": 0.0031146060209721327,
+              "25": 0.009058539755642414,
+              "50": 0.022061066702008247,
+              "75": 0.04140045493841171,
+              "95": 0.07772504538297653,
+              "98": 0.09833711385726929,
+              "99": 0.11547703295946121
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -35.09449768066406,
+              "max": 16.725576400756836,
+              "mean": -17.231245040893555,
+              "std_population": 4.371950626373291,
+              "percentiles": {
+                "1": -27.370136260986328,
+                "2": -26.510589599609375,
+                "5": -25.065969467163086,
+                "25": -20.429418563842773,
+                "50": -16.563735961914062,
+                "75": -13.829948425292969,
+                "95": -11.094389915466309,
+                "98": -10.07282543182373,
+                "99": -9.375043869018555
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 0,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 0.0,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -35.09449768066406,
+              "max": 16.725576400756836,
+              "mean": -17.231245040893555,
+              "std_population": 4.371950626373291,
+              "percentiles": {
+                "1": -27.370136260986328,
+                "2": -26.510589599609375,
+                "5": -25.065969467163086,
+                "25": -20.429418563842773,
+                "50": -16.563735961914062,
+                "75": -13.829948425292969,
+                "95": -11.094389915466309,
+                "98": -10.07282543182373,
+                "99": -9.375043869018555
+              }
+            }
+          }
+        ],
+        "normalized_distribution_by_model": {
+          "scratch": [
+            {
+              "band": "VV",
+              "mean": -0.041719164699316025,
+              "std": 1.1190950870513916,
+              "p02": -2.747112989425659,
+              "median": 0.1594456136226654,
+              "p98": 1.7249988317489624
+            },
+            {
+              "band": "VH",
+              "mean": -0.0059061916545033455,
+              "std": 0.8893829584121704,
+              "p02": -1.8935970067977905,
+              "median": 0.12988461554050446,
+              "p98": 1.4503260850906372
+            }
+          ],
+          "pretrained": [
+            {
+              "band": "VV",
+              "mean": 0.407865971326828,
+              "std": 0.8806136250495911,
+              "p02": -1.7210026979446411,
+              "median": 0.566162109375,
+              "p98": 1.7980926036834717
+            },
+            {
+              "band": "VH",
+              "mean": 0.5009087920188904,
+              "std": 0.7395659685134888,
+              "p02": -1.068799614906311,
+              "median": 0.6138255596160889,
+              "p98": 1.7118380069732666
+            }
+          ]
+        },
+        "db_output": {
+          "path": "data/gherproof/processed/phase7/sentinel1/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+          "sha256": "5c9c26f364a70aac2d13baffec15c210e3c90255c7775549c3b57bdcf3d376de",
+          "bytes": 40244133,
+          "nodata": -32768.0,
+          "bands": [
+            "VV_dB",
+            "VH_dB"
+          ]
+        }
+      },
+      {
+        "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+        "date": "2026-01-24",
+        "platform": "sentinel-1a",
+        "relative_orbit": 12,
+        "orbit_direction": "ascending",
+        "source_raster": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_rtc_vv_vh_10m_utm45n.tif",
+        "source_raster_sha256": "5501194becd7c725433f29256cc929c4ad0a275c74c879210ade6ef5045a6d3e",
+        "source_raster_metadata": {
+          "crs": "EPSG:32645",
+          "transform": [
+            10.0,
+            0.0,
+            729410.0,
+            0.0,
+            -10.0,
+            2557970.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "bounds": [
+            729410.0,
+            2536410.0,
+            760520.0,
+            2557970.0
+          ],
+          "resolution_m": [
+            10.0,
+            10.0
+          ],
+          "width": 3111,
+          "height": 2156,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "nodata": -32768.0,
+          "tags": {
+            "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+            "collection": "sentinel-1-rtc",
+            "datetime": "2026-01-24T12:12:45.938137Z",
+            "instrument_mode": "IW",
+            "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+            "orbit_direction": "ascending",
+            "platform": "sentinel-1a",
+            "polarizations": "VV,VH",
+            "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+            "relative_orbit": "12",
+            "AREA_OR_POINT": "Area"
+          }
+        },
+        "common_positive_valid_pixels": 6475371,
+        "common_positive_valid_fraction_of_aoi": 1.0,
+        "vv_vh_linear_correlation": 0.12193356811774007,
+        "bands": [
+          {
+            "band": "VV",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0008753368747420609,
+            "linear_max": 1280.2994384765625,
+            "linear_percentiles": {
+              "1": 0.005464168265461922,
+              "2": 0.006859214045107365,
+              "5": 0.010958395898342133,
+              "25": 0.05635301023721695,
+              "50": 0.11511649936437607,
+              "75": 0.19696205854415894,
+              "95": 0.3728106617927551,
+              "98": 0.4888628423213959,
+              "99": 0.6054354906082153
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -30.578248977661133,
+              "max": 31.0731143951416,
+              "mean": -10.175335884094238,
+              "std_population": 4.503378868103027,
+              "percentiles": {
+                "1": -22.624759674072266,
+                "2": -21.637256622314453,
+                "5": -19.60253143310547,
+                "25": -12.490829467773438,
+                "50": -9.38862419128418,
+                "75": -7.056174278259277,
+                "95": -4.285117149353027,
+                "98": -3.1081297397613525,
+                "99": -2.1793212890625
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 42,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 6.486114849635643e-06,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -30.578248977661133,
+              "max": 20.0,
+              "mean": -10.175354957580566,
+              "std_population": 4.503229141235352,
+              "percentiles": {
+                "1": -22.624759674072266,
+                "2": -21.637256622314453,
+                "5": -19.60253143310547,
+                "25": -12.490829467773438,
+                "50": -9.38862419128418,
+                "75": -7.056174278259277,
+                "95": -4.285117149353027,
+                "98": -3.1081297397613525,
+                "99": -2.1793212890625
+              }
+            }
+          },
+          {
+            "band": "VH",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.00012579643225762993,
+            "linear_max": 50.14595031738281,
+            "linear_percentiles": {
+              "1": 0.0018352351617068052,
+              "2": 0.0022343702148646116,
+              "5": 0.0031021134927868843,
+              "25": 0.008641013875603676,
+              "50": 0.02186238206923008,
+              "75": 0.042506419122219086,
+              "95": 0.08061538636684418,
+              "98": 0.10224305093288422,
+              "99": 0.12015171349048615
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -39.003318786621094,
+              "max": 17.002357482910156,
+              "mean": -17.24533462524414,
+              "std_population": 4.464174747467041,
+              "percentiles": {
+                "1": -27.363080978393555,
+                "2": -26.50844955444336,
+                "5": -25.083423614501953,
+                "25": -20.63435173034668,
+                "50": -16.603025436401367,
+                "75": -13.715455055236816,
+                "95": -10.935821533203125,
+                "98": -9.903661727905273,
+                "99": -9.2027006149292
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 0,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 0.0,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -39.003318786621094,
+              "max": 17.002357482910156,
+              "mean": -17.24533462524414,
+              "std_population": 4.464174747467041,
+              "percentiles": {
+                "1": -27.363080978393555,
+                "2": -26.50844955444336,
+                "5": -25.083423614501953,
+                "25": -20.63435173034668,
+                "50": -16.603025436401367,
+                "75": -13.715455055236816,
+                "95": -10.935821533203125,
+                "98": -9.903661727905273,
+                "99": -9.2027006149292
+              }
+            }
+          }
+        ],
+        "normalized_distribution_by_model": {
+          "scratch": [
+            {
+              "band": "VV",
+              "mean": 0.013632920570671558,
+              "std": 1.0886032581329346,
+              "p02": -2.757148504257202,
+              "median": 0.20381596684455872,
+              "p98": 1.7220523357391357
+            },
+            {
+              "band": "VH",
+              "mean": -0.008772530592978,
+              "std": 0.9081439971923828,
+              "p02": -1.893161654472351,
+              "median": 0.12189198285341263,
+              "p98": 1.484738826751709
+            }
+          ],
+          "pretrained": [
+            {
+              "band": "VV",
+              "mean": 0.45142239332199097,
+              "std": 0.8566195964813232,
+              "p02": -1.7288994789123535,
+              "median": 0.6010770201683044,
+              "p98": 1.795773983001709
+            },
+            {
+              "band": "VH",
+              "mean": 0.4985252618789673,
+              "std": 0.7551667094230652,
+              "p02": -1.0684375762939453,
+              "median": 0.6071792840957642,
+              "p98": 1.7404539585113525
+            }
+          ]
+        },
+        "db_output": {
+          "path": "data/gherproof/processed/phase7/sentinel1/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+          "sha256": "986f751368f1f0a8ab4c73b35b5571cfdb47fe16c56864991bffd2dce7564594",
+          "bytes": 40278563,
+          "nodata": -32768.0,
+          "bands": [
+            "VV_dB",
+            "VH_dB"
+          ]
+        }
+      },
+      {
+        "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+        "date": "2026-01-09",
+        "platform": "sentinel-1a",
+        "relative_orbit": 150,
+        "orbit_direction": "descending",
+        "source_raster": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_rtc_vv_vh_10m_utm45n.tif",
+        "source_raster_sha256": "0b8ad0a17cf8a3e979bb827e85bb94f7a4afa1b528f83b55f949d62e775b21e8",
+        "source_raster_metadata": {
+          "crs": "EPSG:32645",
+          "transform": [
+            10.0,
+            0.0,
+            729410.0,
+            0.0,
+            -10.0,
+            2557970.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "bounds": [
+            729410.0,
+            2536410.0,
+            760520.0,
+            2557970.0
+          ],
+          "resolution_m": [
+            10.0,
+            10.0
+          ],
+          "width": 3111,
+          "height": 2156,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "nodata": -32768.0,
+          "tags": {
+            "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+            "collection": "sentinel-1-rtc",
+            "datetime": "2026-01-09T23:56:19.288128Z",
+            "instrument_mode": "IW",
+            "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+            "orbit_direction": "descending",
+            "platform": "sentinel-1a",
+            "polarizations": "VV,VH",
+            "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+            "relative_orbit": "150",
+            "AREA_OR_POINT": "Area"
+          }
+        },
+        "common_positive_valid_pixels": 6475371,
+        "common_positive_valid_fraction_of_aoi": 1.0,
+        "vv_vh_linear_correlation": 0.23551341288578936,
+        "bands": [
+          {
+            "band": "VV",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0012451907387003303,
+            "linear_max": 837.182861328125,
+            "linear_percentiles": {
+              "1": 0.008432704955339432,
+              "2": 0.010302283801138401,
+              "5": 0.014594482257962227,
+              "25": 0.05430912598967552,
+              "50": 0.11748135834932327,
+              "75": 0.20517313480377197,
+              "95": 0.4023377299308777,
+              "98": 0.5490649342536926,
+              "99": 0.71095210313797
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -29.04764175415039,
+              "max": 29.22820281982422,
+              "mean": -9.991828918457031,
+              "std_population": 4.397872447967529,
+              "percentiles": {
+                "1": -20.74032974243164,
+                "2": -19.870664596557617,
+                "5": -18.358112335205078,
+                "25": -12.65127182006836,
+                "50": -9.300310134887695,
+                "75": -6.878795146942139,
+                "95": -3.954092264175415,
+                "98": -2.6037631034851074,
+                "99": -1.4815964698791504
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 36,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 5.559527013973408e-06,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -29.04764175415039,
+              "max": 20.0,
+              "mean": -9.991844177246094,
+              "std_population": 4.397767543792725,
+              "percentiles": {
+                "1": -20.74032974243164,
+                "2": -19.870664596557617,
+                "5": -18.358112335205078,
+                "25": -12.65127182006836,
+                "50": -9.300310134887695,
+                "75": -6.878795146942139,
+                "95": -3.954092264175415,
+                "98": -2.6037631034851074,
+                "99": -1.4815964698791504
+              }
+            }
+          },
+          {
+            "band": "VH",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0004562223330140114,
+            "linear_max": 24.125368118286133,
+            "linear_percentiles": {
+              "1": 0.0030713616870343685,
+              "2": 0.0036376866046339273,
+              "5": 0.0047646453604102135,
+              "25": 0.010950150899589062,
+              "50": 0.02323705144226551,
+              "75": 0.04132106155157089,
+              "95": 0.07610256224870682,
+              "98": 0.09614496678113937,
+              "99": 0.11328050494194031
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -33.408233642578125,
+              "max": 13.824739456176758,
+              "mean": -16.745948791503906,
+              "std_population": 3.785616874694824,
+              "percentiles": {
+                "1": -25.126689910888672,
+                "2": -24.391746520996094,
+                "5": -23.219694137573242,
+                "25": -19.605798721313477,
+                "50": -16.33819007873535,
+                "75": -13.838285446166992,
+                "95": -11.186007499694824,
+                "98": -10.170734405517578,
+                "99": -9.458447456359863
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 0,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 0.0,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -33.408233642578125,
+              "max": 13.824739456176758,
+              "mean": -16.745948791503906,
+              "std_population": 3.785616874694824,
+              "percentiles": {
+                "1": -25.126689910888672,
+                "2": -24.391746520996094,
+                "5": -23.219694137573242,
+                "25": -19.605798721313477,
+                "50": -16.33819007873535,
+                "75": -13.838285446166992,
+                "95": -11.186007499694824,
+                "98": -10.170734405517578,
+                "99": -9.458447456359863
+              }
+            }
+          }
+        ],
+        "normalized_distribution_by_model": {
+          "scratch": [
+            {
+              "band": "VV",
+              "mean": 0.0579947866499424,
+              "std": 1.063109040260315,
+              "p02": -2.3300952911376953,
+              "median": 0.22516486048698425,
+              "p98": 1.8439770936965942
+            },
+            {
+              "band": "VH",
+              "mean": 0.09281713515520096,
+              "std": 0.7701054215431213,
+              "p02": -1.4625624418258667,
+              "median": 0.17576725780963898,
+              "p98": 1.4304085969924927
+            }
+          ],
+          "pretrained": [
+            {
+              "band": "VV",
+              "mean": 0.48633065819740295,
+              "std": 0.8365582227706909,
+              "p02": -1.3928520679473877,
+              "median": 0.617876410484314,
+              "p98": 1.8917162418365479
+            },
+            {
+              "band": "VH",
+              "mean": 0.5830020904541016,
+              "std": 0.6403807997703552,
+              "p02": -0.7103729248046875,
+              "median": 0.6519792675971985,
+              "p98": 1.6952755451202393
+            }
+          ]
+        },
+        "db_output": {
+          "path": "data/gherproof/processed/phase7/sentinel1/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+          "sha256": "6c4f5124fcd5f63def401caba59d1d17b6432b6a34a019a6f15480a49f96273c",
+          "bytes": 40374955,
+          "nodata": -32768.0,
+          "bands": [
+            "VV_dB",
+            "VH_dB"
+          ]
+        }
+      },
+      {
+        "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+        "date": "2026-01-21",
+        "platform": "sentinel-1a",
+        "relative_orbit": 150,
+        "orbit_direction": "descending",
+        "source_raster": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_rtc_vv_vh_10m_utm45n.tif",
+        "source_raster_sha256": "b6ac3b6d20b4298bb5b2d419d6465722959026d283acbbe0083bd161ab328d27",
+        "source_raster_metadata": {
+          "crs": "EPSG:32645",
+          "transform": [
+            10.0,
+            0.0,
+            729410.0,
+            0.0,
+            -10.0,
+            2557970.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "bounds": [
+            729410.0,
+            2536410.0,
+            760520.0,
+            2557970.0
+          ],
+          "resolution_m": [
+            10.0,
+            10.0
+          ],
+          "width": 3111,
+          "height": 2156,
+          "descriptions": [
+            "VV",
+            "VH"
+          ],
+          "nodata": -32768.0,
+          "tags": {
+            "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+            "collection": "sentinel-1-rtc",
+            "datetime": "2026-01-21T23:56:18.062524Z",
+            "instrument_mode": "IW",
+            "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+            "orbit_direction": "descending",
+            "platform": "sentinel-1a",
+            "polarizations": "VV,VH",
+            "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+            "relative_orbit": "150",
+            "AREA_OR_POINT": "Area"
+          }
+        },
+        "common_positive_valid_pixels": 6475371,
+        "common_positive_valid_fraction_of_aoi": 1.0,
+        "vv_vh_linear_correlation": 0.23699351008006345,
+        "bands": [
+          {
+            "band": "VV",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0009457243140786886,
+            "linear_max": 776.1179809570312,
+            "linear_percentiles": {
+              "1": 0.006816224195063114,
+              "2": 0.008440100587904453,
+              "5": 0.01281527429819107,
+              "25": 0.06179187074303627,
+              "50": 0.12709401547908783,
+              "75": 0.21969303488731384,
+              "95": 0.4275338649749756,
+              "98": 0.5784305334091187,
+              "99": 0.7415375709533691
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -30.242355346679688,
+              "max": 28.89927864074707,
+              "mean": -9.696532249450684,
+              "std_population": 4.50447940826416,
+              "percentiles": {
+                "1": -21.664562225341797,
+                "2": -20.736522674560547,
+                "5": -18.92272186279297,
+                "25": -12.090686798095703,
+                "50": -8.958748817443848,
+                "75": -6.581836700439453,
+                "95": -3.6902947425842285,
+                "98": -2.377487897872925,
+                "99": -1.2986685037612915
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 18,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 2.779763506986704e-06,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -30.242355346679688,
+              "max": 20.0,
+              "mean": -9.696542739868164,
+              "std_population": 4.504405498504639,
+              "percentiles": {
+                "1": -21.664562225341797,
+                "2": -20.736522674560547,
+                "5": -18.92272186279297,
+                "25": -12.090686798095703,
+                "50": -8.958748817443848,
+                "75": -6.581836700439453,
+                "95": -3.6902947425842285,
+                "98": -2.377487897872925,
+                "99": -1.2986685037612915
+              }
+            }
+          },
+          {
+            "band": "VH",
+            "aoi_pixel_count": 6475371,
+            "nodata_or_masked_pixels_in_array": 231945,
+            "finite_valid_pixels": 6475371,
+            "positive_linear_pixels": 6475371,
+            "zero_pixels": 0,
+            "negative_pixels": 0,
+            "linear_min": 0.0005864392151124775,
+            "linear_max": 25.881114959716797,
+            "linear_percentiles": {
+              "1": 0.003101898357272148,
+              "2": 0.0036776845809072256,
+              "5": 0.0048088752664625645,
+              "25": 0.010873833671212196,
+              "50": 0.024131299927830696,
+              "75": 0.044749170541763306,
+              "95": 0.08331287652254105,
+              "98": 0.10523088276386261,
+              "99": 0.1236111968755722
+            },
+            "db_unclipped": {
+              "count": 6475371,
+              "min": -32.31776809692383,
+              "max": 14.129829406738281,
+              "mean": -16.57172393798828,
+              "std_population": 3.9259212017059326,
+              "percentiles": {
+                "1": -25.083724975585938,
+                "2": -24.344255447387695,
+                "5": -23.1795654296875,
+                "25": -19.636173248291016,
+                "50": -16.174192428588867,
+                "75": -13.49215030670166,
+                "95": -10.792878150939941,
+                "98": -9.77856731414795,
+                "99": -9.079421997070312
+              }
+            },
+            "training_clip_low_pixels": 0,
+            "training_clip_high_pixels": 0,
+            "training_clip_low_fraction": 0.0,
+            "training_clip_high_fraction": 0.0,
+            "db_after_training_clip": {
+              "count": 6475371,
+              "min": -32.31776809692383,
+              "max": 14.129829406738281,
+              "mean": -16.57172393798828,
+              "std_population": 3.9259212017059326,
+              "percentiles": {
+                "1": -25.083724975585938,
+                "2": -24.344255447387695,
+                "5": -23.1795654296875,
+                "25": -19.636173248291016,
+                "50": -16.174192428588867,
+                "75": -13.49215030670166,
+                "95": -10.792878150939941,
+                "98": -9.77856731414795,
+                "99": -9.079421997070312
+              }
+            }
+          }
+        ],
+        "normalized_distribution_by_model": {
+          "scratch": [
+            {
+              "band": "VV",
+              "mean": 0.12938019633293152,
+              "std": 1.0888874530792236,
+              "p02": -2.5394062995910645,
+              "median": 0.30773332715034485,
+              "p98": 1.8986765146255493
+            },
+            {
+              "band": "VH",
+              "mean": 0.12825942039489746,
+              "std": 0.7986474633216858,
+              "p02": -1.452901005744934,
+              "median": 0.2091291844844818,
+              "p98": 1.510186791419983
+            }
+          ],
+          "pretrained": [
+            {
+              "band": "VV",
+              "mean": 0.5425036549568176,
+              "std": 0.8568432331085205,
+              "p02": -1.5575587749481201,
+              "median": 0.6828494071960449,
+              "p98": 1.934759259223938
+            },
+            {
+              "band": "VH",
+              "mean": 0.6124741435050964,
+              "std": 0.6641148924827576,
+              "p02": -0.7023389935493469,
+              "median": 0.6797213554382324,
+              "p98": 1.7616151571273804
+            }
+          ]
+        },
+        "db_output": {
+          "path": "data/gherproof/processed/phase7/sentinel1/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+          "sha256": "f2f27106fbf13fe2c3c1f1345f36b208714f6c074afa0f0720297fea7e75ebe0",
+          "bytes": 40442809,
+          "nodata": -32768.0,
+          "bands": [
+            "VV_dB",
+            "VH_dB"
+          ]
+        }
+      }
+    ]
+  },
+  "selected_pairwise_dB_differences": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "common_valid_pixels": 6475371,
+      "by_band": [
+        {
+          "band": "VV",
+          "median_db_change": 0.19957542419433594,
+          "p02_db_change": -6.271754264831543,
+          "p98_db_change": 6.880442142486572,
+          "mean_db_change": 0.22898012399673462
+        },
+        {
+          "band": "VH",
+          "median_db_change": 0.04141998291015625,
+          "p02_db_change": -6.1387739181518555,
+          "p98_db_change": 5.645723342895508,
+          "mean_db_change": -0.014090113341808319
+        }
+      ]
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "common_valid_pixels": 6475371,
+      "by_band": [
+        {
+          "band": "VV",
+          "median_db_change": 0.27997589111328125,
+          "p02_db_change": -6.166077136993408,
+          "p98_db_change": 6.843266487121582,
+          "mean_db_change": 0.295296311378479
+        },
+        {
+          "band": "VH",
+          "median_db_change": 0.2213287353515625,
+          "p02_db_change": -5.789114952087402,
+          "p98_db_change": 5.768284320831299,
+          "mean_db_change": 0.17422404885292053
+        }
+      ]
+    }
+  ],
+  "training_distribution_sample_method": "Deterministic random sample up to 2,500 valid pixels per training chip/channel (about 525k values/channel) for quantiles/plots; training means/std/min/max and valid-pixel count computed across every exact training pixel using the project _stats routine. RTC percentiles are exact per scene.",
+  "plot": "data/gherproof/processed/phase7/figures/phase7_radiometric_distributions.png",
+  "limitations": [
+    "S1Hand contains GRD backscatter in dB but original incidence-angle/processing details are not preserved in the local chip GeoTIFFs.",
+    "The regional RTC uses terrain-corrected gamma0; equal dB units do not remove calibration-reference, incidence, terrain correction, speckle/texture, resampling or seasonal domain differences.",
+    "This report supports exploratory input compatibility only, not quantitative accuracy."
+  ]
+}

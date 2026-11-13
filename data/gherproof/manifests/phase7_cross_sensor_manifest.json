@@ -1,0 +1,877 @@
+{
+  "status": "exploratory_cross_sensor_comparison",
+  "outputs": [
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "5ae97acfbba5f634ade5dad76fd7a715c3fe846f764771792321225db83afaff",
+      "valid_pixels": 1617928,
+      "bytes": 227046
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "87064a8bf09404e4e0ac6915facfba19752ae7184a4f67a4876bbb2cdb41cf76",
+      "valid_pixels": 1617928,
+      "bytes": 216472
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "2ac07375177f592fa7c65439b25dcc97238d5d14de5da9d326914f2bb195651f",
+      "valid_pixels": 1617928,
+      "bytes": 208591
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "1cfdccdcc5e813d4dcf1b13eaf1149aa4cbcf9e066c6d44b1bb070d9a65ec6f1",
+      "valid_pixels": 1617928,
+      "bytes": 197429
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "4a3dffdb8798c777ecfa96bf811ae4d2a5613e030c41053cf7dbcd2773c14cb1",
+      "valid_pixels": 1617928,
+      "bytes": 201809
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "2f809b947f25d41260573b45f730e980d72d3591c17834492b8cfed3aee77dd3",
+      "valid_pixels": 1617928,
+      "bytes": 203710
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "18616483c8e742116470f34f1adb877779c53f0bf3887c2c009db9f0bfba60c2",
+      "valid_pixels": 1617928,
+      "bytes": 164781
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "5785960d4f19f2f4adcda117c90b56619e4c24b444ee4e089eac243804e24e5f",
+      "valid_pixels": 1617928,
+      "bytes": 152317
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "bfcd0197e2b0612f431be73e7f1730c744954a51fdda40c5b0b8e7950f609a13",
+      "valid_pixels": 1617928,
+      "bytes": 142612
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "e9de4d931765c171a5adcc3802daa27aab056631593250bb61b8c00314a1d78d",
+      "valid_pixels": 1617928,
+      "bytes": 157286
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "88b34e457ab60af551c73d3d1a0b73e4e616195cb68b860b8ee9e53d329fd565",
+      "valid_pixels": 1617928,
+      "bytes": 161204
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "a1b2c30f786df6eedb2bf76a4f012c70429e87df2ce8afa926b364d7daa6327e",
+      "valid_pixels": 1617928,
+      "bytes": 163059
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "e92e8522b85603de8bfcd292c081e39eb2f77561d62a4889f675b7dcb614a6f3",
+      "valid_pixels": 1617928,
+      "bytes": 210478
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "8e605c8c3e4e4616af84c5073162a4a80f82ae9e9f9eccaca0c936fb708a913f",
+      "valid_pixels": 1617928,
+      "bytes": 200284
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "39a7f474ddcbd970aab91d1455233bc8f8b1e12690a8a1f9c1685a38af49620d",
+      "valid_pixels": 1617928,
+      "bytes": 192459
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "0f0c0cdade389da58d69fb787c1129a32c2d14d97509970c019ccb2ce66f9849",
+      "valid_pixels": 1617928,
+      "bytes": 183979
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "b3229074296e2969d406848313cb9ee7eae1b7ffd532829b2ca8a75280b936cf",
+      "valid_pixels": 1617928,
+      "bytes": 188175
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "e27235ade1c216f23b04983cc457e72c50175ae2263c128fa2c1f3aa6b3272b0",
+      "valid_pixels": 1617928,
+      "bytes": 189862
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "f77fa983a4ef079309f1594877d554ae95675b338b9ba15b35ff91c8e04deb29",
+      "valid_pixels": 1617928,
+      "bytes": 139031
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "421f32bef45a7b023838875f16e154e3b81694e9813ef219260e446f8b0d445f",
+      "valid_pixels": 1617928,
+      "bytes": 125583
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "f487860320718ded4a21ac5f25b2ac00e7cdfee0bd4dd83a22514e7cdad536c4",
+      "valid_pixels": 1617928,
+      "bytes": 115236
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "95fc19055a91dd3b975677966279189f8308e2b560bf61bebb030ed0a8e1139c",
+      "valid_pixels": 1617928,
+      "bytes": 138534
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "8613a192d38835fc71ec05bad40db788de338ecc6476dc1b5f59c17fbe6cae2a",
+      "valid_pixels": 1617928,
+      "bytes": 142702
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "06d10b68209785ce42d328b3309b9a9afe34598eda627b1922e7a33aa8c0322e",
+      "valid_pixels": 1617928,
+      "bytes": 144369
+    }
+  ],
+  "comparisons": [
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 207591,
+        "agreement_positive": 131811,
+        "sar_only": 245122,
+        "optical_only": 75780,
+        "neither": 1165215,
+        "optical_change_candidate": 14538,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 2483
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "5ae97acfbba5f634ade5dad76fd7a715c3fe846f764771792321225db83afaff",
+        "valid_pixels": 1617928,
+        "bytes": 227046
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 178245,
+        "agreement_positive": 119230,
+        "sar_only": 257703,
+        "optical_only": 59015,
+        "neither": 1181980,
+        "optical_change_candidate": 11033,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 1765
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "87064a8bf09404e4e0ac6915facfba19752ae7184a4f67a4876bbb2cdb41cf76",
+        "valid_pixels": 1617928,
+        "bytes": 216472
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 152952,
+        "agreement_positive": 107978,
+        "sar_only": 268955,
+        "optical_only": 44974,
+        "neither": 1196021,
+        "optical_change_candidate": 9578,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 1413
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "2ac07375177f592fa7c65439b25dcc97238d5d14de5da9d326914f2bb195651f",
+        "valid_pixels": 1617928,
+        "bytes": 208591
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 676006,
+        "agreement_positive": 319979,
+        "sar_only": 56954,
+        "optical_only": 356027,
+        "neither": 884968,
+        "optical_change_candidate": 72313,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 19264
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "1cfdccdcc5e813d4dcf1b13eaf1149aa4cbcf9e066c6d44b1bb070d9a65ec6f1",
+        "valid_pixels": 1617928,
+        "bytes": 197429
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 618122,
+        "agreement_positive": 305217,
+        "sar_only": 71716,
+        "optical_only": 312905,
+        "neither": 928090,
+        "optical_change_candidate": 74270,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 19655
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "4a3dffdb8798c777ecfa96bf811ae4d2a5613e030c41053cf7dbcd2773c14cb1",
+        "valid_pixels": 1617928,
+        "bytes": 201809
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 376933,
+        "optical_candidate": 556844,
+        "agreement_positive": 287193,
+        "sar_only": 89740,
+        "optical_only": 269651,
+        "neither": 971344,
+        "optical_change_candidate": 73956,
+        "SAR_model_new_candidate": 111163,
+        "overlap_of_optical_change_and_SAR_change": 19453
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "2f809b947f25d41260573b45f730e980d72d3591c17834492b8cfed3aee77dd3",
+        "valid_pixels": 1617928,
+        "bytes": 203710
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 207591,
+        "agreement_positive": 102847,
+        "sar_only": 39860,
+        "optical_only": 104744,
+        "neither": 1370477,
+        "optical_change_candidate": 14538,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 1477
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "18616483c8e742116470f34f1adb877779c53f0bf3887c2c009db9f0bfba60c2",
+        "valid_pixels": 1617928,
+        "bytes": 164781
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 178245,
+        "agreement_positive": 97122,
+        "sar_only": 45585,
+        "optical_only": 81123,
+        "neither": 1394098,
+        "optical_change_candidate": 11033,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 1176
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "5785960d4f19f2f4adcda117c90b56619e4c24b444ee4e089eac243804e24e5f",
+        "valid_pixels": 1617928,
+        "bytes": 152317
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 152952,
+        "agreement_positive": 90573,
+        "sar_only": 52134,
+        "optical_only": 62379,
+        "neither": 1412842,
+        "optical_change_candidate": 9578,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 976
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "bfcd0197e2b0612f431be73e7f1730c744954a51fdda40c5b0b8e7950f609a13",
+        "valid_pixels": 1617928,
+        "bytes": 142612
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 676006,
+        "agreement_positive": 137531,
+        "sar_only": 5176,
+        "optical_only": 538475,
+        "neither": 936746,
+        "optical_change_candidate": 72313,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 5591
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "e9de4d931765c171a5adcc3802daa27aab056631593250bb61b8c00314a1d78d",
+        "valid_pixels": 1617928,
+        "bytes": 157286
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 618122,
+        "agreement_positive": 135732,
+        "sar_only": 6975,
+        "optical_only": 482390,
+        "neither": 992831,
+        "optical_change_candidate": 74270,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 6040
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "88b34e457ab60af551c73d3d1a0b73e4e616195cb68b860b8ee9e53d329fd565",
+        "valid_pixels": 1617928,
+        "bytes": 161204
+      }
+    },
+    {
+      "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-12",
+      "S1_post_date": "2026-01-24",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": 2,
+      "S1_post_offset_vs_S2_days": 4,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 142707,
+        "optical_candidate": 556844,
+        "agreement_positive": 133328,
+        "sar_only": 9379,
+        "optical_only": 423516,
+        "neither": 1051705,
+        "optical_change_candidate": 73956,
+        "SAR_model_new_candidate": 35968,
+        "overlap_of_optical_change_and_SAR_change": 6368
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "a1b2c30f786df6eedb2bf76a4f012c70429e87df2ce8afa926b364d7daa6327e",
+        "valid_pixels": 1617928,
+        "bytes": 163059
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 207591,
+        "agreement_positive": 50814,
+        "sar_only": 184176,
+        "optical_only": 156777,
+        "neither": 1226161,
+        "optical_change_candidate": 14538,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 2290
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "e92e8522b85603de8bfcd292c081e39eb2f77561d62a4889f675b7dcb614a6f3",
+        "valid_pixels": 1617928,
+        "bytes": 210478
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 178245,
+        "agreement_positive": 42129,
+        "sar_only": 192861,
+        "optical_only": 136116,
+        "neither": 1246822,
+        "optical_change_candidate": 11033,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 1510
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "8e605c8c3e4e4616af84c5073162a4a80f82ae9e9f9eccaca0c936fb708a913f",
+        "valid_pixels": 1617928,
+        "bytes": 200284
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "ndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 152952,
+        "agreement_positive": 35255,
+        "sar_only": 199735,
+        "optical_only": 117697,
+        "neither": 1265241,
+        "optical_change_candidate": 9578,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 1207
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "39a7f474ddcbd970aab91d1455233bc8f8b1e12690a8a1f9c1685a38af49620d",
+        "valid_pixels": 1617928,
+        "bytes": 192459
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 676006,
+        "agreement_positive": 195265,
+        "sar_only": 39725,
+        "optical_only": 480741,
+        "neither": 902197,
+        "optical_change_candidate": 72313,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 17672
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "0f0c0cdade389da58d69fb787c1129a32c2d14d97509970c019ccb2ce66f9849",
+        "valid_pixels": 1617928,
+        "bytes": 183979
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 618122,
+        "agreement_positive": 184662,
+        "sar_only": 50328,
+        "optical_only": 433460,
+        "neither": 949478,
+        "optical_change_candidate": 74270,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 18590
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "b3229074296e2969d406848313cb9ee7eae1b7ffd532829b2ca8a75280b936cf",
+        "valid_pixels": 1617928,
+        "bytes": 188175
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "scratch",
+      "index": "mndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 234990,
+        "optical_candidate": 556844,
+        "agreement_positive": 171884,
+        "sar_only": 63106,
+        "optical_only": 384960,
+        "neither": 997978,
+        "optical_change_candidate": 73956,
+        "SAR_model_new_candidate": 101747,
+        "overlap_of_optical_change_and_SAR_change": 19263
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "e27235ade1c216f23b04983cc457e72c50175ae2263c128fa2c1f3aa6b3272b0",
+        "valid_pixels": 1617928,
+        "bytes": 189862
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 207591,
+        "agreement_positive": 18191,
+        "sar_only": 9508,
+        "optical_only": 189400,
+        "neither": 1400829,
+        "optical_change_candidate": 14538,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 549
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "f77fa983a4ef079309f1594877d554ae95675b338b9ba15b35ff91c8e04deb29",
+        "valid_pixels": 1617928,
+        "bytes": 139031
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 178245,
+        "agreement_positive": 16535,
+        "sar_only": 11164,
+        "optical_only": 161710,
+        "neither": 1428519,
+        "optical_change_candidate": 11033,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 459
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "421f32bef45a7b023838875f16e154e3b81694e9813ef219260e446f8b0d445f",
+        "valid_pixels": 1617928,
+        "bytes": 125583
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "ndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 152952,
+        "agreement_positive": 14731,
+        "sar_only": 12968,
+        "optical_only": 138221,
+        "neither": 1452008,
+        "optical_change_candidate": 9578,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 458
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "f487860320718ded4a21ac5f25b2ac00e7cdfee0bd4dd83a22514e7cdad536c4",
+        "valid_pixels": 1617928,
+        "bytes": 115236
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": -0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 676006,
+        "agreement_positive": 25167,
+        "sar_only": 2532,
+        "optical_only": 650839,
+        "neither": 939390,
+        "optical_change_candidate": 72313,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 1125
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+        "sha256": "95fc19055a91dd3b975677966279189f8308e2b560bf61bebb030ed0a8e1139c",
+        "valid_pixels": 1617928,
+        "bytes": 138534
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": 0,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 618122,
+        "agreement_positive": 24669,
+        "sar_only": 3030,
+        "optical_only": 593453,
+        "neither": 996776,
+        "optical_change_candidate": 74270,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 1204
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+        "sha256": "8613a192d38835fc71ec05bad40db788de338ecc6476dc1b5f59c17fbe6cae2a",
+        "valid_pixels": 1617928,
+        "bytes": 142702
+      }
+    },
+    {
+      "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+      "model": "pretrained",
+      "index": "mndwi",
+      "threshold": 0.05,
+      "S1_pre_date": "2026-01-09",
+      "S1_post_date": "2026-01-21",
+      "S2_pre_date": "2026-01-10",
+      "S2_post_date": "2026-01-20",
+      "S1_pre_offset_vs_S2_days": -1,
+      "S1_post_offset_vs_S2_days": 1,
+      "counts": {
+        "valid_pixels": 1617928,
+        "sar_predicted_water_like": 27699,
+        "optical_candidate": 556844,
+        "agreement_positive": 24059,
+        "sar_only": 3640,
+        "optical_only": 532785,
+        "neither": 1057444,
+        "optical_change_candidate": 73956,
+        "SAR_model_new_candidate": 13108,
+        "overlap_of_optical_change_and_SAR_change": 1282
+      },
+      "agreement_raster": {
+        "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+        "sha256": "06d10b68209785ce42d328b3309b9a9afe34598eda627b1922e7a33aa8c0322e",
+        "valid_pixels": 1617928,
+        "bytes": 144369
+      }
+    }
+  ],
+  "limitations": [
+    "Optical index threshold candidates are exploratory and not labelled validation data.",
+    "Sentinel-1 and Sentinel-2 dates differ; offsets are reported per pair.",
+    "SCL class-6 pixels are retained in clear mask as in Phase 6B; they are not used as labels.",
+    "No fusion into a confirmed water/flood product; SAR and optical masks remain separate."
+  ]
+}

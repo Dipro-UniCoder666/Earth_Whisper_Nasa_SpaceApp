@@ -1,0 +1,871 @@
+{
+  "status": "partial_sample_read",
+  "collection": "sentinel-1-grd",
+  "processed_full_scenes": 0,
+  "records": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "asset_inspections": {
+        "vv": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+          "asset_title": "VV: vertical transmit, vertical receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/657630900",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25838,
+            "height": 16730,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16730.0,
+              25838.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:12 14:41:01",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69201",
+              "GRD_ORIGINAL_HEADER_SIZE": "392",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 63.0,
+            "max": 302.0,
+            "percentiles": {
+              "1": 83.69999694824219,
+              "2": 93.5999984741211,
+              "25": 139.0,
+              "50": 172.0,
+              "75": 212.0,
+              "98": 275.79998779296875,
+              "99": 289.3500061035156
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12911,
+            8357,
+            16,
+            16
+          ]
+        },
+        "vh": {
+          "status": "metadata_opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+          "asset_title": "VH: vertical transmit, horizontal receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/568343664",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25838,
+            "height": 16730,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16730.0,
+              25838.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:12 14:41:27",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69200",
+              "GRD_ORIGINAL_HEADER_SIZE": "392",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "sample_read_error": "RasterioIOError: Read failed. See previous exception for details."
+        }
+      },
+      "metadata_files": [
+        {
+          "asset_key": "safe-manifest",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_safe-manifest.xml",
+          "bytes": 25272,
+          "sha256": "6614060d91e09cd4268ba6653adb8ca5f2527128114ee3173e397cbf0d0e0eb7",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-calibration-vv.xml",
+          "bytes": 1014835,
+          "sha256": "48d9d6022839e9217622ceef357a75a6e6be0793784747441cacf353829b9784",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-calibration-vh.xml",
+          "bytes": 1014835,
+          "sha256": "2552613246266ff65f7947cf5f05b318319320dd09c943d027eb112346fc4319",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-noise-vv.xml",
+          "bytes": 426285,
+          "sha256": "82a8442f7bc47ae6eb6209d60a1aad4852bd4ffc2fa44984209b37a33e993055",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_schema-noise-vh.xml",
+          "bytes": 426285,
+          "sha256": "bb92b07b140376cdeda3b1efa7474cdccd6b39a8415b2dccb50e6ec4ac618fff",
+          "status": "already_present"
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "asset_inspections": {
+        "vv": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+          "asset_title": "VV: vertical transmit, vertical receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/670075518",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25314,
+            "height": 16742,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16742.0,
+              25314.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:10 01:49:09",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69335",
+              "GRD_ORIGINAL_HEADER_SIZE": "393",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 84.0,
+            "max": 403.0,
+            "percentiles": {
+              "1": 93.55000305175781,
+              "2": 99.0,
+              "25": 147.0,
+              "50": 177.0,
+              "75": 219.0,
+              "98": 317.20001220703125,
+              "99": 350.8500061035156
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12649,
+            8363,
+            16,
+            16
+          ]
+        },
+        "vh": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+          "asset_title": "VH: vertical transmit, horizontal receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/572384985",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25314,
+            "height": 16742,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16742.0,
+              25314.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:10 01:49:57",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69335",
+              "GRD_ORIGINAL_HEADER_SIZE": "393",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 33.0,
+            "max": 131.0,
+            "percentiles": {
+              "1": 37.20000076293945,
+              "2": 42.099998474121094,
+              "25": 63.0,
+              "50": 74.0,
+              "75": 87.0,
+              "98": 122.4000015258789,
+              "99": 124.9000015258789
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12649,
+            8363,
+            16,
+            16
+          ]
+        }
+      },
+      "metadata_files": [
+        {
+          "asset_key": "safe-manifest",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_safe-manifest.xml",
+          "bytes": 25272,
+          "sha256": "91b0c4a60e5bbe100070ae0d8ffab9cd608ae9b529736caec04f07885150f543",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-calibration-vv.xml",
+          "bytes": 994477,
+          "sha256": "cff7fe0b76bffba59bedf0e20a3362592a581ab45200b982657b2484c8ad64b5",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-calibration-vh.xml",
+          "bytes": 994477,
+          "sha256": "5e775dcd44b2d119dfc50d1d489bfe2f6a2f27d3f450459eddcc521c586e19fd",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-noise-vv.xml",
+          "bytes": 407642,
+          "sha256": "9e776080fe4c34bafaaeb95734346ca86d20afc07ba1d64591cc24652680efbd",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_schema-noise-vh.xml",
+          "bytes": 407642,
+          "sha256": "4109ffd91836602480834548e9ac4e66018e1f0028f6f915a99422f13862682b",
+          "status": "already_present"
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "asset_inspections": {
+        "vv": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+          "asset_title": "VV: vertical transmit, vertical receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/656631097",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25837,
+            "height": 16730,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16730.0,
+              25837.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:24 14:46:14",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69739",
+              "GRD_ORIGINAL_HEADER_SIZE": "392",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 71.0,
+            "max": 348.0,
+            "percentiles": {
+              "1": 78.6500015258789,
+              "2": 91.0,
+              "25": 138.0,
+              "50": 169.5,
+              "75": 205.25,
+              "98": 299.29998779296875,
+              "99": 313.95001220703125
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12910,
+            8357,
+            16,
+            16
+          ]
+        },
+        "vh": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+          "asset_title": "VH: vertical transmit, horizontal receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/569984054",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25837,
+            "height": 16730,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16730.0,
+              25837.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:24 14:46:56",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69739",
+              "GRD_ORIGINAL_HEADER_SIZE": "392",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 36.0,
+            "max": 169.0,
+            "percentiles": {
+              "1": 39.54999923706055,
+              "2": 42.20000076293945,
+              "25": 64.75,
+              "50": 86.0,
+              "75": 108.0,
+              "98": 147.89999389648438,
+              "99": 157.8000030517578
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12910,
+            8357,
+            16,
+            16
+          ]
+        }
+      },
+      "metadata_files": [
+        {
+          "asset_key": "safe-manifest",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_safe-manifest.xml",
+          "bytes": 25272,
+          "sha256": "1734655ec78978557c7c4e84e70da91d096eb0f323dff24d63a3a11d00de697b",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-calibration-vv.xml",
+          "bytes": 1014835,
+          "sha256": "9d8312e96bd60703e66ecf27b7d046f7887f38741dd1e9d003b8d60d25f16643",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-calibration-vh.xml",
+          "bytes": 1014835,
+          "sha256": "47ce46445950b94ef5fa29281963b170cd3143b26c3e4cfad9296b33038928cd",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-noise-vv.xml",
+          "bytes": 426250,
+          "sha256": "17efe7ee8cf0db0aa0df607c799051f5b03dea4f993ac676fedb479d95ea0b66",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_schema-noise-vh.xml",
+          "bytes": 426250,
+          "sha256": "75a2b862981a20430f6d95fbf75b2ff5e0cbafbd5fede65e2502e9b983568610",
+          "status": "already_present"
+        }
+      ]
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF",
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "asset_inspections": {
+        "vv": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+          "asset_title": "VV: vertical transmit, vertical receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/670958049",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25314,
+            "height": 16742,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16742.0,
+              25314.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:22 03:22:34",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69346",
+              "GRD_ORIGINAL_HEADER_SIZE": "393",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 64.0,
+            "max": 384.0,
+            "percentiles": {
+              "1": 83.6500015258789,
+              "2": 88.0999984741211,
+              "25": 135.75,
+              "50": 174.5,
+              "75": 209.0,
+              "98": 354.5,
+              "99": 369.25
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12649,
+            8363,
+            16,
+            16
+          ]
+        },
+        "vh": {
+          "status": "opened",
+          "asset_description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+          "asset_title": "VH: vertical transmit, horizontal receive",
+          "range_request": {
+            "http_status": 206,
+            "content_range": "bytes 0-16383/575873343",
+            "content_length": "16384",
+            "range_bytes_received": 16384,
+            "tiff_magic": "49492a00"
+          },
+          "raster_metadata": {
+            "crs": null,
+            "width": 25314,
+            "height": 16742,
+            "transform": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              0.0,
+              16742.0,
+              25314.0,
+              0.0
+            ],
+            "resolution": [
+              1.0,
+              1.0
+            ],
+            "dtype": [
+              "uint16"
+            ],
+            "count": 1,
+            "nodata": 0.0,
+            "units": [
+              null
+            ],
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "descriptions": [
+              null
+            ],
+            "dataset_tags": {
+              "TIFFTAG_IMAGEDESCRIPTION": "Sentinel-1A IW GRD HR L1",
+              "TIFFTAG_SOFTWARE": "Sentinel-1 IPF 004.02",
+              "TIFFTAG_DATETIME": "2026:01:22 03:23:16",
+              "GRD_ORIGINAL_FOOTER_SIZE": "69346",
+              "GRD_ORIGINAL_HEADER_SIZE": "393",
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {},
+            "band1_mask_flags": [
+              "8"
+            ]
+          },
+          "center_sample": {
+            "count": 256,
+            "min": 19.0,
+            "max": 193.0,
+            "percentiles": {
+              "1": 32.54999923706055,
+              "2": 39.099998474121094,
+              "25": 71.0,
+              "50": 86.0,
+              "75": 100.0,
+              "98": 149.8000030517578,
+              "99": 161.85000610351562
+            },
+            "nonpositive_count": 0
+          },
+          "native_sample_window": [
+            12649,
+            8363,
+            16,
+            16
+          ]
+        }
+      },
+      "metadata_files": [
+        {
+          "asset_key": "safe-manifest",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_safe-manifest.xml",
+          "bytes": 25272,
+          "sha256": "d54648ed3bd4e08986309424bb60a4e8419d0b92c6c931534ca278defc85a84a",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-calibration-vv.xml",
+          "bytes": 994477,
+          "sha256": "e7fe7f8c5bf73b316dd89688f628515c26a12644366929a012dfd4f3fbe6c6f2",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-calibration-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-calibration-vh.xml",
+          "bytes": 994477,
+          "sha256": "889c069f2c2882a007620d877b1f008435da75dd239b22b0ef22256b37f020b2",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vv",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-noise-vv.xml",
+          "bytes": 407623,
+          "sha256": "cec746445818672cff71b026ff17f4a95d43a9867bd540202a8a2c35b524fa3a",
+          "status": "already_present"
+        },
+        {
+          "asset_key": "schema-noise-vh",
+          "path": "data/gherproof/raw/phase7b/grd_metadata/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_schema-noise-vh.xml",
+          "bytes": 407623,
+          "sha256": "14b53a712d703c06732507ea7f29f6130828d808f70e70565e35552a2c8a41d0",
+          "status": "already_present"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "STAC asset descriptions say terrain-corrected amplitude, but actual TIFF tags, identity transform, missing CRS and Level-1 SAFE metadata identify the returned assets as uncalibrated, ungeocoded GRD DN arrays.",
+    "Seven of eight VV/VH center sample windows decoded; one VH window failed with Rasterio Read failed while range/metadata access succeeded. No full scene processing or compatible model input was produced.",
+    "SAS token was memory-only and omitted from outputs/logging."
+  ],
+  "metadata_opened_assets": 8,
+  "pixel_sampled_assets": 7,
+  "pixel_sample_read_failures": 1
+}

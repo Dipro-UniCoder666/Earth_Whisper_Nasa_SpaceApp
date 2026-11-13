@@ -1,0 +1,508 @@
+{
+  "created_at_utc": "2026-11-12T18:29:08.154519+00:00",
+  "provider": "Microsoft Planetary Computer",
+  "stac_api": "https://planetarycomputer.microsoft.com/api/stac/v1",
+  "aoi_geojson": "data/gherproof/regional/six_village_regional_search_extent.geojson",
+  "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+  "aoi_bbox_wgs84": [
+    89.24,
+    22.92,
+    89.54,
+    23.11
+  ],
+  "aoi_area_km2_approx": 650.13,
+  "analysis_grid": {
+    "crs": "EPSG:32645",
+    "resolution_m": 10,
+    "width": 3111,
+    "height": 2156,
+    "aoi_pixels": 6475371
+  },
+  "query_windows": [
+    {
+      "pre": "2026-01-01/2026-01-13"
+    },
+    {
+      "post": "2026-01-15/2026-01-31"
+    }
+  ],
+  "catalogue_scenes": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-12T12:12:47.436905Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 1.0,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.89391939166941,
+              22.09294852824791
+            ],
+            [
+              89.85714465240748,
+              22.257079464720103
+            ],
+            [
+              89.56630425372487,
+              23.763910135212146
+            ],
+            [
+              87.1437136979187,
+              23.347851733185962
+            ],
+            [
+              87.46066952895572,
+              21.837663958138712
+            ],
+            [
+              88.89391939166941,
+              22.09294852824791
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-09T23:56:19.288128Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 1.0,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.00109671113435,
+              22.840386182307416
+            ],
+            [
+              91.26556445873936,
+              24.09108086267755
+            ],
+            [
+              88.82884731494308,
+              24.505628722152647
+            ],
+            [
+              88.53770444240635,
+              22.99894209369758
+            ],
+            [
+              90.94597925504465,
+              22.581255275534595
+            ],
+            [
+              91.00109671113435,
+              22.840386182307416
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-07T12:04:40.528434Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 114,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 0.9029924829634353,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.6367345634956,
+              22.44446372466187
+            ],
+            [
+              91.83843765310155,
+              22.649036672211167
+            ],
+            [
+              91.54762230707742,
+              24.155877999976024
+            ],
+            [
+              89.11581312106354,
+              23.74030039418125
+            ],
+            [
+              89.43490427997051,
+              22.230493813478848
+            ],
+            [
+              90.6367345634956,
+              22.44446372466187
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260131T120426_20260131T120451_063011_07E81A_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-31T12:04:39.097437Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 114,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 0.9064377560958913,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.63537666229853,
+              22.444353544083672
+            ],
+            [
+              91.83727071002359,
+              22.64893788564837
+            ],
+            [
+              91.54644247082263,
+              24.155776461693517
+            ],
+            [
+              89.11483416814,
+              23.740275757553164
+            ],
+            [
+              89.43384123037748,
+              22.230380263180287
+            ],
+            [
+              90.63537666229853,
+              22.444353544083672
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-24T12:12:45.938137Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 1.0,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.89566340593923,
+              22.092928305008805
+            ],
+            [
+              89.85869560026732,
+              22.257052166708895
+            ],
+            [
+              89.56787290240003,
+              23.763884051020597
+            ],
+            [
+              87.14518106062596,
+              23.34776004920741
+            ],
+            [
+              87.46221779698416,
+              21.837659627572364
+            ],
+            [
+              88.89566340593923,
+              22.092928305008805
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-21T23:56:18.062524Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 1.0,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.00129284011638,
+              22.840298347323696
+            ],
+            [
+              91.26576114233764,
+              24.091083094341364
+            ],
+            [
+              88.82904718190414,
+              24.505544095181104
+            ],
+            [
+              88.53800221639223,
+              22.99877021297948
+            ],
+            [
+              90.94597925504465,
+              22.581255275534595
+            ],
+            [
+              91.00129284011638,
+              22.840298347323696
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-01-19T12:04:39.512002Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 114,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "product_type": "GRD",
+      "processing_level": "1",
+      "footprint_overlap_fraction_by_degree_area": 0.9010617662152867,
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.63683319577908,
+              22.444374883339638
+            ],
+            [
+              91.83882764729064,
+              22.64894917278203
+            ],
+            [
+              91.54811535214195,
+              24.155792391386758
+            ],
+            [
+              89.11640049345375,
+              23.74031517319403
+            ],
+            [
+              89.4354876539003,
+              22.230416397405687
+            ],
+            [
+              90.63683319577908,
+              22.444374883339638
+            ]
+          ]
+        ]
+      },
+      "asset_keys": [
+        "vh",
+        "vv",
+        "tilejson",
+        "rendered_preview"
+      ],
+      "asset_access_status": "not_pixel_validated"
+    }
+  ],
+  "catalogue_compatible_pairs": [
+    {
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "status": "catalogue_geometry_match_only"
+    },
+    {
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "status": "catalogue_geometry_match_only"
+    },
+    {
+      "pre_date": "2026-01-07",
+      "post_date": "2026-01-31",
+      "relative_orbit": 114,
+      "orbit_direction": "ascending",
+      "status": "catalogue_geometry_match_only"
+    },
+    {
+      "pre_date": "2026-01-07",
+      "post_date": "2026-01-19",
+      "relative_orbit": 114,
+      "orbit_direction": "ascending",
+      "status": "catalogue_geometry_match_only"
+    }
+  ],
+  "same_geometry_pairs": [],
+  "pixel_validation_requested": false,
+  "sas_expiry_utc": null,
+  "limitations": [
+    "Catalog search results are not raster observations.",
+    "Pixel windows are not validated in the default catalogue-only run; --check-pixels enables bounded window reads.",
+    "Regional envelope is intentionally provisional and positional accuracy is not quantified.",
+    "No event inference or affected area is produced.",
+    "Alternative track candidates have not been downloaded or pixel-validated.",
+    "The common support fraction is based on existing local Jan 7/19 clips over the larger provisional regional search AOI.",
+    "Reported footprint overlap is in lon/lat polygon area and is not raster coverage."
+  ],
+  "existing_local_pair_coverage": {
+    "dates": [
+      "2026-01-07",
+      "2026-01-19"
+    ],
+    "platform": "sentinel-1a",
+    "relative_orbit": 114,
+    "direction": "ascending",
+    "mode": "IW",
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "raster_crs": "EPSG:32645",
+    "resolution_m": 10,
+    "dtype": "float32",
+    "nodata": -32768.0,
+    "band_descriptions": [
+      "VV",
+      "VH"
+    ],
+    "common_valid_pixels_all_four_layers": 463292,
+    "common_valid_area_km2": 46.3292,
+    "fraction_of_regional_search_aoi": 0.07154678859327133,
+    "full_regional_pixel_validation_status": "not performed for full source COGs; only extant local clips counted"
+  },
+  "catalogue_candidate_pairs": [
+    {
+      "pre_date": "2026-01-07",
+      "post_date": "2026-01-19",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "status": "same geometry; local clips validated; regional coverage partial"
+    },
+    {
+      "pre_date": "2026-01-09",
+      "post_date": "2026-01-21",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "status": "STAC geometry match only"
+    },
+    {
+      "pre_date": "2026-01-12",
+      "post_date": "2026-01-24",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "status": "STAC geometry match only"
+    }
+  ],
+  "phase6b_pixel_validation": {
+    "manifest": "data/gherproof/manifests/phase6b_sentinel1_pixel_validation.json",
+    "raster_qc_manifest": "data/gherproof/manifests/phase6b_raster_qc_manifest.json",
+    "catalogue_candidates": 7,
+    "pixel_verified_complete_scenes": 6,
+    "partial_or_failed_scenes": 1,
+    "pixel_validated_pairs": 2
+  }
+}

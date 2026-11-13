@@ -1,0 +1,64 @@
+{
+  "updated_at_utc": "2026-11-11T23:11:20.945766+00:00",
+  "input_manifest": "data/gherproof/manifests/event_imagery_manifest.json",
+  "asset_results": [
+    {
+      "date": "2026-01-07",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG",
+      "polarization": "VV",
+      "status": "authentication_blocked",
+      "raster_qc": null,
+      "error": "CDSE credentials are not configured; no request attempted"
+    },
+    {
+      "date": "2026-01-07",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG",
+      "polarization": "VH",
+      "status": "authentication_blocked",
+      "raster_qc": null,
+      "error": "CDSE credentials are not configured; no request attempted"
+    },
+    {
+      "date": "2026-01-19",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG",
+      "polarization": "VV",
+      "status": "authentication_blocked",
+      "raster_qc": null,
+      "error": "CDSE credentials are not configured; no request attempted"
+    },
+    {
+      "date": "2026-01-19",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG",
+      "polarization": "VH",
+      "status": "authentication_blocked",
+      "raster_qc": null,
+      "error": "CDSE credentials are not configured; no request attempted"
+    }
+  ],
+  "scene_results": {},
+  "pre_post_assessment": {
+    "dates": [
+      "2026-01-07",
+      "2026-01-19"
+    ],
+    "pre_event_date": "2026-01-07",
+    "post_event_date": "2026-01-19",
+    "pre_days_before_reported_incident": 7,
+    "post_days_after_reported_incident": 5,
+    "same_platform_orbit_direction_mode_product_family": true,
+    "all_four_verified": false,
+    "vv_vh_within_scene_grid_aligned": false,
+    "pre_post_grid_compatible": false,
+    "radiometric_comparability": "not_established",
+    "terrain_correction_status": "not_established",
+    "suitable_for_change_inference": false,
+    "suitability_class": "not_evaluated",
+    "suitability_reason": "Actual pre/post VV/VH raster products are not all locally verified."
+  },
+  "failures": [],
+  "limitations": [
+    "GRD/COG presence alone does not prove radiometric calibration or terrain correction.",
+    "No common-grid reprojection is run until the source measurement units and processing provenance are established.",
+    "No event water inference is emitted by this validator."
+  ]
+}

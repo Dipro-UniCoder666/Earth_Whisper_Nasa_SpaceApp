@@ -1,0 +1,59 @@
+{
+  "updated_at_utc": "2026-11-12",
+  "items": [
+    {
+      "name": "Sentinel-1 GRD measurement assets",
+      "provider": "Copernicus Data Space Ecosystem / ESA Copernicus",
+      "source_url": "https://dataspace.copernicus.eu/terms-and-conditions",
+      "license_or_terms": "Copernicus Sentinel Data Legal Notice; CDSE terms describe Sentinel access as free, full and open",
+      "redistribution": "Follow the Sentinel Data Legal Notice and attribution requirements; distinguish source data from CDSE portal material",
+      "use_status": "catalogued_only; none downloaded in this phase",
+      "commercial_use": "Sentinel data use is open under its legal notice; CDSE portal contents may have separate terms"
+    },
+    {
+      "name": "Sentinel-2 contextual visual COG",
+      "provider": "ESA Copernicus data delivered through Microsoft Planetary Computer",
+      "source_url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+      "license_or_terms": "Copernicus Sentinel Data Legal Notice; Microsoft Planetary Computer service terms apply to service",
+      "redistribution": "Not repackaged for redistribution; attribute Sentinel/Copernicus and service source",
+      "use_status": "local context crop retained; not classified",
+      "commercial_use": "Follow Sentinel Data Legal Notice and applicable service terms"
+    },
+    {
+      "name": "Sen1Floods11 v1.1 hand-labeled S1Hand and LabelHand",
+      "provider": "Cloud to Street Public Benefit Corporation",
+      "source_url": "https://github.com/cloudtostreet/Sen1Floods11",
+      "license_or_terms": "Official v1.1 imagery and label collection metadata declare proprietary; no permissive dataset license found in source README",
+      "redistribution": "Do not redistribute chips, labels or derived weights until written permission and terms are clarified",
+      "use_status": "locally downloaded and used for requested research benchmark; provenance retained",
+      "commercial_use": "Unresolved; treat as not permitted pending written clarification"
+    },
+    {
+      "name": "Sentinel-1 ResNet50 MoCo encoder weights",
+      "provider": "TorchGeo model package; upstream SSL4EO-S12",
+      "source_url": "https://huggingface.co/torchgeo/resnet50_sentinel1_all_moco",
+      "license_or_terms": "CC-BY-4.0",
+      "redistribution": "Attribution and license copy required; preserve upstream model/checkpoint attribution",
+      "use_status": "verified checkpoint retained under data/gherproof/raw/pretrained_sar; not yet used for local fine-tuning completion",
+      "commercial_use": "CC-BY-4.0 permits use subject to attribution and license terms"
+    },
+    {
+      "name": "Bangladesh Aquaculture and Coastal Habitats 2022 map",
+      "provider": "Clark Labs, Clark University",
+      "source_url": "https://www.clarku.edu/geospatial-analytics/aquaculture-data-download/",
+      "license_or_terms": "CC-BY-4.0; Clark Labs additionally states non-commercial use only and requires permission for other applications",
+      "redistribution": "Attribution required; follow non-commercial limitation unless explicit permission obtained",
+      "use_status": "historical contextual raster; not an exact 2026 enclosure or reference label",
+      "commercial_use": "Permission required according to provider page"
+    },
+    {
+      "name": "OpenStreetMap base map",
+      "provider": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/copyright",
+      "license_or_terms": "Open Database License (ODbL) with attribution",
+      "redistribution": "Attribute OpenStreetMap contributors; comply with ODbL for derived database use",
+      "use_status": "map tiles only; no OSM boundary feature used",
+      "commercial_use": "Permitted under ODbL terms and attribution"
+    }
+  ]
+}

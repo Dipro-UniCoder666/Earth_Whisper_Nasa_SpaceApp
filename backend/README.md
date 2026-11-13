@@ -1,45 +1,42 @@
-# Earth Whisper — Backend
+# Earth Whisper and DHARA API
 
-**Status: not yet implemented.** This directory only contains the planned
-package structure. No API routes, processing pipelines, or evidence
-services exist yet — building them is scoped to later prompts (Prompt 2
-onward), once the frontend shell in `../app` is confirmed.
+The FastAPI service continues to serve the Earth Whisper Step 12/11 evidence
+contracts. DHARA adds a read-only event provenance API; it does not serve
+an inferred flood map or affected-area estimate when those outputs do not
+exist. Sandhya and Monda data remain separate.
 
-## Planned structure
+## Run locally (PowerShell)
 
-```
-backend/
-└── app/
-    ├── api/          # FastAPI route handlers (location search, observation
-    │                   queries, case file endpoints)
-    ├── services/      # Orchestration between processing, evidence, and API layers
-    ├── processing/    # NISAR/InSAR analysis (coherence, deformation, temporal
-    │                   fingerprinting) — will wrap or call out to the existing
-    │                   QGIS/GDAL workflow in ../AquaByte_NISAR
-    ├── evidence/       # Evidence-fusion engine: terrain, precipitation, optical,
-    │                   fire, water datasets, and candidate-cause comparison
-    ├── models/         # Pydantic schemas shared with the frontend's TypeScript
-    │                   types in app/src/data/eventTypes.ts
-    └── config/         # Settings, environment configuration
-```
-
-## Design principle carried over from the frontend
-
-The backend must never fabricate scientific findings. If evidence is
-insufficient to support or rule out a hypothesis, the API should return
-an explicit `insufficient-evidence` or `undetermined` status — never a
-guessed cause or an invented confidence value. See
-`../docs/science/scientific-principles.md`.
-
-## Running (once implemented)
-
-```bash
+```powershell
 cd backend
 python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-pip install -r requirements.txt
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-`app/main.py` does not exist yet — it will be added when the first real
-endpoint is built.
+Fisheries API write routes are disabled by default. For trusted local development only, explicitly set `GHERPROOF_FISHERIES_WRITES_ENABLED=true`; do not enable this on an unauthenticated network-facing deployment.
+
+## DHARA evidence API
+
+The product is branded DHARA in the application. The `/api/gherproof` prefix,
+evidence storage paths and `GHERPROOF_*` environment variable names are
+retained for backward compatibility.
+
+- `GET /api/gherproof/status` — reported event status and counts of catalogue matches versus processed scenes.
+- `GET /api/gherproof/catalogue` — saved January 2026 Copernicus scene metadata for a provisional locality query window.
+- `GET /api/gherproof/evidence-report` — downloadable JSON case-status report with explicit unknowns.
+
+The event catalogue is stored at `../data/gherproof/manifests/event_satellite_catalogue.json`.
+Catalogue matches are not processed observations. DHARA serves only event
+evidence and manifests from `../data/gherproof/`.
+
+## Tests
+
+```powershell
+cd backend
+.\.venv\Scripts\python -m pytest
+```
+
+The DHARA tests verify truthful empty states, catalogue provenance and
+the absence of fabricated area/model outputs.

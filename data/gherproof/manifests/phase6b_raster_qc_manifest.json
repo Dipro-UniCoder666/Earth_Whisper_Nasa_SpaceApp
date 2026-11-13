@@ -1,0 +1,2498 @@
+{
+  "created_at_utc": "2026-11-12T20:58:07.883958+00:00",
+  "scope": "all GeoTIFFs under data/gherproof/regional/processed/phase6b",
+  "inspection": "Rasterio local open, geospatial metadata, valid/nodata/NaN/infinite counts, min/p02/median/p98/max, SHA-256",
+  "raster_count": 40,
+  "rasters": [
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "0b8ad0a17cf8a3e979bb827e85bb94f7a4afa1b528f83b55f949d62e775b21e8",
+      "bytes": 42567438,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0012451907387003303,
+          "p02": 0.010302283801138401,
+          "median": 0.11748135834932327,
+          "p98": 0.5490649342536926,
+          "max": 837.182861328125
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0004562223330140114,
+          "p02": 0.0036376866046339273,
+          "median": 0.02323705144226551,
+          "p98": 0.09614496678113937,
+          "max": 24.125368118286133
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-09T23:56:19.288128Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+        "orbit_direction": "descending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "150",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "3a53b9121226280ebbba0ad6184b4ee55f27a2edbfd041b32ea90b31d0675dc0",
+      "bytes": 42564382,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0006444070604629815,
+          "p02": 0.00692509301006794,
+          "median": 0.11035267263650894,
+          "p98": 0.4902367889881134,
+          "max": 1050.0501708984375
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.00030942136072553694,
+          "p02": 0.0022332691587507725,
+          "median": 0.022061066702008247,
+          "p98": 0.09833711385726929,
+          "max": 47.04977798461914
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-12T12:12:47.436905Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+        "orbit_direction": "ascending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "12",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-19_S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "121e7a635804d305e3ba85ce165ee5899c7f2da7aaa6d79f0a0c423528aa00fc",
+      "bytes": 38197112,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 5813035,
+          "nodata_pixels": 894281,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0012169930851086974,
+          "p02": 0.008305124938488007,
+          "median": 0.11205524951219559,
+          "p98": 0.7559297680854797,
+          "max": 171.6131134033203
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 5813035,
+          "nodata_pixels": 894281,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0005184583715163171,
+          "p02": 0.004528461955487728,
+          "median": 0.024706967175006866,
+          "p98": 0.11838515102863312,
+          "max": 56.296207427978516
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-19T12:04:39.512002Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_rtc",
+        "orbit_direction": "ascending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "114",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "b6ac3b6d20b4298bb5b2d419d6465722959026d283acbbe0083bd161ab328d27",
+      "bytes": 42543105,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0009457243140786886,
+          "p02": 0.008440100587904453,
+          "median": 0.12709401547908783,
+          "p98": 0.5784305334091187,
+          "max": 776.1179809570312
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0005864392151124775,
+          "p02": 0.0036776845809072256,
+          "median": 0.024131299927830696,
+          "p98": 0.10523088276386261,
+          "max": 25.881114959716797
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-21T23:56:18.062524Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+        "orbit_direction": "descending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "150",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "5501194becd7c725433f29256cc929c4ad0a275c74c879210ade6ef5045a6d3e",
+      "bytes": 42537213,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0008753368747420609,
+          "p02": 0.006859214045107365,
+          "median": 0.11511649936437607,
+          "p98": 0.4888628423213959,
+          "max": 1280.2994384765625
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.00012579643225762993,
+          "p02": 0.0022343702148646116,
+          "median": 0.02186238206923008,
+          "p98": 0.10224305093288422,
+          "max": 50.14595031738281
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-24T12:12:45.938137Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+        "orbit_direction": "ascending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "12",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/2026-01-31_S1A_IW_GRDH_1SDV_20260131T120426_20260131T120451_063011_07E81A_rtc_rtc_vv_vh_10m_utm45n.tif",
+      "sha256": "4b6047e21ba89cd8ebd0d3ed17dc32e51e44b73f19659439e52b7eda1d2d6e33",
+      "bytes": 38370927,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "VV",
+        "VH"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "VV",
+          "dtype": "float32",
+          "valid_pixels": 5847476,
+          "nodata_pixels": 859840,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.001317652058787644,
+          "p02": 0.00899968296289444,
+          "median": 0.12655727565288544,
+          "p98": 0.7851717472076416,
+          "max": 215.8728790283203
+        },
+        {
+          "index": 2,
+          "description": "VH",
+          "dtype": "float32",
+          "valid_pixels": 5847476,
+          "nodata_pixels": 859840,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.000568310497328639,
+          "p02": 0.004900528118014336,
+          "median": 0.025704894214868546,
+          "p98": 0.12333202362060547,
+          "max": 55.41663360595703
+        }
+      ],
+      "tags": {
+        "aoi_status": "provisional regional search envelope; not village/admin/mouza/gher boundary",
+        "collection": "sentinel-1-rtc",
+        "datetime": "2026-01-31T12:04:39.097437Z",
+        "instrument_mode": "IW",
+        "item_id": "S1A_IW_GRDH_1SDV_20260131T120426_20260131T120451_063011_07E81A_rtc",
+        "orbit_direction": "ascending",
+        "platform": "sentinel-1a",
+        "polarizations": "VV,VH",
+        "processing": "MPC Sentinel-1 RTC; nearest-neighbor warp to EPSG:32645 10m; float32 native RTC values; nodata preserved",
+        "relative_orbit": "114",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/pair_masks/2026-01-09_2026-01-21_rel150_descending_common_valid_10m.tif",
+      "sha256": "3b0318ffcb011c32332efaad50453edc9cc8df4c9d7e2f0c46dbf9e213fe2308",
+      "bytes": 39718,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=common valid VV/VH pixels on both dates; 0=not common valid; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=common valid VV/VH pixels on both dates; 0=not common valid; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "orbit_direction": "descending",
+        "pair_id": "2026-01-09_2026-01-21_rel150_descending",
+        "post_date": "2026-01-21",
+        "pre_date": "2026-01-09",
+        "relative_orbit": "150",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel1/pair_masks/2026-01-12_2026-01-24_rel12_ascending_common_valid_10m.tif",
+      "sha256": "f8dec7c621e0e9fa367df118c6200bf7dd6b5e2586b23d7820b30918e9f671d3",
+      "bytes": 39714,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=common valid VV/VH pixels on both dates; 0=not common valid; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=common valid VV/VH pixels on both dates; 0=not common valid; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "nodata_pixels": 231945,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "orbit_direction": "ascending",
+        "pair_id": "2026-01-12_2026-01-24_rel12_ascending",
+        "post_date": "2026-01-24",
+        "pre_date": "2026-01-12",
+        "relative_orbit": "12",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-03_S2B_MSIL2A_20260103T044109_R033_T45QYF_20260103T070213_clear_20m.tif",
+      "sha256": "58d9d9dd09efd7e696b9c971aaafe218a241629d49c62cb3d5612cdf1380c9d9",
+      "bytes": 15239,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-03T04:41:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260103T044109_R033_T45QYF_20260103T070213",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-05_S2C_MSIL2A_20260105T043201_R133_T45QYF_20260105T074417_clear_20m.tif",
+      "sha256": "0252dc80e12ff764837bb9a9b6701a4ff53b7470ad51355d169a86285be82e0b",
+      "bytes": 7553,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 0.0,
+          "median": 0.0,
+          "p98": 0.0,
+          "max": 0.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-05T04:32:01.025000Z",
+        "item_id": "S2C_MSIL2A_20260105T043201_R133_T45QYF_20260105T074417",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-07_S2A_MSIL2A_20260107T043241_R133_T45QYF_20260107T075314_clear_20m.tif",
+      "sha256": "f87fc9a01542a8bd4412d56ec65e320cdecc750b4492c3d9c9696b4375e8ce98",
+      "bytes": 13321,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-07T04:32:41.024000Z",
+        "item_id": "S2A_MSIL2A_20260107T043241_R133_T45QYF_20260107T075314",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-08_S2C_MSIL2A_20260108T044151_R033_T45QYF_20260108T075009_clear_20m.tif",
+      "sha256": "9ff381bee076f7a70c6d7139ee14eea25b6a12e8faee4e4eb96e7244d86f2170",
+      "bytes": 12687,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-08T04:41:51.025000Z",
+        "item_id": "S2C_MSIL2A_20260108T044151_R033_T45QYF_20260108T075009",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-10_S2A_MSIL2A_20260110T044241_R033_T45QYF_20260110T072709_clear_20m.tif",
+      "sha256": "8f2b6373e11db7e40373661d341c0114ac9b1cf3aa40673cf184741c44db0580",
+      "bytes": 12561,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-10T04:42:41.024000Z",
+        "item_id": "S2A_MSIL2A_20260110T044241_R033_T45QYF_20260110T072709",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_clear_20m.tif",
+      "sha256": "3adb134db7d4202989c322429940d5905a157981381a0eccc40bba4df754bd0a",
+      "bytes": 12627,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-10T04:30:49.024000Z",
+        "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-13_S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956_clear_20m.tif",
+      "sha256": "1cd517f9caf942d487123827218e41fb85d130a4a9c680cef30cd1e7e52b6f56",
+      "bytes": 12753,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-13T04:40:39.024000Z",
+        "item_id": "S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-15_S2C_MSIL2A_20260115T043131_R133_T45QYF_20260115T073709_clear_20m.tif",
+      "sha256": "c6ce3a66211929706ae5703bd4269b6d297e51d0aad1c6da1c26a9faba7e5267",
+      "bytes": 12711,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-15T04:31:31.025000Z",
+        "item_id": "S2C_MSIL2A_20260115T043131_R133_T45QYF_20260115T073709",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-18_S2C_MSIL2A_20260118T044131_R033_T45QYF_20260118T075208_clear_20m.tif",
+      "sha256": "569ca36791b22a4c97f44671dc4ecdb0020bd8c4638e6b0ef815f477587b70fc",
+      "bytes": 12683,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-18T04:41:31.025000Z",
+        "item_id": "S2C_MSIL2A_20260118T044131_R033_T45QYF_20260118T075208",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_clear_20m.tif",
+      "sha256": "f060dcb19e18f74977ab86c581a1e37ea626548a792b0d1fb1723fd994814085",
+      "bytes": 12747,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-20T04:30:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-23_S2B_MSIL2A_20260123T043959_R033_T45QYF_20260123T064016_clear_20m.tif",
+      "sha256": "856e28a437ae69679c7c2189706a3ddbde47bc9dd6ca1c9e7773427394f741e7",
+      "bytes": 12939,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-23T04:39:59.024000Z",
+        "item_id": "S2B_MSIL2A_20260123T043959_R033_T45QYF_20260123T064016",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-25_S2C_MSIL2A_20260125T043051_R133_T45QYF_20260125T075409_clear_20m.tif",
+      "sha256": "d1e4ee60947ad828dc76e2c6ca222b3ffa4569164440eeeb09189f6facad73a7",
+      "bytes": 12831,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-25T04:30:51.025000Z",
+        "item_id": "S2C_MSIL2A_20260125T043051_R133_T45QYF_20260125T075409",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-28_S2C_MSIL2A_20260128T044041_R033_T45QYF_20260128T080011_clear_20m.tif",
+      "sha256": "0b3abba14f470b8e725ac4da5b0df5dd5e678d3d6c7058eb96beef8a96375a0f",
+      "bytes": 12637,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 1.0,
+          "median": 1.0,
+          "p98": 1.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-28T04:40:41.025000Z",
+        "item_id": "S2C_MSIL2A_20260128T044041_R033_T45QYF_20260128T080011",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/clear_masks/2026-01-30_S2B_MSIL2A_20260130T042929_R133_T45QYF_20260130T081341_clear_20m.tif",
+      "sha256": "67b6b3fd21605310eb74c35ab7dc8b08d0a1c4572af9dc85c454d86f5a19e5d7",
+      "bytes": 9807,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "1=clear SCL class 2/4/5/6; 0=cloud/shadow/invalid/other class; 255=outside AOI",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 0.0,
+          "median": 0.0,
+          "p98": 0.0,
+          "max": 1.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-30T04:29:29.024000Z",
+        "item_id": "S2B_MSIL2A_20260130T042929_R133_T45QYF_20260130T081341",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_10m/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_B03_B04_B08_10m_utm45n.tif",
+      "sha256": "3a4bcf3aebba51b528b25a2ae6f69c6ec9d0e4e6addf7c5f0ad73b568d98f3a7",
+      "bytes": 27259762,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 3,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "B03",
+        "B04",
+        "B08"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "B03",
+          "dtype": "float32",
+          "valid_pixels": 6472354,
+          "nodata_pixels": 234962,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1132.0,
+          "p02": 1372.0,
+          "median": 1694.0,
+          "p98": 2152.0,
+          "max": 5736.0
+        },
+        {
+          "index": 2,
+          "description": "B04",
+          "dtype": "float32",
+          "valid_pixels": 6472354,
+          "nodata_pixels": 234962,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1087.0,
+          "p02": 1271.0,
+          "median": 1588.0,
+          "p98": 2258.0,
+          "max": 5948.0
+        },
+        {
+          "index": 3,
+          "description": "B08",
+          "dtype": "float32",
+          "valid_pixels": 6472354,
+          "nodata_pixels": 234962,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 701.0,
+          "p02": 1352.0,
+          "median": 2688.0,
+          "p98": 4508.0,
+          "max": 7564.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-10T04:30:49.024000Z",
+        "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+        "mgrs_tile": "45QYF",
+        "platform": "Sentinel-2B",
+        "processing": "Sentinel-2 L2A source stored values; B03/B04/B08 bilinear warp to 10m EPSG:32645; masked with 20m SCL nearest-upsample; no reflectance scale applied; no index/classification produced",
+        "relative_orbit": "133",
+        "scl_mask_resampling": "nearest 20m to 10m",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_10m/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_B03_B04_B08_10m_utm45n.tif",
+      "sha256": "683ca4cd70e1a3ea83d48efd3b5dd8b6ffeef9e89bd37178704083fcb567731a",
+      "bytes": 27134446,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "count": 3,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "B03",
+        "B04",
+        "B08"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "B03",
+          "dtype": "float32",
+          "valid_pixels": 6472158,
+          "nodata_pixels": 235158,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1125.0,
+          "p02": 1402.0,
+          "median": 1714.0,
+          "p98": 2100.0,
+          "max": 4940.0
+        },
+        {
+          "index": 2,
+          "description": "B04",
+          "dtype": "float32",
+          "valid_pixels": 6472158,
+          "nodata_pixels": 235158,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1028.0,
+          "p02": 1301.0,
+          "median": 1614.0,
+          "p98": 2166.0,
+          "max": 6028.0
+        },
+        {
+          "index": 3,
+          "description": "B08",
+          "dtype": "float32",
+          "valid_pixels": 6472158,
+          "nodata_pixels": 235158,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1050.0,
+          "p02": 1378.0,
+          "median": 2676.0,
+          "p98": 4416.0,
+          "max": 7208.0
+        }
+      ],
+      "tags": {
+        "datetime": "2026-01-20T04:30:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+        "mgrs_tile": "45QYF",
+        "platform": "Sentinel-2B",
+        "processing": "Sentinel-2 L2A source stored values; B03/B04/B08 bilinear warp to 10m EPSG:32645; masked with 20m SCL nearest-upsample; no reflectance scale applied; no index/classification produced",
+        "relative_orbit": "133",
+        "scl_mask_resampling": "nearest 20m to 10m",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_20m/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_B11_20m_utm45n.tif",
+      "sha256": "54fcdd2ecb76ffaf36302770471ced12ade2667bdae00a67082bcf78735aaca6",
+      "bytes": 2731735,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "Sentinel-2 L2A B11 source stored values; native 20m; no reflectance scaling applied"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A B11 source stored values; native 20m; no reflectance scaling applied",
+          "dtype": "float32",
+          "valid_pixels": 1618737,
+          "nodata_pixels": 60187,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 869.0,
+          "p02": 1112.0,
+          "median": 2075.0,
+          "p98": 3562.0,
+          "max": 6584.0
+        }
+      ],
+      "tags": {
+        "asset_href": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/10/S2B_MSIL2A_20260110T043049_N0511_R133_T45QYF_20260110T065859.SAFE/GRANULE/L2A_T45QYF_A046205_20260110T043130/IMG_DATA/R20m/T45QYF_20260110T043049_B11_20m.tif",
+        "datetime": "2026-01-10T04:30:49.024000Z",
+        "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+        "processing": "native 20m grid warp; conservative SCL mask; no index/classification",
+        "resampling": "bilinear reprojection on native 20m grid",
+        "value_interpretation": "source stored values; no reflectance scale applied",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/l2a_stored_values_20m/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_B11_20m_utm45n.tif",
+      "sha256": "404d40821f0201cc0de0fec70fa06cc4d0bc60c8f9e63758b1aa5f2875980644",
+      "bytes": 2741277,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": -32768.0,
+      "dtype": "float32",
+      "band_descriptions": [
+        "Sentinel-2 L2A B11 source stored values; native 20m; no reflectance scaling applied"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A B11 source stored values; native 20m; no reflectance scaling applied",
+          "dtype": "float32",
+          "valid_pixels": 1618688,
+          "nodata_pixels": 60236,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 1092.0,
+          "p02": 1163.0,
+          "median": 2049.0,
+          "p98": 3489.0,
+          "max": 6732.0
+        }
+      ],
+      "tags": {
+        "asset_href": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/45/Q/YF/2026/01/20/S2B_MSIL2A_20260120T043009_N0511_R133_T45QYF_20260120T062559.SAFE/GRANULE/L2A_T45QYF_A046348_20260120T043528/IMG_DATA/R20m/T45QYF_20260120T043009_B11_20m.tif",
+        "datetime": "2026-01-20T04:30:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+        "processing": "native 20m grid warp; conservative SCL mask; no index/classification",
+        "resampling": "bilinear reprojection on native 20m grid",
+        "value_interpretation": "source stored values; no reflectance scale applied",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-03_S2B_MSIL2A_20260103T044109_R033_T45QYF_20260103T070213_SCL_20m.tif",
+      "sha256": "9e77f0d6abdb82ef5c7f201dee6bd3f87b844461794a6a6a6efe84ecc71efafc",
+      "bytes": 47194,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 5.0,
+          "p02": 5.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 8.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-03T04:41:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260103T044109_R033_T45QYF_20260103T070213",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-05_S2C_MSIL2A_20260105T043201_R133_T45QYF_20260105T074417_SCL_20m.tif",
+      "sha256": "87797d2d2d4a16169c16153f4bbd9d34f712dd02cd88c62eb201563e91d16e63",
+      "bytes": 18106,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 8.0,
+          "p02": 9.0,
+          "median": 9.0,
+          "p98": 9.0,
+          "max": 9.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-05T04:32:01.025000Z",
+        "item_id": "S2C_MSIL2A_20260105T043201_R133_T45QYF_20260105T074417",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-07_S2A_MSIL2A_20260107T043241_R133_T45QYF_20260107T075314_SCL_20m.tif",
+      "sha256": "7b1b69cd1a63505c3e8ab294e8ae802d79546470f4335f7513d94d12ca0c2809",
+      "bytes": 181560,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 10.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-07T04:32:41.024000Z",
+        "item_id": "S2A_MSIL2A_20260107T043241_R133_T45QYF_20260107T075314",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-08_S2C_MSIL2A_20260108T044151_R033_T45QYF_20260108T075009_SCL_20m.tif",
+      "sha256": "1e28118d8ee6a41cf26adde3317bc6b15ae1d910aeb072f9dc82638e07925c41",
+      "bytes": 194760,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 0.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-08T04:41:51.025000Z",
+        "item_id": "S2C_MSIL2A_20260108T044151_R033_T45QYF_20260108T075009",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-10_S2A_MSIL2A_20260110T044241_R033_T45QYF_20260110T072709_SCL_20m.tif",
+      "sha256": "4e51d3413e46abb3ebf75cbcb890c33dc9ebc08aebfd393056e015ae7e0e8d22",
+      "bytes": 193026,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-10T04:42:41.024000Z",
+        "item_id": "S2A_MSIL2A_20260110T044241_R033_T45QYF_20260110T072709",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_SCL_20m.tif",
+      "sha256": "f5047cc0f7622176cbbd991b4d66d48feffa8ccb038e9883eac4fd90f1f13702",
+      "bytes": 201962,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-10T04:30:49.024000Z",
+        "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-13_S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956_SCL_20m.tif",
+      "sha256": "69dc316d71d9a85b49845e2ae4db7712bf9a74e82665c2af5d1bbd7fb84e7120",
+      "bytes": 175008,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-13T04:40:39.024000Z",
+        "item_id": "S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-15_S2C_MSIL2A_20260115T043131_R133_T45QYF_20260115T073709_SCL_20m.tif",
+      "sha256": "b2d2bfaf022680a96409960241f8b4d97ed7d4cb9f10b2663712bcecfeae6ee0",
+      "bytes": 64630,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 5.0,
+          "p02": 5.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-15T04:31:31.025000Z",
+        "item_id": "S2C_MSIL2A_20260115T043131_R133_T45QYF_20260115T073709",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-18_S2C_MSIL2A_20260118T044131_R033_T45QYF_20260118T075208_SCL_20m.tif",
+      "sha256": "4e2482059a89beea726ab5c82cedbd40879730ddf645343dbf4850560835e3aa",
+      "bytes": 142964,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 10.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-18T04:41:31.025000Z",
+        "item_id": "S2C_MSIL2A_20260118T044131_R033_T45QYF_20260118T075208",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_SCL_20m.tif",
+      "sha256": "f3242d44d27772335779ac5028079c7233b30a2a81cae23c21e3f9ca08ff6558",
+      "bytes": 68792,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 5.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-20T04:30:09.024000Z",
+        "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-23_S2B_MSIL2A_20260123T043959_R033_T45QYF_20260123T064016_SCL_20m.tif",
+      "sha256": "e967efe8d935aaa89410ed421e999a67ee192943d0b597433bbd9b0eba9a4a57",
+      "bytes": 117108,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-23T04:39:59.024000Z",
+        "item_id": "S2B_MSIL2A_20260123T043959_R033_T45QYF_20260123T064016",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-25_S2C_MSIL2A_20260125T043051_R133_T45QYF_20260125T075409_SCL_20m.tif",
+      "sha256": "0ee069c027d82f06fdbf65c2a44805b8db9dbaee2244448f399628e7153fe1db",
+      "bytes": 57952,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 5.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-25T04:30:51.025000Z",
+        "item_id": "S2C_MSIL2A_20260125T043051_R133_T45QYF_20260125T075409",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-28_S2C_MSIL2A_20260128T044041_R033_T45QYF_20260128T080011_SCL_20m.tif",
+      "sha256": "149394ab601adc1deffc64650078fc80d697b1aae0494b500e6cb1b19c1f8dd6",
+      "bytes": 154496,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 4.0,
+          "p02": 4.0,
+          "median": 5.0,
+          "p98": 6.0,
+          "max": 7.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-28T04:40:41.025000Z",
+        "item_id": "S2C_MSIL2A_20260128T044041_R033_T45QYF_20260128T080011",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "path": "data/gherproof/regional/processed/phase6b/sentinel2/scl/2026-01-30_S2B_MSIL2A_20260130T042929_R133_T45QYF_20260130T081341_SCL_20m.tif",
+      "sha256": "544f149082eb53f0945e9d469c337395aa646f7ef1c985afb8e71b7fa84f2c53",
+      "bytes": 97664,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "resolution_m": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "nodata": 255.0,
+      "dtype": "uint8",
+      "band_descriptions": [
+        "Sentinel-2 L2A Scene Classification Layer (SCL)"
+      ],
+      "bands": [
+        {
+          "index": 1,
+          "description": "Sentinel-2 L2A Scene Classification Layer (SCL)",
+          "dtype": "uint8",
+          "valid_pixels": 1618843,
+          "nodata_pixels": 60081,
+          "nan_pixels": 0,
+          "infinite_pixels": 0,
+          "min": 5.0,
+          "p02": 8.0,
+          "median": 10.0,
+          "p98": 10.0,
+          "max": 10.0
+        }
+      ],
+      "tags": {
+        "classification_clear_codes": "2,4,5,6",
+        "clear_class_policy": "2,4,5,6; excluded 0,1,3,7,8,9,10,11",
+        "datetime": "2026-01-30T04:29:29.024000Z",
+        "item_id": "S2B_MSIL2A_20260130T042929_R133_T45QYF_20260130T081341",
+        "AREA_OR_POINT": "Area"
+      }
+    }
+  ]
+}

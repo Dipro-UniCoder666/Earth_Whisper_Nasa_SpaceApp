@@ -1,0 +1,73 @@
+{
+  "retrieved_at_utc": "2026-11-11T21:08:31.995267+00:00",
+  "source": "Microsoft Planetary Computer Sentinel-2 L2A STAC and public time-limited SAS access",
+  "item_id": "S2B_MSIL2A_20260113T044039_R033_T45QYF_20260113T070956",
+  "acquisition_datetime": "2026-01-13T04:40:39.024000Z",
+  "platform": "Sentinel-2B",
+  "tile": "45QYF",
+  "scene_cloud_cover_fraction": 0.000384,
+  "source_bbox_wgs84": [
+    89.15,
+    22.93,
+    89.3,
+    23.08
+  ],
+  "bbox_status": "broad provisional locality only; not a verified enclosure polygon",
+  "asset": "visual true-colour GeoTIFF",
+  "raster_qc": {
+    "crs": "EPSG:32645",
+    "full_dimensions": [
+      10980,
+      10980
+    ],
+    "window": [
+      2028,
+      4581,
+      1563,
+      1685
+    ],
+    "resolution": [
+      10.0,
+      10.0
+    ],
+    "bands": 3,
+    "dtype": [
+      "uint8",
+      "uint8",
+      "uint8"
+    ],
+    "nodata": 0.0,
+    "crop_bounds": [
+      720240.0,
+      2537380.0,
+      735870.0,
+      2554230.0
+    ],
+    "rgb_pixel_percentiles": [
+      [
+        25.0,
+        66.0,
+        143.0
+      ],
+      [
+        35.0,
+        74.0,
+        119.0
+      ],
+      [
+        20.0,
+        52.0,
+        94.0
+      ]
+    ]
+  },
+  "outputs": [
+    "data/gherproof/processed/sentinel2/2026-01-13_sentinel2_visual_provisional_locality.tif",
+    "data/gherproof/processed/sentinel2/2026-01-13_sentinel2_visual_provisional_locality.png"
+  ],
+  "limitations": [
+    "Scene-level cloud estimate does not replace pixel-level cloud/shadow screening.",
+    "No exact enclosure point or boundary was found in OSM or published source metadata.",
+    "This broad crop was not used to draw an enclosure polygon or infer land-use labels."
+  ]
+}

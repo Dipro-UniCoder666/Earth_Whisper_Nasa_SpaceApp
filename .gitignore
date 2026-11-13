@@ -10,6 +10,11 @@ backend/__pycache__/
 backend/**/__pycache__/
 backend/*.egg-info/
 
+# GherProof fisheries records are runtime SQLite data, not source fixtures.
+data/gherproof/fisheries/*.sqlite3
+data/gherproof/fisheries/*.sqlite3-shm
+data/gherproof/fisheries/*.sqlite3-wal
+
 # --- OS / editor ---
 .DS_Store
 Thumbs.db
@@ -19,6 +24,7 @@ Thumbs.db
 # --- Environment ---
 .env
 .env.local
+.env.cdse.local
 
 # --- Logs ---
 *.log
@@ -26,3 +32,8 @@ npm-debug.log*
 
 # Note: AquaByte_NISAR/ raster and geopackage files are intentionally
 # tracked, not ignored — they are the team's scientific source data.
+
+# Temporary and generated files
+tmp/
+**/__pycache__/
+*.py[cod]

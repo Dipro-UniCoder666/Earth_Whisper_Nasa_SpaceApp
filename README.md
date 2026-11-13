@@ -178,6 +178,49 @@ The main generated artifacts are:
 These artifacts contain precomputed scientific outputs. The browser does not
 recalculate raw satellite measurements during an investigation.
 
+## DHARA — Water Monitoring and Decision Support
+
+DHARA is Earth Whisper's satellite-powered environmental monitoring and
+decision-support product: **Seeing Water Changes. Supporting Better Decisions.**
+The focused `/dhara` case page tracks a reported January 2026 Sujatpur
+Pallimangal Fisheries Enclosure event. The January Sentinel catalogue query
+uses a provisional locality box only. Six Sentinel-1 and fourteen
+Sentinel-2 catalogue results are recorded in
+`data/gherproof/manifests/event_satellite_catalogue.json`; none is counted
+as a locally processed observation. No flood mask, local affected-area
+estimate, breach diagnosis, model evaluation, fish-loss estimate, or
+compensation decision is available.
+
+Sen1Floods11 v1.1 hand-labelled Sentinel-1 data and official event metadata
+support a generic benchmark segmentation experiment. Its scores are not
+Sujatpur performance. January event imagery remains unavailable until local
+CDSE authentication is configured, and the enclosure boundary is not verified.
+The `/gherproof` route and `/api/gherproof` endpoints remain available as
+backward-compatible internal paths. Sandhya and Monda routes/data remain
+separate and unchanged.
+
+Start the API and frontend in two terminals:
+
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+```powershell
+cd app
+npm install
+npm run dev
+```
+
+Recreate the January event-window catalogue query with
+`python scripts/gherproof/query_event_scenes.py`. Download and validate the
+S1GFloods archive with `python scripts/gherproof/download_public_data.py`.
+See the DHARA rebranding report and preserved historical evidence reports in
+`docs/` for limitations and reproducibility.
+
 ## Running the Application
 
 ```bash
@@ -201,7 +244,8 @@ services are not live NASA evidence integrations.
 The following capabilities are not currently implemented as production
 features:
 
-- Live NASA/ASF catalog integration and live NASA data downloading.
+- Scheduled NASA/ASF catalog refresh and Sentinel-1 scene processing; Sentinel-1 currently has catalogue metadata only.
+- NISAR recurrence/water-likelihood derivation and inspection-candidate ranking; one exploratory HHHH layer is available but repeated P-29 observations and field labels are not available to validate a model.
 - Complete packaging of every raw input and environment needed to reproduce
   all derived outputs from scratch.
 - Automated causal hypothesis comparison or physical-cause attribution.

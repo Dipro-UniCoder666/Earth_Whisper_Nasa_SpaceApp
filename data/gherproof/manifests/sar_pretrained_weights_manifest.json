@@ -1,0 +1,14 @@
+{
+  "name": "TorchGeo ResNet50 Sentinel-1 GRD MoCo / SSL4EO-S12",
+  "source": "https://huggingface.co/torchgeo/resnet50_sentinel1_all_moco",
+  "upstream": "https://github.com/zhu-xlab/SSL4EO-S12",
+  "license": "CC-BY-4.0",
+  "input_channels": [
+    "Sentinel-1 VV",
+    "Sentinel-1 VH"
+  ],
+  "size_bytes": 94349125,
+  "sha256": "906e4356da0ff06ce0388cba50dd4f310ba6abbee706c5303c129d8aead98082",
+  "retrieved_at_utc": "2026-11-11T21:31:38.963898+00:00",
+  "path": "data/gherproof/raw/pretrained_sar/resnet50_sentinel1_all_moco.pth"
+}

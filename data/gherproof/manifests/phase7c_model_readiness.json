@@ -1,0 +1,9 @@
+{
+  "readiness": "exploratory_only",
+  "local_validation_status": "human_review_pending",
+  "phase8_impact_quantification": "NOT_APPROVED",
+  "human_labels_completed": 0,
+  "human_label_slots": 900,
+  "metrics_manifest": "data/gherproof/manifests/phase7c_model_evaluation_manifest.json",
+  "reason": "No human labels supplied; model probabilities are not reference observations."
+}

@@ -1,0 +1,117 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "reviewed_at": "2026-11-12",
+  "starting_point": "Phase 5C official DLRS catalogue records and public previews; no catalogue rediscovery performed.",
+  "requested_official_sheets": [
+    {"survey": "CS", "sheet": "1", "record_id": "674849135945584000"},
+    {"survey": "CS", "sheet": "2", "record_id": "674849414338318000"},
+    {"survey": "RS", "sheet": "1", "record_id": "717475995518533000"},
+    {"survey": "RS", "sheet": "2", "record_id": "717475991252926000"}
+  ],
+  "provenance_labels": [
+    "official_catalogue_confirmed",
+    "secondary_copy_found",
+    "preview_cross_checked",
+    "content_match_confirmed",
+    "not_verified"
+  ],
+  "digital_mouza_map": {
+    "provider": "Digital Mouza Map / Mouza BD; private secondary repository, not DLRS or Ministry of Land",
+    "catalogue_url": "https://mouza.bd/en/mouza-maps?division=%E0%A6%96%E0%A7%81%E0%A6%B2%E0%A6%A8%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%97&district=%E0%A6%AF%E0%A6%B6%E0%A7%8B%E0%A6%B0&upazila=%E0%A6%AE%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AA%E0%A7%81%E0%A6%B0&q=Sujatpur",
+    "about_url": "https://mouza.bd/en/about",
+    "terms_url": "https://mouza.bd/terms-of-conditions",
+    "access_date": "2026-11-12",
+    "matching_catalogue_entries": [
+      {
+        "slug": "default-bsrs-143-sujatpur-1resultresult-aa51c8e490fc",
+        "title": "Sujatpur Mouza Map — মনিরামপুর, যশোর (BS/RS survey, JL 143, Sheet 1)",
+        "listed_survey": "BS/RS",
+        "listed_jl": 143,
+        "listed_sheet": "1",
+        "product_url": "https://mouza.bd/en/products/default-bsrs-143-sujatpur-1resultresult-aa51c8e490fc",
+        "product_price_bdt": 80,
+        "page_access_status": "product_detail_page_public; checkout/download not accessed",
+        "preview_url": "https://spagreen.sgp1.digitaloceanspaces.com/mouzabd/thumbnails/68e50b8e-ffab-4ed3-9e98-ede98c18eb3c/c210c459-adbb-4e79-919f-456e30491086.webp",
+        "preview_path": "data/gherproof/reference/secondary_mouza_sources/mouza_bd_Sujatpur_JL143_BSRS_sheet1_listing_thumbnail.webp",
+        "preview_sha256": "bcba83d458e63d3fb4587531b510f834d61846a76e0488b31456b48e107df5bc",
+        "preview_dimensions_px": [1200, 1200],
+        "preview_cross_checked": true,
+        "comparison_targets": ["CS sheet 1", "CS sheet 2", "RS sheet 1", "RS sheet 2"],
+        "content_match_confirmed": false,
+        "status_labels": ["secondary_copy_found", "preview_cross_checked", "not_verified"],
+        "observations": [
+          "A third-party catalogue record exists for a putative J.L. 143 sheet, but its listed BS/RS edition is not an exact match for the four official CS/RS catalogue records.",
+          "The publicly served product image is a preview thumbnail, not a full-resolution downloadable map file.",
+          "Visual comparison did not establish a content match to any of the four DLRS previews; sheet title/J.L./sheet identity is not independently legible and the visible map layout differs.",
+          "The preview title block text refers to the East Bengal State Acquisition and Tenancy Act and a 1958–65 period; this does not independently establish its survey edition or identity.",
+          "The product detail page displayed BDT 80 and a one-time payment/checkout statement. No checkout or download was attempted. The broader site's free-download statements conflict with this specific page's payment prompt; access terms for this item remain unresolved."
+        ],
+        "license": "No item-specific reuse license was identified. Repository describes itself as private and says files are reference copies, not certified copies; retained preview only for internal provenance review.",
+        "full_resolution_copy_recovered": false
+      }
+    ],
+    "exact_sheet_outcomes": {
+      "CS_sheet_1": "not_found_in_public_search_results",
+      "CS_sheet_2": "not_found_in_public_search_results",
+      "RS_sheet_1": "not_found_as_an_exact_matching_secondary_record; one unverified BS/RS sheet-1 listing exists",
+      "RS_sheet_2": "not_found_in_public_search_results"
+    },
+    "search_notes": "Location-filtered Digital Mouza Map search returned one matching Manirampur/Sujatpur/J.L.143 listing, BS/RS sheet 1. Search results for Sujatpur also returned homonymous mouzas in other districts; those were excluded."
+  },
+  "mowjabd": {
+    "provider": "MowjaBD; third-party public-data interface, not an official DLRMS service",
+    "url": "https://mowjabd.vercel.app/",
+    "access_date": "2026-11-12",
+    "observed_claims": ["Live DLRMS data", "free", "no login", "public Google Drive map library"],
+    "public_drive_folder_id": "1E9bof5XcwZUWTsDmSX4fCsy6KaiA-58H",
+    "results": "The public embedded Google Drive folder returned HTTP 404. The site's own read-only /api/drive/library root request returned a serverless FUNCTION_INVOCATION_FAILED response. No Sujatpur item or map file was accessible to inspect.",
+    "full_resolution_copy_recovered": false,
+    "exact_sheet_outcomes": {
+      "CS_sheet_1": "not_verified_no_catalogue_record_accessed",
+      "CS_sheet_2": "not_verified_no_catalogue_record_accessed",
+      "RS_sheet_1": "not_verified_no_catalogue_record_accessed",
+      "RS_sheet_2": "not_verified_no_catalogue_record_accessed"
+    }
+  },
+  "ministry_map_portal": {
+    "provider": "Ministry of Land, Bangladesh, Mouza and Plot Based National Digital Land Zoning project",
+    "url": "https://map.land.gov.bd/",
+    "access_date": "2026-11-12",
+    "interactive_selector_present": true,
+    "public_live_query": {
+      "method": "Read-only POST to public location lookup endpoint using site session and CSRF token; no user data or account credentials sent",
+      "endpoint": "https://map.land.gov.bd/getAdminByCode",
+      "division": {"name": "Khulna", "code": "40"},
+      "district_options_returned": [
+        {"name": "Bagerhat", "code": "4001"},
+        {"name": "Khulna", "code": "4047"}
+      ],
+      "jashore_returned": false,
+      "sujatpur_query_reached": false,
+      "plot_geometry_or_map_rendered": false,
+      "downloadable_geospatial_layer": false
+    },
+    "interpretation": "The public page has administrative selectors and describes georeferenced mouza/plot maps, but the live Khulna division response did not include Jashore. The target record could not be selected, rendered or downloaded. Selector presence is not evidence of target access.",
+    "exact_sheet_outcomes": {
+      "CS_sheet_1": "not_available_in_retrieved_target_path",
+      "CS_sheet_2": "not_available_in_retrieved_target_path",
+      "RS_sheet_1": "not_available_in_retrieved_target_path",
+      "RS_sheet_2": "not_available_in_retrieved_target_path"
+    }
+  },
+  "map_comparison": {
+    "comparison_image": "data/gherproof/review/phase5/pallimangal_phase5d_preview_comparison.png",
+    "method": "Human visual comparison of third-party listing thumbnail against all four existing low-resolution DLRS catalogue previews; no georeferencing or image registration performed.",
+    "result": "No content match confirmed. All map-source identities remain not_verified beyond the official catalogue metadata."
+  },
+  "site_and_coverage": {
+    "pallimangal_site_status": "unresolved",
+    "candidate_geometries_created": 0,
+    "cadastral_georeferencing": "not_attempted_no_full_sheet_and_no_control_points",
+    "road_khal_plot_matching": "not_supported",
+    "jan_7_jan_19_target_coverage": "unknown_no_supported_candidate_geometry",
+    "common_valid_area_in_broad_search_window_km2": 46.3292,
+    "common_valid_fraction_of_broad_window": 0.1812739557297332,
+    "experimental_ml_inference_ready": false
+  }
+}

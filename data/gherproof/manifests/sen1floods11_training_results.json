@@ -1,0 +1,476 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-11-11T21:25:11.638514+00:00",
+  "dataset": "Sen1Floods11 v1.1 hand-labeled Sentinel-1",
+  "task": "generic surface-water segmentation; labels are not incident-specific flood labels",
+  "architecture": "4-scale residual attention U-Net, trained from scratch; pretrained compatible weights discovered and checksum-verified after this run, not used",
+  "device": "cpu",
+  "torch_version": "2.12.1+cpu",
+  "cuda_available": false,
+  "mixed_precision": false,
+  "seed": 42,
+  "patch_size": 256,
+  "batch_size": 4,
+  "train_chips": 210,
+  "validation_chips": 41,
+  "validation_event_id": "11",
+  "bolivia_event_test_chips": 15,
+  "bolivia_event_ids": [
+    "1"
+  ],
+  "empty_valid_chips_skipped_by_official_split": {
+    "train": 1,
+    "valid": 3,
+    "test": 2,
+    "bolivia": 0
+  },
+  "official_random_validation_chips_retained_not_used": 89,
+  "official_random_test_chips_retained_not_used": 90,
+  "event_group_counts_official_train": {
+    "2": 30,
+    "3": 40,
+    "4": 18,
+    "5": 10,
+    "6": 16,
+    "7": 39,
+    "8": 15,
+    "9": 18,
+    "10": 24,
+    "11": 41
+  },
+  "normalization": {
+    "mean_db": [
+      -10.23175048828125,
+      -17.202211380004883
+    ],
+    "std_db": [
+      4.136703968048096,
+      4.915712356567383
+    ],
+    "input_qc": {
+      "unique_crs": [
+        "EPSG:4326"
+      ],
+      "unique_shape": [
+        [
+          512,
+          512
+        ]
+      ],
+      "unique_resolutions": [
+        [
+          8.98315e-05,
+          8.98315e-05
+        ]
+      ],
+      "per_band_min": [
+        -60.0,
+        -60.0
+      ],
+      "per_band_max": [
+        20.0,
+        17.376384735107422
+      ],
+      "train_valid_pixels_for_normalization": 46968696
+    }
+  },
+  "class_counts_train": {
+    "water": 4868059,
+    "non_water": 42100637,
+    "positive_weight": 8.648341178894043
+  },
+  "epochs_completed": 13,
+  "best_validation_event_iou": 0.5087645717324306,
+  "validation_event_metrics": {
+    "iou": 0.5087645717324306,
+    "precision": 0.6468678134924225,
+    "recall": 0.7044065265744817,
+    "f1": 0.6744121399248453,
+    "pr_auc_average_precision": 0.7268402965847153,
+    "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+      [
+        9509438,
+        222504
+      ],
+      [
+        171036,
+        407583
+      ]
+    ],
+    "valid_pixels": 10310561,
+    "water_prevalence": 0.05611906083480812
+  },
+  "bolivia_event_holdout_metrics": {
+    "iou": 0.6275512676719422,
+    "precision": 0.7423303714016625,
+    "recall": 0.8023195345883279,
+    "f1": 0.7711600612982162,
+    "pr_auc_average_precision": 0.7469309317701698,
+    "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+      [
+        2246682,
+        125851
+      ],
+      [
+        89332,
+        362569
+      ]
+    ],
+    "valid_pixels": 2824434,
+    "water_prevalence": 0.1599970117906809
+  },
+  "checkpoint": "models/gherproof/sen1floods11_attention_unet.pt",
+  "checkpoint_sha256": "fcb244de72d51da9760d089ed5909d0cfdfda41af2e8def76aae203aadf5a040",
+  "training_history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 1.5686274856891271,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.3689397637410915,
+      "validation_metrics": {
+        "iou": 0.3689397637410915,
+        "precision": 0.4107562586784562,
+        "recall": 0.7837385222400233,
+        "f1": 0.5390153365592051,
+        "pr_auc_average_precision": 0.6627397290633253,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9081401,
+            650541
+          ],
+          [
+            125133,
+            453486
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 1.340011847469042,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.30375617637256747,
+      "validation_metrics": {
+        "iou": 0.30375617637256747,
+        "precision": 0.3182644571636783,
+        "recall": 0.8695099884379877,
+        "f1": 0.4659708339295563,
+        "pr_auc_average_precision": 0.7065870838213737,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            8654249,
+            1077693
+          ],
+          [
+            75504,
+            503115
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 1.2536672786721643,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.32402423724198304,
+      "validation_metrics": {
+        "iou": 0.32402423724198304,
+        "precision": 0.3389735749698664,
+        "recall": 0.880199233001336,
+        "f1": 0.48945363404667536,
+        "pr_auc_average_precision": 0.7212910635362966,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            8738765,
+            993177
+          ],
+          [
+            69319,
+            509300
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 1.1861747778811544,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.46648662018705794,
+      "validation_metrics": {
+        "iou": 0.46648662018705794,
+        "precision": 0.5272813440816833,
+        "recall": 0.8018195047172665,
+        "f1": 0.6361962172250235,
+        "pr_auc_average_precision": 0.743891857235415,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9316003,
+            415939
+          ],
+          [
+            114671,
+            463948
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 1.3407677932167954,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.4814490821100548,
+      "validation_metrics": {
+        "iou": 0.4814490821100548,
+        "precision": 0.5897825493073178,
+        "recall": 0.7238390028671716,
+        "f1": 0.6499704754270976,
+        "pr_auc_average_precision": 0.7244671065761744,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9440631,
+            291311
+          ],
+          [
+            159792,
+            418827
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 1.1648500326950595,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.41013932937366493,
+      "validation_metrics": {
+        "iou": 0.41013932937366493,
+        "precision": 0.7750794861097124,
+        "recall": 0.46554814135035316,
+        "f1": 0.5817004331846196,
+        "pr_auc_average_precision": 0.6848929611589039,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9653772,
+            78170
+          ],
+          [
+            309244,
+            269375
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 1.1515884326314025,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.4565670294448783,
+      "validation_metrics": {
+        "iou": 0.4565670294448783,
+        "precision": 0.5249835262559408,
+        "recall": 0.777945418314988,
+        "f1": 0.6269083677101817,
+        "pr_auc_average_precision": 0.7418275674753355,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9324651,
+            407291
+          ],
+          [
+            128485,
+            450134
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 1.1516055003652033,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.5073137808459004,
+      "validation_metrics": {
+        "iou": 0.5073137808459004,
+        "precision": 0.595389857900025,
+        "recall": 0.7742365874608335,
+        "f1": 0.6731362604025252,
+        "pr_auc_average_precision": 0.7590563506152986,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9427502,
+            304440
+          ],
+          [
+            130631,
+            447988
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 1.1723364538179253,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.5087645717324306,
+      "validation_metrics": {
+        "iou": 0.5087645717324306,
+        "precision": 0.6468678134924225,
+        "recall": 0.7044065265744817,
+        "f1": 0.6744121399248453,
+        "pr_auc_average_precision": 0.7268402965847153,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9509438,
+            222504
+          ],
+          [
+            171036,
+            407583
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.0983560231496703,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.48381345292005395,
+      "validation_metrics": {
+        "iou": 0.48381345292005395,
+        "precision": 0.7605805726498877,
+        "recall": 0.5707348013113983,
+        "f1": 0.6521216692946661,
+        "pr_auc_average_precision": 0.7024170360113069,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9627988,
+            103954
+          ],
+          [
+            248381,
+            330238
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 11,
+      "mean_train_loss": 1.2194152097657043,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.46317966833142765,
+      "validation_metrics": {
+        "iou": 0.46317966833142765,
+        "precision": 0.5508907496369836,
+        "recall": 0.7441874532291542,
+        "f1": 0.6331138661318686,
+        "pr_auc_average_precision": 0.7243634966090553,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9380898,
+            351044
+          ],
+          [
+            148018,
+            430601
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0002
+    },
+    {
+      "epoch": 12,
+      "mean_train_loss": 1.0349614775546316,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.45799135027372045,
+      "validation_metrics": {
+        "iou": 0.45799135027372045,
+        "precision": 0.5224826586911739,
+        "recall": 0.7877065910383171,
+        "f1": 0.6282497494758634,
+        "pr_auc_average_precision": 0.7298832384253814,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9315385,
+            416557
+          ],
+          [
+            122837,
+            455782
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0001
+    },
+    {
+      "epoch": 13,
+      "mean_train_loss": 1.0386257070415426,
+      "validation_event_id": "11",
+      "validation_event_iou": 0.4859323889519418,
+      "validation_metrics": {
+        "iou": 0.4859323889519418,
+        "precision": 0.5779136402570161,
+        "recall": 0.753274607297721,
+        "f1": 0.6540437405697573,
+        "pr_auc_average_precision": 0.7365813822970071,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9413607,
+            318335
+          ],
+          [
+            142760,
+            435859
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "lr": 0.0001
+    }
+  ],
+  "elapsed_seconds": 674.2,
+  "limitations": [
+    "A benchmark water segmentation score is not waterlogging accuracy or local Sujatpur performance.",
+    "The Bolivia event holdout has only 15 chips; uncertainty and domain shift remain substantial.",
+    "Sen1Floods11 dataset licensing is unclear/proprietary in official catalog metadata; do not redistribute.",
+    "No January Sujatpur image inference was performed by this script."
+  ],
+  "pretrained_follow_up": {
+    "compatible_checkpoint": "TorchGeo/SSL4EO-S12 ResNet50 Sentinel-1 GRD MoCo, 2 input channels",
+    "status": "downloaded_and_sha256_verified_after_this_training_run; not used in trained model",
+    "manifest": "data/gherproof/manifests/sar_pretrained_weights_manifest.json"
+  }
+}

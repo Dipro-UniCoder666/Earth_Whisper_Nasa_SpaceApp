@@ -1,0 +1,1404 @@
+{
+  "status": "rasterio_qc_complete",
+  "software": {
+    "rasterio": "1.5.2",
+    "numpy": "2.5.4"
+  },
+  "file_count": 16,
+  "all_comparable_group_alignments_pass": true,
+  "grid_groups": {
+    "frequencyA": {
+      "count": 8,
+      "dimensions": [
+        [
+          3111,
+          2155
+        ]
+      ],
+      "resolutions": [
+        [
+          10.0,
+          10.0
+        ]
+      ]
+    },
+    "frequencyB": {
+      "count": 8,
+      "dimensions": [
+        [
+          388,
+          270
+        ]
+      ],
+      "resolutions": [
+        [
+          80.0,
+          80.0
+        ]
+      ]
+    }
+  },
+  "all_have_crs": true,
+  "all_no_nan_or_infinite": true,
+  "files": [
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_common_valid_mask.tif",
+      "bytes": 66789,
+      "sha256": "5db6fd8dc69985b45ff601bf3553028599a9587f4f81d070cbe9523dfabd935d",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH common valid mask",
+        "HVHV common valid mask"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "comparison_dates": "2026-10-23/2026-11-04",
+        "frequency_grid": "frequencyA",
+        "mission": "NASA-ISRO NISAR",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH common valid mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV common valid mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_frequencyB_80m_common_valid_mask.tif",
+      "bytes": 2925,
+      "sha256": "610e127d7a65cc46432f01df842498441d8ef0860691a1e282181fd63daaeb50",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH common valid mask",
+        "HVHV common valid mask"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "comparison_dates": "2026-10-23/2026-11-04",
+        "frequency_grid": "frequencyB",
+        "mission": "NASA-ISRO NISAR",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH common valid mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV common valid mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_frequencyB_80m_gamma0_change_db.tif",
+      "bytes": 757720,
+      "sha256": "8104d075cff47264803474856fd87acdeae7513d0c0f0fa8412d47f0f945af61",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 change, 10log10(Nov04/Oct23), dB",
+        "HVHV gamma0 change, 10log10(Nov04/Oct23), dB"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "comparison_dates": "2026-10-23/2026-11-04",
+        "frequency_grid": "frequencyB",
+        "interpretation": "Exploratory temporal backscatter change only; not a water/flood probability or fisheries impact map.",
+        "limitations": "Two later observations only; not January event evidence; surface, vegetation, moisture and acquisition noise effects remain.",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "resolution_m": "80",
+        "source": "ASF DAAC",
+        "units": "dB ratio of like-for-like linear gamma0 covariance power",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 change, 10log10(Nov04/Oct23), dB",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": -13.401527404785156,
+          "p05": -2.0787232995033262,
+          "median": -0.12276745960116386,
+          "p95": 1.8465758264064787,
+          "max": 19.171892166137695
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 change, 10log10(Nov04/Oct23), dB",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": -9.442965507507324,
+          "p05": -2.138422954082489,
+          "median": -0.18889816850423813,
+          "p95": 1.755227828025817,
+          "max": 8.5654878616333
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_to_2026-11-04_track170_gamma0_change_db.tif",
+      "bytes": 47642806,
+      "sha256": "40e60e2d268a82de2bc628339c58be3e52d07fbc32032030e58a9a64294d8d03",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 change, 10log10(Nov04/Oct23), dB",
+        "HVHV gamma0 change, 10log10(Nov04/Oct23), dB"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "comparison_dates": "2026-10-23/2026-11-04",
+        "frequency_grid": "frequencyA",
+        "interpretation": "Exploratory temporal backscatter change only; not a water/flood probability or fisheries impact map.",
+        "limitations": "Two later observations only; not January event evidence; surface, vegetation, moisture and acquisition noise effects remain.",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "resolution_m": "10",
+        "source": "ASF DAAC",
+        "units": "dB ratio of like-for-like linear gamma0 covariance power",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 change, 10log10(Nov04/Oct23), dB",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": -39.7170524597168,
+          "p05": -4.654142379760742,
+          "median": -0.15449629724025726,
+          "p95": 4.448701858520508,
+          "max": 43.66840744018555
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 change, 10log10(Nov04/Oct23), dB",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": -28.93681526184082,
+          "p05": -4.65672492980957,
+          "median": -0.05126882717013359,
+          "p95": 4.60672664642334,
+          "max": 28.125885009765625
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_frequencyB_80m_gamma0_power.tif",
+      "bytes": 521193,
+      "sha256": "b2df037d1b06654e968e5ff9009bd6bca130922373fac7a2940ba712d84c6871",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 covariance power (linear, unit 1)",
+        "HVHV gamma0 covariance power (linear, unit 1)"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "rtc_gamma_to_sigma_factor_applied": "false",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.00982654094696045,
+          "p05": 0.030678439140319827,
+          "median": 0.23976612091064453,
+          "p95": 0.6213226318359375,
+          "max": 22.957763671875
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.0028229355812072754,
+          "p05": 0.00642436444759369,
+          "median": 0.03249764442443848,
+          "p95": 0.09413580894470214,
+          "max": 1.0446319580078125
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_frequencyB_80m_quality.tif",
+      "bytes": 4340,
+      "sha256": "64926478a04908a6e33665207a87b425c730f29f0b9c00709eea663931925d50",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint16",
+        "uint16"
+      ],
+      "nodata": 65535.0,
+      "band_descriptions": [
+        "GCOV subswath mask; 0 invalid, 255 outside scene",
+        "inputDataExceptionMask; raw bits preserved"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "GCOV subswath mask; 0 invalid, 255 outside scene",
+          "dtype": "uint16",
+          "valid_pixels": 104760,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "inputDataExceptionMask; raw bits preserved",
+          "dtype": "uint16",
+          "valid_pixels": 104760,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 768.0,
+          "p05": 768.0,
+          "median": 768.0,
+          "p95": 768.0,
+          "max": 768.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_frequencyB_80m_valid_mask.tif",
+      "bytes": 3390,
+      "sha256": "3873d524ba3eaf46905f72240317927930b7230d47c2f72731b5b25f9fcfbef3",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH fully-focused valid-data mask",
+        "HVHV fully-focused valid-data mask"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_gamma0_power.tif",
+      "bytes": 33842032,
+      "sha256": "785ede29c192051a3f0c467a4d772bc7b5d02a383739ec2ceddefc26a1c5b005",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 covariance power (linear, unit 1)",
+        "HVHV gamma0 covariance power (linear, unit 1)"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "rtc_gamma_to_sigma_factor_applied": "false",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.000848621129989624,
+          "p05": 0.011037826538085938,
+          "median": 0.1312427520751953,
+          "p95": 0.7039642333984375,
+          "max": 775.15625
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.0003079026937484741,
+          "p05": 0.0030055195093154907,
+          "median": 0.022278785705566406,
+          "p95": 0.12599754333496094,
+          "max": 13.8043212890625
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_quality.tif",
+      "bytes": 84883,
+      "sha256": "6959725113e44fef670061610b8d5258fe269c5041ea7249e5f9cf289d8339d3",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint16",
+        "uint16"
+      ],
+      "nodata": 65535.0,
+      "band_descriptions": [
+        "GCOV subswath mask; 0 invalid, 255 outside scene",
+        "inputDataExceptionMask; raw bits preserved"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "GCOV subswath mask; 0 invalid, 255 outside scene",
+          "dtype": "uint16",
+          "valid_pixels": 6704205,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "inputDataExceptionMask; raw bits preserved",
+          "dtype": "uint16",
+          "valid_pixels": 6704205,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 768.0,
+          "p05": 768.0,
+          "median": 768.0,
+          "p95": 768.0,
+          "max": 768.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-10-23_track170_ascending_validated_valid_mask.tif",
+      "bytes": 66302,
+      "sha256": "e735f0e95f13855e60c9502844b8e59ad52e12ba475756bbb4ca655e20edfcbc",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH fully-focused valid-data mask",
+        "HVHV fully-focused valid-data mask"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-10-23",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_033_170_A_013_4005_DHDH_A_20261023T232918_20261023T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_frequencyB_80m_gamma0_power.tif",
+      "bytes": 520825,
+      "sha256": "8d7d16b336c1ec40a88816c34e7061a3c1a13d9f426e232b78dfa574e7ceb3f0",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 covariance power (linear, unit 1)",
+        "HVHV gamma0 covariance power (linear, unit 1)"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "rtc_gamma_to_sigma_factor_applied": "false",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.008198738098144531,
+          "p05": 0.029003572463989262,
+          "median": 0.2262096405029297,
+          "p95": 0.6040077209472647,
+          "max": 33.2197265625
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.0024927854537963867,
+          "p05": 0.006052252650260926,
+          "median": 0.030744314193725586,
+          "p95": 0.09131493568420407,
+          "max": 1.067596435546875
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_frequencyB_80m_quality.tif",
+      "bytes": 4340,
+      "sha256": "1a0a958cf24f4a2801f6e8dfb154f42e63866eb7ffc43e21a0131ed0fe402e25",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint16",
+        "uint16"
+      ],
+      "nodata": 65535.0,
+      "band_descriptions": [
+        "GCOV subswath mask; 0 invalid, 255 outside scene",
+        "inputDataExceptionMask; raw bits preserved"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "GCOV subswath mask; 0 invalid, 255 outside scene",
+          "dtype": "uint16",
+          "valid_pixels": 104760,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "inputDataExceptionMask; raw bits preserved",
+          "dtype": "uint16",
+          "valid_pixels": 104760,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 768.0,
+          "p05": 768.0,
+          "median": 768.0,
+          "p95": 768.0,
+          "max": 768.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_frequencyB_80m_valid_mask.tif",
+      "bytes": 3390,
+      "sha256": "3efdf47d7f3350b4b25cf0ed11c116c52aaf820424a1ee2505e229592a6fa74b",
+      "crs": "EPSG:32645",
+      "transform": [
+        80.0,
+        0.0,
+        729440.0,
+        0.0,
+        -80.0,
+        2558000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729440.0,
+        2536400.0,
+        760480.0,
+        2558000.0
+      ],
+      "width": 388,
+      "height": 270,
+      "resolution": [
+        80.0,
+        80.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH fully-focused valid-data mask",
+        "HVHV fully-focused valid-data mask"
+      ],
+      "frequency_grid_group": "frequencyB",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "frequency_grid": "frequencyB",
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 101170,
+          "masked_pixels": 3590,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_gamma0_power.tif",
+      "bytes": 33855837,
+      "sha256": "3ac0c0a5c37010ebf28b7a5f5ba5838e875ab8347cc315a68214da304589a095",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "nodata": -9999.0,
+      "band_descriptions": [
+        "HHHH gamma0 covariance power (linear, unit 1)",
+        "HVHV gamma0 covariance power (linear, unit 1)"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "rtc_gamma_to_sigma_factor_applied": "false",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.0010514557361602783,
+          "p05": 0.010302066802978516,
+          "median": 0.1271343231201172,
+          "p95": 0.6851806640625,
+          "max": 978.0546875
+        },
+        {
+          "band": 2,
+          "description": "HVHV gamma0 covariance power (linear, unit 1)",
+          "dtype": "float32",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 0.0002827942371368408,
+          "p05": 0.0029661059379577637,
+          "median": 0.02193927764892578,
+          "p95": 0.12598228454589844,
+          "max": 19.657958984375
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_quality.tif",
+      "bytes": 84883,
+      "sha256": "bd9e8bfd96e255a6beb2702db6bef61b74aa29a3d402233a6f419f9e8a7a528f",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint16",
+        "uint16"
+      ],
+      "nodata": 65535.0,
+      "band_descriptions": [
+        "GCOV subswath mask; 0 invalid, 255 outside scene",
+        "inputDataExceptionMask; raw bits preserved"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "GCOV subswath mask; 0 invalid, 255 outside scene",
+          "dtype": "uint16",
+          "valid_pixels": 6704205,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "inputDataExceptionMask; raw bits preserved",
+          "dtype": "uint16",
+          "valid_pixels": 6704205,
+          "masked_pixels": 0,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 768.0,
+          "p05": 768.0,
+          "median": 768.0,
+          "p95": 768.0,
+          "max": 768.0
+        }
+      ]
+    },
+    {
+      "path": "data/gherproof/processed/nisar/validated/nisar_2026-11-04_track170_ascending_validated_valid_mask.tif",
+      "bytes": 66302,
+      "sha256": "f0ceb44c6c49f19ecdc75981ee42426da408fa1bcb6782abfca30e93036b1f80",
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557960.0
+      ],
+      "width": 3111,
+      "height": 2155,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "uint8",
+        "uint8"
+      ],
+      "nodata": 0.0,
+      "band_descriptions": [
+        "HHHH fully-focused valid-data mask",
+        "HVHV fully-focused valid-data mask"
+      ],
+      "frequency_grid_group": "frequencyA",
+      "aligned_to_group_reference": true,
+      "tags": {
+        "mask_rule": "GCOV subswath mask in 1..254 plus per-pol focused validity bit (HH=256, HV=512); outside AOI is nodata.",
+        "measurement": "GCOV diagonal covariance power; linear gamma0; units 1",
+        "mission": "NASA-ISRO NISAR",
+        "orbit_direction": "ascending",
+        "polarizations": "HH,HV",
+        "processing_note": "Regional AOI window extracted from remote HDF5 via authenticated HTTP Range; full source product not downloaded.",
+        "product_date": "2026-11-04",
+        "product_maturity": "VALIDATED",
+        "relative_orbit": "170",
+        "source": "ASF DAAC",
+        "source_product_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_170_A_013_4005_DHDH_A_20261104T232918_20261104T232952_P05036_N_F_J_001.h5",
+        "AREA_OR_POINT": "Area"
+      },
+      "bands": [
+        {
+          "band": 1,
+          "description": "HHHH fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        {
+          "band": 2,
+          "description": "HVHV fully-focused valid-data mask",
+          "dtype": "uint8",
+          "valid_pixels": 6475371,
+          "masked_pixels": 228834,
+          "nan_count": 0,
+          "infinite_count": 0,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raster validity is based on explicit NISAR masks carried into the processing outputs.",
+    "The provisional AOI is not an official village/site/enclosure boundary.",
+    "Raster QC does not constitute water classification or field validation."
+  ]
+}

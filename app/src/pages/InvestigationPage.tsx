@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react'
 import { MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ROUTES } from '@/lib/constants'
 import { InvestigationMap } from '@/features/investigation/components/InvestigationMap'
 import { InvestigationResults } from '@/features/investigation/components/InvestigationResults'
 import { SandhyaInvestigationResults } from '@/features/candidates/components/SandhyaInvestigationResults'
@@ -66,6 +68,9 @@ export function InvestigationPage() {
           <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">
             Choose a place and discover what Earth-observation data reveals.
           </p>
+          <Link to={ROUTES.investigationAnalysis} className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-slate-950/40 px-4 py-2 text-sm font-medium text-slate-100 hover:border-teal-300/60 hover:text-teal-100">
+            Open Analysis Workbench <span aria-hidden="true">→</span>
+          </Link>
         </div>
 
         <section className="ew-panel" aria-labelledby="investigation-location">

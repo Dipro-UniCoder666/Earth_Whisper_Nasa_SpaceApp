@@ -1,0 +1,1051 @@
+{
+  "status": "complete",
+  "provider": "Microsoft Planetary Computer public STAC API",
+  "collection": "sentinel-1-grd",
+  "query": "Exact RTC-derived source scene ID; fallback AOI-intersecting STAC search within \u00b175 seconds, then strict exact metadata match.",
+  "created_at_utc": "2026-11-12T21:40:52.422008+00:00",
+  "scene_count": 4,
+  "records": [
+    {
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "target_grd_item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0",
+      "rtc_datetime": "2026-01-12T12:12:47.436905Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "status": "exact_counterpart_found",
+      "match_method": "exact product scene identifier plus platform/orbit/mode",
+      "candidates": [],
+      "match": {
+        "id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0",
+        "collection": "sentinel-1-grd",
+        "bbox": [
+          87.141052,
+          21.837538,
+          89.92033400000003,
+          23.774021
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                87.141052,
+                23.34726
+              ],
+              [
+                87.46017499999999,
+                21.837538
+              ],
+              [
+                89.92033400000003,
+                22.267551
+              ],
+              [
+                89.62905899999998,
+                23.774021
+              ],
+              [
+                87.141052,
+                23.34726
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "datetime": "2026-01-12T12:12:47.436905Z",
+          "start_datetime": "2026-01-12T12:12:34.937747Z",
+          "end_datetime": "2026-01-12T12:12:59.936064Z",
+          "platform": "sentinel-1a",
+          "sat:relative_orbit": 12,
+          "sat:orbit_state": "ascending",
+          "sar:instrument_mode": "IW",
+          "sar:polarizations": [
+            "VV",
+            "VH"
+          ],
+          "sar:frequency_band": "C",
+          "s1:product_type": null,
+          "s1:processing_level": "1",
+          "s1:resolution_meters": null,
+          "s1:mission_data_take_id": null,
+          "s1:instrument_configuration_id": null
+        },
+        "assets": {
+          "vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/measurement/iw-vh.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VH: vertical transmit, horizontal receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/measurement/iw-vv.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VV: vertical transmit, vertical receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "thumbnail": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/preview/quick-look.png",
+            "type": "image/png",
+            "roles": [
+              "thumbnail"
+            ],
+            "title": "Preview Image",
+            "description": "An averaged, decimated preview image in PNG format. Single polarisation products are represented with a grey scale image. Dual polarisation products are represented by a single composite colour image in RGB with the red channel (R) representing the  co-polarisation VV or HH), the green channel (G) represents the cross-polarisation (VH or HV) and the blue channel (B) represents the ratio of the cross an co-polarisations.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "safe-manifest": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/manifest.safe",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "Manifest File",
+            "description": "General product metadata in XML format. Contains a high-level textual description of the product and references to all of product's components, the product metadata, including the product identification and the resource references, and references to the physical location of each component file contained in the product.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/calibration/noise-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/calibration/noise-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/rfi/rfi-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/rfi/rfi-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/calibration/calibration-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/12/IW/DV/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_15EB/annotation/calibration/calibration-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "tilejson": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json",
+            "type": "application/json",
+            "roles": [
+              "tiles"
+            ],
+            "title": "TileJSON with default rendering",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "rendered_preview": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png",
+            "type": "image/png",
+            "roles": [
+              "overview"
+            ],
+            "title": "Rendered preview",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          }
+        },
+        "links": [
+          {
+            "rel": "collection",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd"
+          },
+          {
+            "rel": "self",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd/items/S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0"
+          }
+        ]
+      },
+      "vv_asset_present": true,
+      "vh_asset_present": true,
+      "dual_pol_asset_check": "pass",
+      "datetime_exact": true,
+      "relative_orbit_exact": true,
+      "direction_exact": true,
+      "mode_exact": true
+    },
+    {
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "target_grd_item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80",
+      "rtc_datetime": "2026-01-09T23:56:19.288128Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "status": "exact_counterpart_found",
+      "match_method": "exact product scene identifier plus platform/orbit/mode",
+      "candidates": [],
+      "match": {
+        "id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80",
+        "collection": "sentinel-1-grd",
+        "bbox": [
+          88.52331500000003,
+          22.581247,
+          91.26738,
+          24.507654
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                90.946617,
+                22.581247
+              ],
+              [
+                91.26738,
+                24.09075
+              ],
+              [
+                88.81568099999998,
+                24.507654
+              ],
+              [
+                88.52331500000003,
+                23.001249
+              ],
+              [
+                90.946617,
+                22.581247
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "datetime": "2026-01-09T23:56:19.288128Z",
+          "start_datetime": "2026-01-09T23:56:06.788856Z",
+          "end_datetime": "2026-01-09T23:56:31.787400Z",
+          "platform": "sentinel-1a",
+          "sat:relative_orbit": 150,
+          "sat:orbit_state": "descending",
+          "sar:instrument_mode": "IW",
+          "sar:polarizations": [
+            "VV",
+            "VH"
+          ],
+          "sar:frequency_band": "C",
+          "s1:product_type": null,
+          "s1:processing_level": "1",
+          "s1:resolution_meters": null,
+          "s1:mission_data_take_id": null,
+          "s1:instrument_configuration_id": null
+        },
+        "assets": {
+          "vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/measurement/iw-vh.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VH: vertical transmit, horizontal receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/measurement/iw-vv.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VV: vertical transmit, vertical receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "thumbnail": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/preview/quick-look.png",
+            "type": "image/png",
+            "roles": [
+              "thumbnail"
+            ],
+            "title": "Preview Image",
+            "description": "An averaged, decimated preview image in PNG format. Single polarisation products are represented with a grey scale image. Dual polarisation products are represented by a single composite colour image in RGB with the red channel (R) representing the  co-polarisation VV or HH), the green channel (G) represents the cross-polarisation (VH or HV) and the blue channel (B) represents the ratio of the cross an co-polarisations.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "safe-manifest": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/manifest.safe",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "Manifest File",
+            "description": "General product metadata in XML format. Contains a high-level textual description of the product and references to all of product's components, the product metadata, including the product identification and the resource references, and references to the physical location of each component file contained in the product.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/calibration/noise-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/calibration/noise-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/rfi/rfi-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/rfi/rfi-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/calibration/calibration-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/9/IW/DV/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_6734/annotation/calibration/calibration-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "tilejson": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json",
+            "type": "application/json",
+            "roles": [
+              "tiles"
+            ],
+            "title": "TileJSON with default rendering",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "rendered_preview": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png",
+            "type": "image/png",
+            "roles": [
+              "overview"
+            ],
+            "title": "Rendered preview",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          }
+        },
+        "links": [
+          {
+            "rel": "collection",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd"
+          },
+          {
+            "rel": "self",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd/items/S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80"
+          }
+        ]
+      },
+      "vv_asset_present": true,
+      "vh_asset_present": true,
+      "dual_pol_asset_check": "pass",
+      "datetime_exact": true,
+      "relative_orbit_exact": true,
+      "direction_exact": true,
+      "mode_exact": true
+    },
+    {
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "target_grd_item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438",
+      "rtc_datetime": "2026-01-24T12:12:45.938137Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 12,
+      "orbit_direction": "ascending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "status": "exact_counterpart_found",
+      "match_method": "exact product scene identifier plus platform/orbit/mode",
+      "candidates": [],
+      "match": {
+        "id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438",
+        "collection": "sentinel-1-grd",
+        "bbox": [
+          87.14260100000001,
+          21.837473,
+          89.921783,
+          23.77396
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                87.14260100000001,
+                23.347193
+              ],
+              [
+                87.46173099999999,
+                21.837473
+              ],
+              [
+                89.921783,
+                22.267492
+              ],
+              [
+                89.63050099999998,
+                23.77396
+              ],
+              [
+                87.14260100000001,
+                23.347193
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "datetime": "2026-01-24T12:12:45.938137Z",
+          "start_datetime": "2026-01-24T12:12:33.438979Z",
+          "end_datetime": "2026-01-24T12:12:58.437296Z",
+          "platform": "sentinel-1a",
+          "sat:relative_orbit": 12,
+          "sat:orbit_state": "ascending",
+          "sar:instrument_mode": "IW",
+          "sar:polarizations": [
+            "VV",
+            "VH"
+          ],
+          "sar:frequency_band": "C",
+          "s1:product_type": null,
+          "s1:processing_level": "1",
+          "s1:resolution_meters": null,
+          "s1:mission_data_take_id": null,
+          "s1:instrument_configuration_id": null
+        },
+        "assets": {
+          "vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/measurement/iw-vh.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VH: vertical transmit, horizontal receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/measurement/iw-vv.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VV: vertical transmit, vertical receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "thumbnail": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/preview/quick-look.png",
+            "type": "image/png",
+            "roles": [
+              "thumbnail"
+            ],
+            "title": "Preview Image",
+            "description": "An averaged, decimated preview image in PNG format. Single polarisation products are represented with a grey scale image. Dual polarisation products are represented by a single composite colour image in RGB with the red channel (R) representing the  co-polarisation VV or HH), the green channel (G) represents the cross-polarisation (VH or HV) and the blue channel (B) represents the ratio of the cross an co-polarisations.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "safe-manifest": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/manifest.safe",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "Manifest File",
+            "description": "General product metadata in XML format. Contains a high-level textual description of the product and references to all of product's components, the product metadata, including the product identification and the resource references, and references to the physical location of each component file contained in the product.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/calibration/noise-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/calibration/noise-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/rfi/rfi-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/rfi/rfi-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/calibration/calibration-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/24/IW/DV/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_A181/annotation/calibration/calibration-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "tilejson": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json",
+            "type": "application/json",
+            "roles": [
+              "tiles"
+            ],
+            "title": "TileJSON with default rendering",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "rendered_preview": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png",
+            "type": "image/png",
+            "roles": [
+              "overview"
+            ],
+            "title": "Rendered preview",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          }
+        },
+        "links": [
+          {
+            "rel": "collection",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd"
+          },
+          {
+            "rel": "self",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd/items/S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438"
+          }
+        ]
+      },
+      "vv_asset_present": true,
+      "vh_asset_present": true,
+      "dual_pol_asset_check": "pass",
+      "datetime_exact": true,
+      "relative_orbit_exact": true,
+      "direction_exact": true,
+      "mode_exact": true
+    },
+    {
+      "rtc_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "target_grd_item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF",
+      "rtc_datetime": "2026-01-21T23:56:18.062524Z",
+      "platform": "sentinel-1a",
+      "relative_orbit": 150,
+      "orbit_direction": "descending",
+      "instrument_mode": "IW",
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "status": "exact_counterpart_found",
+      "match_method": "exact product scene identifier plus platform/orbit/mode",
+      "candidates": [],
+      "match": {
+        "id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF",
+        "collection": "sentinel-1-grd",
+        "bbox": [
+          88.52352100000002,
+          22.581196,
+          91.267563,
+          24.50758
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                90.946823,
+                22.581196
+              ],
+              [
+                91.267563,
+                24.090702
+              ],
+              [
+                88.81586500000003,
+                24.50758
+              ],
+              [
+                88.52352100000002,
+                23.001173
+              ],
+              [
+                90.946823,
+                22.581196
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "datetime": "2026-01-21T23:56:18.062524Z",
+          "start_datetime": "2026-01-21T23:56:05.563281Z",
+          "end_datetime": "2026-01-21T23:56:30.561767Z",
+          "platform": "sentinel-1a",
+          "sat:relative_orbit": 150,
+          "sat:orbit_state": "descending",
+          "sar:instrument_mode": "IW",
+          "sar:polarizations": [
+            "VV",
+            "VH"
+          ],
+          "sar:frequency_band": "C",
+          "s1:product_type": null,
+          "s1:processing_level": "1",
+          "s1:resolution_meters": null,
+          "s1:mission_data_take_id": null,
+          "s1:instrument_configuration_id": null
+        },
+        "assets": {
+          "vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/measurement/iw-vh.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VH: vertical transmit, horizontal receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/measurement/iw-vv.tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+              "data"
+            ],
+            "title": "VV: vertical transmit, vertical receive",
+            "description": "Amplitude of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "thumbnail": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/preview/quick-look.png",
+            "type": "image/png",
+            "roles": [
+              "thumbnail"
+            ],
+            "title": "Preview Image",
+            "description": "An averaged, decimated preview image in PNG format. Single polarisation products are represented with a grey scale image. Dual polarisation products are represented by a single composite colour image in RGB with the red channel (R) representing the  co-polarisation VV or HH), the green channel (G) represents the cross-polarisation (VH or HV) and the blue channel (B) represents the ratio of the cross an co-polarisations.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "safe-manifest": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/manifest.safe",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "Manifest File",
+            "description": "General product metadata in XML format. Contains a high-level textual description of the product and references to all of product's components, the product metadata, including the product identification and the resource references, and references to the physical location of each component file contained in the product.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/calibration/noise-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-noise-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/calibration/noise-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Noise Schema",
+            "description": "Estimated thermal noise look-up tables",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/rfi/rfi-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-product-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/rfi/rfi-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Product Schema",
+            "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vh": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/calibration/calibration-iw-vh.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VH Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "schema-calibration-vv": {
+            "href": "https://sentinel1euwest.blob.core.windows.net/s1-grd/GRD/2026/1/21/IW/DV/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_2D0B/annotation/calibration/calibration-iw-vv.xml",
+            "type": "application/xml",
+            "roles": [
+              "metadata"
+            ],
+            "title": "VV Calibration Schema",
+            "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "tilejson": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json",
+            "type": "application/json",
+            "roles": [
+              "tiles"
+            ],
+            "title": "TileJSON with default rendering",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          },
+          "rendered_preview": {
+            "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png",
+            "type": "image/png",
+            "roles": [
+              "overview"
+            ],
+            "title": "Rendered preview",
+            "description": null,
+            "file:size": null,
+            "raster:bands": null,
+            "proj:shape": null,
+            "proj:transform": null,
+            "proj:epsg": null
+          }
+        },
+        "links": [
+          {
+            "rel": "collection",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd"
+          },
+          {
+            "rel": "self",
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd/items/S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF"
+          }
+        ]
+      },
+      "vv_asset_present": true,
+      "vh_asset_present": true,
+      "dual_pol_asset_check": "pass",
+      "datetime_exact": true,
+      "relative_orbit_exact": true,
+      "direction_exact": true,
+      "mode_exact": true
+    }
+  ],
+  "limitations": [
+    "This script searches exact sensing acquisitions only; nearby-date substitutions are never labeled exact.",
+    "A STAC item/asset record alone is not a verified local raster or model-domain comparison.",
+    "Asset href query components are stripped before persistence."
+  ]
+}

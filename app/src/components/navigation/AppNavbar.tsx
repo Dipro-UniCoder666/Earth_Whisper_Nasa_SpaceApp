@@ -7,9 +7,10 @@ import { MobileMenu } from '@/components/navigation/MobileMenu'
 import { ROUTES } from '@/lib/constants'
 
 const APP_NAV_LINKS = [
-  { label: 'Science Mode', href: '#science-mode' },
-  { label: 'About', href: '#about' },
   { label: 'Home', href: ROUTES.landing },
+  { label: 'Investigate', href: ROUTES.investigate },
+  { label: 'DHARA', href: ROUTES.dhara },
+  { label: 'About', href: ROUTES.about },
 ] as const
 
 export function AppNavbar() {

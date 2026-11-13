@@ -1,0 +1,3694 @@
+{
+  "status": "all_phase7_geotiffs_reopened",
+  "raster_count": 80,
+  "rasters": [
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "8613a192d38835fc71ec05bad40db788de338ecc6476dc1b5f59c17fbe6cae2a",
+      "bytes": 142702,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "06d10b68209785ce42d328b3309b9a9afe34598eda627b1922e7a33aa8c0322e",
+      "bytes": 144369,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "95fc19055a91dd3b975677966279189f8308e2b560bf61bebb030ed0a8e1139c",
+      "bytes": 138534,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "421f32bef45a7b023838875f16e154e3b81694e9813ef219260e446f8b0d445f",
+      "bytes": 125583,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "f487860320718ded4a21ac5f25b2ac00e7cdfee0bd4dd83a22514e7cdad536c4",
+      "bytes": 115236,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "f77fa983a4ef079309f1594877d554ae95675b338b9ba15b35ff91c8e04deb29",
+      "bytes": 139031,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "b3229074296e2969d406848313cb9ee7eae1b7ffd532829b2ca8a75280b936cf",
+      "bytes": 188175,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "e27235ade1c216f23b04983cc457e72c50175ae2263c128fa2c1f3aa6b3272b0",
+      "bytes": 189862,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "0f0c0cdade389da58d69fb787c1129a32c2d14d97509970c019ccb2ce66f9849",
+      "bytes": 183979,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "8e605c8c3e4e4616af84c5073162a4a80f82ae9e9f9eccaca0c936fb708a913f",
+      "bytes": 200284,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "39a7f474ddcbd970aab91d1455233bc8f8b1e12690a8a1f9c1685a38af49620d",
+      "bytes": 192459,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-09_2026-01-21_rel150_descending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "e92e8522b85603de8bfcd292c081e39eb2f77561d62a4889f675b7dcb614a6f3",
+      "bytes": 210478,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "88b34e457ab60af551c73d3d1a0b73e4e616195cb68b860b8ee9e53d329fd565",
+      "bytes": 161204,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "a1b2c30f786df6eedb2bf76a4f012c70429e87df2ce8afa926b364d7daa6327e",
+      "bytes": 163059,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "e9de4d931765c171a5adcc3802daa27aab056631593250bb61b8c00314a1d78d",
+      "bytes": 157286,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "5785960d4f19f2f4adcda117c90b56619e4c24b444ee4e089eac243804e24e5f",
+      "bytes": 152317,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "bfcd0197e2b0612f431be73e7f1730c744954a51fdda40c5b0b8e7950f609a13",
+      "bytes": 142612,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/pretrained/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "18616483c8e742116470f34f1adb877779c53f0bf3887c2c009db9f0bfba60c2",
+      "bytes": 164781,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "4a3dffdb8798c777ecfa96bf811ae4d2a5613e030c41053cf7dbcd2773c14cb1",
+      "bytes": 201809,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "2f809b947f25d41260573b45f730e980d72d3591c17834492b8cfed3aee77dd3",
+      "bytes": 203710,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/mndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "1cfdccdcc5e813d4dcf1b13eaf1149aa4cbcf9e066c6d44b1bb070d9a65ec6f1",
+      "bytes": 197429,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 1617928,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.00/agreement_codes_20m.tif",
+      "sha256": "87064a8bf09404e4e0ac6915facfba19752ae7184a4f67a4876bbb2cdb41cf76",
+      "bytes": 216472,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t+0.05/agreement_codes_20m.tif",
+      "sha256": "2ac07375177f592fa7c65439b25dcc97238d5d14de5da9d326914f2bb195651f",
+      "bytes": 208591,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/cross_sensor/2026-01-12_2026-01-24_rel12_ascending/scratch/ndwi/t-0.05/agreement_codes_20m.tif",
+      "sha256": "5ae97acfbba5f634ade5dad76fd7a715c3fe846f764771792321225db83afaff",
+      "bytes": 227046,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "uint8"
+      ],
+      "descriptions": [
+        "0 neither; 1 both candidate; 2 SAR-only; 3 optical-only"
+      ],
+      "nodata": 255.0,
+      "valid_values": 6468628,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 3.0,
+      "max": 3.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/absolute_probability_difference_post.tif",
+      "sha256": "230fcc83cf40d8019b4f5e8d3043b8352448da29d634ee78451143ff912c5943",
+      "bytes": 21650269,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Absolute model probability disagreement (post)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 9.313225746154785e-10,
+      "p02": 0.00032092229230329394,
+      "median": 0.03685004264116287,
+      "p98": 0.6607885956764221,
+      "max": 0.9504494071006775,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/absolute_probability_difference_pre.tif",
+      "sha256": "a9960906dbb5dbb32f9fdffdcfba170ac1c0c08bfaf31a6786d68ff6671344d0",
+      "bytes": 21749550,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Absolute model probability disagreement (pre)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 3.259629011154175e-09,
+      "p02": 0.00031477882293984294,
+      "median": 0.02426367625594139,
+      "p98": 0.6467538475990295,
+      "max": 0.9415920376777649,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/binary_xor_post.tif",
+      "sha256": "7d72d4045cba821564aab85e4c029c535e9e0e9ab5466cb7a8ccb576c5d35712",
+      "bytes": 678037,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Model binary disagreement (post)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-09_2026-01-21_rel150_descending/binary_xor_pre.tif",
+      "sha256": "20b050dde22d5fce6b5f8e318700cc2c38379382b91278844ed418218486a6eb",
+      "bytes": 569582,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Model binary disagreement (pre)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/absolute_probability_difference_post.tif",
+      "sha256": "527545dd14357e2d75b07d148273e1da3f6bf437c88aa2cd7071105b0ba341a4",
+      "bytes": 21516999,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Absolute model probability disagreement (post)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 9.313225746154785e-09,
+      "p02": 0.00041010332643054426,
+      "median": 0.060942672193050385,
+      "p98": 0.6252013444900513,
+      "max": 0.9171971678733826,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/absolute_probability_difference_pre.tif",
+      "sha256": "9e53c4f458594f726b92d027185f62a2db09f5321dd9f472d8d3a394b07ee93c",
+      "bytes": 21618384,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Absolute model probability disagreement (pre)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 7.450580596923828e-09,
+      "p02": 0.00036215950967743993,
+      "median": 0.044248808175325394,
+      "p98": 0.6208664774894714,
+      "max": 0.9149761199951172,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/binary_xor_post.tif",
+      "sha256": "f8b0b631c3d1449219a96f5e40df379018b5566c6455357b89ec2434574c6e1d",
+      "bytes": 851727,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Model binary disagreement (post)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/disagreement/2026-01-12_2026-01-24_rel12_ascending/binary_xor_pre.tif",
+      "sha256": "3dbfb623a35f7916575ed1a11c4b32921ad0b611706394855428556ed0ded419",
+      "bytes": 780832,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Model binary disagreement (pre)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-09_2026-01-21_rel150_descending/new_water_candidate.tif",
+      "sha256": "4a00cc412f02c09766e44dc0023ed8427abef2ab83d894bab3e6cb0eeadf3c2c",
+      "bytes": 158489,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post class water-like and pre class not water-like"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 0.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-09_2026-01-21_rel150_descending/probability_post_minus_pre.tif",
+      "sha256": "f3ab496ab73a17096d772cd99cc4bfa8b8a8e4ee9c13b32d41fb113d3b31f7e1",
+      "bytes": 21619062,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post minus pre model probability (unitless)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.8964674472808838,
+      "p02": -0.12528552114963531,
+      "median": 0.0001977626234292984,
+      "p98": 0.21372245252132416,
+      "max": 0.9227394461631775,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-12_2026-01-24_rel12_ascending/new_water_candidate.tif",
+      "sha256": "640ed03f8fd8cc1db7d3a2c304be04bcfec3c1b7d10e31339008528939f14031",
+      "bytes": 276745,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post class water-like and pre class not water-like"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/pretrained/2026-01-12_2026-01-24_rel12_ascending/probability_post_minus_pre.tif",
+      "sha256": "66fa8f51051b619db0b5a19f8534dd6af9099d8968e4aaf00f0cd2f80fcfe4c7",
+      "bytes": 21595442,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post minus pre model probability (unitless)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.9466279149055481,
+      "p02": -0.26267021894454956,
+      "median": -0.00010945089161396027,
+      "p98": 0.3064713478088379,
+      "max": 0.9545072317123413,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-09_2026-01-21_rel150_descending/new_water_candidate.tif",
+      "sha256": "d140b57e3be0751e68a16424e52af6579b1d8868975283101314c309ffafad00",
+      "bytes": 566286,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post class water-like and pre class not water-like"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-09_2026-01-21_rel150_descending/probability_post_minus_pre.tif",
+      "sha256": "3c66dbf18960c40bea133cd79a249db0747f585a7d7e6d36e61a7878f214948a",
+      "bytes": 22362003,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post minus pre model probability (unitless)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.974664032459259,
+      "p02": -0.2626764178276062,
+      "median": 0.003817788790911436,
+      "p98": 0.46536707878112793,
+      "max": 0.9853191375732422,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-12_2026-01-24_rel12_ascending/new_water_candidate.tif",
+      "sha256": "0071fe992023c41f60321fa92436b2e72d6a6c6a8729e259b341515ac3383006",
+      "bytes": 638688,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post class water-like and pre class not water-like"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/pairs/scratch/2026-01-12_2026-01-24_rel12_ascending/probability_post_minus_pre.tif",
+      "sha256": "61dd11685192c2edda1016aa46b7d368725059b8be369144d2ff6785925c5c85",
+      "bytes": 22299041,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Post minus pre model probability (unitless)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.9837955236434937,
+      "p02": -0.2867654263973236,
+      "median": 0.003657260909676552,
+      "p98": 0.4613971710205078,
+      "max": 0.9882435202598572,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_binary_entropy.tif",
+      "sha256": "9daa54290e57ea49280a0446e8bba7a681250c67dc19bb90091cd987384a453e",
+      "bytes": 19954685,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.005149411503225565,
+      "p02": 0.045438989996910095,
+      "median": 0.1468062847852707,
+      "p98": 0.9109526872634888,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_mask_0p5.tif",
+      "sha256": "d27de2428f9b88e334612bc7bfca50d79074d328a09e7027cecfdf2884273350",
+      "bytes": 149797,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 0.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_water_probability.tif",
+      "sha256": "f135b03e37ac64b4c33dae4ff082360942d61bf97b4cae9187008986237e3e9c",
+      "bytes": 20289459,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0004050882998853922,
+      "p02": 0.0050031826831400394,
+      "median": 0.020961716771125793,
+      "p98": 0.3996066451072693,
+      "max": 0.9814816117286682,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_binary_entropy.tif",
+      "sha256": "ee4cbf7777cd21db5fabbf33e4ae8fc07d0b0a6cfb19323f15067c55b8737ba4",
+      "bytes": 20001835,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0010977949714288116,
+      "p02": 0.039678413420915604,
+      "median": 0.17498937249183655,
+      "p98": 0.9906338453292847,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_mask_0p5.tif",
+      "sha256": "a07e1e66f2a7ce53ad201488341f4cb50c8fd6c5ad94d2cbe0ba0bee618c788d",
+      "bytes": 328649,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_water_probability.tif",
+      "sha256": "69cce80b699703035e2216dbf3ce8626f3abd225842b8cd3bc71a7f22f964428",
+      "bytes": 20319603,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 7.222237763926387e-05,
+      "p02": 0.004259795881807804,
+      "median": 0.026393329724669456,
+      "p98": 0.8970127105712891,
+      "max": 0.9937824606895447,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_binary_entropy.tif",
+      "sha256": "0832f5e0cb0efa6e1342be0d647203c7b6a0a7f04d538251d29ee294b0f0083f",
+      "bytes": 19950257,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.004556880332529545,
+      "p02": 0.04188647121191025,
+      "median": 0.15710556507110596,
+      "p98": 0.9455980658531189,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_mask_0p5.tif",
+      "sha256": "6cbfed3866c0114304587e4fbd5691e599e6b7c75dcaefd4bfd55e334ca26456",
+      "bytes": 175215,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 0.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_water_probability.tif",
+      "sha256": "33a028c381dd092f018879444934e1ed8977bef59e306fa6b4bf430f3db05e6a",
+      "bytes": 20319207,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0003529511159285903,
+      "p02": 0.004542090930044651,
+      "median": 0.022841526195406914,
+      "p98": 0.4679238498210907,
+      "max": 0.9866192936897278,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_binary_entropy.tif",
+      "sha256": "4655e1e51cccf9b75f34ee8c310cd7f8ab1d833807a21a9539adafcca872a77c",
+      "bytes": 19979677,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.001063512172549963,
+      "p02": 0.03693181648850441,
+      "median": 0.18451163172721863,
+      "p98": 0.9930260181427002,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_mask_0p5.tif",
+      "sha256": "55e646a3f9ab06a613d00be8aa7d89ea88a8f3dfd7c4ec4bfcc528ed118e8810",
+      "bytes": 344989,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_water_probability.tif",
+      "sha256": "c4507227cf3ade880dba0a76562168ed274dffc8ab1cc3355f5ca78427453fa2",
+      "bytes": 20319745,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 6.973677227506414e-05,
+      "p02": 0.003913423977792263,
+      "median": 0.028358934447169304,
+      "p98": 0.8977051973342896,
+      "max": 0.993943452835083,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_binary_entropy.tif",
+      "sha256": "5652e84dfc93fc5c8ae4cb6605c9d888fa2c7a55f9bece630d5a5d10873d8260",
+      "bytes": 20597529,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.00023987960594240576,
+      "p02": 0.03164582699537277,
+      "median": 0.25985777378082275,
+      "p98": 0.9970614910125732,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_mask_0p5.tif",
+      "sha256": "a3af06e1b2ce64c0c59330be1b61d8dc5feb663fdb0822e4ae2ada8d44981ccc",
+      "bytes": 531609,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_water_probability.tif",
+      "sha256": "8f610e6f33f3f2de0c319614a9e93e33ddecf4c4fec7dc066dffe602eb6e6392",
+      "bytes": 20959054,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 1.3622392543766182e-05,
+      "p02": 0.0032639720011502504,
+      "median": 0.045428454875946045,
+      "p98": 0.8822837471961975,
+      "max": 0.9986721873283386,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_binary_entropy.tif",
+      "sha256": "3c2f63a8e0a950b24c448213b3eb8a2f62471a3beb5bd97c6fd291ae93ce4aa5",
+      "bytes": 20505131,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0002629274385981262,
+      "p02": 0.036556411534547806,
+      "median": 0.36459630727767944,
+      "p98": 0.9983885884284973,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_mask_0p5.tif",
+      "sha256": "abfbba51aed6277c4153d1ce6b711aa6fbc92b3c5139f9d359c8a397759cb8a9",
+      "bytes": 680441,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_water_probability.tif",
+      "sha256": "4cdcec3e4a18bd9f3a07e5ce8b804c38b565b27e6adf813a0270a3ed3a1d3ddd",
+      "bytes": 20845424,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 1.5054984032758512e-05,
+      "p02": 0.003878982737660408,
+      "median": 0.07986371964216232,
+      "p98": 0.9323116540908813,
+      "max": 0.9988558888435364,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_binary_entropy.tif",
+      "sha256": "c92323844fb710ed72cd33d69b295c2f45fad5801564b4a70c31383fe7a04b72",
+      "bytes": 20517321,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0002654926502145827,
+      "p02": 0.032262496650218964,
+      "median": 0.3215973377227783,
+      "p98": 0.9982177019119263,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_mask_0p5.tif",
+      "sha256": "9d11e3ed7740d0ac19366569acad8083fa7be6b71445f8f8da46c70045027738",
+      "bytes": 625861,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_water_probability.tif",
+      "sha256": "81f8fa03c260561ad2fc8703044f0684763b3ee4801d7eac08acef780253e764",
+      "bytes": 20910192,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 1.5219254237308633e-05,
+      "p02": 0.0033405048307031393,
+      "median": 0.06266935914754868,
+      "p98": 0.9060413241386414,
+      "max": 0.9987419247627258,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_binary_entropy.tif",
+      "sha256": "a2cc90f6be4f548a2e0b297f2e76afc7f617e3400141e424556bfa3158c5ce0a",
+      "bytes": 20441357,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Binary entropy of model probability; 0 certain by model, 1 maximally uncertain"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0003137631865683943,
+      "p02": 0.03797540068626404,
+      "median": 0.42952388525009155,
+      "p98": 0.9988159537315369,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_mask_0p5.tif",
+      "sha256": "94d5e3ef7827ef46c7e73d4d03ccdfe580d0a56efdd7e93ea870e263afe5b035",
+      "bytes": 745579,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental model class at fixed p>=0.5"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.0,
+      "p02": 0.0,
+      "median": 0.0,
+      "p98": 1.0,
+      "max": 1.0,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_water_probability.tif",
+      "sha256": "7fdeafc47a1e37ea83daa1c814bff7faf3fce23c2602023230ece7d387293a91",
+      "bytes": 20792824,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "Experimental water-class probability; not locally validated"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6475371,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 1.826141851779539e-05,
+      "p02": 0.00405753031373024,
+      "median": 0.11164291203022003,
+      "p98": 0.9415111541748047,
+      "max": 0.9990441203117371,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel1/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+      "sha256": "6c4f5124fcd5f63def401caba59d1d17b6432b6a34a019a6f15480a49f96273c",
+      "bytes": 40374955,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "descriptions": [
+        "VV terrain-corrected Gamma0 dB; 10*log10(linear intensity)",
+        "VH terrain-corrected Gamma0 dB; 10*log10(linear intensity)"
+      ],
+      "nodata": -32768.0,
+      "valid_values": 12950742,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -33.408233642578125,
+      "p02": -23.548690795898438,
+      "median": -13.445405960083008,
+      "p98": -3.61034893989563,
+      "max": 29.22820281982422,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel1/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+      "sha256": "5c9c26f364a70aac2d13baffec15c210e3c90255c7775549c3b57bdcf3d376de",
+      "bytes": 40244133,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "descriptions": [
+        "VV terrain-corrected Gamma0 dB; 10*log10(linear intensity)",
+        "VH terrain-corrected Gamma0 dB; 10*log10(linear intensity)"
+      ],
+      "nodata": -32768.0,
+      "valid_values": 12950742,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -35.09449768066406,
+      "p02": -25.48600959777832,
+      "median": -13.547195434570312,
+      "p98": -3.9743411540985107,
+      "max": 30.212099075317383,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel1/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+      "sha256": "f2f27106fbf13fe2c3c1f1345f36b208714f6c074afa0f0720297fea7e75ebe0",
+      "bytes": 40442809,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "descriptions": [
+        "VV terrain-corrected Gamma0 dB; 10*log10(linear intensity)",
+        "VH terrain-corrected Gamma0 dB; 10*log10(linear intensity)"
+      ],
+      "nodata": -32768.0,
+      "valid_values": 12950742,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -32.31776809692383,
+      "p02": -23.543590545654297,
+      "median": -12.995448112487793,
+      "p98": -3.353325366973877,
+      "max": 28.89927864074707,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel1/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_VV_VH_gamma0_db_10m_utm45n.tif",
+      "sha256": "986f751368f1f0a8ab4c73b35b5571cfdb47fe16c56864991bffd2dce7564594",
+      "bytes": 40278563,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 2,
+      "dtype": [
+        "float32",
+        "float32"
+      ],
+      "descriptions": [
+        "VV terrain-corrected Gamma0 dB; 10*log10(linear intensity)",
+        "VH terrain-corrected Gamma0 dB; 10*log10(linear intensity)"
+      ],
+      "nodata": -32768.0,
+      "valid_values": 12950742,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -39.003318786621094,
+      "p02": -25.495615005493164,
+      "median": -13.26422119140625,
+      "p98": -3.9818503856658936,
+      "max": 31.0731143951416,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B03_reflectance_10m.tif",
+      "sha256": "7e490228b8c8fd6e77549b3b9b6ae83fd467e4ee1f60886dbaf70318b2cc04d7",
+      "bytes": 18808991,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B03 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472354,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.013199999928474426,
+      "p02": 0.03720000013709068,
+      "median": 0.06939999759197235,
+      "p98": 0.1151999980211258,
+      "max": 0.47360000014305115,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B04_reflectance_10m.tif",
+      "sha256": "59c7af283174838c82958a8414ef1499cc2ae2b145869550a0e2585a5f07a65f",
+      "bytes": 19338425,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B04 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472354,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.008700000122189522,
+      "p02": 0.02710000053048134,
+      "median": 0.058800000697374344,
+      "p98": 0.1257999986410141,
+      "max": 0.49480000138282776,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B08_reflectance_10m.tif",
+      "sha256": "2f9b42f8331401eb54c3900aa581c5d4a316b1f5cb7256db16f4e56a734ba814",
+      "bytes": 20046001,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B08 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472354,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.029899999499320984,
+      "p02": 0.03519999980926514,
+      "median": 0.1687999963760376,
+      "p98": 0.3508000075817108,
+      "max": 0.6564000248908997,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_B11_reflectance_20m.tif",
+      "sha256": "499edddb6d47650f1fea58d3076610b5f75f87e2db345e48e64e51f52316fc5c",
+      "bytes": 5197871,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B11 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 1618737,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.013100000098347664,
+      "p02": 0.01119999960064888,
+      "median": 0.10750000178813934,
+      "p98": 0.25619998574256897,
+      "max": 0.5583999752998352,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_MNDWI_20m.tif",
+      "sha256": "6b2b4d91cdf2a155cfb6aab0d46222f69a989a0af3279d67f55ab54c0323c463",
+      "bytes": 5468232,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "MNDWI (Green averaged to 20m, B11)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 1618737,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.7816891074180603,
+      "p02": -0.569590151309967,
+      "median": -0.20435383915901184,
+      "p98": 0.7337586879730225,
+      "max": 1.411949634552002,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-10_NDWI_10m.tif",
+      "sha256": "ec0a47cdd14cfc027e51e344fb0cb0db90876f0c1cd92602003f47bd7a964c1b",
+      "bytes": 21017996,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "NDWI (Green,NIR)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472354,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.8402498364448547,
+      "p02": -0.7260459065437317,
+      "median": -0.39241355657577515,
+      "p98": 0.331597238779068,
+      "max": 2.5102040767669678,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B03_reflectance_10m.tif",
+      "sha256": "60a9a7007f2a30df59d2164e2d36200f840fa03664f5dd46e737384ddb17fc6d",
+      "bytes": 18683231,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B03 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472158,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.012500000186264515,
+      "p02": 0.04019999876618385,
+      "median": 0.0714000016450882,
+      "p98": 0.10999999940395355,
+      "max": 0.39399999380111694,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B04_reflectance_10m.tif",
+      "sha256": "e79941b4c8af80e4a6fab10f308b8c51e515a650f5a99ee342f50eb259ea2f91",
+      "bytes": 19165659,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B04 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472158,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.00279999990016222,
+      "p02": 0.03009999915957451,
+      "median": 0.061400000005960464,
+      "p98": 0.11659999936819077,
+      "max": 0.5027999877929688,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B08_reflectance_10m.tif",
+      "sha256": "d9df1e105c1b0a0d7c8a9cc3765194207fb40d67f6294c389d5211c30ca62d19",
+      "bytes": 20036097,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B08 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472158,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.004999999888241291,
+      "p02": 0.03779999911785126,
+      "median": 0.16760000586509705,
+      "p98": 0.3416000008583069,
+      "max": 0.6208000183105469,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_B11_reflectance_20m.tif",
+      "sha256": "92a74fd2e98b1bc6a8c506aa2dab0c4fb50597882b57c871a74916fc00dca410",
+      "bytes": 5162137,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "B11 BOA reflectance"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 1618688,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 0.009200000204145908,
+      "p02": 0.016300000250339508,
+      "median": 0.10490000247955322,
+      "p98": 0.24889999628067017,
+      "max": 0.573199987411499,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_MNDWI_20m.tif",
+      "sha256": "3b537a609b5d51a01207221dfbd7a7d8ae2afe4dce325dcd0cce0ba80e4876b3",
+      "bytes": 5495678,
+      "crs": "EPSG:32645",
+      "transform": [
+        20.0,
+        0.0,
+        729400.0,
+        0.0,
+        -20.0,
+        2557980.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729400.0,
+        2536400.0,
+        760520.0,
+        2557980.0
+      ],
+      "width": 1556,
+      "height": 1079,
+      "res": [
+        20.0,
+        20.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "MNDWI (Green averaged to 20m, B11)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 1618688,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.7657544612884521,
+      "p02": -0.5814162492752075,
+      "median": -0.18028120696544647,
+      "p98": 0.6499127149581909,
+      "max": 0.8232825398445129,
+      "reopened": true
+    },
+    {
+      "path": "data/gherproof/processed/phase7/sentinel2/2026-01-20_NDWI_10m.tif",
+      "sha256": "b2fe8d06d897a9d98a1d496b132b493c2283c548231fea0e8960468acb1a8779",
+      "bytes": 20983996,
+      "crs": "EPSG:32645",
+      "transform": [
+        10.0,
+        0.0,
+        729410.0,
+        0.0,
+        -10.0,
+        2557970.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        729410.0,
+        2536410.0,
+        760520.0,
+        2557970.0
+      ],
+      "width": 3111,
+      "height": 2156,
+      "res": [
+        10.0,
+        10.0
+      ],
+      "count": 1,
+      "dtype": [
+        "float32"
+      ],
+      "descriptions": [
+        "NDWI (Green,NIR)"
+      ],
+      "nodata": -9999.0,
+      "valid_values": 6472158,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": -0.838702380657196,
+      "p02": -0.7144508957862854,
+      "median": -0.3850415349006653,
+      "p98": 0.3090378940105438,
+      "max": 0.6870502829551697,
+      "reopened": true
+    }
+  ]
+}

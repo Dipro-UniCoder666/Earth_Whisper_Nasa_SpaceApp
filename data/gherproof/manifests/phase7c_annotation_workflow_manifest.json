@@ -1,0 +1,57 @@
+{
+  "status": "annotation_workflow_prepared_human_review_pending",
+  "source_baseline": "data/gherproof/reference/phase7b/gherproof_optical_reference_samples.gpkg",
+  "source_baseline_sha256": "701c4a9140869eb20e94247051975e6e0d15237ede4b6b5207fb9991c9d74d00",
+  "editable_geopackage": "data/gherproof/reference/phase7c/gherproof_optical_reference_samples_editable.gpkg",
+  "editable_geopackage_sha256": "245f4e91c6fe562c3c8a6790ddf5d7cb8734671c3dede1aecd760e4be7020702",
+  "sample_count": 450,
+  "blank_pre_label_slots": 450,
+  "blank_post_label_slots": 450,
+  "split_manifest": "data/gherproof/manifests/phase7c_fixed_spatial_split_manifest.json",
+  "split_counts": {
+    "calibration": 150,
+    "validation": 150,
+    "test": 150
+  },
+  "csv_template": "data/gherproof/reference/phase7c/gherproof_optical_annotations_template.csv",
+  "composites": [
+    {
+      "path": "data/gherproof/reference/phase7c/2026-01-10_S2_false_colour_B08_B04_B03.tif",
+      "sha256": "37bed8af269dce330572899f0975faed325d0f19d24ec0f47df1aa682b03583b"
+    },
+    {
+      "path": "data/gherproof/reference/phase7c/2026-01-20_S2_false_colour_B08_B04_B03.tif",
+      "sha256": "1c39b290ef3d50a1cb7d478a50e177e61482857236b7c8abe169665fbad74ed2"
+    }
+  ],
+  "qgis_available": false,
+  "qgis_project": "data/gherproof/reference/phase7c/gherproof_optical_annotation.qgs",
+  "qgis_open_test": "blocked_qgis_not_installed",
+  "progress": {
+    "status": "human_review_pending",
+    "sample_count": 450,
+    "pre_label_slots": 450,
+    "post_label_slots": 450,
+    "completed_pre_labels": 0,
+    "completed_post_labels": 0,
+    "reviewed_status_counts": {
+      "not_reviewed": 450,
+      "reviewed": 0,
+      "needs_second_review": 0
+    },
+    "updated_at_utc": "2026-11-13T00:23:09.352748+00:00"
+  },
+  "qgis_project_sha256": "ac31c47223ca36a417fc94fe29c460bc88b68164ffc24206badde0a227a692ca",
+  "qgis_project_layers": [
+    "2026-01-10_S2_false_colour_B08_B04_B03.tif",
+    "2026-01-20_S2_false_colour_B08_B04_B03.tif",
+    "../../regional/processed/phase6b/sentinel2/scl/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_SCL_20m.tif",
+    "../../regional/processed/phase6b/sentinel2/scl/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_SCL_20m.tif",
+    "../../regional/processed/phase6b/sentinel2/clear_masks/2026-01-10_S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_clear_20m.tif",
+    "../../regional/processed/phase6b/sentinel2/clear_masks/2026-01-20_S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_clear_20m.tif",
+    "gherproof_optical_reference_samples_editable.gpkg|layername=samples",
+    "../../regional/six_village_regional_search_extent.geojson"
+  ],
+  "qgis_primary_view_has_model_outputs": false,
+  "annotation_guide_image_sha256": "b61591dbd161c4f9ced7e5f61c6b72e2bcb672d818604023c7c41b6b44c5b4ad"
+}

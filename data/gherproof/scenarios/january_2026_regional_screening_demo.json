@@ -1,0 +1,477 @@
+{
+  "scenario_id": "january_2026_regional_screening_demo",
+  "scenario_title": "January 2026 — Regional Flood Screening Investigation",
+  "demonstration_mode": "simulated_workflow_using_real_saved_evidence",
+  "is_simulated": true,
+  "user_persona": {
+    "role": "hypothetical regional disaster-monitoring officer",
+    "description": "A fictional user reviewing a reported embankment-failure incident in the Manirampur/Abhaynagar region; no real officer or agency use is claimed."
+  },
+  "investigation_dates": {
+    "reported_event_date": "2026-01-14",
+    "date_status": "reported/inferred; not independently verified",
+    "analysis_period": [
+      "2026-01-09",
+      "2026-01-24"
+    ]
+  },
+  "incident_context": {
+    "status": "source_reported_unverified",
+    "reported_location_descriptions": [
+      "Sujatpur Pallimangal Fisheries Enclosure",
+      "Sujatpur mouza / Beel Kedaria / Bhavadah context as described in secondary reports",
+      "southern embankment and adjacent khal as reported; not spatially located"
+    ],
+    "reported_affected_village_names": [
+      "Sujatpur",
+      "Hatgachha",
+      "Kultia",
+      "Moshiahati",
+      "Bedbhita",
+      "Balarabad"
+    ],
+    "village_names_attribution": "Reported in the linked January 16 Dhaka Post account; not verified by this evidence pipeline.",
+    "reported_claims": [
+      {
+        "source": "Daily Country Today",
+        "claim": "Headline reports 1,500 bighas flooded and over 500 families homeless in Jashore.",
+        "status": "attributed news claim; not a satellite measurement",
+        "url": "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded-as-embankment-collapses%2C-over-500-families-homeless-in-jashore"
+      },
+      {
+        "source": "Dhaka Post",
+        "claim": "Reports the Pallimangal enclosure incident and names six affected-village locations.",
+        "status": "attributed news claim; not independently verified",
+        "url": "https://www.dhakapost.com/country/424238"
+      },
+      {
+        "source": "Samakal",
+        "claim": "Places the reported operation in Sujatpur mouza / Beel Kedaria and describes a southern embankment beside a khal.",
+        "status": "textual reported context; no geodetic point or boundary",
+        "url": "https://samakal.com/whole-country/article/334020"
+      }
+    ],
+    "coordinates": null,
+    "verified_enclosure_boundary": false
+  },
+  "available_satellite_scenes": [
+    {
+      "acquisition_date": "2026-01-12",
+      "item_id": "S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "observation_evidence_id": "s1-rtc-2026-01-12",
+      "scratch_probability_evidence_id": "prediction-scratch-2026-01-12-probability",
+      "pretrained_probability_evidence_id": "prediction-pretrained-2026-01-12-probability",
+      "probability_files": {
+        "scratch": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_scratch_water_probability.tif",
+        "pretrained": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-12_S1A_IW_GRDH_1SDV_20260112T121234_20260112T121259_062734_07DDE0_rtc_pretrained_water_probability.tif"
+      }
+    },
+    {
+      "acquisition_date": "2026-01-24",
+      "item_id": "S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc",
+      "relative_orbit": 12,
+      "direction": "ascending",
+      "observation_evidence_id": "s1-rtc-2026-01-24",
+      "scratch_probability_evidence_id": "prediction-scratch-2026-01-24-probability",
+      "pretrained_probability_evidence_id": "prediction-pretrained-2026-01-24-probability",
+      "probability_files": {
+        "scratch": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_scratch_water_probability.tif",
+        "pretrained": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-24_S1A_IW_GRDH_1SDV_20260124T121233_20260124T121258_062909_07E438_rtc_pretrained_water_probability.tif"
+      }
+    },
+    {
+      "acquisition_date": "2026-01-09",
+      "item_id": "S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "observation_evidence_id": "s1-rtc-2026-01-09",
+      "scratch_probability_evidence_id": "prediction-scratch-2026-01-09-probability",
+      "pretrained_probability_evidence_id": "prediction-pretrained-2026-01-09-probability",
+      "probability_files": {
+        "scratch": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_scratch_water_probability.tif",
+        "pretrained": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-09_S1A_IW_GRDH_1SDV_20260109T235606_20260109T235631_062697_07DC80_rtc_pretrained_water_probability.tif"
+      }
+    },
+    {
+      "acquisition_date": "2026-01-21",
+      "item_id": "S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc",
+      "relative_orbit": 150,
+      "direction": "descending",
+      "observation_evidence_id": "s1-rtc-2026-01-21",
+      "scratch_probability_evidence_id": "prediction-scratch-2026-01-21-probability",
+      "pretrained_probability_evidence_id": "prediction-pretrained-2026-01-21-probability",
+      "probability_files": {
+        "scratch": "data/gherproof/processed/phase7/inference/scenes/scratch/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_scratch_water_probability.tif",
+        "pretrained": "data/gherproof/processed/phase7/inference/scenes/pretrained/2026-01-21_S1A_IW_GRDH_1SDV_20260121T235605_20260121T235630_062872_07E2FF_rtc_pretrained_water_probability.tif"
+      }
+    }
+  ],
+  "available_optical_indicators": [
+    {
+      "date": "2026-01-10",
+      "datetime_utc": "2026-01-10T04:30:49.024000Z",
+      "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "weak_reference_evidence_id": "optical-weakref-2026-01-10-weak_reference",
+      "ndwi_evidence_id": "optical-weakref-2026-01-10-ndwi_20m",
+      "mndwi_evidence_id": "optical-weakref-2026-01-10-mndwi_20m",
+      "scl_evidence_id": "optical-weakref-2026-01-10-scl_class",
+      "weak_reference_counts": {
+        "invalid": 61514,
+        "weak_water": 175119,
+        "weak_nonwater": 973193,
+        "uncertain": 469098,
+        "weak_label_coverage_fraction_of_clear_observations": 0.7093411776188302,
+        "clear_observation_pixels": 1618843,
+        "valid_dual_index_pixels": 1617410
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "datetime_utc": "2026-01-20T04:30:09.024000Z",
+      "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "weak_reference_evidence_id": "optical-weakref-2026-01-20-weak_reference",
+      "ndwi_evidence_id": "optical-weakref-2026-01-20-ndwi_20m",
+      "mndwi_evidence_id": "optical-weakref-2026-01-20-mndwi_20m",
+      "scl_evidence_id": "optical-weakref-2026-01-20-scl_class",
+      "weak_reference_counts": {
+        "invalid": 61554,
+        "weak_water": 154536,
+        "weak_nonwater": 963888,
+        "uncertain": 498946,
+        "weak_label_coverage_fraction_of_clear_observations": 0.6908786089818469,
+        "clear_observation_pixels": 1618843,
+        "valid_dual_index_pixels": 1617370
+      }
+    }
+  ],
+  "available_model_predictions": [
+    {
+      "model": "scratch",
+      "readiness": "exploratory_only",
+      "prediction_evidence_ids": [
+        "prediction-scratch-2026-01-12-probability",
+        "prediction-scratch-2026-01-24-probability",
+        "prediction-scratch-2026-01-09-probability",
+        "prediction-scratch-2026-01-21-probability"
+      ]
+    },
+    {
+      "model": "pretrained",
+      "readiness": "exploratory_only",
+      "prediction_evidence_ids": [
+        "prediction-pretrained-2026-01-12-probability",
+        "prediction-pretrained-2026-01-24-probability",
+        "prediction-pretrained-2026-01-09-probability",
+        "prediction-pretrained-2026-01-21-probability"
+      ]
+    }
+  ],
+  "weak_reference_comparison_manifest": "data/gherproof/manifests/phase8b_weak_reference_comparison.json",
+  "weak_reference_comparison_summary": [
+    {
+      "model": "scratch",
+      "sentinel1_date": "2026-01-09",
+      "sentinel1_relative_orbit": 150,
+      "sentinel1_direction": "descending",
+      "sentinel2_date": "2026-01-10",
+      "date_offset_hours": -4.579,
+      "common_valid_comparison_pixels": 1148312,
+      "weak_reference_agreement": 0.8362404990978062,
+      "weak_reference_positive_agreement": 0.159634305814903,
+      "weak_reference_negative_agreement": 0.9579908610111252
+    },
+    {
+      "model": "pretrained",
+      "sentinel1_date": "2026-01-09",
+      "sentinel1_relative_orbit": 150,
+      "sentinel1_direction": "descending",
+      "sentinel2_date": "2026-01-10",
+      "date_offset_hours": -4.579,
+      "common_valid_comparison_pixels": 1148312,
+      "weak_reference_agreement": 0.8554399849518249,
+      "weak_reference_positive_agreement": 0.06168376932257493,
+      "weak_reference_negative_agreement": 0.9982706410753057
+    },
+    {
+      "model": "scratch",
+      "sentinel1_date": "2026-01-12",
+      "sentinel1_relative_orbit": 12,
+      "sentinel1_direction": "ascending",
+      "sentinel2_date": "2026-01-10",
+      "date_offset_hours": 55.696,
+      "common_valid_comparison_pixels": 1148312,
+      "weak_reference_agreement": 0.887019381492138,
+      "weak_reference_positive_agreement": 0.6060336114299419,
+      "weak_reference_negative_agreement": 0.9375807265362575
+    },
+    {
+      "model": "pretrained",
+      "sentinel1_date": "2026-01-12",
+      "sentinel1_relative_orbit": 12,
+      "sentinel1_direction": "ascending",
+      "sentinel2_date": "2026-01-10",
+      "date_offset_hours": 55.696,
+      "common_valid_comparison_pixels": 1148312,
+      "weak_reference_agreement": 0.9241756595768398,
+      "weak_reference_positive_agreement": 0.5305991925490666,
+      "weak_reference_negative_agreement": 0.9949968813996812
+    },
+    {
+      "model": "scratch",
+      "sentinel1_date": "2026-01-21",
+      "sentinel1_relative_orbit": 150,
+      "sentinel1_direction": "descending",
+      "sentinel2_date": "2026-01-20",
+      "date_offset_hours": 43.432,
+      "common_valid_comparison_pixels": 1118424,
+      "weak_reference_agreement": 0.8476400721014571,
+      "weak_reference_positive_agreement": 0.19989517005746235,
+      "weak_reference_negative_agreement": 0.9514902146307455
+    },
+    {
+      "model": "pretrained",
+      "sentinel1_date": "2026-01-21",
+      "sentinel1_relative_orbit": 150,
+      "sentinel1_direction": "descending",
+      "sentinel2_date": "2026-01-20",
+      "date_offset_hours": 43.432,
+      "common_valid_comparison_pixels": 1118424,
+      "weak_reference_agreement": 0.8712527628162485,
+      "weak_reference_positive_agreement": 0.08177382616348294,
+      "weak_reference_negative_agreement": 0.9978265109639294
+    },
+    {
+      "model": "scratch",
+      "sentinel1_date": "2026-01-24",
+      "sentinel1_relative_orbit": 12,
+      "sentinel1_direction": "ascending",
+      "sentinel2_date": "2026-01-20",
+      "date_offset_hours": 103.707,
+      "common_valid_comparison_pixels": 1118424,
+      "weak_reference_agreement": 0.8957345335936997,
+      "weak_reference_positive_agreement": 0.6774279132370451,
+      "weak_reference_negative_agreement": 0.9307346911674386
+    },
+    {
+      "model": "pretrained",
+      "sentinel1_date": "2026-01-24",
+      "sentinel1_relative_orbit": 12,
+      "sentinel1_direction": "ascending",
+      "sentinel2_date": "2026-01-20",
+      "date_offset_hours": 103.707,
+      "common_valid_comparison_pixels": 1118424,
+      "weak_reference_agreement": 0.9368191312060542,
+      "weak_reference_positive_agreement": 0.5768882331624994,
+      "weak_reference_negative_agreement": 0.994525297544943
+    }
+  ],
+  "evidence_registry_references": [
+    "data/gherproof/manifests/evidence_registry.json",
+    "reported-event-2026-01-14",
+    "geography-provisional-regional-aoi"
+  ],
+  "demonstration_steps": [
+    {
+      "step": 1,
+      "name": "Open investigation",
+      "simulated_user_action": "Select the January 2026 Regional Flood Screening Investigation card.",
+      "expected_system_response": "Show a labeled demonstration case, source-reported incident date, and provisional-region banner.",
+      "evidence_ids": [
+        "reported-event-2026-01-14",
+        "geography-provisional-regional-aoi"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Incident context",
+      "simulated_user_action": "Expand reported context and source links.",
+      "expected_system_response": "Present attributed reports and reported place names; clearly show that reported claims and date are not independently verified.",
+      "evidence_ids": [
+        "reported-event-2026-01-14"
+      ],
+      "source_refs": [
+        "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded-as-embankment-collapses%2C-over-500-families-homeless-in-jashore"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Satellite review",
+      "simulated_user_action": "Select a Sentinel-1 acquisition and inspect its date, orbit, direction, observation footprint and provenance.",
+      "expected_system_response": "Show each acquisition as its own scene; keep ascending relative orbit 12 and descending relative orbit 150 separate.",
+      "evidence_ids": [
+        "s1-rtc-2026-01-12",
+        "s1-rtc-2026-01-24",
+        "s1-rtc-2026-01-09",
+        "s1-rtc-2026-01-21"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Optical comparison",
+      "simulated_user_action": "Toggle January 10/20 optical weak-reference, NDWI, MNDWI, SCL and uncertainty layers.",
+      "expected_system_response": "Display the fixed optical-only thresholds, 20 m comparison grid, clear/invalid masks and exact acquisition timestamps; do not call candidates confirmed water.",
+      "evidence_ids": [
+        "optical-weakref-2026-01-10-weak_reference",
+        "optical-weakref-2026-01-20-weak_reference",
+        "optical-weakref-2026-01-10-ndwi_20m",
+        "optical-weakref-2026-01-20-ndwi_20m",
+        "optical-weakref-2026-01-10-mndwi_20m",
+        "optical-weakref-2026-01-20-mndwi_20m"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "AI screening",
+      "simulated_user_action": "Toggle scratch and pretrained outputs independently for one acquisition.",
+      "expected_system_response": "Show separate exploratory prediction layers and preserve model selection as none.",
+      "evidence_ids": [
+        "prediction-scratch-2026-01-12-probability",
+        "prediction-pretrained-2026-01-12-probability",
+        "prediction-scratch-2026-01-24-probability",
+        "prediction-pretrained-2026-01-24-probability",
+        "prediction-scratch-2026-01-09-probability",
+        "prediction-pretrained-2026-01-09-probability",
+        "prediction-scratch-2026-01-21-probability",
+        "prediction-pretrained-2026-01-21-probability"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "Uncertainty review",
+      "simulated_user_action": "Open optical/SAR agreement, model disagreement and joint coverage views.",
+      "expected_system_response": "Keep agreements, disagreements, optical uncertainty and unavailable coverage distinct; report temporal offsets and block variation.",
+      "evidence_ids": [
+        "phase8b-2026-01-09-scratch-agreement_codes",
+        "phase8b-2026-01-09-scratch-joint_coverage_codes",
+        "phase8b-2026-01-09-pretrained-agreement_codes",
+        "phase8b-2026-01-09-pretrained-joint_coverage_codes",
+        "phase8b-2026-01-09-all-model_disagreement_codes",
+        "phase8b-2026-01-12-scratch-agreement_codes",
+        "phase8b-2026-01-12-scratch-joint_coverage_codes",
+        "phase8b-2026-01-12-pretrained-agreement_codes",
+        "phase8b-2026-01-12-pretrained-joint_coverage_codes",
+        "phase8b-2026-01-12-all-model_disagreement_codes",
+        "phase8b-2026-01-21-scratch-agreement_codes",
+        "phase8b-2026-01-21-scratch-joint_coverage_codes",
+        "phase8b-2026-01-21-pretrained-agreement_codes",
+        "phase8b-2026-01-21-pretrained-joint_coverage_codes",
+        "phase8b-2026-01-21-all-model_disagreement_codes",
+        "phase8b-2026-01-24-scratch-agreement_codes",
+        "phase8b-2026-01-24-scratch-joint_coverage_codes",
+        "phase8b-2026-01-24-pretrained-agreement_codes",
+        "phase8b-2026-01-24-pretrained-joint_coverage_codes",
+        "phase8b-2026-01-24-all-model_disagreement_codes",
+        "phase8b-2026-01-09-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-09-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-09-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-09-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-12-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-12-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-12-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-12-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-21-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-21-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-21-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-21-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-24-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-24-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-24-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-24-pretrained-sar_optical_disagreement_mask"
+      ]
+    },
+    {
+      "step": 7,
+      "name": "Evidence assessment",
+      "simulated_user_action": "Open the evidence panel and filter by observations, derived measurements, weak references, predictions and provisional context.",
+      "expected_system_response": "Show category, status, file checksum, processing provenance and limitations. Weak-reference metrics must not be labeled local accuracy.",
+      "evidence_ids": [
+        "reported-event-2026-01-14",
+        "geography-provisional-regional-aoi",
+        "optical-weakref-2026-01-10-weak_reference",
+        "optical-weakref-2026-01-20-weak_reference"
+      ]
+    },
+    {
+      "step": 8,
+      "name": "Investigation report",
+      "simulated_user_action": "Generate a screening summary for review.",
+      "expected_system_response": "Summarize per-model/per-acquisition weak-reference consistency and state required follow-up: field observations, human labels, verified site geometry and authoritative event records. No impact estimate or breach diagnosis is produced.",
+      "evidence_ids": [
+        "reported-event-2026-01-14",
+        "phase8b-2026-01-09-scratch-agreement_codes",
+        "phase8b-2026-01-09-pretrained-agreement_codes",
+        "phase8b-2026-01-09-all-multi_source_candidate_codes",
+        "phase8b-2026-01-12-scratch-agreement_codes",
+        "phase8b-2026-01-12-pretrained-agreement_codes",
+        "phase8b-2026-01-12-all-multi_source_candidate_codes",
+        "phase8b-2026-01-21-scratch-agreement_codes",
+        "phase8b-2026-01-21-pretrained-agreement_codes",
+        "phase8b-2026-01-21-all-multi_source_candidate_codes",
+        "phase8b-2026-01-24-scratch-agreement_codes",
+        "phase8b-2026-01-24-pretrained-agreement_codes",
+        "phase8b-2026-01-24-all-multi_source_candidate_codes",
+        "phase8b-2026-01-09-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-09-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-09-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-09-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-12-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-12-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-12-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-12-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-21-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-21-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-21-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-21-pretrained-sar_optical_disagreement_mask",
+        "phase8b-2026-01-24-scratch-sar_optical_agreement_mask",
+        "phase8b-2026-01-24-scratch-sar_optical_disagreement_mask",
+        "phase8b-2026-01-24-pretrained-sar_optical_agreement_mask",
+        "phase8b-2026-01-24-pretrained-sar_optical_disagreement_mask"
+      ]
+    }
+  ],
+  "simulated_user_actions": [
+    "Select the January 2026 Regional Flood Screening Investigation card.",
+    "Expand reported context and source links.",
+    "Select a Sentinel-1 acquisition and inspect its date, orbit, direction, observation footprint and provenance.",
+    "Toggle January 10/20 optical weak-reference, NDWI, MNDWI, SCL and uncertainty layers.",
+    "Toggle scratch and pretrained outputs independently for one acquisition.",
+    "Open optical/SAR agreement, model disagreement and joint coverage views.",
+    "Open the evidence panel and filter by observations, derived measurements, weak references, predictions and provisional context.",
+    "Generate a screening summary for review."
+  ],
+  "scientific_limitations": [
+    "All optical reference states are automated weak references, not human or field ground truth.",
+    "Model metrics are weak_reference_agreement, not local model accuracy.",
+    "Sentinel-1/2 acquisitions are not simultaneous; each exact timestamp offset is displayed.",
+    "Sentinel-1 orbit directions and relative orbits remain separate; no geometry pooling.",
+    "No official village boundary, exact Pallimangal boundary or breach coordinate is available.",
+    "No confirmed flood extent, cropland area, fish loss, financial loss or affected-family estimate is produced.",
+    "No incident causality or embankment failure is inferred from spatial adjacency."
+  ],
+  "readiness_statuses": {
+    "model_readiness": "exploratory_only",
+    "human_reference_labels": "human_review_pending",
+    "impact_quantification": "not_approved",
+    "pallimangal_location": "unresolved",
+    "demonstration_scenario": "ready_for_phase9_frontend_workflow_prototyping"
+  },
+  "phase9_api_paths": [
+    "GET /api/gherproof/scenarios/january_2026_regional_screening_demo",
+    "GET /api/gherproof/weak-reference",
+    "GET /api/gherproof/comparisons",
+    "GET /api/gherproof/evidence",
+    "GET /api/gherproof/scenes",
+    "GET /api/gherproof/predictions",
+    "GET /api/gherproof/layers",
+    "GET /api/gherproof/reports/summary"
+  ],
+  "source_event_registry_record": {
+    "evidence_id": "reported-event-2026-01-14",
+    "status": "provisional",
+    "source_provenance": [
+      "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded-as-embankment-collapses%2C-over-500-families-homeless-in-jashore"
+    ]
+  }
+}

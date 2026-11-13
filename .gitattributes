@@ -1,0 +1,2 @@
+data/gherproof/raw/S1GFloods.rar filter=lfs diff=lfs merge=lfs -text
+models/gherproof/sen1floods11_resnet50_moco_unet.pt filter=lfs diff=lfs merge=lfs -text

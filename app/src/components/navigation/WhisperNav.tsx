@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { ROUTES } from '@/lib/constants'
+import { Link, useLocation } from 'react-router-dom'
+import { NAV_LINKS, ROUTES } from '@/lib/constants'
 
 /**
  * WhisperNav - the single shared navbar for the whole application.
@@ -14,19 +14,12 @@ import { ROUTES } from '@/lib/constants'
  * - `sticky`  - pinned to the top of a scrolling page; the page supplies
  *               the dark landing background behind it.
  */
-const NAV_LINKS = [
-  { label: 'Home', to: ROUTES.landing },
-  { label: 'Investigate', to: ROUTES.investigate },
-  { label: 'Whisper Lab', to: ROUTES.science },
-  { label: 'Analysis', to: ROUTES.analysis },
-  { label: 'About', to: ROUTES.about },
-]
-
 interface WhisperNavProps {
   variant?: 'overlay' | 'sticky'
 }
 
 export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
+  const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
   const navRef = useRef<HTMLElement | null>(null)
 
@@ -107,6 +100,7 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
             key={link.to}
             to={link.to}
             className="whisper-nav-link"
+            aria-current={location.pathname === link.to || (link.to === ROUTES.investigate && location.pathname.startsWith('/investigate')) ? 'page' : undefined}
             style={{
               padding: '6px 16px',
               fontSize: '0.9rem',
@@ -144,6 +138,7 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
               to={link.to}
               role="menuitem"
               className="whisper-nav-menu-link"
+              aria-current={location.pathname === link.to || (link.to === ROUTES.investigate && location.pathname.startsWith('/investigate')) ? 'page' : undefined}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

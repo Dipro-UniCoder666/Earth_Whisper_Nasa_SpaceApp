@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-11-13T01:19:36.583270+00:00",
+  "status": "available_with_scientific_limitations",
+  "evidence_registry": "data/gherproof/manifests/evidence_registry.json",
+  "registry_record_count": 207,
+  "category_counts": {
+    "catalogue_metadata": 4,
+    "derived_satellite_measurement": 93,
+    "human_verified_evidence": 1,
+    "model_comparison": 28,
+    "model_prediction": 50,
+    "news_reported_event": 1,
+    "optical_reference_interpretation": 1,
+    "optical_weak_reference": 8,
+    "provisional_geographic_reference": 1,
+    "uncertainty_layer": 14,
+    "verified_satellite_observation": 6
+  },
+  "file_inventory": {
+    "available": 205,
+    "unavailable": 0,
+    "invalid_path": 0,
+    "checksum_mismatches": 0
+  },
+  "observations": {
+    "sentinel1_rtc_dates": [
+      "2026-01-07",
+      "2026-01-09",
+      "2026-01-12",
+      "2026-01-19",
+      "2026-01-21",
+      "2026-01-24"
+    ],
+    "sentinel1_grd_fully_processed_scenes": 0,
+    "sentinel2_reflectance_index_dates": [
+      "2026-01-10",
+      "2026-01-20"
+    ],
+    "sentinel2_scl_dates": [
+      "2026-01-03",
+      "2026-01-05",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-10",
+      "2026-01-13",
+      "2026-01-15",
+      "2026-01-18",
+      "2026-01-20",
+      "2026-01-23",
+      "2026-01-25",
+      "2026-01-28",
+      "2026-01-30"
+    ]
+  },
+  "model_outputs": {
+    "model_checkpoints": 2,
+    "probability_mask_uncertainty_layers": 24,
+    "disagreement_layers": 8,
+    "local_validation_status": "human_review_pending",
+    "model_readiness": "exploratory_only"
+  },
+  "annotation": {
+    "samples": 450,
+    "pre_post_label_slots": 900,
+    "completed_labels": 0
+  },
+  "geography": {
+    "regional_extent": "provisional",
+    "authoritative_village_boundaries": false,
+    "exact_pallimangal_boundary": false
+  },
+  "reports": [
+    "docs/GHERPROOF_PHASE4B_REPORT.md",
+    "docs/GHERPROOF_PHASE5_REPORT.md",
+    "docs/GHERPROOF_PHASE6_REPORT.md",
+    "docs/GHERPROOF_PHASE6B_REPORT.md",
+    "docs/GHERPROOF_PHASE7_REPORT.md",
+    "docs/GHERPROOF_PHASE7B_REPORT.md",
+    "docs/GHERPROOF_PHASE7C_REPORT.md"
+  ],
+  "limitations": [
+    "Evidence inventory availability is not equivalent to scientific suitability.",
+    "Phase 4B Jan 7/19 clips cover a limited local swath and Phase 6B has a separate Jan 7 VV read failure.",
+    "No local model accuracy or impact-area result is available."
+  ],
+  "phase8b": {
+    "optical_weak_reference": "generated",
+    "model_comparison": "generated exploratory consistency analysis",
+    "model_readiness": "exploratory_only",
+    "human_reference_status": "human_review_pending",
+    "impact_quantification": "not_approved"
+  }
+}

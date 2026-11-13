@@ -1,0 +1,200 @@
+{
+  "created_at_utc": "2026-11-12T21:13:03.337290+00:00",
+  "provider": "Microsoft Planetary Computer Sentinel-2 L2A SAFE metadata assets",
+  "selected_pair": {
+    "pre_item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+    "pre_date": "2026-01-10",
+    "post_item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+    "post_date": "2026-01-20",
+    "pre_platform": "Sentinel-2B",
+    "post_platform": "Sentinel-2B",
+    "pre_relative_orbit": "133",
+    "post_relative_orbit": "133",
+    "mgrs_tile": "45QYF",
+    "pre_baseline": "05.11",
+    "post_baseline": "05.11"
+  },
+  "scenes": [
+    {
+      "item_id": "S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859",
+      "datetime": "2026-01-10T04:30:49.024000Z",
+      "platform": "Sentinel-2B",
+      "baseline_stac": "05.11",
+      "mgrs_tile": "45QYF",
+      "metadata_assets": {
+        "product-metadata": {
+          "status": "downloaded",
+          "path": "data/gherproof/raw/phase7/sentinel2_metadata/S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_product_metadata.xml",
+          "bytes": 55084,
+          "sha256": "657703b9a712250fad497415a75146645de4edd54709241c854e5a6203d44a01",
+          "values": {
+            "PROCESSING_BASELINE": [
+              {
+                "value": "05.11",
+                "band_id": null
+              }
+            ],
+            "BOA_QUANTIFICATION_VALUE": [
+              {
+                "value": "10000",
+                "band_id": null
+              }
+            ],
+            "BOA_ADD_OFFSET": [
+              {
+                "value": "-1000",
+                "band_id": "0"
+              },
+              {
+                "value": "-1000",
+                "band_id": "1"
+              },
+              {
+                "value": "-1000",
+                "band_id": "2"
+              },
+              {
+                "value": "-1000",
+                "band_id": "3"
+              },
+              {
+                "value": "-1000",
+                "band_id": "4"
+              },
+              {
+                "value": "-1000",
+                "band_id": "5"
+              },
+              {
+                "value": "-1000",
+                "band_id": "6"
+              },
+              {
+                "value": "-1000",
+                "band_id": "7"
+              },
+              {
+                "value": "-1000",
+                "band_id": "8"
+              },
+              {
+                "value": "-1000",
+                "band_id": "9"
+              },
+              {
+                "value": "-1000",
+                "band_id": "10"
+              },
+              {
+                "value": "-1000",
+                "band_id": "11"
+              },
+              {
+                "value": "-1000",
+                "band_id": "12"
+              }
+            ]
+          }
+        },
+        "granule-metadata": {
+          "status": "downloaded",
+          "path": "data/gherproof/raw/phase7/sentinel2_metadata/S2B_MSIL2A_20260110T043049_R133_T45QYF_20260110T065859_granule_metadata.xml",
+          "bytes": 457655,
+          "sha256": "d93b4699e68e6ceaf4978fdc640d3632ee80b701cb044bd3aff31f5a97b53bbc",
+          "values": {}
+        }
+      }
+    },
+    {
+      "item_id": "S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559",
+      "datetime": "2026-01-20T04:30:09.024000Z",
+      "platform": "Sentinel-2B",
+      "baseline_stac": "05.11",
+      "mgrs_tile": "45QYF",
+      "metadata_assets": {
+        "product-metadata": {
+          "status": "downloaded",
+          "path": "data/gherproof/raw/phase7/sentinel2_metadata/S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_product_metadata.xml",
+          "bytes": 55078,
+          "sha256": "fb682a5d4c1d6726871b733201625f28e48cc1b60ea62f2b9e6d610779192b6d",
+          "values": {
+            "PROCESSING_BASELINE": [
+              {
+                "value": "05.11",
+                "band_id": null
+              }
+            ],
+            "BOA_QUANTIFICATION_VALUE": [
+              {
+                "value": "10000",
+                "band_id": null
+              }
+            ],
+            "BOA_ADD_OFFSET": [
+              {
+                "value": "-1000",
+                "band_id": "0"
+              },
+              {
+                "value": "-1000",
+                "band_id": "1"
+              },
+              {
+                "value": "-1000",
+                "band_id": "2"
+              },
+              {
+                "value": "-1000",
+                "band_id": "3"
+              },
+              {
+                "value": "-1000",
+                "band_id": "4"
+              },
+              {
+                "value": "-1000",
+                "band_id": "5"
+              },
+              {
+                "value": "-1000",
+                "band_id": "6"
+              },
+              {
+                "value": "-1000",
+                "band_id": "7"
+              },
+              {
+                "value": "-1000",
+                "band_id": "8"
+              },
+              {
+                "value": "-1000",
+                "band_id": "9"
+              },
+              {
+                "value": "-1000",
+                "band_id": "10"
+              },
+              {
+                "value": "-1000",
+                "band_id": "11"
+              },
+              {
+                "value": "-1000",
+                "band_id": "12"
+              }
+            ]
+          }
+        },
+        "granule-metadata": {
+          "status": "downloaded",
+          "path": "data/gherproof/raw/phase7/sentinel2_metadata/S2B_MSIL2A_20260120T043009_R133_T45QYF_20260120T062559_granule_metadata.xml",
+          "bytes": 457787,
+          "sha256": "b0efa309484dc59e13796388c01486bd528d7587085429aeeec2e7dbbbe8b141",
+          "values": {}
+        }
+      }
+    }
+  ],
+  "source_note": "Downloaded from each exact saved STAC item asset; any URLs in this manifest are unsigned and query-free."
+}

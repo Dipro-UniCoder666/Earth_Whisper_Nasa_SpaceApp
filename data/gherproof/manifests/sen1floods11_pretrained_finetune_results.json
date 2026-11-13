@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-11-11T22:27:40.985499+00:00",
+  "architecture": "ResNet50 SAR encoder-decoder; compatible MoCo encoder weights; fine-tune layers 3/4 and decoder",
+  "device": "cpu",
+  "torch_version": "2.12.1+cpu",
+  "cuda_available": false,
+  "mixed_precision": false,
+  "seed": 42,
+  "patch": 256,
+  "batch_size": 4,
+  "train_chips": 210,
+  "validation_chips": 41,
+  "validation_event_id": "11",
+  "epochs_completed": 8,
+  "best_validation_iou": 0.5504542163590161,
+  "checkpoint": "models/gherproof/sen1floods11_resnet50_moco_unet.pt",
+  "checkpoint_sha256": "084b41f06ea0f1049b53c6708fed0a78e081a38704677dce7e172e67e2b8d9f0",
+  "pretrained_weight_manifest": "data/gherproof/manifests/sar_pretrained_weights_manifest.json",
+  "normalization_mean_db": [
+    -12.54847240447998,
+    -20.192371368408203
+  ],
+  "normalization_std_db": [
+    5.256977081298828,
+    5.911509037017822
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.5650910791361108,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.2542867924866911,
+        "precision": 0.2632802467555526,
+        "recall": 0.8815749223582358,
+        "f1": 0.40546834106823976,
+        "pr_auc_average_precision": 0.6562923834021719,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            8304574,
+            1427368
+          ],
+          [
+            68523,
+            510096
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2759377529036324,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.3780022356346803,
+        "precision": 0.4027270094158119,
+        "recall": 0.8602776611207029,
+        "f1": 0.5486235448095337,
+        "pr_auc_average_precision": 0.7015999633616286,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            8993709,
+            738233
+          ],
+          [
+            80846,
+            497773
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2528639109629505,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.3566034778342367,
+        "precision": 0.37541587241448715,
+        "recall": 0.8767911181623832,
+        "f1": 0.5257298594037808,
+        "pr_auc_average_precision": 0.7277497945332999,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            8887894,
+            844048
+          ],
+          [
+            71291,
+            507328
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.3574216298337252,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.5504542163590161,
+        "precision": 0.6848954318894198,
+        "recall": 0.7371344528956014,
+        "f1": 0.7100554283397885,
+        "pr_auc_average_precision": 0.7412305291746999,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9535710,
+            196232
+          ],
+          [
+            152099,
+            426520
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.1918882519569036,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.5289623268432775,
+        "precision": 0.6199822320537584,
+        "recall": 0.7827516897993325,
+        "f1": 0.6919232966784504,
+        "pr_auc_average_precision": 0.7461004659278363,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9454328,
+            277614
+          ],
+          [
+            125704,
+            452915
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.1979848928046677,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.5191658475157751,
+        "precision": 0.6046854576086826,
+        "recall": 0.7859074797059896,
+        "f1": 0.6834880449224738,
+        "pr_auc_average_precision": 0.7419356924180348,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9434654,
+            297288
+          ],
+          [
+            123878,
+            454741
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.3293993951014753,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.52850702896031,
+        "precision": 0.6525262344448601,
+        "recall": 0.7355012538475232,
+        "f1": 0.691533658592071,
+        "pr_auc_average_precision": 0.7467572668316057,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9505321,
+            226621
+          ],
+          [
+            153044,
+            425575
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 5e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.085075782155091,
+      "validation_event_id": "11",
+      "validation_metrics": {
+        "iou": 0.424014502679536,
+        "precision": 0.4642498562572777,
+        "recall": 0.8302907439956172,
+        "f1": 0.5955199218570842,
+        "pr_auc_average_precision": 0.7409233882028888,
+        "confusion_matrix_rows_true_0_1_cols_pred_0_1": [
+          [
+            9177529,
+            554413
+          ],
+          [
+            98197,
+            480422
+          ]
+        ],
+        "valid_pixels": 10310561,
+        "water_prevalence": 0.05611906083480812
+      },
+      "learning_rate": 5e-05
+    }
+  ],
+  "elapsed_seconds": 907.0,
+  "test_set_used_for_selection": false,
+  "limitations": [
+    "Sen1Floods11 benchmark-only metrics do not estimate Sujatpur accuracy.",
+    "Only two encoder stages are fine-tuned due local compute limits.",
+    "Official Sen1Floods11 license remains ambiguous/proprietary; no redistribution."
+  ]
+}

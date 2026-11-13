@@ -1,0 +1,36 @@
+{
+  "asset_id": "asset-pallimangal-reported",
+  "asset_name": "Sujatpur Pallimangal Fisheries Enclosure (reported name)",
+  "asset_type": "fish_enclosure",
+  "administrative_location": {
+    "site_description": "Sujatpur mouza / Beel Kedaria / Bhavadah context as described in secondary reports",
+    "upazila": "Manirampur (reported; exact jurisdiction unresolved)",
+    "district": "Jashore"
+  },
+  "mouza": "Sujatpur",
+  "geometry_reference": null,
+  "geometry_status": "not_delineated",
+  "geometry_source": null,
+  "ownership_or_operator": null,
+  "verification_date": null,
+  "verification_notes": "Reported site name only. No GPS point, parcel ID, authoritative fisheries ID, or verified polygon is available. No ownership or lease boundary is asserted.",
+  "provenance": [
+    {
+      "source_name": "Dhaka Post",
+      "source_type": "news",
+      "url": "https://www.dhakapost.com/country/424238",
+      "claim": "Secondary report names the Pallimangal fisheries enclosure in the Sujatpur incident context; no georeferenced boundary.",
+      "claim_status": "reported_unverified",
+      "reliability": "secondary_reporting",
+      "evidence_id": "reported-event-2026-01-14"
+    },
+    {
+      "source_name": "Sujatpur boundary provenance review",
+      "source_type": "other",
+      "claim": "Existing project provenance records the boundary as not_delineated, with geometry null; the reported locality window is not an enclosure boundary.",
+      "claim_status": "reported_unverified",
+      "reliability": "unknown",
+      "evidence_id": "geography-provisional-regional-aoi"
+    }
+  ]
+}

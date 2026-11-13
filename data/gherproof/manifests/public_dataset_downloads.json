@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "Tamer-Saleh/S1GFloods",
+    "source_url": "https://huggingface.co/datasets/Tamer-Saleh/S1GFloods/resolve/main/S1GFloods.rar",
+    "retrieved_utc": "2026-11-11T19:38:48.492358+00:00",
+    "bytes": 673724972,
+    "sha256": "4f1b57c342c661853dec0d7384709ce4bb9e53097ab31cd060cd4a3f915e3e67",
+    "license_metadata": "Hugging Face dataset card reports CC-BY-4.0; official author repository says non-commercial/research only. Treat as restricted pending clarification.",
+    "path": "data/gherproof/raw/S1GFloods.rar",
+    "extracted": false
+  },
+  {
+    "dataset": "Clark Bangladesh aquaculture maps",
+    "source_url": "https://clarkcga-aquaculture.s3.amazonaws.com/data/v1.0/zip/bangladesh/Bangladesh_Landcover_Change_Maps_1999_2014_2018_2020_2022.zip",
+    "retrieved_utc": "2026-11-11T20:05:40+00:00",
+    "bytes": 46943637,
+    "sha256": "5c070d8e06d73a79d282b99047f096174701106291a25b012e573c1bb742ee5a",
+    "license": "Non-commercial restriction on source page; archive metadata says CC-BY-4.0. Do not redistribute; clarify rights before commercial use.",
+    "path": "data/gherproof/raw/Clark_Bangladesh_Aquaculture_1999_2022.zip",
+    "extracted": true
+  }
+]

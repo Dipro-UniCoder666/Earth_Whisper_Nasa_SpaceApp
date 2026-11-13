@@ -1,0 +1,65 @@
+{
+  "audit_date_utc": "2026-11-11",
+  "datasets": [
+    {
+      "name": "S1GFloods",
+      "source": "https://huggingface.co/datasets/Tamer-Saleh/S1GFloods",
+      "archive": "data/gherproof/raw/S1GFloods.rar",
+      "archive_bytes": 673724972,
+      "sha256": "4f1b57c342c661853dec0d7384709ce4bb9e53097ab31cd060cd4a3f915e3e67",
+      "archive_test": "WinRAR UnRAR 6.00 test completed with exit code 0",
+      "observed_archive_members": {
+        "A_png": 5360,
+        "B_png": 5360,
+        "Label_png": 5360,
+        "split_directories_or_manifests": 0
+      },
+      "inspected_sample": {
+        "files": ["A/image_1.png", "B/image_1.png", "Label/image_1.png"],
+        "dimensions": [256, 256],
+        "image_modes": ["RGB", "RGB", "L"],
+        "label_values": [0, 255]
+      },
+      "dataset_split_claim_in_author_readme": {
+        "train_pairs": 4300,
+        "validation_pairs": 530,
+        "test_pairs": 530,
+        "events": 46
+      },
+      "local_split_audit": "The downloaded archive contains flat A, B, and Label PNG folders with generic image_N names. It has no event IDs, geographic metadata, or train/validation/test assignment. It is not possible to verify or reconstruct event-level groups from this archive alone.",
+      "license": "Author repository says non-commercial and research only; Hugging Face dataset card reports CC-BY-4.0. Treat under stricter author restriction pending clarification.",
+      "use_status": "downloaded_and_sample_inspected; not extracted as a full working dataset; not used for training"
+    },
+    {
+      "name": "Clark Bangladesh land-cover and change maps",
+      "source_page": "https://www.clarku.edu/geospatial-analytics/aquaculture-data-download/",
+      "archive_url": "https://clarkcga-aquaculture.s3.amazonaws.com/data/v1.0/zip/bangladesh/Bangladesh_Landcover_Change_Maps_1999_2014_2018_2020_2022.zip",
+      "archive": "data/gherproof/raw/Clark_Bangladesh_Aquaculture_1999_2022.zip",
+      "archive_bytes": 46943637,
+      "sha256": "5c070d8e06d73a79d282b99047f096174701106291a25b012e573c1bb742ee5a",
+      "years_in_archive": [1999, 2014, 2018, 2020, 2022],
+      "inspected_raster": {
+        "year": 2022,
+        "dimensions": [27672, 24088],
+        "resolution_m": 15,
+        "crs": "WGS84 Normal Aspect Cylindrical Equal Area, standard parallel 15 degrees",
+        "nodata": 0,
+        "class_legend": {
+          "1": "Mangrove",
+          "2": "Coastal Wetland",
+          "3": "Pond Aquaculture",
+          "4": "Water",
+          "5": "Other Landcover",
+          "6": "Missing"
+        },
+        "observed_raster_values": [0, 1, 3, 4, 5]
+      },
+      "license": "Clark download page permits non-commercial use only; archive metadata states CC-BY-4.0. Retain attribution, do not redistribute source archive, and treat commercial use as requiring permission.",
+      "local_target_status": "Bangladesh-wide raster and legend inspected. No precise verified enclosure geometry was available, so no local Sujatpur pond inventory or 2026 boundary was extracted."
+    }
+  ],
+  "not_downloaded": [
+    {"name": "Sen1Floods11", "reason": "The complete public bucket is approximately 14 GB; a defensible useful subset was not selected and source event/label metadata has not yet been prepared."},
+    {"name": "Dynamic World", "reason": "Earth Engine access and a verified target AOI workflow were not configured."}
+  ]
+}

@@ -12,8 +12,8 @@ const CONTACT = {
 const NAV_LINKS = [
   { label: 'Home',        to: '/' },
   { label: 'Investigate', to: '/investigate' },
-  { label: 'Whisper Lab', to: '/science' },
-  { label: 'Analysis',    to: '/analysis' },
+  { label: 'Analysis Workbench', to: '/investigate/analysis' },
+  { label: 'DHARA', to: '/dhara' },
   { label: 'About',       to: '/about' },
 ]
 
