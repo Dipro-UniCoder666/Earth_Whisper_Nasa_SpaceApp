@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/dhara", "destination": "/index.html" },
+    { "source": "/gherproof", "destination": "/index.html" },
+    { "source": "/investigate", "destination": "/index.html" },
+    { "source": "/investigate/map", "destination": "/index.html" },
+    { "source": "/investigate/case/:candidateId", "destination": "/index.html" },
+    { "source": "/science", "destination": "/index.html" },
+    { "source": "/analysis", "destination": "/index.html" },
+    { "source": "/investigate/analysis", "destination": "/index.html" },
+    { "source": "/about", "destination": "/index.html" }
+  ]
+}

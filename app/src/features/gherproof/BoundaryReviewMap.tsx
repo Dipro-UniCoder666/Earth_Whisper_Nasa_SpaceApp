@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { DHARA_CONTEXT_IMAGE, GHERPROOF_API } from './services/gherproofApi'
 import { CircleMarker, ImageOverlay, MapContainer, Polygon, TileLayer, useMapEvents } from 'react-leaflet'
 import type { LatLngExpression, LatLngTuple } from 'leaflet'
 
@@ -26,7 +27,7 @@ export function BoundaryReviewMap() {
   const [busy, setBusy] = useState(false)
 
   async function load() {
-    const response = await fetch('/api/gherproof/boundary')
+    const response = await fetch(`${GHERPROOF_API}/boundary`)
     if (!response.ok) throw new Error(`Boundary API returned ${response.status}`)
     const body = await response.json() as BoundaryResponse
     setLoaded(body)
@@ -56,7 +57,7 @@ export function BoundaryReviewMap() {
         status, evidence: evidenceItems, reviewer: reviewer.trim() || null,
         reviewed_at: reviewedAt ? new Date(reviewedAt).toISOString() : null, confidence,
       } }
-      const response = await fetch('/api/gherproof/boundary', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+      const response = await fetch(`${GHERPROOF_API}/boundary`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       const result = await response.json()
       if (!response.ok) throw new Error(result.detail ?? `Save failed (${response.status})`)
       setLoaded(result); setMessage(`Saved version ${result.provenance.active_version} as ${result.status}.`)
@@ -73,7 +74,7 @@ export function BoundaryReviewMap() {
     </div>
     <MapContainer center={[23.005, 89.225]} zoom={11} scrollWheelZoom style={{ height: 440, borderRadius: 10, margin: '14px 0' }}>
       <TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      {loaded?.context_bounds_wgs84 && <ImageOverlay url="/api/gherproof/context/sentinel2" bounds={loaded.context_bounds_wgs84} opacity={0.72} />}
+      {loaded?.context_bounds_wgs84 && <ImageOverlay url={DHARA_CONTEXT_IMAGE} bounds={loaded.context_bounds_wgs84} opacity={0.72} />}
       <AddVertex onAdd={(point) => setPoints((current) => [...current, point])} />
       {points.length >= 3 && <Polygon positions={polygon} pathOptions={{ color: stroke, fillColor: stroke, fillOpacity: status === 'verified' ? 0.18 : 0.1, dashArray: status === 'verified' ? undefined : '7 6' }} />}
       {points.map((point, index) => <CircleMarker key={`${index}-${point[0]}-${point[1]}`} center={point} radius={6} pathOptions={{ color: '#fff', fillColor: stroke, fillOpacity: 1 }} />)}

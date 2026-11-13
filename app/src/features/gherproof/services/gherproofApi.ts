@@ -1,4 +1,6 @@
-export const GHERPROOF_API = '/api/gherproof'
+const configuredApiBase = (import.meta.env.VITE_API_BASE_URL ?? '').trim().replace(/\/+$/, '')
+export const GHERPROOF_API = `${configuredApiBase}/api/gherproof`
+export const DHARA_CONTEXT_IMAGE = '/images/dhara-sentinel2-context-2026-01-13.png'
 export const PALLIMANGAL_INCIDENT_ID = 'incident-pallimangal-2026-01-14'
 export const PALLIMANGAL_ASSET_ID = 'asset-pallimangal-reported'
 
@@ -192,12 +194,21 @@ export async function loadGherProofData(signal?: AbortSignal): Promise<{ data: G
   const results = await Promise.allSettled(requests.map(([, path]) => getGherProofJson<unknown>(path, signal)))
   const partial: Partial<GherProofData> = {}
   const failures: string[] = []
+  let screeningFailure: unknown
   results.forEach((result, index) => {
     const key = requests[index][0] as keyof GherProofData
     if (result.status === 'fulfilled') Object.assign(partial, { [key]: result.value })
-    else if (!signal?.aborted && requests[index][0] !== 'status') failures.push(requests[index][0])
+    else if (!signal?.aborted) {
+      if (key === 'fisheriesScreening') screeningFailure = result.reason
+      if (key !== 'status') failures.push(requests[index][0])
+    }
   })
-  if (!partial.fisheriesScreening) throw new Error('The Pallimangal incident screening could not be loaded. Retry when the DHARA evidence service is available.')
+  if (!partial.fisheriesScreening) {
+    const reason = screeningFailure instanceof GherProofApiError
+      ? `HTTP ${screeningFailure.status}`
+      : 'a network or CORS failure'
+    throw new Error(`The Pallimangal screening service could not be reached (${reason}). Check VITE_API_BASE_URL or same-origin /api routing, then confirm backend availability and CORS.`)
+  }
   if ((!partial.evidence || !partial.layers) && !failures.includes('evidence') && !failures.includes('layers')) {
     failures.push('map evidence registry')
   }

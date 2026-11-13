@@ -1,0 +1,27 @@
+.gp-context-image-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 18px;
+  background: radial-gradient(ellipse at 50% 20%, #174558, #102432 70%);
+  color: #abd5df;
+  text-align: center;
+  font-size: 12px;
+}
+
+.gp-context-image-fallback small {
+  color: #89a7b3;
+  font-size: 10px;
+}
+
+.gp-intro-visual .gp-context-image-fallback {
+  width: 100%;
+  height: 100%;
+}
+
+.gp-card-image .gp-context-image-fallback {
+  position: absolute;
+  inset: 0;
+}
