@@ -2,6 +2,7 @@
 
 from io import BytesIO
 import json
+import logging
 from pathlib import Path
 import sys
 
@@ -13,6 +14,7 @@ from app.services import gherproof_screening_service as screening
 from app.services import gherproof_report_service as reports
 from app.schemas.gherproof_evidence import EvidenceListResponse, LayerMetadataResponse, ReportIndexResponse, SceneResponse, ScreeningStatusResponse
 
+logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/gherproof", tags=["DHARA"])
 
 
@@ -382,6 +384,9 @@ def get_evidence_geojson(evidence_id: str):
             if evidence_id=='geography-provisional-regional-aoi':
                 x0,y0,x1,y1=geom.bounds
                 if x0 < -180 or x1 > 180 or y0 < -90 or y1 > 90:raise ValueError('provisional AOI must use longitude/latitude coordinates')
+    except FileNotFoundError:
+        logger.warning('Registered optional GeoJSON is unavailable: evidence_id=%s path=%s', evidence_id, path)
+        return JSONResponse(status_code=404, content={'status':'unavailable','evidence_id':evidence_id,'reason':'Registered GeoJSON evidence is not present in this checkout.'})
     except (json.JSONDecodeError,ValueError) as exc:raise HTTPException(422,'Stored GeoJSON failed validation') from exc
     return JSONResponse(geo,headers={'Cache-Control':'public, max-age=3600','X-Evidence-Id':evidence_id,'X-Evidence-Status':r['confidence_or_validation_status']})
 
