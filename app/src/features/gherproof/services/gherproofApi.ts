@@ -167,10 +167,29 @@ export class GherProofApiError extends Error {
   }
 }
 
+const GHERPROOF_REQUEST_TIMEOUT_MS = 15000
+
 export async function getGherProofJson<T>(path: string, signal?: AbortSignal): Promise<T> {
-  const response = await fetch(`${GHERPROOF_API}${path}`, { signal, headers: { Accept: 'application/json' } })
-  if (!response.ok) throw new GherProofApiError(response.status, path)
-  return response.json() as Promise<T>
+  const controller = new AbortController()
+  const abortFromCaller = () => controller.abort()
+  if (signal?.aborted) controller.abort()
+  else signal?.addEventListener('abort', abortFromCaller, { once: true })
+  const timeout = setTimeout(() => controller.abort(), GHERPROOF_REQUEST_TIMEOUT_MS)
+
+  try {
+    let response: Response
+    try {
+      response = await fetch(`${GHERPROOF_API}${path}`, { signal: controller.signal, headers: { Accept: 'application/json' } })
+    } catch (error) {
+      if (controller.signal.aborted && !signal?.aborted) throw new GherProofApiError(408, path)
+      throw error
+    }
+    if (!response.ok) throw new GherProofApiError(response.status, path)
+    return await response.json() as T
+  } finally {
+    clearTimeout(timeout)
+    signal?.removeEventListener('abort', abortFromCaller)
+  }
 }
 
 export async function loadGherProofData(signal?: AbortSignal): Promise<{ data: GherProofData; failures: string[] }> {
@@ -205,7 +224,7 @@ export async function loadGherProofData(signal?: AbortSignal): Promise<{ data: G
   })
   if (!partial.fisheriesScreening) {
     const reason = screeningFailure instanceof GherProofApiError
-      ? `HTTP ${screeningFailure.status}`
+      ? screeningFailure.status === 408 ? `request timed out after ${GHERPROOF_REQUEST_TIMEOUT_MS / 1000} seconds` : `HTTP ${screeningFailure.status}`
       : 'a network or CORS failure'
     throw new Error(`The Pallimangal screening service could not be reached (${reason}). Check VITE_API_BASE_URL or same-origin /api routing, then confirm backend availability and CORS.`)
   }

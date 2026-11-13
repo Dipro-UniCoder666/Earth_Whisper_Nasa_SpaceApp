@@ -81,3 +81,7 @@ The SPA route and contextual image are deployed. Analyze Now is still blocked in
 Added `/dhara/pallimangal` as the direct, named results URL for the Pallimangal investigation. Analyze Now navigates to this path, and the existing `/dhara?stage=results` remains a supported link. The Vercel SPA rewrite and React Router both serve the named route. The frontend build passed after this change. In the latest live smoke check, the frontend route and image were available while `/api/health` and the screening endpoint returned 404; this route update does not resolve the missing production FastAPI connection.
 
 Post-route deployment check: after commit `314a056`, both `/dhara/pallimangal` and the backward-compatible `/dhara?stage=results` returned HTTP 200 HTML from Vercel. `/api/health` continued to return HTTP 404, so the application shell is routable while the results data service remains unavailable.
+
+## Results loading timeout — 2026-11-13
+
+The results loader previously waited without a bound for all parallel API requests. A stalled request could leave the page showing “Loading prepared satellite evidence…” indefinitely. Each request now aborts after 15 seconds; the required screening timeout is reported distinctly, and the page exits its spinner into the existing error/retry state. This is a user-interface timeout safeguard, not a backend repair: when the production API returns 404, results remain unavailable until FastAPI is connected.
