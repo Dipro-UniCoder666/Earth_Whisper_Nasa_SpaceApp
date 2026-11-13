@@ -29,14 +29,14 @@ export function GherProofPage(){
  },[navigate])
 
  const loadAnalysis=useCallback(async()=>{
-  setLoading(true);setError(null);setFailureList([])
+  attempted.current=true;setLoading(true);setError(null);setFailureList([])
   try{
    const loaded=await loadGherProofData()
    setData(loaded.data);setFailureList(loaded.failures);attempted.current=true;setLoading(false);moveTo('results');return true
   }catch(reason){setError(reason instanceof Error?reason.message:'The DHARA evidence service could not be reached.');setLoading(false);return false}
  },[moveTo])
 
- useEffect(()=>{if(stage==='results'&&!data&&!loading&&!attempted.current)void loadAnalysis()},[stage,data,loading,loadAnalysis])
+ useEffect(()=>{if(stage==='results'&&!data&&!loading&&!attempted.current){attempted.current=true;void loadAnalysis()}},[stage,data,loading,loadAnalysis])
 
  async function analyze(){if(!selected)return;await loadAnalysis()}
 

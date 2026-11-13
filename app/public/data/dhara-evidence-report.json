@@ -1,0 +1,165 @@
+{
+  "case_id": "GHERPROOF-SUJATPUR-2026-01",
+  "generated_at_utc": "2026-11-13T15:29:41.861335+00:00",
+  "location": "Sujatpur Pallimangal Fisheries Enclosure, Monirampur, Jashore, Bangladesh",
+  "reported_event": {
+    "date": "2026-01-14",
+    "status": "reported, not independently verified by this system",
+    "sources": [
+      "https://dailycountrytodaybd.com/bn/story/1%2C500-bighas-of-land-flooded-as-embankment-collapses%2C-over-500-families-homeless-in-jashore"
+    ]
+  },
+  "satellite_catalogue_status": {
+    "case_id": "GHERPROOF-SUJATPUR-2026-01",
+    "reported_incident_date": "2026-01-14",
+    "event_status": "reported_by_news_sources_not_independently_verified",
+    "study_geometry_status": "provisional locality search window, not authoritative enclosure boundary",
+    "catalogue_search": "complete_for_provisional_bbox_only",
+    "sentinel1_catalogue_matches": 6,
+    "sentinel2_catalogue_matches": 14,
+    "processed_event_observations": 0,
+    "local_flood_inference": "not_available",
+    "model_training": "benchmark_completed_not_local_event",
+    "event_workflow_state": "imagery_unavailable",
+    "recovered_event_assets": 0,
+    "verified_event_assets": 0,
+    "boundary_status": "not_delineated",
+    "pre_post_suitable": false,
+    "model_comparison_available": true,
+    "last_manifest_query_utc": "2026-11-11T20:09:12.400362+00:00"
+  },
+  "event_imagery_assets": [
+    {
+      "date": "2026-01-07",
+      "datetime": "2026-01-07T12:04:28.028694Z",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "polarization": "VV",
+      "provider": "Copernicus Data Space Ecosystem",
+      "asset_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c13324b1-90eb-4ca4-bbf8-c92e11f8d20d)/Nodes(S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260107t120428-20260107t120453-062661-07db1b-001-cog.tiff)/$value",
+      "catalogue_bytes": 664403282,
+      "catalogue_checksum": "161005f318ec3f462bee040e3a4c577aa5ea",
+      "catalogue_checksum_algorithm": "unidentified",
+      "status": "authentication_blocked",
+      "platform": "sentinel-1a",
+      "instrument_mode": "IW",
+      "product_type": "GRDH",
+      "processing_level": "L1",
+      "error": "CDSE credentials are not configured; no request attempted",
+      "verification_status": "authentication_blocked",
+      "product_identifier": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG"
+    },
+    {
+      "date": "2026-01-07",
+      "datetime": "2026-01-07T12:04:28.028694Z",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "polarization": "VH",
+      "provider": "Copernicus Data Space Ecosystem",
+      "asset_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(c13324b1-90eb-4ca4-bbf8-c92e11f8d20d)/Nodes(S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260107t120428-20260107t120453-062661-07db1b-002-cog.tiff)/$value",
+      "catalogue_bytes": 572402839,
+      "catalogue_checksum": "1610219ec257a5b5ddede87466f01771bfb8",
+      "catalogue_checksum_algorithm": "unidentified",
+      "status": "authentication_blocked",
+      "platform": "sentinel-1a",
+      "instrument_mode": "IW",
+      "product_type": "GRDH",
+      "processing_level": "L1",
+      "error": "CDSE credentials are not configured; no request attempted",
+      "verification_status": "authentication_blocked",
+      "product_identifier": "S1A_IW_GRDH_1SDV_20260107T120428_20260107T120453_062661_07DB1B_6998_COG"
+    },
+    {
+      "date": "2026-01-19",
+      "datetime": "2026-01-19T12:04:27.012308Z",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "polarization": "VV",
+      "provider": "Copernicus Data Space Ecosystem",
+      "asset_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b5dd9e23-6c0f-4cbc-8d45-cc7a0c133b2d)/Nodes(S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vv-20260119t120427-20260119t120452-062836-07e1d9-001-cog.tiff)/$value",
+      "catalogue_bytes": 662506694,
+      "catalogue_checksum": "16105d11e3755fc181cb26dd5a9d822a98aa",
+      "catalogue_checksum_algorithm": "unidentified",
+      "status": "authentication_blocked",
+      "platform": "sentinel-1a",
+      "instrument_mode": "IW",
+      "product_type": "GRDH",
+      "processing_level": "L1",
+      "error": "CDSE credentials are not configured; no request attempted",
+      "verification_status": "authentication_blocked",
+      "product_identifier": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG"
+    },
+    {
+      "date": "2026-01-19",
+      "datetime": "2026-01-19T12:04:27.012308Z",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG",
+      "relative_orbit": 114,
+      "direction": "ascending",
+      "polarization": "VH",
+      "provider": "Copernicus Data Space Ecosystem",
+      "asset_url": "https://zipper.dataspace.copernicus.eu/odata/v1/Products(b5dd9e23-6c0f-4cbc-8d45-cc7a0c133b2d)/Nodes(S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG.SAFE)/Nodes(measurement)/Nodes(s1a-iw-grd-vh-20260119t120427-20260119t120452-062836-07e1d9-002-cog.tiff)/$value",
+      "catalogue_bytes": 573468706,
+      "catalogue_checksum": "1610a8a511c655cb3798b3e0b9b45b206e3d",
+      "catalogue_checksum_algorithm": "unidentified",
+      "status": "authentication_blocked",
+      "platform": "sentinel-1a",
+      "instrument_mode": "IW",
+      "product_type": "GRDH",
+      "processing_level": "L1",
+      "error": "CDSE credentials are not configured; no request attempted",
+      "verification_status": "authentication_blocked",
+      "product_identifier": "S1A_IW_GRDH_1SDV_20260119T120427_20260119T120452_062836_07E1D9_E3D6_COG"
+    }
+  ],
+  "event_imagery_validation": {
+    "dates": [
+      "2026-01-07",
+      "2026-01-19"
+    ],
+    "pre_event_date": "2026-01-07",
+    "post_event_date": "2026-01-19",
+    "pre_days_before_reported_incident": 7,
+    "post_days_after_reported_incident": 5,
+    "same_platform_orbit_direction_mode_product_family": true,
+    "all_four_verified": false,
+    "vv_vh_within_scene_grid_aligned": false,
+    "pre_post_grid_compatible": false,
+    "radiometric_comparability": "not_established",
+    "terrain_correction_status": "not_established",
+    "suitable_for_change_inference": false,
+    "suitability_class": "not_evaluated",
+    "suitability_reason": "Actual pre/post VV/VH raster products are not all locally verified."
+  },
+  "boundary": {
+    "status": "not_delineated",
+    "feature": null,
+    "provenance": {
+      "status": "not_delineated",
+      "versions": []
+    },
+    "context_image": "/api/gherproof/context/sentinel2",
+    "context_bounds_wgs84": [
+      [
+        22.927870280942933,
+        89.14761162033032
+      ],
+      [
+        23.082110634777358,
+        89.30251194175665
+      ]
+    ]
+  },
+  "processed_observations": [],
+  "predicted_spillover_mask": null,
+  "affected_area_estimate": null,
+  "model_evaluation": null,
+  "limitations": [
+    "The catalogue query uses a provisional broad locality bounding box, not an authoritative enclosure boundary.",
+    "Catalogue matches are not downloaded or processed observations.",
+    "No flood mask, local area estimate, model metric, fish-loss estimate, or compensation determination is available.",
+    "Satellite imagery alone cannot establish a physical breach point or its cause."
+  ]
+}

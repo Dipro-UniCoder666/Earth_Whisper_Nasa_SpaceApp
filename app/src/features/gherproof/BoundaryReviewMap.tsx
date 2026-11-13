@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { DHARA_CONTEXT_IMAGE, GHERPROOF_API } from './services/gherproofApi'
+import { DHARA_CONTEXT_IMAGE, DHARA_DATA_MODE, GHERPROOF_API } from './services/gherproofApi'
 import { CircleMarker, ImageOverlay, MapContainer, Polygon, TileLayer, useMapEvents } from 'react-leaflet'
 import type { LatLngExpression, LatLngTuple } from 'leaflet'
 
@@ -40,7 +40,14 @@ export function BoundaryReviewMap() {
     setMessage(body.status === 'not_delineated' ? 'No enclosure geometry is stored. Click the map to begin a human-reviewed candidate trace.' : `Loaded ${body.status} boundary version.`)
   }
 
-  useEffect(() => { load().catch((error: Error) => setMessage(error.message)) }, [])
+  useEffect(() => {
+    if (DHARA_DATA_MODE === 'demo') {
+      setLoaded({ status: 'not_delineated', feature: null, context_bounds_wgs84: null })
+      setMessage('Static demonstration mode is read-only. No verified enclosure geometry is available.')
+      return
+    }
+    load().catch((error: Error) => setMessage(error.message))
+  }, [])
 
   function updatePoint(index: number, axis: 0 | 1, value: number) {
     setPoints((current) => current.map((point, i) => i === index ? (axis === 0 ? [value, point[1]] : [point[0], value]) : point))
@@ -72,21 +79,22 @@ export function BoundaryReviewMap() {
       <div><h2 style={{ marginTop: 0 }}>Pallimangal boundary review</h2><p style={{ color: muted, lineHeight: 1.55 }}>The orange frame is a broad locality context, not an enclosure. Trace only when you have a credible target reference; this map does not establish the farm location.</p></div>
       <strong style={{ color: stroke, textTransform: 'capitalize' }}>Boundary: {loaded?.status ?? 'loading'}</strong>
     </div>
-    <MapContainer center={[23.005, 89.225]} zoom={11} scrollWheelZoom style={{ height: 440, borderRadius: 10, margin: '14px 0' }}>
+    {DHARA_DATA_MODE === 'demo' ? <div role="status" style={{ padding: 24, border: '1px solid rgba(255,191,105,.35)', borderRadius: 10, color: muted }}>No Pallimangal enclosure boundary is included in the hosted demonstration. Boundary editing and saving require the local backend.</div> : <MapContainer center={[23.005, 89.225]} zoom={11} scrollWheelZoom style={{ height: 440, borderRadius: 10, margin: '14px 0' }}>
       <TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {loaded?.context_bounds_wgs84 && <ImageOverlay url={DHARA_CONTEXT_IMAGE} bounds={loaded.context_bounds_wgs84} opacity={0.72} />}
       <AddVertex onAdd={(point) => setPoints((current) => [...current, point])} />
       {points.length >= 3 && <Polygon positions={polygon} pathOptions={{ color: stroke, fillColor: stroke, fillOpacity: status === 'verified' ? 0.18 : 0.1, dashArray: status === 'verified' ? undefined : '7 6' }} />}
       {points.map((point, index) => <CircleMarker key={`${index}-${point[0]}-${point[1]}`} center={point} radius={6} pathOptions={{ color: '#fff', fillColor: stroke, fillOpacity: 1 }} />)}
-    </MapContainer>
+    </MapContainer>}
     <p style={{ color: muted, fontSize: 13 }}>Click to add vertices. Edit coordinates below; the current polygon outline is candidate/review geometry only.</p>
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 8, maxHeight: 170, overflowY: 'auto' }}>
+    {DHARA_DATA_MODE !== 'demo' && <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 8, maxHeight: 170, overflowY: 'auto' }}>
       {points.map(([lat, lng], index) => <div key={index} style={{ display: 'flex', gap: 5 }}>
         <label style={{ color: muted, fontSize: 11 }}>Lat <input aria-label={`Vertex ${index + 1} latitude`} type="number" step="0.000001" value={lat} onChange={(event) => updatePoint(index, 0, Number(event.target.value))} style={{ width: 104 }} /></label>
         <label style={{ color: muted, fontSize: 11 }}>Lon <input aria-label={`Vertex ${index + 1} longitude`} type="number" step="0.000001" value={lng} onChange={(event) => updatePoint(index, 1, Number(event.target.value))} style={{ width: 104 }} /></label>
         <button type="button" onClick={() => setPoints((current) => current.filter((_, i) => i !== index))} aria-label={`Remove vertex ${index + 1}`}>×</button>
       </div>)}
-    </div>
+    </div>}
+    {DHARA_DATA_MODE !== 'demo' && <>
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 10, marginTop: 16 }}>
       <label>Review state<select value={status} onChange={(event) => setStatus(event.target.value as typeof status)}><option value="candidate">Candidate</option><option value="under_review">Under review</option><option value="verified">Verified</option></select></label>
       <label>Confidence<select value={confidence} onChange={(event) => setConfidence(event.target.value)}><option>low</option><option>medium</option><option>high</option></select></label>
@@ -95,5 +103,6 @@ export function BoundaryReviewMap() {
     </div>
     <label style={{ display: 'block', marginTop: 10 }}>Evidence supporting this trace<textarea value={evidence} onChange={(event) => setEvidence(event.target.value)} rows={3} placeholder="One source or field observation per line. Include dates and links/record IDs where available." style={{ display: 'block', width: '100%' }} /></label>
     <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 12 }}><button type="button" onClick={save} disabled={busy}>{busy ? 'Saving…' : 'Save boundary version'}</button><button type="button" onClick={() => setPoints([])}>Clear vertices</button><span role="status" style={{ color: muted }}>{message}</span></div>
+    </>}
   </section>
 }

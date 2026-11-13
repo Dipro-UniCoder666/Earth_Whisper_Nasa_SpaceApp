@@ -4,7 +4,7 @@ import {
   ExternalLink, FileText, Info, Layers3, MapPin, Maximize2, Waves, X,
 } from 'lucide-react'
 import { GherProofMap } from './GherProofMap'
-import { GHERPROOF_API, getGherProofJson } from './services/gherproofApi'
+import { DHARA_DATA_MODE, GHERPROOF_API, getGherProofJson } from './services/gherproofApi'
 import type { EvidenceRecord, FisheriesReport, GherProofData, RasterLayer } from './services/gherproofApi'
 import './gherproof-phase9.css'
 
@@ -44,7 +44,8 @@ function formatNumber(value: unknown): string {
   return typeof value === 'number' && Number.isFinite(value) ? new Intl.NumberFormat('en-US').format(value) : 'Unavailable'
 }
 
-function imageUrl(id: string, bounds: string | null, width: number, rgb = false): string {
+function imageUrl(id: string, bounds: string | null, width: number, rgb = false, staticPreviews?: Record<string, string>): string {
+  if (DHARA_DATA_MODE === 'demo') return staticPreviews?.[`${id}|1`] ?? ''
   if (!bounds) return ''
   const query = new URLSearchParams({ bbox: bounds, width: String(width) })
   if (rgb) query.set('rgb', 'true')
@@ -88,15 +89,23 @@ export function GherProofWorkspace({ data, failures, onRetry, onBack }: { data: 
   const preferredLayerId = view === 'satellite' ? 's2-true-colour-2026-01-10' : view === 'context' ? 'clark-2022-aquaculture-context' : 'optical-weakref-temporal-temporal_change'
   const activeLayerId = mapChoices.some((layer) => layer.evidence_id === selectedLayerId) ? selectedLayerId : (mapChoices.find((layer) => layer.evidence_id === preferredLayerId)?.evidence_id ?? mapChoices[0]?.evidence_id ?? '')
   const metadata = metadataState?.id === activeLayerId ? metadataState.value : null
+  const demoMode = DHARA_DATA_MODE === 'demo'
+  const staticPreviews = data.demo?.previews ?? {}
+  const staticPreviewBounds = data.demo?.preview_bounds ?? {}
 
   useEffect(() => {
     if (!activeLayerId) return
+    if (demoMode) {
+      const value = data.demo?.layer_metadata[activeLayerId] as LayerMetadata | undefined
+      setMetadataState(value ? { id: activeLayerId, value } : null)
+      return
+    }
     const controller = new AbortController()
     getGherProofJson<LayerMetadata>(`/layers/${encodeURIComponent(activeLayerId)}`, controller.signal)
       .then((value) => setMetadataState({ id: activeLayerId, value }))
       .catch(() => setMetadataState(null))
     return () => controller.abort()
-  }, [activeLayerId])
+  }, [activeLayerId, data.demo, demoMode])
 
   useEffect(() => {
     const onEscape = (event: KeyboardEvent) => {
@@ -152,6 +161,7 @@ export function GherProofWorkspace({ data, failures, onRetry, onBack }: { data: 
       <span className="gp9-status"><span/>EXPLORATORY REGIONAL SCREENING</span>
     </div>
 
+    {demoMode && <div className="gp9-screening-scope"><strong>Prepared demonstration data</strong><span>Static snapshot from registered local evidence; no hosted analysis backend is connected. {data.demo?.generated_at_utc ? `Prepared ${new Date(data.demo.generated_at_utc).toLocaleDateString()}.` : ''}</span></div>}
     {visibleFailures.length > 0 && <div className="gp9-warning" role="status"><AlertCircle size={17}/><span>Some optional content is unavailable: {visibleFailures.join(', ')}.</span><button onClick={onRetry}>Retry</button></div>}
 
     <div className="gp9-metrics" aria-label="Investigation summary metrics">
@@ -175,7 +185,7 @@ export function GherProofWorkspace({ data, failures, onRetry, onBack }: { data: 
           </select><ChevronDown size={14}/></label>
         </div>
         <div className="gp9-map-frame">
-          {geographicData ? <GherProofMap layers={layers} layerIds={currentOverlayIds} opacity={opacity} band={activeLayerId.startsWith('nisar-gcov-') ? nisarBand : 1} aoi={geographicData} onError={setMapError}/> : <div className="gp9-map-unavailable"><MapPin/><span>Study-area geography is unavailable.</span></div>}
+          {geographicData ? <GherProofMap layers={layers} layerIds={currentOverlayIds} opacity={opacity} band={activeLayerId.startsWith('nisar-gcov-') ? nisarBand : 1} aoi={geographicData} onError={setMapError} demoMode={demoMode} staticPreviews={staticPreviews} staticPreviewBounds={staticPreviewBounds}/> : <div className="gp9-map-unavailable"><MapPin/><span>Study-area geography is unavailable.</span></div>}
           <div className="gp9-map-label"><MapPin size={15}/><span>Provisional regional study area<small>Not official village or enclosure boundaries</small></span></div>
           <MapLegend view={view} selectedLayerId={activeLayerId}/>
         </div>
@@ -215,7 +225,7 @@ export function GherProofWorkspace({ data, failures, onRetry, onBack }: { data: 
     <section className="gp9-evidence" aria-labelledby="gp9-evidence-title">
       <div className="gp9-evidence-heading"><div><span className="gp9-kicker">REGISTERED PROJECT OUTPUTS</span><h2 id="gp9-evidence-title">Key Evidence</h2></div><span>Open a preview for details and provenance</span></div>
       <div className="gp9-evidence-layout">
-        <div className="gp9-preview-grid">{REQUIRED_PREVIEWS.map((preview) => <EvidenceCard key={preview.id} preview={preview} bounds={bounds} records={records} layers={layers} onOpen={setLightbox}/>)}</div>
+        <div className="gp9-preview-grid">{REQUIRED_PREVIEWS.map((preview) => <EvidenceCard key={preview.id} preview={preview} bounds={bounds} records={records} layers={layers} staticPreviews={staticPreviews} onOpen={setLightbox}/>)}</div>
         <button className="gp9-report-button" type="button" onClick={() => setReportOpen(true)} disabled={!report}><FileText size={18}/><span>View Investigation Report</span><ArrowRight size={17}/></button>
       </div>
       {!report && <div className="gp9-report-unavailable" role="status">The fisheries report service did not return a report. <button onClick={onRetry}>Retry report loading</button></div>}
@@ -224,14 +234,14 @@ export function GherProofWorkspace({ data, failures, onRetry, onBack }: { data: 
     {nisarPreviews.length > 0 && <section className="gp9-evidence" aria-labelledby="gp9-nisar-title">
       <div className="gp9-evidence-heading"><div><span className="gp9-kicker">SEPARATE SENSOR · LATER REGIONAL OBSERVATIONS</span><h2 id="gp9-nisar-title">Additional NISAR Regional Observations</h2></div><span>October 23 and November 4, 2026 · not evidence for the January incident</span></div>
       <p className="gp9-nisar-note">These are later regional NISAR observations, acquired after the reported January incident. They provide additional L-band radar context, not evidence of the January fisheries incident. NISAR gamma0 intensity and change are not water probability. Frequency B (80 m) layers remain available in the map selector.</p>
-      <div className="gp9-preview-grid">{nisarPreviews.map((preview) => <EvidenceCard key={preview.id} preview={preview} bounds={bounds} records={records} layers={layers} onOpen={setLightbox}/>)}</div>
+      <div className="gp9-preview-grid">{nisarPreviews.map((preview) => <EvidenceCard key={preview.id} preview={preview} bounds={bounds} records={records} layers={layers} staticPreviews={staticPreviews} onOpen={setLightbox}/>)}</div>
     </section>}
 
     <details className="gp9-limitations"><summary>Evidence limitations</summary><p>The exact Pallimangal enclosure boundary is not identified, so enclosure exposure cannot be calculated. The incident and date are reported/inferred and have not been independently confirmed. Candidate-cell counts are not measured flood area. The two models remain separate exploratory predictions with no local human-label validation. Historical Clark and WorldCover classes may differ from 2026 conditions. The evidence does not confirm fish escape, mortality, breach location or financial damage.</p><p>{(screening?.limitations ?? []).join(' ')}</p><button type="button" onClick={() => setTechnicalOpen((open) => !open)} aria-expanded={technicalOpen}>Technical details <ChevronDown size={13}/></button>{technicalOpen && <span>Sentinel-2 comparison: {screening?.optical_change_screening.pre_date ?? 'date unavailable'} → {screening?.optical_change_screening.post_date ?? 'date unavailable'} · {screening?.optical_change_screening.pixel_resolution_m ?? '—'} m grid. Registered satellite observations: {screening?.observations.length ?? 0}. AI comparison records: {screening?.model_evidence.per_acquisition_comparisons.length ?? 0}; model selection: none.</span>}</details>
-    <div className="gp9-bottom-actions"><button type="button" className="gp9-back-link" onClick={onBack}><ArrowLeft size={15}/> Back to investigation</button><a href={`${GHERPROOF_API}/evidence-report`} target="_blank" rel="noreferrer"><ExternalLink size={14}/> Evidence registry report</a></div>
+    <div className="gp9-bottom-actions"><button type="button" className="gp9-back-link" onClick={onBack}><ArrowLeft size={15}/> Back to investigation</button><a href={demoMode ? (data.demo?.evidence_report_url ?? '/data/dhara-evidence-report.json') : `${GHERPROOF_API}/evidence-report`} target="_blank" rel="noreferrer"><ExternalLink size={14}/> Evidence registry report</a></div>
 
-    {lightbox && <EvidenceLightbox preview={lightbox} bounds={bounds} records={records} onClose={() => setLightbox(null)}/>}
-    {reportOpen && report && <ReportDialog report={report} layers={layers} aoi={geographicData} onClose={() => setReportOpen(false)}/>}
+    {lightbox && <EvidenceLightbox preview={lightbox} bounds={bounds} records={records} staticPreviews={staticPreviews} onClose={() => setLightbox(null)}/>}
+    {reportOpen && report && <ReportDialog report={report} layers={layers} aoi={geographicData} demoMode={demoMode} staticPreviews={staticPreviews} staticPreviewBounds={staticPreviewBounds} onClose={() => setReportOpen(false)}/>}
   </section>
 }
 
@@ -265,14 +275,14 @@ function MapLegend({ view, selectedLayerId }: { view: MapView; selectedLayerId: 
   return <div className="gp9-legend"><strong>{view === 'context' ? 'Historical context' : view === 'ai' ? 'Screening key' : 'Map key'}</strong>{entries.map(([color, text]) => <span key={text}><i style={{ backgroundColor: color }}/>{text}</span>)}<small>{attribution}</small></div>
 }
 
-function EvidenceCard({ preview, bounds, records, layers, onOpen }: { preview: Preview; bounds: string | null; records: EvidenceRecord[]; layers: RasterLayer[]; onOpen: (preview: Preview) => void }) {
+function EvidenceCard({ preview, bounds, records, layers, staticPreviews, onOpen }: { preview: Preview; bounds: string | null; records: EvidenceRecord[]; layers: RasterLayer[]; staticPreviews: Record<string, string>; onOpen: (preview: Preview) => void }) {
   const ids = [preview.id, preview.secondId, preview.thirdId].filter((id): id is string => Boolean(id))
   const availableIds = ids.filter((id) => Boolean(findLayer(layers, records, id)))
   const [failed, setFailed] = useState<Record<string, boolean>>({})
   const hasAvailablePreview = availableIds.some((id) => !failed[id])
   return <button type="button" className="gp9-preview-card" onClick={() => hasAvailablePreview && onOpen(preview)} disabled={!hasAvailablePreview} aria-label={`${preview.title}, ${preview.date}`}>
     <div className="gp9-preview-image">
-      {availableIds.filter((id) => !failed[id]).map((id) => <img key={id} className={availableIds.length > 1 ? 'gp9-preview-secondary' : ''} style={availableIds.length > 1 ? { width: `${100 / availableIds.length}%` } : undefined} src={imageUrl(id, bounds, 480, Boolean(preview.rgb && id === preview.id))} alt={`${preview.title}; ${id}`} onError={() => setFailed((previous) => ({ ...previous, [id]: true }))}/>)}
+      {availableIds.filter((id) => !failed[id]).map((id) => <img key={id} className={availableIds.length > 1 ? 'gp9-preview-secondary' : ''} style={availableIds.length > 1 ? { width: `${100 / availableIds.length}%` } : undefined} src={imageUrl(id, bounds, 480, Boolean(preview.rgb && id === preview.id), staticPreviews)} alt={`${preview.title}; ${id}`} onError={() => setFailed((previous) => ({ ...previous, [id]: true }))}/>)}
       {!hasAvailablePreview && <span className="gp9-preview-unavailable">Registered preview unavailable</span>}
       {preview.rgb && <span className="gp9-image-tag">{preview.id.startsWith('s2-true-colour-') ? 'NATURAL COLOUR' : 'FALSE COLOUR'}</span>}
       {preview.id.includes('prediction') && <span className="gp9-image-tag">EXPLORATORY</span>}
@@ -282,13 +292,13 @@ function EvidenceCard({ preview, bounds, records, layers, onOpen }: { preview: P
   </button>
 }
 
-function EvidenceLightbox({ preview, bounds, records, onClose }: { preview: Preview; bounds: string | null; records: EvidenceRecord[]; onClose: () => void }) {
+function EvidenceLightbox({ preview, bounds, records, staticPreviews, onClose }: { preview: Preview; bounds: string | null; records: EvidenceRecord[]; staticPreviews: Record<string, string>; onClose: () => void }) {
   const [failed, setFailed] = useState<Record<string, boolean>>({})
   const ids = [preview.id, preview.secondId, preview.thirdId].filter((id): id is string => Boolean(id) && records.some((record) => record.evidence_id === id))
   const evidence = ids.map((id) => records.find((record) => record.evidence_id === id)).filter((record): record is EvidenceRecord => Boolean(record))
   return <div className="gp9-overlay" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}><section className="gp9-lightbox" role="dialog" aria-modal="true" aria-labelledby="gp9-lightbox-title">
     <header><div><span>{preview.date}</span><h2 id="gp9-lightbox-title">{preview.title}</h2></div><button type="button" onClick={onClose} aria-label="Close preview"><X/></button></header>
-    <div className={`gp9-lightbox-images ${ids.length > 1 ? 'has-two' : ''} ${ids.length > 2 ? 'has-many' : ''}`}>{ids.map((id) => <div key={id} className="gp9-lightbox-image">{findEvidence(evidence, id) && !failed[id] ? <img src={imageUrl(id, bounds, 1100, Boolean(preview.rgb && id === preview.id))} alt={`${preview.title}; evidence ${id}`} onError={() => setFailed((previous) => ({ ...previous, [id]: true }))}/> : <span>Preview unavailable for {id}</span>}<small>{id}</small></div>)}</div>
+    <div className={`gp9-lightbox-images ${ids.length > 1 ? 'has-two' : ''} ${ids.length > 2 ? 'has-many' : ''}`}>{ids.map((id) => <div key={id} className="gp9-lightbox-image">{findEvidence(evidence, id) && !failed[id] ? <img src={imageUrl(id, bounds, 1100, Boolean(preview.rgb && id === preview.id), staticPreviews)} alt={`${preview.title}; evidence ${id}`} onError={() => setFailed((previous) => ({ ...previous, [id]: true }))}/> : <span>Preview unavailable for {id}</span>}<small>{id}</small></div>)}</div>
     <p>{preview.caption} Display is a visualization of stored raster values, not an independently validated event finding.</p>
     <div className="gp9-provenance"><strong>Evidence provenance</strong>{evidence.map((item) => <span key={item.evidence_id}>{item.evidence_id} · {item.confidence_or_validation_status} · {item.source_dataset ?? item.evidence_category}{item.acquisition_date ? ` · ${item.acquisition_date}` : ''}</span>)}</div>
   </section></div>
@@ -298,7 +308,7 @@ function findEvidence(records: EvidenceRecord[], id: string): EvidenceRecord | u
 
 function ignoreMapError(): void {}
 
-function ReportDialog({ report, layers, aoi, onClose }: { report: FisheriesReport; layers: RasterLayer[]; aoi: Record<string, unknown> | null; onClose: () => void }) {
+function ReportDialog({ report, layers, aoi, onClose, demoMode = false, staticPreviews, staticPreviewBounds }: { report: FisheriesReport; layers: RasterLayer[]; aoi: Record<string, unknown> | null; onClose: () => void; demoMode?: boolean; staticPreviews?: Record<string, string>; staticPreviewBounds?: Record<string, string> }) {
   const screening = report.water_change_screening
   const counts = screening.candidate_counts_grid_cells ?? {}
   const models = report.ai_screening
@@ -314,7 +324,7 @@ function ReportDialog({ report, layers, aoi, onClose }: { report: FisheriesRepor
     <header><div><span>DHARA · EXPLORATORY INVESTIGATION</span><h2 id="gp9-report-title">{report.title}</h2></div><button type="button" onClick={onClose} aria-label="Close investigation report"><X/></button></header>
     <div className="gp9-report-content">
       <section><h3>Reported incident</h3><p><strong>{report.incident.title}</strong></p><p>{report.incident.description}</p><p>{report.incident.administrative_location.site_description ?? 'Reported Sujatpur, Manirampur, Jashore; exact site boundary remains unresolved.'}</p><p>Incident date: {report.incident.incident_date ?? 'unavailable'} ({report.incident.incident_date_status}). This is source-reported information, not independent field confirmation.</p><ul>{report.evidence_sources.map((source, index) => <li key={`${source.source_name}-${index}`}>{source.url ? <a href={source.url} target="_blank" rel="noreferrer">{source.source_name}</a> : source.source_name}: {source.claim} ({source.claim_status})</li>)}</ul></section>
-      <section><h3>Provisional regional study-area map</h3><div className="gp9-report-map">{aoi && <GherProofMap layers={layers} layerIds={[report.study_area_map.candidate_change_layer_id]} opacity={0.92} aoi={aoi} onError={ignoreMapError}/>}</div><p>Regional search extent only; it does not identify Pallimangal, a village boundary or an enclosure boundary.</p></section>
+      <section><h3>Provisional regional study-area map</h3><div className="gp9-report-map">{aoi && <GherProofMap layers={layers} layerIds={[report.study_area_map.candidate_change_layer_id]} opacity={0.92} aoi={aoi} onError={ignoreMapError} demoMode={demoMode} staticPreviews={staticPreviews} staticPreviewBounds={staticPreviewBounds}/>}</div><p>Regional search extent only; it does not identify Pallimangal, a village boundary or an enclosure boundary.</p></section>
       <section><h3>Available satellite observations</h3>{report.satellite_observations.length ? <ul>{report.satellite_observations.map((item) => <li key={`${item.sensor}-${item.acquisition_date}`}>{item.sensor} · {item.acquisition_date ?? 'date unavailable'}{item.limitations.length ? ` — ${item.limitations.join(' ')}` : ''}</li>)}</ul> : <p>No satellite observations were returned.</p>}</section>
       <section><h3>Possible water-change screening</h3><p>{screening.interpretation ?? 'Optical comparison is unavailable.'}</p><p>{screening.pre_date ?? 'Earlier date unavailable'} → {screening.post_date ?? 'Later date unavailable'} · {screening.pixel_resolution_m ?? '—'} m grid. Possible increase: {formatNumber(counts.possible_new_water_candidate)} cells. Possible decrease: {formatNumber(counts.possible_water_loss_candidate)} cells. Grid counts are not area or confirmed flooding.</p></section>
       <section><h3>Historical aquaculture and land-cover context</h3><p>Clark Labs Bangladesh Land Cover and Change Maps 2022 v1 class 3 is <strong>Pond aquaculture</strong>. The AOI-masked raster contains {formatNumber(asObject(clark.pond_aquaculture_class_3_area_km2_in_covered_footprint))} km² of this historical class across {formatNumber(asObject(clark.valid_covered_aoi_area_km2))} km² of valid coverage. This partial footprint is not a 2026 farm inventory or enclosure boundary.</p><p>ESA WorldCover 2021 class overlap: {formatNumber(cropland.candidate_cells)} possible-new-water candidates on historical cropland and {formatNumber(historicWater.candidate_cells)} on its permanent-water class. These land classes are historical context, not water truth for January 2026.</p><p>Attribution: Clark Labs, Clark University, Bangladesh Land Cover and Change Maps 2022 v1 (©2024), CC BY 4.0; use limited to non-commercial purposes. ESA WorldCover attribution: {String(worldcover.attribution ?? 'ESA WorldCover 2021 attribution unavailable')}</p></section>

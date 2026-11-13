@@ -1,5 +1,10 @@
 const configuredApiBase = (import.meta.env.VITE_API_BASE_URL ?? '').trim().replace(/\/+$/, '')
 export const GHERPROOF_API = `${configuredApiBase}/api/gherproof`
+const configuredDharaMode = (import.meta.env.VITE_DHARA_DATA_MODE ?? '').trim().toLowerCase()
+export const DHARA_DATA_MODE: 'demo' | 'backend' = configuredDharaMode === 'demo' || configuredDharaMode === 'backend'
+  ? configuredDharaMode
+  : import.meta.env.PROD ? 'demo' : 'backend'
+export const DHARA_DEMO_DATA_URL = '/data/dhara-demo.json'
 export const DHARA_CONTEXT_IMAGE = '/images/dhara-sentinel2-context-2026-01-13.png'
 export const PALLIMANGAL_INCIDENT_ID = 'incident-pallimangal-2026-01-14'
 export const PALLIMANGAL_ASSET_ID = 'asset-pallimangal-reported'
@@ -153,6 +158,16 @@ export interface GherProofData {
   fisheriesFindings: { incident_id: string; findings: FisheriesFinding[] } | null
   fisheriesPriorities: { incident_id: string; priorities: FisheriesPriority[] } | null
   report: FisheriesReport | null
+  demo?: {
+    mode: 'prepared_static_demo'
+    generated_at_utc: string
+    source: string
+    limitations: string[]
+    previews: Record<string, string>
+    preview_bounds: Record<string, string>
+    layer_metadata: Record<string, Record<string, unknown>>
+    evidence_report_url: string
+  }
 }
 
 export class GherProofApiError extends Error {
@@ -193,6 +208,16 @@ export async function getGherProofJson<T>(path: string, signal?: AbortSignal): P
 }
 
 export async function loadGherProofData(signal?: AbortSignal): Promise<{ data: GherProofData; failures: string[] }> {
+  if (DHARA_DATA_MODE === 'demo') {
+    const response = await fetch(DHARA_DEMO_DATA_URL, { signal, headers: { Accept: 'application/json' } })
+    if (!response.ok) throw new Error(`Prepared DHARA demonstration data could not be loaded (HTTP ${response.status}).`)
+    const data = await response.json() as GherProofData
+    if (data.demo?.mode !== 'prepared_static_demo' || !data.fisheriesScreening || !data.evidence || !data.layers) {
+      throw new Error('Prepared DHARA demonstration data is incomplete or has an unsupported format.')
+    }
+    return { data, failures: [] }
+  }
+
   const requests = [
     ['status', '/screening/status'],
     ['evidence', '/evidence?limit=500'],

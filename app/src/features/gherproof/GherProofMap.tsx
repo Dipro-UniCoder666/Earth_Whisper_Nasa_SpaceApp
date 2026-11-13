@@ -54,13 +54,28 @@ function boundsToExtent(bounds: LatLngBoundsExpression | null): string {
   return [west, south, east, north].map((coordinate) => coordinate.toFixed(6)).join(',')
 }
 
-export function GherProofMap({ layers, layerIds, opacity, band = 1, aoi, onError }: { layers: RasterLayer[]; layerIds: string[]; opacity: number; band?: 1 | 2; aoi: Record<string, unknown> | null; onError: (message: string | null) => void }) {
+export function GherProofMap({ layers, layerIds, opacity, band = 1, aoi, onError, staticPreviews, staticPreviewBounds, demoMode = false }: { layers: RasterLayer[]; layerIds: string[]; opacity: number; band?: 1 | 2; aoi: Record<string, unknown> | null; onError: (message: string | null) => void; staticPreviews?: Record<string, string>; staticPreviewBounds?: Record<string, string>; demoMode?: boolean }) {
   const studyBounds = useMemo(() => geographyBounds(aoi), [aoi])
   const [extent, setExtent] = useState(() => boundsToExtent(studyBounds))
   const [overlays, setOverlays] = useState<Overlay[]>([])
 
   useEffect(() => {
     if (!layerIds.length || !extent) return
+    if (demoMode) {
+      const next: Overlay[] = []
+      for (const evidenceId of layerIds) {
+        const key = `${evidenceId}|${evidenceId.startsWith('nisar-gcov-') ? band : 1}`
+        const url = staticPreviews?.[key] ?? staticPreviews?.[`${evidenceId}|1`]
+        const boundsValue = staticPreviewBounds?.[key] ?? staticPreviewBounds?.[`${evidenceId}|1`]
+        const values = boundsValue?.split(',').map(Number)
+        if (url && values?.length === 4 && values.every(Number.isFinite)) {
+          next.push({ evidenceId, url, bounds: [[values[1], values[0]], [values[3], values[2]]] as LatLngBoundsExpression })
+        }
+      }
+      setOverlays(next)
+      onError(next.length ? null : 'No prepared static preview exists for this layer')
+      return
+    }
     const controller = new AbortController()
     const objectUrls: string[] = []
     const selectedLayers = layerIds.map((id) => layers.find((layer) => layer.evidence_id === id)).filter((layer): layer is RasterLayer => Boolean(layer))
@@ -86,12 +101,12 @@ export function GherProofMap({ layers, layerIds, opacity, band = 1, aoi, onError
     }
     void load()
     return () => { controller.abort(); objectUrls.forEach(URL.revokeObjectURL) }
-  }, [band, extent, layerIds, layers, onError])
+  }, [band, demoMode, extent, layerIds, layers, onError, staticPreviewBounds, staticPreviews])
 
   return <MapContainer center={[23.0, 89.4] as LatLngExpression} zoom={9} zoomControl={false} className="gp-leaflet-map" preferCanvas>
     <TileLayer attribution="&copy; OpenStreetMap contributors" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
     {overlays.filter((overlay) => layerIds.includes(overlay.evidenceId)).map((overlay) => <ImageOverlay key={overlay.evidenceId} url={overlay.url} bounds={overlay.bounds} opacity={opacity} className={overlay.evidenceId.includes('temporal_change') ? 'gp-temporal-overlay' : ''}/>)}
-    {aoi && <GeoJSON data={aoi as never} style={{ color: '#86a7b6', weight: 1.5, dashArray: '7 6', fillColor: '#526b78', fillOpacity: 0.025 }}/>}
+    {aoi && <GeoJSON data={aoi as never} style={{ color: '#86a7b6', weight: 1.5, dashArray: '7 6', fillColor: '#526b78', fillOpacity: 0.025 }}/>} 
     <FitStudyExtent bounds={studyBounds}/><ExtentEvents onChange={setExtent}/><MapControls bounds={studyBounds}/>
   </MapContainer>
 }
