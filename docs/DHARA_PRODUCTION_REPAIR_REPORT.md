@@ -79,3 +79,5 @@ The SPA route and contextual image are deployed. Analyze Now is still blocked in
 ## Named results route — 2026-11-13
 
 Added `/dhara/pallimangal` as the direct, named results URL for the Pallimangal investigation. Analyze Now navigates to this path, and the existing `/dhara?stage=results` remains a supported link. The Vercel SPA rewrite and React Router both serve the named route. The frontend build passed after this change. In the latest live smoke check, the frontend route and image were available while `/api/health` and the screening endpoint returned 404; this route update does not resolve the missing production FastAPI connection.
+
+Post-route deployment check: after commit `314a056`, both `/dhara/pallimangal` and the backward-compatible `/dhara?stage=results` returned HTTP 200 HTML from Vercel. `/api/health` continued to return HTTP 404, so the application shell is routable while the results data service remains unavailable.
