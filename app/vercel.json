@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     { "source": "/dhara", "destination": "/index.html" },
+    { "source": "/dhara/pallimangal", "destination": "/index.html" },
     { "source": "/gherproof", "destination": "/index.html" },
     { "source": "/investigate", "destination": "/index.html" },
     { "source": "/investigate/map", "destination": "/index.html" },

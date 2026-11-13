@@ -62,6 +62,7 @@ export const router = createBrowserRouter([
           { path: ROUTES.about,   element: <AboutPage /> },
           { path: ROUTES.gherproof, element: <GherProofPage /> },
           { path: ROUTES.dhara, element: <GherProofPage /> },
+          { path: ROUTES.dharaPallimangal, element: <GherProofPage /> },
         ],
       },
 

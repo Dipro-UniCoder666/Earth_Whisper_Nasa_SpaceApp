@@ -14,6 +14,7 @@ export const ROUTES = {
   analysis:    '/analysis',
   investigationAnalysis: '/investigate/analysis',
   dhara:       '/dhara',
+  dharaPallimangal: '/dhara/pallimangal',
   // Legacy route retained for saved links and internal integrations.
   gherproof:   '/gherproof',
   about:       '/about',

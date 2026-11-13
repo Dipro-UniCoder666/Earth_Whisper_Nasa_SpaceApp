@@ -1,15 +1,19 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AlertTriangle, ArrowLeft, ArrowRight, Check, LoaderCircle, MapPinned, Satellite, ShieldAlert, Waves } from 'lucide-react'
-import { useSearchParams } from 'react-router-dom'
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 import { GherProofWorkspace } from './GherProofWorkspace'
 import { ContextSatelliteImage } from './ContextSatelliteImage'
+import { ROUTES } from '@/lib/constants'
 import { loadGherProofData } from './services/gherproofApi'
 import type { GherProofData } from './services/gherproofApi'
 import './gherproof.css'
 
 export function GherProofPage(){
- const [params,setParams]=useSearchParams()
- const stage=params.get('stage')==='select'||params.get('stage')==='results'?params.get('stage'):'intro'
+ const location=useLocation()
+ const navigate=useNavigate()
+ const [params]=useSearchParams()
+ const requestedStage=params.get('stage')
+ const stage=requestedStage==='select'||requestedStage==='results'?requestedStage:location.pathname===ROUTES.dharaPallimangal?'results':'intro'
  const [selected,setSelected]=useState(false)
  const [loading,setLoading]=useState(false)
  const [error,setError]=useState<string|null>(null)
@@ -18,7 +22,11 @@ export function GherProofPage(){
  const attempted=useRef(false)
 
  useEffect(()=>{document.title='Earth Whisper - DHARA'},[])
- const moveTo=useCallback((next:'intro'|'select'|'results',replace=false)=>setParams(next==='intro'?{}:{stage:next},{replace}),[setParams])
+ const moveTo=useCallback((next:'intro'|'select'|'results',replace=false)=>{
+  if(next==='results') navigate(ROUTES.dharaPallimangal,{replace})
+  else if(next==='select') navigate(`${ROUTES.dhara}?stage=select`,{replace})
+  else navigate(ROUTES.dhara,{replace})
+ },[navigate])
 
  const loadAnalysis=useCallback(async()=>{
   setLoading(true);setError(null);setFailureList([])
