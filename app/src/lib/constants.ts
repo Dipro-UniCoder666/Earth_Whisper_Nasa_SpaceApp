@@ -22,7 +22,6 @@ export const ROUTES = {
 
 export const NAV_LINKS = [
   { label: 'Home',        to: '/',            external: false },
-  { label: 'Investigate', to: '/investigate', external: false },
   { label: DHARA_NAME,   to: '/dhara',       external: false },
   { label: 'About',       to: '/about',       external: false },
 ] as const

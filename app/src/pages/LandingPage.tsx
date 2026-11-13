@@ -801,7 +801,7 @@ export function LandingPage() {
       >
         <button
           type="button" className="ew-hero-cta-btn"
-          onClick={() => navigate(ROUTES.investigate)}
+          onClick={() => navigate(ROUTES.dhara)}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -819,7 +819,7 @@ export function LandingPage() {
             letterSpacing: '-0.01em',
           }}
         >
-        Begin the Investigation
+        Analysis with DHARA
         <span className="ew-hero-cta-arrow" aria-hidden="true">⮞</span>
       </button>
       </div>

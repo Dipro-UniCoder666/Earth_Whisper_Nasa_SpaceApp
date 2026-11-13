@@ -100,7 +100,7 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
             key={link.to}
             to={link.to}
             className="whisper-nav-link"
-            aria-current={location.pathname === link.to || (link.to === ROUTES.investigate && location.pathname.startsWith('/investigate')) ? 'page' : undefined}
+            aria-current={location.pathname === link.to ? 'page' : undefined}
             style={{
               padding: '6px 16px',
               fontSize: '0.9rem',
@@ -138,7 +138,7 @@ export function WhisperNav({ variant = 'overlay' }: WhisperNavProps) {
               to={link.to}
               role="menuitem"
               className="whisper-nav-menu-link"
-              aria-current={location.pathname === link.to || (link.to === ROUTES.investigate && location.pathname.startsWith('/investigate')) ? 'page' : undefined}
+              aria-current={location.pathname === link.to ? 'page' : undefined}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
