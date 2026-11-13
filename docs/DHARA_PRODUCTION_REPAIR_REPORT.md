@@ -62,3 +62,16 @@ These account-level settings cannot be changed or verified from the checked-out 
 This report was first prepared while the repair files were still local. The user subsequently requested direct publication of the full local codebase to GitHub `main`; the reviewed repair files are included in that update. The user-provided untracked `gherproof-file-list.txt` remains untouched and is excluded. The pretrained model and S1GFloods archive are already Git LFS-tracked; the new Sentinel-2 context preview is 5.44 MB.
 
 The live Vercel project still needs a verified FastAPI origin configured as `VITE_API_BASE_URL`, or an existing same-origin API proxy. This repository does not contain a production API hostname or deployment account settings, so publishing the frontend cannot by itself make the screening API reachable. No API host has been invented.
+
+## Post-deployment smoke check — 2026-11-13
+
+After the direct push to GitHub `main` (commit `00eb277`), the live Vercel project returned:
+
+| Request | Result |
+|---|---|
+| `/dhara` | **PASS** — HTTP 200 HTML |
+| `/images/dhara-sentinel2-context-2026-01-13.png` | **PASS** — HTTP 200 PNG, 5,440,663 bytes |
+| `/api/health` | **FAIL** — HTTP 404 |
+| Pallimangal `/api/gherproof/.../screening` | **FAIL** — HTTP 404 |
+
+The SPA route and contextual image are deployed. Analyze Now is still blocked in production because Vercel has no `/api` backend route and no verified FastAPI origin was found in the repository. Configure Vercel production `VITE_API_BASE_URL` to the actual FastAPI HTTPS origin (without `/api`), or deploy a same-origin proxy to that service; then redeploy and recheck `/api/health` and screening. This repository contains no verified API hostname, so none is supplied here.
